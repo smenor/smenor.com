@@ -2,6 +2,16 @@ html {
   background: #eee;
   color: #111;
 
+  a {
+    color: #a00;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:current {
+      color: #0a0;
+    }
+  }
+
   @media (prefers-color-scheme: dark) {
     background: #111;
     color: #eee;
@@ -15,9 +25,47 @@ html {
   }
 
   body {
+    margin: 0;
+
+    header {
+      width: 100%;
+      background-color: #ddd;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: #222;
+      }
+
+      h1 {
+        margin: 0;
+
+      }
+    }
+
+    nav {
+      position: sticky;
+      background-color: #ddd;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: #222;
+      }
+
+      top: 0;
+
+      ul {
+        list-style-type: none;
+        display: inline;
+
+        li {
+          display: inline;
+          margin-left: 1em;
+        }
+      }
+    }
+
     article {
       margin: 0em 2em 0em 2em;
     }
+
     h1 {
       text-align: center;
       font-weight: bold;
