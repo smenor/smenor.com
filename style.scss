@@ -5,6 +5,9 @@ html {
   @media (prefers-color-scheme: dark) {
     background: #111;
     color: #eee;
+    a {
+      color: #e44;
+    }
   }
 
   @media (prefers-color-scheme: light) {
