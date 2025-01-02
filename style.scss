@@ -1,9 +1,10 @@
 html {
-  background: #eee;
+  background: #fdfdfd;
   color: #111;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   a {
-    color: #a00;
+    color: #eb4a41;
     font-weight: bold;
     text-decoration: none;
 
@@ -14,10 +15,7 @@ html {
 
   @media (prefers-color-scheme: dark) {
     background: #111;
-    color: #eee;
-    a {
-      color: #e44;
-    }
+    color: #fdfdfd;
   }
 
   @media (prefers-color-scheme: light) {
@@ -26,44 +24,77 @@ html {
 
   body {
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 
     header {
-      width: 100%;
-      background-color: #ddd;
-
+      display: flex;
+      background-color: #f8f8f8;
+      position: sticky;
+      top: 0;
+      left: 0;
+      right : 0;
+      padding: 0em 0.5em 0em 0.5em;
       @media (prefers-color-scheme: dark) {
         background-color: #222;
+      }
+
+      img {
+        height: 3em;
+        vertical-align: middle;
+        margin-right: 1em;
       }
 
       h1 {
-        margin: 0;
-
+        vertical-align: middle;
+        margin: auto;
+        @media screen and (min-width: 768px) {
+          margin-left: 1em;
+        }
+        font-size: 1.3em;
       }
     }
 
-    nav {
-      position: sticky;
-      background-color: #ddd;
+    footer {
+      display: flex;
+      position: relative;
+      color: #888;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: smaller;
+      margin: 0.5em;
+      margin-top: auto;
 
-      @media (prefers-color-scheme: dark) {
-        background-color: #222;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        margin: 0.2em;
+        margin-top: auto;
       }
 
-      top: 0;
+      :first-child {
+        @media screen and (min-width: 768px) {
+          margin-right: auto;
+        }
+      }
 
-      ul {
-        list-style-type: none;
-        display: inline;
-
-        li {
-          display: inline;
-          margin-left: 1em;
+      :last-child {
+        @media screen and (min-width: 768px){
+          margin-left: auto;
         }
       }
     }
 
     article {
-      margin: 0em 2em 0em 2em;
+      @media screen and (min-width: 749px) {
+        margin: 0em 2em 0em 2em;
+      }
+
+      @media screen and (max-width: 749px) {
+        margin: 0em 0.5em 0em 0.5em;
+      }
     }
 
     h1 {
