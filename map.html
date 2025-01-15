@@ -25,10 +25,11 @@
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);
 
+      map.on('click', addMarker);
+
       var fireLayer = omnivore.kml('https://smenor.com/CA_Perimeters_NIFC_FIRIS_public_view.kml')
         .on('ready', function() {
           fireLayer.eachLayer(function(layer) {
-            console.log(layer);
             layer.setStyle({
               "LabelStyle": {
                 "color": "00000000",
@@ -50,6 +51,17 @@
             console.log("error");
         })
         .addTo(map);
+
+        var businessLayer = omnivore.geojson("businesses.geojson")
+        .on('ready', function() {
+
+        })
+        .addTo(map);
+
+        function addMarker(e) {
+          var newMarker = new L.marker(e.latlng).addTo(map);
+          console.log(e.latlng);
+        }
 
         // var myCustomGroup = L.geoJSON(null, {
         //   style: getStyle

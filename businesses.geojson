@@ -1,0 +1,14 @@
+{
+  "type": "FeatureCollection",
+  "features": [{
+    "type": "Feature",
+    "title": "Bonnie B's BBQ",
+    "address": "1280 N Lake Ave, Pasadena, CA 91104",
+    "phone": "(626) 794-0132",
+    "url": "https://www.bonniebssmokin.com",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [34.168011,  -118.131866]
+    }
+  }]
+}
