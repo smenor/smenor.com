@@ -52,9 +52,15 @@
         })
         .addTo(map);
 
-        var businessLayer = omnivore.geojson("businesses.geojson")
+        var businessLayer = omnivore.geojson("https://smenor.com/businesses.geojson")
         .on('ready', function() {
-
+          businessLayer.eachLayer(function(layer) {
+            console.log(layer);
+            
+          })
+        })
+        .on('error', function() {
+          console.log("json error");
         })
         .addTo(map);
 

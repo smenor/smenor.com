@@ -2,6 +2,7 @@
   "type": "FeatureCollection",
   "features": [{
     "type": "Feature",
+    "description": "Food",
     "title": "Bonnie B's BBQ",
     "address": "1280 N Lake Ave, Pasadena, CA 91104",
     "phone": "(626) 794-0132",
@@ -9,6 +10,17 @@
     "geometry": {
       "type": "Point",
       "coordinates": [34.168011,  -118.131866]
+    }
+  }, {
+    "type": "Feature",
+    "title": "Culture Shock Cafe",
+    "description": "Coffee Shop",
+    "address": "1359 N Altadena Dr, Pasadena, CA 91107",
+    "phone": "(626) 398-8654",
+    "instagram": "@culture_shock_cafe",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [34.169640,  -118.098343]
     }
   }]
 }
