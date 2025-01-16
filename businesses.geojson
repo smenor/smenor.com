@@ -35,6 +35,16 @@
         "type": "Point",
         "coordinates": [-118.141091, 34.145890]
       }
+    }, {
+      "type": "Feature",
+      "title": "Little Red Hen",
+      "description": "Food",
+      "address": "2697 N Fair Oaks Ave Altadena, CA 91001",
+      "phone": "(626) 791-1614",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.148890, 34.191827]
+      }
     }
   ]
 }
