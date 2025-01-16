@@ -1,26 +1,40 @@
 {
   "type": "FeatureCollection",
-  "features": [{
-    "type": "Feature",
-    "description": "Food",
-    "title": "Bonnie B's BBQ",
-    "address": "1280 N Lake Ave, Pasadena, CA 91104",
-    "phone": "(626) 794-0132",
-    "url": "https://www.bonniebssmokin.com",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [34.168011,  -118.131866]
+  "features": [
+    {
+      "type": "Feature",
+      "description": "Food",
+      "title": "Bonnie B's BBQ",
+      "address": "1280 N Lake Ave, Pasadena, CA 91104",
+      "phone": "(626) 794-0132",
+      "url": "https://www.bonniebssmokin.com",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.131866, 34.168011]
+      }
+    }, {
+      "type": "Feature",
+      "title": "Culture Shock Cafe",
+      "description": "Coffee Shop",
+      "address": "1359 N Altadena Dr, Pasadena, CA 91107",
+      "phone": "(626) 398-8654",
+      "instagram": "@culture_shock_cafe",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.098343, 34.169640]
+      }
+    }, {
+      "type": "Feature",
+      "title": "Leberry Bakery",
+      "description": "Bakery",
+      "address": "445 E Colorado Blvd, Pasadena, CA 91101",
+      "phone": "(626) 993-9898",
+      "url": "https://www.leberrybakery.com",
+      "instagram": "@leberrybakery",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.141091, 34.145890]
+      }
     }
-  }, {
-    "type": "Feature",
-    "title": "Culture Shock Cafe",
-    "description": "Coffee Shop",
-    "address": "1359 N Altadena Dr, Pasadena, CA 91107",
-    "phone": "(626) 398-8654",
-    "instagram": "@culture_shock_cafe",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [34.169640,  -118.098343]
-    }
-  }]
+  ]
 }
