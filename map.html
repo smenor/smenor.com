@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Pasedn</title>
+    <title>BLACK OWNED BUSINESSES IN Pasadena & Altadena</title>
     <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.umd.min.js"></script>
     <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.css" rel="stylesheet" />
 
@@ -66,13 +66,34 @@
           fillOpacity: 0.8
         };
 
-        var businessLayer = omnivore.geojson("https://smenor.com/businesses.geojson")
+        var businessLayer = omnivore.geojson("https://smenor.com/businesses.geojson?3")
         .on('ready', function() {
           businessLayer.eachLayer(function(layer) {
             document.asdf = layer;
             const latLng = layer._latlng;
+            if (latLng === undefined) {
+              return;
+            }
             const title = layer.feature.title;
             const url = layer.feature.url;
+            const instagram = layer.feature.instagram;
+            const phone = layer.feature.phone;
+
+            var label = "";
+
+            if (url !== undefined) {
+              label += `<a target='_' href='${url}'>${title}</a>`;
+            } else {
+              label += `${title}`;
+            }
+
+            if (instagram !== undefined) {
+              label += `<br/><a target='_' href='https://instagram.com/${instagram.replace(/@/, "")}'>${instagram}</a>`;
+            }
+
+            if (phone !== undefined) {
+              label += `<br/>${phone}`;
+            }
 
             const circle = new L.circle([latLng.lat, latLng.lng], {
               "title": title,
@@ -81,17 +102,21 @@
               "color": "black",
               "fill": "red",
             }).addTo(map);
+            circle.bindPopup(label)
+            .openPopup();
+
             circle.addTo(map);
-          })
+
+          });
         })
         .on('error', function() {
           console.log("json error");
         })
         // .addTo(map);
 
-        maptilersdk.config.apiKey = 'UbiNygaAfb3hWHxM82Hq';
-        const results = maptilersdk.geocoding.forward("181 E Orange Grove Blvd, Pasadena, CA 91103");
-        document.results = results.pop().center;
+        // maptilersdk.config.apiKey = 'UbiNygaAfb3hWHxM82Hq';
+        // const results = maptilersdk.geocoding.forward("181 E Orange Grove Blvd, Pasadena, CA 91103");
+        // document.results = results.pop().center;
     </script>
   </body>
 </html>
