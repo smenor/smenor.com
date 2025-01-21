@@ -22,9 +22,11 @@
  </head>
   <body>
     <div id="map"></div>
+    <p>
+      <a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a>
+      <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>
+    </p>
     <script>
-      maptilersdk.config.apiKey = 'UbiNygaAfb3hWHxM82Hq';
-
       var map = L.map('map').setView([34.2075, -118.10722], 12);
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -64,24 +66,32 @@
           fillOpacity: 0.8
         };
 
-        var businessLayer = omnivore.geojson("https://smenor.com/businesses.geojson",{
-          pointToLayer: function (feature, latlng) {
-            return L.circleMarker(latlng, geojsonMarkerOptions);
-          }
-        })
+        var businessLayer = omnivore.geojson("https://smenor.com/businesses.geojson")
         .on('ready', function() {
           businessLayer.eachLayer(function(layer) {
             document.asdf = layer;
-            new L.marker(layer._latlng).addTo(map);
+            const latLng = layer._latlng;
+            const title = layer.feature.title;
+            const url = layer.feature.url;
+
+            const circle = new L.circle([latLng.lat, latLng.lng], {
+              "title": title,
+              "alt": title,
+              "radius": "100",
+              "color": "black",
+              "fill": "red",
+            }).addTo(map);
+            circle.addTo(map);
           })
         })
         .on('error', function() {
           console.log("json error");
         })
-        .addTo(map);
+        // .addTo(map);
 
+        maptilersdk.config.apiKey = 'UbiNygaAfb3hWHxM82Hq';
         const results = maptilersdk.geocoding.forward("181 E Orange Grove Blvd, Pasadena, CA 91103");
-        document.results = results;
+        document.results = results.pop().center;
     </script>
   </body>
 </html>
