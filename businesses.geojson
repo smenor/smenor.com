@@ -1,0 +1,184 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "description": "Food",
+      "title": "Bonnie B's BBQ",
+      "address": "1280 N Lake Ave, Pasadena, CA 91104",
+      "phone": "(626) 794-0132",
+      "url": "https://www.bonniebssmokin.com",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.131866, 34.168011]
+      }
+    }, {
+      "type": "Feature",
+      "title": "Culture Shock Cafe",
+      "description": "Coffee Shop",
+      "address": "1359 N Altadena Dr, Pasadena, CA 91107",
+      "phone": "(626) 398-8654",
+      "instagram": "@culture_shock_cafe",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.098343, 34.169640]
+      }
+    }, {
+      "type": "Feature",
+      "title": "Leberry Bakery",
+      "description": "Bakery",
+      "address": "445 E Colorado Blvd, Pasadena, CA 91101",
+      "phone": "(626) 993-9898",
+      "url": "https://www.leberrybakery.com",
+      "instagram": "@leberrybakery",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.141091, 34.145890]
+      }
+    }, {
+      "type": "Feature",
+      "title": "Little Red Hen",
+      "description": "Food",
+      "address": "2697 N Fair Oaks Ave Altadena, CA 91001",
+      "phone": "(626) 791-1614",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.148890, 34.191827]
+      }
+    }, {
+      "type": "Feature",
+      "title": "My Place Cafe Coffee",
+      "description": "Breakfast",
+      "address": "2057 N Los Robles Ave, Pasadena, CA",
+      "phone": "(626) 797-9255",
+      "instagram": "@myplacecafepas",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.142644, 34.181314]
+      }
+    }, {
+      "type": "Feature",
+      "title": "Pasadena Fish Market",
+      "description": "Food",
+      "address": "181 E Orange Grove Blvd, Pasadena, CA 91103",
+      "phone": "(626) 792-9233",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.146904, 34.158026]
+      }
+    }, {
+      "type": "Feature",
+      "title": "Perry's Joint ",
+      "description": "Food",
+      "address": "2051 Lincoln Ave, Pasadena, CA 91103 ",
+      "phone": "(626) 798-4700",
+      "url": "https://perrysjoint.com/",
+      "instagram": "@perrysjoint",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.159943, 34.181042]
+      }
+    }, {
+      "type": "Feature",
+      "title": "Rodney's Ribs",
+      "description": "Food",
+      "address": "902 N lake Ave, Pasadena, CA 91104",
+      "phone": "(626) 818-7427 ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.132430, 34.160622]
+      }
+    }, {
+      "type": "Feature",
+      "title": "Solidwtr",
+      "description": "Food & Beverage",
+      "address": "3579 e Foothill Blvd #528, Pasadena ca 91107",
+      "phone": "(626)800-5057",
+      "url": "Www.Solidwtr.net",
+      "instagram": "@solidwtr",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.075643, 34.151255]
+      }
+    }, {
+      "type": "Feature",
+      "title": "The Gourmet Cobbler Factory",
+      "description": "Baked Goods",
+      "address": "33 N Catalina Ave, Pasadena, CA 91106",
+      "phone": "(626) 795-1005",
+      "instagram": "@thegourmetcobblerfactory",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.129631, 34.146555]
+      }
+    }, {
+      "type": "Feature",
+      "title": "UEDF Fish and Chips ",
+      "description": "Food",
+      "address": "2191 N Lake Ave, Altadena, CA 91001",
+      "phone": "(626) 794-0277",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.131816, 34.183525]
+      }
+    },
+    {
+      "type": "Feature",
+      "title": "Altadena Farmers Market",
+      "description": "Farmer's Market",
+      "address": "587 W Palm St, Altadena, CA 91001",
+      "url": "http://altadenafarmersmarket.com/",
+      "instagram": "@altadenafm",
+      "phone": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.159111, 34.200630]
+      }
+    }, {
+      "type": "Feature",
+      "title": "First to Third",
+      "description": "Clothing",
+      "address": "3330 Lincoln Ave, Altadena, CA 91001",
+      "phone": "(626) 840-3258",
+      "instagram": "@first_to_third",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.157367, 34.201269]
+      }
+    }, {
+      "type": "Feature",
+      "title": "Kipenzi Chidimma",
+      "description": "Fashon",
+      "address": "45 S. Arroyo Parkway",
+      "phone": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.147803,34.144712]
+      }
+    }, {
+      "type": "Feature",
+      "title": "Kliek Boutique",
+      "description": "",
+      "address": "300 E Colorado Blvd Suite 151, Pasadena, CA 91101",
+      "phone": " (626) 314-2239 ",
+      "url": "https://www.kliekboutique.com/",
+      "instagram": "@shopatkliek",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.143673, 34.145148]
+      }
+    }, {
+      "type": "Feature",
+      "title": "Rhythms of the Village",
+      "description": "Clothing",
+      "address": "2279 Lake Ave, Altadena, CA 91001",
+      "phone": "(626) 616-2561 ",
+      "url": "https://www.rhythmsofthevillage.com/",
+      "instagram": "@1rhythmsofthevillage",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.132000, 34.185121]
+      }
+    }
+  ]
+}
