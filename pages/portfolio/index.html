@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="/">
+        <img src="/images/logo.png">
+      </a>
+      <div class="title">
+        <a href="/pages/portfolio/">
+          Portfolio
+        </a>
+      </div>
+      <a href="/">Scott Menor</a>
+    </h1>
+    <input type="checkbox" id="menuControl" />
+    <label for="menuControl">
+      <nav>
+        <span class="line"></span>
+        <span class="line"></span>
+        <ul><li><a href="/pages/bio/" >Bio</a></li><li><a href="/pages/ethics/" >Ethics</a></li><li><a href="/pages/mechatronics/" >Mechatronics</a></li><li><a href="/pages/portfolio/" class="current" aria-current="page">Portfolio</a></li><li><a href="/pages/where_I_fit/" >Where I fit</a></li><li><a href="/pages/who_am_i/" >Who am I ?</a></li></ul>
+        <span class="line"></span>
+    </nav>
+    </label>
+  </header>
+  <main>
+    <article>
+      <h2>Noir</h2>
+<p><img src="/images/noirSwitch_3.png" alt="Noir Switch 3.0 Controller and Offline-Power / Switch boards" title="Noir Switch 3.0 PCBs"></p>
+<p>Anyone who has ever fought with autoincorrect can tell you that bad automation is worse than no automation.</p>
+<p>The Noir Switch is a meditation on how control automation should work - there and easy to use when you need it, but disappears from view into the background when you don't.</p>
+<p>The switches, themselves, are iconic black rectangles whose borders glow when you approach and fade to black as you walk away.</p>
+<p>Their surface is touch sensitive and respond to taps and swipes, and they have embedded low-power RADAR and electrostatic proximity sensing to be unintrusively aware of their surroundings and able to adapt to changes in occupency, activity, and ambient lighting.</p>
+<p>Developing the Switch took so many iterations and there were so many subtle challenges along the way from figuring out how to draw offline power from a single circuit without requiring three wires to managing power factors and harmonics and Bluetoothand the RADAR.</p>
+<p><img src="/images/noirSwitchTestBoard.png" alt="Noir Switch Development Board" title="Noir Switch Development Board"></p>
+<p>It also required a huge amount of work on the application, cloud infrastructure, firmware, and FPGA code to make everything go while hiding all of that complexity inside of something beautiful and incredibly simple.</p>
+<p><img src="/images/noirSwitchApp.png" alt="Noir Switch" title="Noir Switch App"></p>
+<p>All of that distilled down to the switch, itself.</p>
+<p><img src="/images/noir_1.0_white_overhead.png" alt="Noir Switch" title="Noir Switch"></p>
+<h2>Flow</h2>
+<p>SILSYNC/Flow is an app for web and macOS / iOS / visionOS devices which allows for easy role-based stakeholder collaboration for product definition and project management including live / interactive design simulations using Swift Hardware, a constraint-based domain-specific declarative hardware definition language which I also developed.</p>
+<p>It includes a task queue, hierarchial Project/Product Requirements Document designed to allow for easy agile development of arbitrary projects/products from small-scale hobbiest stuff to mission-critical enterprise-scale aerospace and medical product management.</p>
+<p><img src="/images/silsyncFlowNoirPRDview.png" alt="SILSYNC/Flow iOS App showing a Product Requirements Document / Specification view for the Noir Switch" title="SILSYNC/Flow App"></p>
+<h2>Medulla, Ganglion, r18n, and Cerebrum</h2>
+<p>Among many other things, at Roambotics I developed several series of controller boards including firmware and VHDL/Verilog FPGA code. These boards include power distribution, various forms of motor drivers ( brushed, brushless, stepper, switched-reluctance, etc. ), inertial measurment units, USB-C, Bluetooth, WiFi, GNSS / GPS, ethernet, CAN ( FD/XL ), DDR RAM, NAND FLASH storage, constant-current LED controllers, FPGAs, embedded microcontrollers, System on a Chip microprocessors, and many other features.</p>
+<p><img src="/images/Medulla5.jpg" alt="Medula 5 motor controller with embedded IMU" title="Medula 5 Motor controller PCB"></p>
+<p><img src="/images/ganglion2.png" alt="Ganglion 2 motor controller with embedded IMU" title="Ganglion 2 Motor controller PCB"></p>
+<h2>Mini</h2>
+<p>Small Mini robot with CNC milled aluminum enclosure standing on two wheels aft portion of enclosure removed exposing interior frame for debugging access.</p>
+<p><img src="/images/Mini.png" alt="Mini Aluminum enclosed handheld balancing robot" title="Mini standing"></p>
+<h2>Jr Series</h2>
+<p><img src="/images/roambotics_exploded_240x240-tiny.png" alt="Exploded view of Jr showing indivual moulded plastic components and motors" title="Jr series-1 Mk 3 exploded view"></p>
+<p>Junior is both a prototyping platform and development testbed for firmware and high-level software controls. Most of my work on general-purpose personal robots has been in finding ways to abstract away the hardware and make programming robots as easy as making apps for phones and the Jr. series helped me along the way there and got me a lot of practice with designing injection-moulded parts, PCBs, and wiring harnesses.</p>
+<p>The first generation Jr won <a href="https://protolabs.com/">Protolabs</a>' <a href="https://www.protolabs.com/about-us/cool-idea-award/past-winners/">Cool Idea Award</a> in 2014.</p>
+<p><img src="/images/aluminumJr.png" alt="Aluminum Jr" title="Jr"></p>
+<p>Freedom to do the human stuff.</p>
+<p><img src="/images/Jr_eyes_closeup.png" alt="Junior eyes looking forward" title="Jr"></p>
+
+    </article>
+  </main>
+  <footer>
+    <span class="copyright" title="Copyright Scott Menor / SMENOR, LLC. All Rights Reserved.">&copy; 2025 </span>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+  <title>Black owned businesses in Pasadena &amp; Altadena</title>
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.umd.min.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>
+      <div class="title">
+        <a href="/map/">
+          Black owned businesses in Pasadena &amp; Altadena
+        </a>
+      </div>
+      <a href="http://qianapatterson.com">Qiana</a>
+    </h1>
+    </label>
+  </header>
+  <main>
+        <div id="map"></div>
+    <p>
+      <a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a>
+      <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>
+    </p>
+    <script>
+      var map = L.map("map",
+      {
+        center: [34.146560023177614, -118.1007719412446], // starting position [lng, lat]
+        zoom: 12, // starting zoom
+      }
+      );
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      var fireLayer = omnivore.kml('https://smenor.com/EATON_CA_Perimeters_NIFC_FIRIS_public_view.kml')
+        .on('ready', function() {
+          fireLayer.eachLayer(function(layer) {
+            layer.setStyle({
+              color: "#de1019"
+            });
+
+            layer.bringToBack();
+          });
+        })
+        .on('error', function() {
+            // fired if the layer can't be loaded over AJAX
+            // or can't be parsed
+            console.log("error");
+        })
+        .addTo(map);
+
+        var geojsonMarkerOptions = {
+          radius: 8,
+          fillColor: "#ff7800",
+          fill: "#800",
+          color: "#000",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.8
+        };
+
+        var businessLayer = omnivore.geojson("/locations_geojson/")
+        .on('ready', function() {
+          businessLayer.eachLayer(function(layer) {
+            document.asdf = layer;
+            const latLng = layer._latlng;
+            if (latLng === undefined) {
+              return;
+            }
+            const title = layer.feature.title;
+            const url = layer.feature.url;
+            const instagram = layer.feature.instagram;
+            const phone = layer.feature.phone;
+
+            var label = "";
+
+            if (url !== undefined) {
+              label += `<a target='_' href='${url}'>${title}</a>`;
+            } else {
+              label += `${title}`;
+            }
+
+            if (instagram !== undefined) {
+              label += `<br/><a target='_' href='https://instagram.com/${instagram.replace(/@/, "")}'>${instagram}</a>`;
+            }
+
+            if (phone !== undefined) {
+              label += `<br/>${phone}`;
+            }
+
+            const circle = new L.circle([latLng.lat, latLng.lng], {
+              "title": title,
+              "alt": title,
+              "radius": "100",
+              "color": "black",
+              "fill": "red",
+            }).addTo(map);
+            circle.bindPopup(label);
+            circle.on('mouseover', function (e) {
+            this.openPopup(e.latlng);
+            });
+            circle.on('mouseout', function (e) {
+                this.closePopup();
+            });
+          });
+        })
+        .on('error', function() {
+          console.log("json error");
+        });
+    </script>
+
+    <article>
+      
+    </article>
+  </main>
+  <footer>
+    <span class="copyright" title="Copyright Scott Menor / SMENOR, LLC. All Rights Reserved.">&copy; 2025 </span>
+  </footer>
+</body>
+</html>
