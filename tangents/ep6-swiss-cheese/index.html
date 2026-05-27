@@ -1,0 +1,3645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+  <meta property="og:title" content="Swiss Cheese">
+  <meta name="twitter:title" content="Swiss Cheese">
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta name="twitter:image" content="https://smenor.com/images/tangentsIconTwitter.png" />
+  <meta name="twitter:twitter:image:alt" content="site logo" />
+
+  <title>Swiss Cheese</title>
+
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.umd.min.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class=" swiss-cheese">
+  <header>
+    <a href="/" class="logo">
+      <img src="/images/tangentsChannelLogo.svg">
+    </a>
+    <h1 class="title">
+      <a href="/tangents/ep6-swiss-cheese/">
+        Swiss Cheese
+      </a>
+    </h1>
+    <input type="checkbox" id="menuControl" />
+    <label for="menuControl">
+      <nav>
+        <span class="line"></span>
+        <span class="line"></span>
+        <ul><li><a href="/ai/" >「 AI 」</a></li><li><a href="/anomalies/" >Anomalies</a></li><li><a href="/bio/" >Bio</a></li><li><a href="/companion/" >Companion</a></li><li><a href="/ethics/" >Ethics</a></li><li><a href="/mechatronics/" >Mechatronics</a></li><li><a href="/portfolio/" >Portfolio</a></li><li><a href="/spite/" >Spite</a></li><li><a href="/support/" >Support</a></li><li><a href="/sweetgrass/" >Sweetgrass</a></li><li><a href="/tangents/" >Tangents</a></li><li><a href="/who_am_i/" >Who am I ?</a></li></ul>
+        <span class="line"></span>
+    </nav>
+    </label>
+  </header>
+  <main>
+    <article><audio controls>
+        <source src="https://smenor.sfo3.cdn.digitaloceanspaces.com/2025.09.05-swiss-cheese.m4a" type="audio/x-m4a">
+      </audio><p><img src="/images/SwissCheese-ver3.0_episode_version.png" alt="top: The Swiss Cheese Respiratory Virus Pandemic Defense showing layers of intervention protecting individuals and communities from infection both with personal and shared responsibilities including things like physical distance, masks, quarantine / isolation, and vaccines; bottom-left: CDC community transmisstion map showing approximate prevelance with reasonable colouring; CDC community levels map which looks green and friendly based a different / completely made-up metric and a colour scheme designed to look friendly completely misrepresenting reality years into Biden's catastrophic lack of pandemic response">
+Source: Ian M. Mackay (virologydownunder.com) and James T Reason. Illustration: Rose Wong.</p>
+<h2>Episode Transcript</h2>
+<p>Hey there, I'm Scott and this is Tangents.</p>
+<p>It is the fifth of Subtemper Holy Shit, 2025.</p>
+<p>I'm recording this 1342, not that you need to know that,
+but this is my last day in Bangkok, this trip.</p>
+<p>I'm flying back to the Tokyo tomorrow.</p>
+<p>Well tomorrow evening.</p>
+<p>I've got to tell you, I feel so, I know I'm repeating myself here a little bit,
+but I just love not being in the US.</p>
+<p>Don't get me wrong, obviously.</p>
+<p>I'm not getting the same experience as if I actually lived here to be fair.</p>
+<p>And also, you know, not perfect.</p>
+<p>Like I could come up with a thousand criticisms of Bangkok.</p>
+<p>One of them certainly is that there are so many,
+and this is also an Apple Maps criticism, so it's not exactly fair,
+but partially fair.</p>
+<p>You can go down a street here, and I really like walking.</p>
+<p>And I don't want to walk and backtrack down the same street over and over again.</p>
+<p>But if you go down a street here and you're not careful,
+it will dead end.</p>
+<p>You'll go down something and you'll think you're going to get around.</p>
+<p>And then it just dead ends.</p>
+<p>And Apple Maps will even show you that you can do it.</p>
+<p>And you'll follow that, and then you'll get to a point,
+and you just can't go any further.</p>
+<p>You have to backtrack 15 minutes to get back to wherever the fuck you were.</p>
+<p>So it means that you're doing a lot of backtracking,
+and you're not really doing loops, or you do big loops.</p>
+<p>Either way, not my favorite thing.</p>
+<p>And you know, I mean, I could just go on, but I won't.</p>
+<p>I really like it.</p>
+<p>I like that I am a five-minute walk.</p>
+<p>Literally like I'm looking out of my window in my hotel,
+and I can see the MRT station,
+one of the two metros that they have here.</p>
+<p>It's awesome.</p>
+<p>It's fucking awesome.</p>
+<p>It's so much cheaper.</p>
+<p>Like if you look at, I was at a organic grocery store yesterday.</p>
+<p>And it's just mind blowing.</p>
+<p>How fucking cheap produces, for example.</p>
+<p>But in the US, I, this was something I noticed when I was in Paris.</p>
+<p>So this is not a new thing, although it's gotten much worse.</p>
+<p>But when I lived in Paris, it was actually cheaper
+to get food at the grocery store, significantly,
+and then to make it, and you to home.</p>
+<p>In the US, I've tried that, and I've tried,
+like I've really worked on figuring out how to economize,
+and vaguely healthier, and all this kind of stuff.</p>
+<p>And it's hard, it's fucking hard.</p>
+<p>You can do it, don't give me wrong.</p>
+<p>And there are things you can do to, to save a little bit of money
+by cooking at home, especially if you could be batches,
+and you could for a few people, and this kind of stuff.</p>
+<p>But for the most part, especially if you're just a single person
+cooking for yourself, which a lot of people are,
+because we don't have a good culture community.</p>
+<p>If you're that, it kind of ends up being at least a wash
+getting food out.</p>
+<p>And the food that you're getting out is not going to be good for you.</p>
+<p>And then that also saves you from cooking, which is a pain in the ass,
+and all this kind of stuff.</p>
+<p>I don't give you wrong, like I enjoyed making my pizzas.</p>
+<p>Every once, once a week for a long time,
+I was making pizzas when I lived in Arizona for about a year.</p>
+<p>And it was a little delight.</p>
+<p>It made my Saturdays kind of special.</p>
+<p>It was a thing that I looked forward to.</p>
+<p>It was like a little tradition that I had for myself.</p>
+<p>Really liked it, but it was not cheap.</p>
+<p>It was not really now, of course, pizza used to be super cheap,
+and here it's still cheap.</p>
+<p>But they're going out for pizza would have been ridiculously expensive
+in many cases.</p>
+<p>And anyway, I don't want to talk too much about this,
+but it's just fucking, that's wild.</p>
+<p>Anyway, what I do want to talk about is getting onto the subject.</p>
+<p>I don't, not going to give you a 20 minute introduction,
+like 45 minute introduction, like last time.</p>
+<p>I guess I should say, next week,
+I have a friend coming to Japan,
+and we'll be kind of showing her around a little bit
+and traveling with her, so,
+won't be making one of these until about Sunday,
+which means that you will not get another one of these probably
+until after the 15th or theirabouts.</p>
+<p>We'll see, there's some small possibility.</p>
+<p>I also could record another one tomorrow if I'm inspired,
+but probably be about a week, not a big deal.</p>
+<p>Anyway, there are a bunch of articles,
+and obviously, I've talked about this,
+but we have a friend and family group chat,
+and my mom likes to share,
+well, we all kind of share articles,
+but my mom was really most responsible for that show we say.</p>
+<p>And, you know, today shared one that Florida
+is no longer going to require vaccines,
+like childhood vaccines.</p>
+<p>And, it's just,
+so we have anti-vaccine here, RFK Junior,
+in charge of health and human services.</p>
+<p>We have this ridiculous,
+just fucking Joker clown,
+who's the surgeon general of Florida,
+and I just read another article,
+literally between the time I stopped making my notes,
+and started recording this,
+Georgia is not going to even offer
+the updated COVID vaccines for the fall,
+which, because of the guidance,
+is unclear,
+the situation in disposition is confusing.</p>
+<p>We said, simply, right now there is a giant wave going on.</p>
+<p>So, that's perfect.</p>
+<p>And also, like, I really,
+this is not getting into the stuff
+that I want to talk about specifically,
+but I do want to say,
+even ignoring long COVID,
+and you don't have to look at just people like physics girl,
+although you should look at physics girl,
+if you don't know who she is.</p>
+<p>She has had her life fucking destroyed,
+by this stuff.</p>
+<p>But there are plenty of people who,
+it's just,
+like, even if it doesn't go to that extreme,
+it has very serious long-term sequela for a lot of people.</p>
+<p>It's a systematic infection,
+by which I mean, the infects.</p>
+<p>It's not just like a respiratory infection,
+it infects your circulatory system,
+it infects neurons,
+so it does brain damage,
+that's why you can't smell,
+why you lose some of the sense of smell and taste.</p>
+<p>It does cardiovascular damage.</p>
+<p>It does a lot of organ damage.</p>
+<p>It's not good for you in a lot of ways.</p>
+<p>It's also immune-modulating and immune-vasive,
+which means that it causes a lot of secondary immunological issues,
+which could be auto-emunity,
+or it could be immune dysregulation,
+because it's an nervous dysregulation.</p>
+<p>A lot of stuff that you don't want.</p>
+<p>You know,
+that stuff ignore all that, right?
+Most people who get these infections,
+they're getting infected by it,
+and they're just true.</p>
+<p>There are lots of people who get asymptomatic infections,
+or brief infections,
+but a lot of people get, like,
+multi-week feel-like shit,
+really terrible disease states
+from getting infected from this stuff.</p>
+<p>And I don't know about you.</p>
+<p>I know I'm fucking weird here, I guess,
+but it's weird to me that this is a weird thing.</p>
+<p>But I don't want to fucking cold.</p>
+<p>You know, I don't want to get sick for two or three days,
+and be mildly ill.</p>
+<p>I definitely, especially,
+especially given that I have asthma,
+and if I get that,
+I will very often get a horrible horse cough,
+the last, like, a month or two,
+and sounds like, you know,
+I'm in a TV ward or something.</p>
+<p>But I don't want that.</p>
+<p>I don't want to be sick.</p>
+<p>I definitely don't want to get flu,
+which, you know,
+records just the flu people like to say.</p>
+<p>That typically has a,
+and this is an annoying thing,
+because people,
+everything has kind of flu-like symptoms,
+because the symptoms that you get
+and the signs,
+the presentation of these diseases,
+is largely due to me in response
+to having a viral infection.</p>
+<p>And so, like, when we took, when I took viralogy,
+you know, the first time,
+every, the first time being the first class,
+not that I retook it.</p>
+<p>But the,
+every virus that we would cover,
+the infected people,
+would have flu-like symptoms,
+and the acute phase.</p>
+<p>HIV, flu-like symptoms,
+influenza, flu-like symptoms, that's where,
+you know,
+rhino viruses.</p>
+<p>Did you just go through the list,
+most terrestrial viruses,
+almost everything, flu-like symptoms.</p>
+<p>And then something else,
+maybe later on.</p>
+<p>But that was,
+that's just the thing.</p>
+<p>And then people don't test,
+and people are very poorly educated on this.</p>
+<p>And I,
+I'm not blaming them for this.</p>
+<p>Obviously, you don't know what you don't know.</p>
+<p>And how would you know?
+But people kind of call everything the flu,
+and they think that the flu is not a big deal.</p>
+<p>If you actually get the flu,
+if you actually get it,
+you will probably not be happy.</p>
+<p>You get, like,
+very sick for a couple of weeks.</p>
+<p>Typically, like,
+14 days is the normal course.</p>
+<p>It'll be gastrointestinal involvement.</p>
+<p>So it's not just that you have muscular aches,
+and joints hurt.</p>
+<p>You get a fever,
+respiratory stuff,
+diarrhea,
+nausea.</p>
+<p>It's just that you will feel like shit.</p>
+<p>You will not be happy.</p>
+<p>It's kind of a big deal.</p>
+<p>It's much more than just a cold.</p>
+<p>And of course,
+even just a cold.</p>
+<p>Things are more complicated than the acute phase presentation.</p>
+<p>And just the cold could be any of
+who knows how many different kinds of viruses.</p>
+<p>It's not like people kind of think of rhino viruses
+as the cold,
+but there are so many,
+so many different viruses
+that have cold-like presentation.</p>
+<p>And then also,
+there are many viruses that are very well adapted
+that have completely asymptomatic,
+or maybe they have some kind of a sign or something,
+but you normally wouldn't notice it.</p>
+<p>And most people are not tuned in and off the notice it.</p>
+<p>And so you're not taking tests.</p>
+<p>You're not,
+which is an annoying thing that we don't do that.</p>
+<p>It should just be standard.</p>
+<p>And there are countries where they have rapid tests
+that they send to people that include things like RSV
+and influenza and COVID.</p>
+<p>And then you can get sick,
+and then you take the test,
+and then you kind of know what you have,
+and then you know what to do.</p>
+<p>To some extent.</p>
+<p>Not that the treatment or the responses
+necessarily that different for different things.</p>
+<p>But, you know,
+if you have influenza and you get it early enough,
+you could take actually Tamiflu or something
+and,
+do you better if you get COVID,
+you can take,
+I brain is completely blanking.</p>
+<p>Oh, this is embarrassing.</p>
+<p>I'm not even going to be able to say,
+tax-loaded.</p>
+<p>And there are other things as well,
+but you know,
+that's something you could do.</p>
+<p>And, you know,
+so on and so forth.</p>
+<p>And that kind of stuff is useful.</p>
+<p>It's also useful,
+epidemiologically,
+because the way that these things are transmitted
+is kind of similar,
+but it's not the same,
+and how infectious they are is very different.</p>
+<p>Like,
+Flu is much less infectious than COVID.</p>
+<p>COVID is very contagious.</p>
+<p>Anyway,
+this is not the point of what I want to talk about here.</p>
+<p>But just,
+kind of,
+setting the stage a little bit.</p>
+<p>And anyway,
+as Antibax Junior and the Surgeon General of Florida
+and Georgia and all of these things are happening,
+I think it's worth talking about public health.</p>
+<p>Now,
+the,
+I'm afraid,
+end of the era of sort of vaccination,
+at least,
+I say,
+and, you know,
+I do think it will come back,
+and,
+although there are some dangers that,
+if you go from a population that's largely vaccinated
+to one that's not for a while,
+you're basically allowing rapid expansion of a bunch of diseases
+and things mutate,
+and you have an area of a vaccinated population
+that they're being challenged with,
+you might be selecting for a vaccine occasion,
+or,
+yeah,
+which is bad.</p>
+<p>I don't know if you know that that's bad.</p>
+<p>It might mean that you have to change the vaccines,
+at least,
+or it might mean that you can no longer vaccinate effectively,
+or it's not as effective,
+which is bad.</p>
+<p>That is not,
+it's not like you can just stop for a while
+and then face the consequences
+and then start again.</p>
+<p>If you're lucky you can,
+and certainly you should try.</p>
+<p>But there could be very serious long-term consequences
+from stopping this stuff.</p>
+<p>It's not a good situation.</p>
+<p>And that,
+you know,
+still would be better than not doing it.</p>
+<p>But you know,
+it's something where you really desperately want
+to vaccinate as much of the population as possible
+until you eradicate stuff,
+which you can do.</p>
+<p>So anyway,
+and I don't want to talk about Wakefield
+and Jenny McCarthy.</p>
+<p>And all the others,
+that there was a whole long list of people
+who got us here.</p>
+<p>And I,
+you know,
+they've undermined trust both in vaccinations,
+they've spread disinformation,
+and public health has been undermined by them.</p>
+<p>They've made people not understand
+how vaccines work.</p>
+<p>They've done,
+they've done a lot of harm.</p>
+<p>But I don't want to,
+to talk about that.</p>
+<p>Many others have.</p>
+<p>And I probably,
+I don't know that I have much to had.</p>
+<p>B, I probably couldn't do it justice.</p>
+<p>And see,
+that's not really what I want to talk about.</p>
+<p>I want to talk about stuff that maybe
+fewer people are talking about.</p>
+<p>You can find that kind of,
+that this other stuff on Wakefield and McCarthy
+pretty easily on your own.</p>
+<p>I hope,
+although don't find,
+don't find ridiculous
+quackery for that,
+find actual good stuff.</p>
+<p>I hope.</p>
+<p>I just had a,
+like,
+minor,
+I just want to say,
+seizure,
+like thinking about,
+the whole,
+like,
+do your own research thing.</p>
+<p>Part of,
+one thing that this is just an aside of an aside.</p>
+<p>But one thing that I think is very important
+to understand when you talk about
+airports through your own research
+is like,
+when you go through the process of becoming a domain expert,
+going to undergrad and then grad school,
+getting a master's or a PhD in a subject,
+one of the things you do,
+so one of the things you do is just learning how to do research.</p>
+<p>That's,
+that's a very important thing.</p>
+<p>And you're not just born knowing how to do research.</p>
+<p>Another thing you do is learning how to put things into context,
+contextualizing stuff.</p>
+<p>So,
+like,
+it's not like you just pull five articles and the articles tell you something.</p>
+<p>That's not how science works.</p>
+<p>You have to understand sort of what is the preponderance of the evidence,
+and look at many different articles,
+and put everything together and see
+how do these pieces fit into the puzzle?
+What is the context of this?
+What does this mean?
+What does this article mean?
+Is this article in total disagreement
+with everything that everybody else thinks?
+And if so,
+is the reasonable thing that it's real,
+or is it dubious?
+And all of that kind of stuff is stuff that you're not getting,
+if you're just,
+like,
+equates to doing the research on your own.</p>
+<p>You have to develop that.</p>
+<p>It takes a lot.</p>
+<p>And it's also something I think,
+like,
+being an auto-direct.</p>
+<p>It's good.</p>
+<p>Don't give me wrong.</p>
+<p>I like teaching myself stuff.</p>
+<p>I like learning stuff on my own.</p>
+<p>But not having a teacher,
+or at least sort of a mentor or a guide,
+helping you out,
+helping you understand how to do this stuff.</p>
+<p>You're going to fuck up.</p>
+<p>You're going to misunderstand stuff.</p>
+<p>You're going to misinterpret stuff.</p>
+<p>And it goes to this thing that I get all the time,
+especially,
+you know,
+I was going to say Twitter,
+I've been with on Twitter in a long time,
+but on blue sky,
+or Facebook,
+or just talking to people.</p>
+<p>And they're like,
+show me the,
+show me the proof.</p>
+<p>Show me the,
+the one article that tells me this.</p>
+<p>And the problem is,
+that is fundamentally misunderstanding
+how that works.</p>
+<p>There's no one article
+that just tells you X.</p>
+<p>All the things I'm going to be,
+talking about here too.</p>
+<p>These are things that have,
+like,
+when I speak about stuff,
+especially here,
+I'm speaking about stuff that I know,
+very well.</p>
+<p>And I've spent a lot of time
+and effort understanding it
+and building this context for it.</p>
+<p>But it's not like I can just point you to a single source,
+and you'll get it.</p>
+<p>It is something where you have to do a lot of work
+to understand all these pieces and put them all together.</p>
+<p>I feel like it conspiracy theory,
+guy talking about that.</p>
+<p>It is just like basically how research works,
+and how,
+you know,
+it's part of scientific epistemology,
+which is,
+we know what things are.</p>
+<p>We know,
+you know,
+successive approximations of reality,
+based on continually sort of testing things,
+and getting refinements,
+and seeing little bits of evidence,
+and putting them all together.</p>
+<p>It's not like one thing tells you anything.</p>
+<p>And in fact,
+if there was a case where you're like,
+oh,
+this one article says this,
+you're fully fucking in it,
+because you can find,
+they might not be the dominant thing.</p>
+<p>You might,
+you know,
+they might be rare,
+but you can find articles talking about all kinds of nonsense,
+and even in good journals.</p>
+<p>And there's plenty of examples of that,
+which is not to say that every article
+in a good journal is bad.</p>
+<p>It's just you have to look at the,
+again,
+I keep using the word,
+but preponderance of evidence,
+and the context,
+and put everything together like that.</p>
+<p>It's,
+it's not like,
+I can just say,
+you know,
+this is,
+here's your,
+you know,
+just look at this summary,
+or even a review article.</p>
+<p>I can't send you to you,
+like this is a review article,
+and look at that,
+and now you'll know.</p>
+<p>Like,
+I can tell you that I've done a lot of work.</p>
+<p>I've looked at a lot of stuff,
+but I can't really just,
+you know,
+without having you do the work,
+you can't really convey that.</p>
+<p>It's one of these problems with expertise,
+and I think,
+people don't understand how expertise works.</p>
+<p>It's a,
+it's a fundamental problem.</p>
+<p>And there's definitely this issue
+that people have where people think,
+or people used to think,
+this sort of,
+I don't know,
+but you call it,
+appeal to authority.</p>
+<p>Was a thing.</p>
+<p>Like,
+you know,
+at one point it was like a priesthood,
+but in science,
+you know,
+it's like,
+oh,
+I have these credentials,
+and I'm an expert in this,
+and so you should trust me,
+because you should trust me.</p>
+<p>That's not,
+that's not how it works.</p>
+<p>And I want to be very careful and clear
+that I'm not asking you to do that.</p>
+<p>Although,
+I normally don't like talking about my background,
+specifically because of what I just said,
+but I do want you to understand
+that being an expert actually means something,
+and it means that,
+you know,
+I have spent many years of my life
+studying a subject,
+and I,
+you know, have looked,
+not just like a couple things,
+but a lot of stuff
+from a lot of different people
+over a long period of time,
+and I've gotten pieces,
+you know,
+and some of those stuff I'm going to talk about today,
+I have studied in,
+and it just,
+just like one of the things,
+actually,
+I'll get to this later.</p>
+<p>I don't want to stop on it too much,
+but I'm going to talk about the,
+the way that genes are encoded in DNA,
+and then translate it,
+transcribed rather to RNA,
+and then expressed as proteins.</p>
+<p>I have studied that in high school,
+several times in different classes,
+then in undergrad in genetics,
+in microbiology,
+in immunology,
+and in biology,
+and you could just go down the list.</p>
+<p>I studied it many, many times,
+and every time you get more layers,
+and you start learning more nuances about it,
+and you start getting a better,
+and better understanding of it.</p>
+<p>I'm going to cover in very broad strokes
+at a very high level,
+some of that today.</p>
+<p>And when I do that,
+you might feel like you know,
+something about it,
+or you might find something
+that's kind of,
+well,
+Scott said this,
+but the actual thing is this.</p>
+<p>I'm giving you the sort of sketch,
+high level sketch of it.</p>
+<p>There are details,
+there are nuances,
+there are things like,
+not everything in your genome,
+not everything in your DNA,
+is coding for proteins,
+for example.</p>
+<p>There are a lot of nuances there,
+and then there are edits after transcription
+and translation,
+and there are,
+all of these,
+all of these things that happen,
+modifications,
+and there's a lot of detail there.</p>
+<p>Like,
+you could spend many years studying that,
+and you would just kind of get
+closer and closer to understanding it.</p>
+<p>But no better,
+who you are,
+no matter how much time you spend on a subject,
+you don't know that much about it.</p>
+<p>And I would say,
+one of the measures of expertise,
+and actually going through an earning expertise,
+is you kind of understand
+how much you don't understand,
+much more than people who are just like,
+brushed on a subject.</p>
+<p>Like you brush on it,
+and it's like,
+oh, that's really simple.</p>
+<p>And then you start studying,
+and you get more and more nuance,
+and more in detail,
+and you're like,
+wow, this is actually really fucking complicated.</p>
+<p>And, you know,
+it just unfolds very quickly.</p>
+<p>That's not to say also,
+like there are plenty of experts,
+and I get really fucking annoyed with these people.</p>
+<p>But these are people like,
+for some reason,
+Neil deGrest Tyson is really in my head,
+Brian Cox.</p>
+<p>He's not as bad,
+but he's pretty bad.</p>
+<p>What the fuck is that guy's name?
+Dawkins.</p>
+<p>He's like the archetype of this kind of person.</p>
+<p>Good cow,
+is a good example of this.</p>
+<p>These are people who are definitely Paul Davies,
+perfect example.</p>
+<p>These are people who are definitely experts in a domain.</p>
+<p>There are people who,
+you know,
+they have credentials,
+they have done some work,
+and they know a lot about some particular subject,
+or at least they at one point in time.</p>
+<p>When you have a PhD with a thing,
+the way to look at that in some senses,
+you are the world expert on some tiny,
+little,
+minutious thing,
+just at the moment that you do your dissertation.</p>
+<p>As soon as you do that,
+other people,
+as soon as you publish,
+other people will start going beyond what you know,
+but at that moment when you're defending,
+in principle at least,
+you're the world expert on that handy little thing.</p>
+<p>And all of the people that I mentioned have PhDs,
+and they've all been world experts on something.</p>
+<p>But like,
+Kakao is a very good particle,
+field theory for physicists,
+but then he talks about weird stuff that's completely unrelated to that.</p>
+<p>Yeah,
+NDT is a really bad one,
+like he just goes out,
+and all these people also have this,
+it's not just the professorial tone,
+but they have a cadence and a way of speaking,
+that really conveys the impression of deep understanding,
+and authority,
+and then they can speak on these other subjects,
+which they know very little,
+to nothing about,
+and they sound like they know what the fuck they're talking about.</p>
+<p>And this is a massive problem.</p>
+<p>Like even if you get outside of,
+like,
+just to use Dawkins, for example,
+he was a world expert at one point in time
+on certain aspects of evolutionary biology.</p>
+<p>There are plenty of evolutionary biology,
+as a huge field.</p>
+<p>This is relevant actually,
+because my last job,
+I was a researcher in evolutionary biology.</p>
+<p>So I know a little bit about this subject,
+a research scientist,
+and I worked with my advisor,
+had some disagreements with him,
+but he's considered widely in the field
+to be one of the leading experts in the domain.</p>
+<p>But all these people,
+who know something about something,
+don't know everything,
+even about that subject,
+and certainly don't know anything,
+necessarily,
+about subjects that are not close to their domain of expertise.</p>
+<p>That is very important.</p>
+<p>That being said,
+and this is where I give you my brief CV,
+a half hour end,
+I guess 26 minutes.</p>
+<p>So I have an undergrad degree in microbiology.</p>
+<p>I have another one in mathematics that I have concurrently.</p>
+<p>Almost got one in anthropology.</p>
+<p>Those two don't matter.</p>
+<p>But I took a lot of classes.</p>
+<p>Suffice it the same.</p>
+<p>I did that in four years,
+ended up with 170 to 174 credit hours,
+and a lot of classes.</p>
+<p>I was like five or six classes every semester.</p>
+<p>Took some summer semesters.</p>
+<p>I did a lot in that.</p>
+<p>And I mentioned it before,
+but in my microbiology,
+I took virology.</p>
+<p>It was like a 400 slash 500 level course.</p>
+<p>It was my first virology course.</p>
+<p>I took immunology.</p>
+<p>I think I took advanced immunology.</p>
+<p>I can't remember if I did that after undergrad,
+or if it was before,
+I finished.</p>
+<p>I think I did both.</p>
+<p>But either we have taken advanced immunology as well.</p>
+<p>And I've taken a couple other immunology courses.</p>
+<p>I have taken epidemiology at like the 400 level.</p>
+<p>So I'm getting into my master's degree in microbiology,
+which incidentally just throwing this out here.</p>
+<p>But I stopped before doing the research.</p>
+<p>So I did not have a PhD in the subject.</p>
+<p>But I took all the coursework.</p>
+<p>I've got the background that I would have had
+if I had a PhD in the subject.</p>
+<p>The only difference is,
+and this is not an insignificant difference.</p>
+<p>Many women says they're PhD ABD.</p>
+<p>All the dissertation are all but done.</p>
+<p>They're full of shit.</p>
+<p>They don't have a PhD.</p>
+<p>That's what that means.</p>
+<p>But they definitely,
+if they actually have done the master's work,
+they've taken the coursework,
+and they have the background that a PhD would have.</p>
+<p>Doesn't mean that they're an expert or that they've actually worked on
+specific research in a specific subdomain of that subject.</p>
+<p>And they've that published or gone through the defense process
+and all of that kind of stuff.</p>
+<p>But they still have some decent amount of background in it.</p>
+<p>Anyway, that's just an aside.</p>
+<p>I get annoyed when people say that I haven't seen that as much anymore,
+but I used to see it.</p>
+<p>Maybe it was because I was a grad student at one point in time.</p>
+<p>And then I was never a postdoc,
+but after I got a PhD,
+I'd see a lot of people saying that and it just created on me.</p>
+<p>It was getting a PhD as a giant fucking pain in the ass.</p>
+<p>But anyway, all of that being said,
+did the masters, and I took the coursework that I would have had,
+if I had a PhD.</p>
+<p>And my specialties, there were virology,
+a couple virology courses as a graduate student,
+and then in the analogy,
+took a couple of those,
+and then I took undergrad, well,
+undergrad, upper division level,
+so like four hundredish level,
+infectious disease, microbiology,
+epidemiology, took them at the grad level as well.</p>
+<p>Which incidentally, and I'm going to talk a little bit about epidemiology here,
+but I want to say one of the big takeaways that I've had
+from studying a bit of epidemiology,
+is that it is a very fraught subject,
+and it's extraordinarily easy
+to misunderstand things,
+or over-generalize something,
+or to be very slippery on,
+especially when you deal with statistics and how to understand stuff,
+or, you know,
+and then you start getting into causation,
+versus correlation,
+and it's just, it's fraught.</p>
+<p>It taught me not to get too deep into that subject,
+when I'm talking about stuff,
+because you're, you're gonna,
+the stuff that I'm going to talk about today,
+is like confidence stuff,
+but there's a lot of stuff that you can get into with epidemiology,
+that is just totally, like you're going to step in it.</p>
+<p>And it's one of the most annoying things,
+when you've got that bit of understanding,
+and then you start seeing people who are not domain experts in it,
+and you've never taken up an epidemiology course,
+and it just like read some bullshit Wikipedia article or something,
+and they feel like and present themselves,
+as though they know anything about epidemiology,
+it's really fucking annoying,
+and they're very, they're very certainly wrong.</p>
+<p>But anyway,
+I've done that, I taught infectious,
+like 400 level infectious disease microbiology,
+but I was one of the instructors.</p>
+<p>I've taught a bunch of introductory microbiology courses,
+and then my PhD is in physics,
+and in physics,
+I've done a lot of math modeling,
+which includes things like transmission,
+basically the stuff that you would do,
+in statistical mechanics,
+but part of the stuff that we did there
+would be the kinds of stuff that you would do
+for epidemiological modeling.</p>
+<p>And I've done a lot of,
+like calculus and differential equations,
+which also gets into things like
+such as the infected air infectious
+and removed population models,
+and more complicated models than that
+for epidemiological modeling.</p>
+<p>So I have a little bit of background.</p>
+<p>I'm not claiming to be the biggest expert in the world
+on these subjects,
+but I can speak with some authority on this,
+and when I say that,
+I also don't mean,
+like, oh, just trust me, bro.</p>
+<p>I mean, like,
+what I'm saying here is actually correct.</p>
+<p>Or at least two,
+yeah.</p>
+<p>Nothing is perfectly correct.</p>
+<p>Nothing is completely true,
+but to a pretty high degree of confidence,
+I'm not gonna say stuff that is dubious or sketchy.</p>
+<p>So just laying that stuff out there.</p>
+<p>And basically,
+what I want to start with is,
+and I put,
+I normally don't put a lot in the,
+the episode images,
+but here I'm putting something that is an image
+that was from Ian McKay,
+who has a site called the virology down under,
+and this was made by Rose Wong,
+and it's not the only,
+like, picture of this.</p>
+<p>There are many different figures like this,
+but I really like this one,
+and I could have made my own,
+I could have done this,
+but I'm hoping that that attribution
+is sufficient here,
+and I'm picking this one,
+A because it was very popular at one point in time,
+although,
+it's pressingly,
+people seem to have completely forgotten about it,
+and partially,
+not due to their own fault.</p>
+<p>It's partially due to a large,
+sort of,
+large scale effort that's been by partisan
+to really,
+really mislead people on this subject.</p>
+<p>But this,
+and this is kind of tailored toward,
+infectious disease for an airborne respiratory virus.</p>
+<p>It's not specifically exactly COVID,
+although it's obviously was made for COVID,
+but it's also relevant for other diseases.</p>
+<p>And so I think it's,
+it's good to talk,
+and like,
+I'm going to talk about it in sort of broader strokes,
+and then occasionally,
+like, come back and forth between other diseases,
+and COVID,
+specifically SARS-CoV-2.</p>
+<p>I'm going to be sloppy,
+just to preface this,
+with like,
+the SARS-CoV-2 versus COVID,
+down in the literature.</p>
+<p>I'm sorry about that.</p>
+<p>It's just,
+it's a little bit of laziness,
+and it's also just being out of practice.</p>
+<p>But,
+anyway,
+the thing that this shows that I really like
+is it has personal responsibilities on one half,
+and then it has shared responsibilities.</p>
+<p>And again,
+I do want to say,
+I'm not like 100% aligned with everything that's here exactly,
+but I like it on a general,
+you know, broad strokes level.</p>
+<p>And I think an important thing to understand,
+especially with public health.</p>
+<p>This is,
+it's one of the most frustrating things for me.</p>
+<p>Public health is public health.</p>
+<p>It is not like individual,
+you do these things to protect yourself.</p>
+<p>It is,
+we do these things together to protect all of us.</p>
+<p>And like,
+the perfect example of this,
+incidentally,
+I was going to talk about this later,
+but this is,
+this is useful here,
+it's herd immunity.</p>
+<p>And herd immunity is,
+and I'll get to have vaccines working all that stuff later,
+but the herd immunity is a big part of how vaccines work.</p>
+<p>And how,
+and why we say,
+you don't vaccinate individuals,
+you vaccinate populations.</p>
+<p>Vaccines are not magical,
+personal shields that protect you from getting sick,
+but what they do,
+what they are,
+and the reason that we use them,
+the real reason that we use them,
+and the real reason that Florida
+turning off the mandates for vaccines is horrible,
+is that they protect us as a society collectively.</p>
+<p>You do get protected by being vaccinated,
+don't get me wrong,
+but not everybody,
+not every vaccine and every person
+elicits protective immunity.</p>
+<p>And it might,
+you know,
+it's a statistical thing,
+it might work for you,
+it might not,
+probably is,
+but really effective vaccines
+might only be effective,
+80%,
+even 90% of the time.</p>
+<p>Sometimes you can have a vaccine,
+it's only effective,
+like 70% of the time.</p>
+<p>And if you vaccinate enough people,
+and it's not contagious enough,
+and you do other measures,
+that can be enough to basically knock a disease
+into oblivion,
+or essentially so.</p>
+<p>So herd immunity is this idea
+that even if you are not effectively protected
+from something by a vaccination yourself,
+people around you are vaccinated,
+and so they're no longer able
+to give you something,
+because they're not,
+yeah,
+they're not going to be carriers
+that are transmitting stuff.</p>
+<p>This is the idea,
+there are there are details here,
+and again,
+I can hear people saying,
+extra details,
+and you know,
+please go with me
+that the broad strokes here are correct.</p>
+<p>There are nuances and details,
+obviously.</p>
+<p>But basically,
+you have a vaccine that protects you,
+not by protecting you directly,
+but by keeping people around you
+from getting you infected,
+which means that people who have
+actual reasons not to be
+able to be effectively vaccinated,
+like immune deficiencies,
+or serious autoimmune disorders,
+they get protected by
+enough of the population being vaccinated.</p>
+<p>And then,
+even if somehow you happen to get sick,
+because everybody is around you as vaccinated,
+and especially if they have
+vaccine or like vaccine raised immunity,
+that protects them,
+they don't get sick,
+and then they don't transmit it to other people.</p>
+<p>So you can't propagate through the population.</p>
+<p>And depending,
+like the details of how many people,
+like what fraction of the population
+has to be vaccinated in order for this to work,
+it varies,
+depending on like how infectious things are.</p>
+<p>Some things are extremely,
+COVID is a good one,
+is extremely, extremely of infectious.</p>
+<p>You can,
+one person who gets infected
+is infecting a lot of people,
+and you don't have to have a very long exposure
+to them to get infected.</p>
+<p>There are other things like flu,
+that it's pretty infectious.</p>
+<p>It's like,
+you're going to give it to a couple
+three people or so,
+on average,
+but it's not like,
+super infectious.</p>
+<p>You need longer exposure time,
+and you know,
+it's,
+and then there are things like,
+a good one is leprosy,
+or tuberculosis,
+that they're pretty infectious as well,
+but much less so.</p>
+<p>And it takes a lot of long term kind of close contact
+to really get something.</p>
+<p>And all of these things are statistical too.</p>
+<p>So you could be in a room with somebody
+who's shedding COVID,
+or shedding COVID variants,
+just for a long time,
+and I could sick,
+and you could,
+you know,
+or you could be just passing by somebody,
+who has tuberculosis,
+and you get really unlucky,
+and then you get tuberculosis.</p>
+<p>That's the,
+the average sort of expected things
+are sort of what I'm talking about here.</p>
+<p>And so those,
+like that herd immunity is why we vaccinate.</p>
+<p>It's also,
+in some sense,
+why things like improving indoor air quality
+is so important.</p>
+<p>You're not doing that to protect individuals,
+necessarily,
+although it does protect individuals,
+but improving ventilation,
+improving filtration,
+making sure that you're not just
+recirculating and ensuring infectious particles.</p>
+<p>That keeps disease from propagating,
+and by preventing it from propagating,
+you are able to stop it,
+or at least slow it down significantly.</p>
+<p>And if you,
+and this is one of these things,
+if you do enough of these things,
+so that one infectious person,
+doesn't infect more people than
+the replacement on average,
+then things will fizzle out.</p>
+<p>And you know,
+you have exponential decay,
+and it'll just go to zero.</p>
+<p>It's zero.</p>
+<p>It's like, you know,
+things,
+especially if they're nonhuman reservoirs,
+it's very difficult to completely
+completely eradicate something,
+but you can take it down
+to essentially an negligible level.</p>
+<p>And if you don't do stuff like that,
+and each person who's infectious
+is infecting on average more people,
+then you get exponential growth,
+and you don't need to have too many credit cards
+to know exponential growth is really bad.</p>
+<p>It can,
+you know,
+one person gets two people infected,
+and then they get four,
+then eight,
+and then,
+you know,
+it's the whole kid with,
+well,
+first they give me one grain of rice,
+and then two grains of rice,
+and then by the end of the month,
+you have to,
+you know, do something horrible,
+because that's like all the rice in the kingdom.</p>
+<p>That's exponential growth.</p>
+<p>And if you adjust the multiplier there,
+you adjust whether or not
+it's going to be able to propagate in the population.</p>
+<p>And there are things that you can do as individual,
+and this is one area where I'm not a huge fan of this,
+of this figure,
+but I do kind of like it's still,
+there are,
+you know,
+in the personal responsibility section,
+there are things like masks,
+hand hygiene,
+cough etiquette,
+avoid touching your face.</p>
+<p>Some of these are more relevant to like flu,
+and other diseases,
+but they're all a good sort of universal precautions
+that everybody should be taking.</p>
+<p>Physical distance and staying home of your sick,
+but all of these things,
+even if they're personal responsibilities,
+there are things that we all do for each other.</p>
+<p>And if everybody does them,
+if, you know,
+people don't go home,
+or go to work or to school when they're sick,
+then you don't have as many people getting infected,
+and then we're all better.</p>
+<p>It's one of these,
+like,
+it might not directly help you on this one instance,
+but by all of us doing it,
+or most of us,
+the vast majority hopefully of us doing it,
+it's better for all of us.</p>
+<p>It's such a simple example of collective responsibilities,
+and why that kind of stuff is so important.</p>
+<p>And it's just,
+I hope that that,
+I'm not rambling too much and boring you,
+but I hope that kind of conveys a little bit about that.</p>
+<p>So,
+one thing in addition to herd immunity,
+that,
+that I want to kind of cover is like,
+what we should have done,
+or what we still could do even,
+to address the ongoing pandemic.</p>
+<p>And one of the first things that you would do is surveillance.</p>
+<p>And surveillance would be,
+you know,
+you test people regularly.</p>
+<p>I used to not like waste water testing,
+but I think it's actually a really good way to,
+to surveil things.</p>
+<p>The problem that I have with it is just that you don't necessarily,
+it's good at detecting relative amounts of something.</p>
+<p>It's good at detecting the presence or the absence of something.</p>
+<p>But even if you're doing quantitative PCR,
+it's difficult to understand directly,
+or to directly correlate,
+like how many people are infected,
+versus how much virus you're seeing,
+for example, and wastewater.</p>
+<p>It is kind of related,
+but if you have one variant that sheds much more than another variant,
+they're not really that comparable.</p>
+<p>If you have,
+you know,
+on average the same thing,
+and the same amount shed by each person,
+you can kind of work backwards from it.</p>
+<p>But even with that though,
+I do think it's actually a really useful,
+powerful tool.</p>
+<p>And it's something,
+especially if you're doing like,
+a large scale survey lens,
+it's easy to set up,
+doesn't cost that much.</p>
+<p>It's raining, it's beautiful.</p>
+<p>It doesn't really take that much effort.</p>
+<p>Like you don't have to get everybody individually
+out to a testing facility,
+and then do all that kind of stuff.</p>
+<p>And you can get pretty good detection,
+and rough,
+broad strokes kind of how prevalent something is.</p>
+<p>So that's part of surveillance.</p>
+<p>Testing individuals is also a part of surveillance.</p>
+<p>And frankly,
+this is the one I like more,
+because A,
+it tells you more immediately.</p>
+<p>B, it tells you exactly who has what.</p>
+<p>And the nice thing about this is,
+if you detect that somebody has something,
+you can do things like quarantine.</p>
+<p>You know,
+it's a very least,
+the very least,
+we're a fucking mask,
+and then that infect the bunch of people.</p>
+<p>And ideally,
+you know,
+just say home,
+while you're sick,
+that would be a nice thing to do.</p>
+<p>You can treat people.</p>
+<p>You can also,
+and this is one that just drives me wild,
+because it's built into all of our phones,
+and it's turned off.</p>
+<p>It should just be on by default,
+and it should be there,
+globally,
+and working together.</p>
+<p>It's there.</p>
+<p>It's not on by default.</p>
+<p>It's only for people in certain apps,
+for certain things,
+and it doesn't really interoperate,
+and it's just like,
+it's just irritating,
+that you have this technology,
+and you don't use it,
+and you don't have it applied well,
+or correctly.</p>
+<p>But contact tracing,
+with our phones,
+would let us know,
+okay,
+you were exposed to somebody
+who is sick,
+or who,
+you know,
+maybe they're not sick,
+maybe they're asymptomatic,
+but they were,
+they're shutting virus.</p>
+<p>And so,
+because you were exposed to them yesterday,
+you could isolate for a day or two,
+or however long it takes to incubate,
+test,
+and see,
+if you're sick,
+and then,
+and I'm using sick,
+kind of sloppily,
+like sick means infected,
+in this case.</p>
+<p>Doesn't necessarily mean that you're actually sick,
+but,
+you know,
+if you are infected and infectious,
+then you're not,
+you're stopping the spread.</p>
+<p>You're not going to be part of that chain of transmission.</p>
+<p>And this is,
+this is really essentially what all of the stuff is,
+because that chain of transmission,
+this is,
+this is also the main reason that I wear a mask.</p>
+<p>I definitely,
+like,
+I don't want to get sick.</p>
+<p>I don't want to,
+I don't want to get,
+either acute symptoms,
+and I don't want to get certainly long COVID.</p>
+<p>I don't want to get a cold,
+or any of that kind of stuff.</p>
+<p>But I also,
+I don't want,
+if I do get infected by something,
+I don't want to be one of the people
+that gives it to somebody.</p>
+<p>Who either dies themselves,
+or gives it to somebody else who dies.</p>
+<p>And when you think about it,
+like COVID is not like the most,
+it's not like Ebola or something.</p>
+<p>The mortality rate,
+or the case mortality rate,
+is low single digit percentages.</p>
+<p>But when you think about,
+like how many people,
+like because it's so infectious,
+every time you get sick,
+you're infecting,
+well,
+like 15,
+20 people.</p>
+<p>And each one of them,
+on average,
+15 or 20 people.</p>
+<p>And so you go a couple of hops out.</p>
+<p>And now if the case mortality rate
+is like one or two percent,
+two hops out.</p>
+<p>So you infect some people
+who infect other people.</p>
+<p>You're killing at least a,
+not just one person,
+but you're killing a few people,
+who would have survived
+if you stopped the chain of transmission.</p>
+<p>In addition to just,
+you know,
+that is continuing the path of exponential growth,
+versus stopping it.</p>
+<p>So that's,
+that's one of the,
+is one of the things that just really gets to me,
+like it's such,
+again,
+a basic communal responsibility thing.</p>
+<p>I wish,
+I really wish,
+that wasn't that complicated to explain to people.</p>
+<p>And also,
+more than that,
+I wish,
+this isn't a thing that just annoys me,
+but this is something
+that should have been explained to people,
+so early on,
+and so often.</p>
+<p>And it's something that people just don't fucking know.</p>
+<p>They don't think about it.</p>
+<p>They don't think about the train of transmission,
+or their responsibility to other people.</p>
+<p>And if they did,
+I think people might have a better understanding
+of how this stuff works.</p>
+<p>They don't understand that you vaccinate populations,
+and not individuals.</p>
+<p>And this is one of the things also that I get really
+incensed,
+and I know I have,
+again,
+I'm a broken record on this,
+the Biden administration.</p>
+<p>And again,
+I want to talk about this very carefully,
+because I don't want you to think,
+like obviously Trump is fucking horrible,
+anti-vaccine,
+as fucking horrible,
+these Republicans,
+doing a considerable amount of damage to public health.</p>
+<p>Absolutely.</p>
+<p>Absolutely.</p>
+<p>But Biden,
+and the Democrats,
+have done,
+I don't,
+again,
+in an argument that I over who did more,
+I'm not going to say that any one group
+did more than the other.</p>
+<p>But what I will say is that some of the stuff that Biden has done,
+and this is even a more abstract kind of thing than this,
+but when you have one group of people pushing to do something bad,
+like the Trump RFK Junior group,
+and then you have another group of people
+who are eliminating any kind of resistance
+to those people doing something bad.</p>
+<p>Who is more responsible?
+I don't know.</p>
+<p>I mean, certainly like,
+proximally,
+the people doing the bad thing.</p>
+<p>I'm responsible,
+but when you're completely undercutting any kind of resistance at all,
+you kind of have some responsibility there.</p>
+<p>I think that,
+yeah, it's a big deal.</p>
+<p>And it really is a team effort between these two groups,
+and in doing this together,
+they're causing an enormous amount of harm.</p>
+<p>And so this is going to continue on to this figure that I have,
+I don't know if you'll be able to see it very well,
+but you'll be able to see at least the stuff that matters from a high level.</p>
+<p>And if you have some good visual impairment,
+I'm going to describe it.</p>
+<p>So, yeah, don't worry about that.</p>
+<p>But yeah, the Swiss cheese thing on top,
+hopefully you get that,
+layers of defense, defense and depth,
+individual layers of imperfect protection,
+layered on top of each other,
+kind of cover up the holes from each other,
+and then it gives you much better protection overall.</p>
+<p>That's, that I think that's pretty easy to understand, I hope so.</p>
+<p>It's something that, as,
+this is,
+the public health is not just the policies,
+and it's not just getting people vaccinated,
+and it's not just improving air quality,
+and getting people to wash their hands,
+and getting people to wear respirators,
+especially in healthcare,
+it's also educating people.</p>
+<p>And teaching people about Swiss cheese is educating people.</p>
+<p>But one of the things Biden did,
+I'll get to these other figures in a second,
+but one of the things Biden did that I fucking despise,
+and I will never forgive him for,
+is basically convinced people to air quotes,
+Vax and relax.</p>
+<p>So, he told people,
+and very badly,
+misrepresented how vaccines work,
+and what they're for,
+and what they do,
+he basically told people,
+they get vaccinated,
+and now you can take off the mask.</p>
+<p>You can just go about your life,
+you can just be,
+and that's not how they fucking work.</p>
+<p>That's not how vaccines work.</p>
+<p>They're not magical,
+individual, personal shields.</p>
+<p>They do not give you perfect protection.</p>
+<p>They don't necessarily prevent you from
+transmitting things,
+although by decreasing the amount of virus that you're shedding,
+they do help.</p>
+<p>This is one of the things that I was talking about before
+when I was a kid here,
+listening and then kind of criticizing.</p>
+<p>You know,
+you'll get people who say,
+oh, it doesn't,
+the COVID vaccines don't pretend,
+but don't prevent transmission.</p>
+<p>And to some extent,
+yeah,
+but because they give you a shorter course,
+because you have some immunity,
+and you're going to be shedding less,
+they do slow it down.</p>
+<p>They do decrease the basic replication number,
+which is what really matters.</p>
+<p>And if you do that with other interventions,
+then it helps.</p>
+<p>It really does help.</p>
+<p>It's not just protecting you.</p>
+<p>But they don't magically stop you from getting infected.</p>
+<p>And they don't magically stop you from infecting other people.</p>
+<p>This is one layer of Swiss cheese.</p>
+<p>And so,
+you know,
+you have Biden,
+his wife,
+Dr. Jill,
+never been on.</p>
+<p>I wouldn't mind that she calls herself,
+Dr. Jill,
+if she didn't start talking about medical stuff,
+but it's when you,
+if I go to a hospital,
+and I call myself Dr. Scott,
+I think that's criminal.</p>
+<p>I think it's actually really deceptive.</p>
+<p>If I'm in a medical,
+even in this thing,
+if I'm calling myself Dr. Scott,
+but I have a PhD in physics.</p>
+<p>Yeah, it's a little misleading.</p>
+<p>It's just a little misleading.</p>
+<p>If he is a doctorate in education,
+not pertinent to,
+and then will be Goldberg,
+you know,
+this is one of those things,
+also like your Scott,
+what he knows that she has a doctorate.</p>
+<p>No, do they?
+What big Goldberg was saying,
+she should be the surgeon general.</p>
+<p>Like,
+that's, and as I'm picking on one example,
+but that's the kind of thing that happens
+when people call themselves Dr.</p>
+<p>And I don't want to take away from,
+especially like,
+I understand there's a lot of misogyny
+and, you know,
+women get a shot upon.</p>
+<p>I don't want to take away from
+a woman calling herself Dr.</p>
+<p>and all this kind of stuff.</p>
+<p>But when you start getting into
+domain stuff that you don't understand
+and you're not an expert in,
+like saying,
+doesn't it?
+Doesn't the air just smell
+sweeter without a mask?
+Which she did say,
+because she was telling people
+that they could vaccinate
+and relax.</p>
+<p>When you start doing that kind of stuff
+and you're calling yourself a doctor,
+people believe you.</p>
+<p>It has real consequences.</p>
+<p>And it's one of these things
+where I get annoyed,
+especially with the misunderstanding
+of the role of experts in expertise.</p>
+<p>So, just you're taking me.</p>
+<p>But because she and her husband
+and a bunch of other people,
+it's been like so many people
+publishing shit
+and again,
+like New York Times and Washington Post.</p>
+<p>And unfortunately,
+a lot of these,
+like horrible,
+pro-infectious disease doctors
+are now part of the current administration.</p>
+<p>It's really beautiful.</p>
+<p>Like these people who,
+a lot of them were from like UCSF
+medical school
+and for some reason,
+Stanford
+and that general Silicon Valley area
+and the greater area around it
+had a lot of fucking horrible people
+and a lot of them were doing a lot of harm
+Dr. Wen,
+and all the,
+I think she's from someplace over there.</p>
+<p>And then they were getting people
+to, you know,
+stop taking the pandemic seriously
+and take off the masks
+and all those kind of stuff.</p>
+<p>And the thing is also,
+like,
+I'm a respirator.</p>
+<p>I don't fucking like it.</p>
+<p>I don't enjoy that I'm doing it.</p>
+<p>Although,
+I will say,
+one of the things I like about being in Asia
+is I'm not fucking alone.</p>
+<p>Like there are other people doing it.</p>
+<p>It's not,
+it's definitely not as many as it was a few years ago.</p>
+<p>It's depressing, disappointing.</p>
+<p>But at least I'm not,
+you know,
+like just the only person
+in the fucking,
+or one of like two or three people
+and the entire store doing it.</p>
+<p>You know,
+it's,
+but Biden pushed for this idea
+that you vaccinate
+and now you don't have,
+like it was an either or thing.</p>
+<p>You get vaccinated or you mask.</p>
+<p>And the problem is it's a both thing.</p>
+<p>It's not an either or
+it's a this and that.</p>
+<p>Each one is an imperfect layer
+of protection
+and between doing these things.</p>
+<p>And not only doing those things
+but also like one of the things
+we absolutely should have done
+that we didn't do
+is give a shit ton of money.</p>
+<p>This would have helped
+the economy too,
+incidentally.</p>
+<p>I don't want to get into that subject.</p>
+<p>But it's,
+it's one of the very simple things
+we could have done
+that would have been a great
+investment in the future
+is like changing building codes
+and requiring better
+ventilation,
+better filtration,
+making standards
+for like indoor
+or quality that included
+like CO2 concentration limits
+and things like that.</p>
+<p>It would have been,
+it would have been very useful.</p>
+<p>Making things especially in
+like schools and hospitals
+and buildings where
+a lot of people are
+that require
+you know certain high
+or fairly high standards
+of filtration.</p>
+<p>What a what a nice
+what a been easy
+and it would have paid dividends
+and it also like
+if we got like in medical settings
+doctors and nurses
+no matter what
+just as a matter
+of universal precautions
+like you and I
+should be able to take off
+the masks if
+we're not,
+but we know we're not infected
+and prevalence
+of things that are circulating
+is very low.</p>
+<p>That's where the surveillance comes in.</p>
+<p>In those cases,
+you could do that.</p>
+<p>But if you're in a medical setting
+and you're
+you're a clinician,
+you're a nurse,
+you're anyone in this kind of domain,
+you should just be wearing them.</p>
+<p>Just like you should just be wearing
+or washing your hands all the time
+because you don't know
+what the fuck you're exposed to.</p>
+<p>People who get sick
+go to a hospital
+and who knows
+if they have
+you know
+the flu
+or if they have RSV
+or if they have some emerging
+airborne infectious disease
+and because people
+have just completely taken off masks
+and especially in medical settings
+where they're dealing with
+people who are immune compromised
+or like on
+infusions for cancer
+or for other things
+and their immune suppressed
+and people are not
+in the ICU units.</p>
+<p>People are not wearing
+fucking masks anymore
+and all that kind of stuff
+not just because of COVID
+but because of other infectious diseases
+including emerging ones
+that we might not know about yet
+you're facilitating
+the transmission of these things
+and you're making everybody
+much, much less safe
+including yourself
+and it's like a communal thing
+that also hurts you.</p>
+<p>It's just annoying.</p>
+<p>So
+the vaccine relax idea
+just irritates me
+and it
+also caused so much harm
+because
+inevitably
+what would happen
+you know vaccines
+are not perfect
+vaccines are not 100
+percent effective
+they do not convey
+magical protection
+against anything
+and so
+even though vaccines are very good
+and they work very well
+people would see
+oh Bob got vaccinated
+and still got sick
+there go
+this is the logic that they're going to use
+because they're not
+they're not had somebody
+explained to them
+which is again
+absolutely essential public health thing
+because they don't know that vaccines
+help
+and they decrease the severity of infections
+and the durations
+of infections
+and the probability of infections
+but they don't
+eliminate them
+so now people are seeing
+all the vaccines
+didn't work here
+and then they conclude
+okay vaccines are pointless
+and then they conclude
+why am I doing this
+because if you don't understand
+that they actually help a lot
+then all you see
+are the risks
+which people again
+like Wakefield
+and McCarthy
+and all these other
+assholes
+have vastly vastly
+overblown
+and
+I don't know if you heard
+that there was a
+there was thunder
+got me excited
+but
+because
+all of these people
+were vastly overblown
+the risks
+and now you see no reward
+and you see risk
+it's bad
+if you wouldn't
+if you would have
+instead said
+and again
+you can explain this
+to a fucking six year old
+vaccines
+are a layer
+of imperfect
+protection
+and
+they help
+they decrease
+the probability of infection
+they decrease
+the likelihood
+that you're going to get a severe infection
+they decrease
+probably the length of infection
+and so on
+and you explain that kind of thing
+but they're not perfect
+and they're not magical shields
+but you
+just like you wear your mask
+for other people
+you get vaccinated
+to help other people
+and if enough people are vaccinated
+then it actually helps everybody
+including you
+that's the whole fucking point of vaccines
+and
+in addition to the herd of
+immunity which I already explained
+it's fucking annoying
+that we had that opportunity
+we had the opportunity
+to improve
+ventilation and filtration
+and it basically make people
+much less likely to transmit
+not just SARS-CoV-2
+but influenza
+or RSV
+or every other airborne
+infectious disease
+we could be much more
+protective against them
+we could have built a society
+we still can't
+find you
+but we should have done this
+five years ago
+built a society
+where people
+get sick
+and then they go
+I'm not going to fucking work
+I'm not going to stay home
+because I don't want to get other people sick
+I don't remember when it was
+it's probably been like
+if I'd have been like
+2018 or something by now
+but
+years ago there was a Bureau
+of Labor Statistics
+study
+for the US
+that said that
+mandatory paid sick time
+off would save
+billions of dollars
+with a B
+a year
+just in the US alone
+because
+turns out when you're sick
+and you go to work
+you're getting other people sick
+if you work in service
+service industry or
+someplace where you're interacting with a lot of people
+you're not just getting your co-workers sick
+you're getting other people in the community sick
+who are going to get
+time off or they're going to
+get other people sick
+who
+take time off
+and use medical resources
+and
+maybe even get really severely ill
+and die
+is a possibility
+or some other kind of long-term injury
+it's fucking annoying
+so
+it's also weird
+like there are countries
+in the world
+where it's just a given
+you don't even have really sick time per se
+it's just your sick
+you stay home
+I don't want you coming to work
+and then in the US you have this thing where it's like
+you're going to go to work no matter what
+and you're going to get me sick
+you're going to get everybody else sick
+and then we're going to go to work no matter what
+just power through it
+which incidentally also means that the probability
+not only of getting other people sick
+and getting yourself sick
+but the probability of having bad outcomes
+increases
+when you overdo it
+as a general rule
+it's just not
+and the length of your sick
+area of your sick
+the length of your sick
+that's good English
+the duration of your illness
+probably goes up
+when you have more stress
+and you're pushing it
+and all of this kind of stuff
+you're not able to recover
+and convalesce
+as quickly
+it's just just worse for everybody
+all around
+and again
+it's more expensive
+for everybody including the employers
+it's one of these many cases
+where
+it's not just
+the direct
+selfish
+self-interested thing
+for companies and businesses
+is actually the thing that's nicer
+is the thing that's like
+let people take sick time off
+similarly letting people take vacation
+and have a nice decent amount of vacation
+increases productivity
+significantly
+and yet
+employers don't want to do it
+and forcing people to go physically into an office
+that you have to pay for
+it decreases productivity
+having to go through traffic
+I'm here
+and then
+and it's not quite
+rush hour now
+but you can see it's thickening up
+but during rush hour
+especially
+I was
+walking a couple days ago
+in the morning
+because I had a zoom call
+that I had to do
+and I was trying to get coffee before it
+was walking in the height of rush hour
+and
+it was just like
+bumper to bumper stopped traffic
+I'm just looking at that
+as like
+all these people
+are going to some place
+most of them don't
+need to be physically
+wherever the fuck they're going
+and they're spending so much time
+in the cars being traffic
+you know
+going painfully slow
+I'm watching a street
+like in front of me right now
+and people are going
+so slow I could walk faster
+than they are in their cars
+wouldn't want to necessarily know
+because it's raining
+although I'm going to go out soon
+because I like that
+but you know
+it's just like wild
+to me
+that we do this
+and then you waste all that energy
+being in your car
+that you're not getting paid for
+by the way
+going to work
+coming from work
+and now you're at work
+and you're going to be less productive
+and in a worse mood
+because you just
+help with all that bullshit
+that you didn't need to deal with
+and then also
+the people that do need to physically be someplace
+have to deal with your ass
+going to and from work
+adding to traffic
+but they could be
+you know
+it could be easier for everybody
+it could be better for everybody
+but anyway
+so if I know like getting back
+to this figure
+this is something that I really want to talk about
+and I just
+I
+it's one of these things that I know
+sounds like
+ridiculous
+wacky conspiracy theory kind of stuff
+this is completely real
+this is something that I'm not making up
+it's not something that I've just constructed
+I'm not like
+I'm not the guy who's got the map
+with all the string
+gets attached to each other
+and is like pulling out his hair
+and pointing it stuff
+this is a real fucking thing
+so you look at these two maps
+down on the bottom of this figure
+and again I'm going to describe them
+I started talking about this
+I think like 15 minutes
+it's going to finally getting to it now
+sorry
+there's a reason
+that the thing is called
+the digits right
+so you look at this
+and the left one
+is the CDC's
+these are both from the CDC
+these are maps
+the CDC was
+putting out
+they've stopped of course
+but they were putting out to sort of tell people
+just status of the
+the pandemic
+right
+more or less
+and the first one
+is Community Transmission
+and the US by a county
+and it had a scale
+it seems pretty natural for me
+red was high
+and in this case
+at this particular point in time
+it was 68.53%
+red
+and it had increased by 7%
+I think the previous week
+and that was
+20 or 2000
+to 108 counties
+look at the map
+it's a sea of red
+right
+and in substantial
+481 counties
+with about 15%
+14.93%
+which had gone slightly down
+from the previous cycle
+moderate is yellow
+11%
+and then low is blue
+with like 5%.</p>
+<p>and you look at this
+and it's all red
+a little orange
+tiny bit of yellow in the middle
+and then there are like
+a lot of blue
+just a little dots of blue
+and you look at that
+and it accurately
+conveys
+is that exactly
+telling you prevalence
+but it's a very close proxy
+for prevalence
+so prevalence would be
+if you go outside
+how many people are sick
+how many people are shedding
+how many people are infectious
+and that's important
+because
+it's like the weather
+if a lot of people are sick
+and shedding
+and infectious
+then maybe you bring
+maybe it's like it's raining
+out and you bring a raincoat
+or rain
+umbrella
+I could not think of the word
+umbrella
+said you bring your umbrella
+because
+it's raining
+right
+and then if it's not
+prevalent
+if things are not circulating
+then maybe you don't need one
+that's why this is useful
+it's also useful
+because it tells you
+if you are paying attention
+to that real-time prevalence data
+you can act accordingly
+and not necessarily where you're
+respirator every day
+but it also helps with public health
+because you can look at that
+and you can say
+well, there's a lot of prevalence
+right now in the community
+and that means that
+because
+people get infected
+and then they have like a week
+or two before they really
+start
+getting seriously sick
+you can prepare for that
+you know that it's coming
+you can see the wave
+before it crests
+that's why prevalence
+is useful
+and why
+community transmissions
+like the amount
+that it's circulating
+in the community
+was useful
+that is a real
+meaningful metric
+and it's a map
+that you look at it
+and it looks pretty bad
+and I
+until they stopped
+publishing this map
+I watched this map
+and it pretty much never
+didn't look bad
+some weeks
+it would get like
+gone
+not as bad
+like it would be
+a little bit more yellow
+or there might be bigger patches of blue
+but it's been pretty bad
+as long as they get
+putting it out
+or it was pretty bad
+and I don't think Biden liked that
+this was also like Trump didn't like it
+and one of the things Trump said
+was
+if we just stopped testing
+then it'll magically go away
+now of course it doesn't
+magically go away
+it's just you don't know
+just like it's just invisible
+but you don't know
+you don't know what you don't know
+but Trump didn't stop testing
+but Biden stopped testing
+Biden basically eliminated
+PCR testing
+so at one point in time
+we had free PCR testing
+and PCR testing is much better
+than rapid antigen testing
+I don't want to get too much into the details
+but basically the antigen testing
+you have
+antibodies that are specific
+to whatever the antigen is
+and the infectious disease
+and then those detect the hat
+and there's some kind of an indicator
+and then you get the little bar
+that tells you
+oh you're positive
+that's kind of antigen testing
+PCR you have primers
+so you have these little sequences
+and then it basically gets in
+to whatever the infectious
+or whatever the sample was
+and then it replicates
+and so you're amplifying it
+and in that amplification
+then you look for those things
+and that means that you're much
+much more sensitive
+and much more specific for that matter
+you're able to detect
+much lower levels of something
+and much more reliably
+and it's just a much better system
+it's not as fast
+it's not like you could just put it on a card
+because you have to have the thermocycle
+or thermocycle
+which is basically something
+that lets the stuff
+anneal, it's a hat
+and it's a replicate
+and then you heat it up
+to split it
+and then it replicates again
+and then you heat it up
+replicate
+and you just keep going through these cycles
+you need a device
+that precisely controls the temperature
+but that's something you can build
+pretty easily
+and pretty cheaply
+and then you need the reagents
+which are again more expensive
+than the stuff that you need
+for the rapid antigen tests
+but not that much more
+like you could do it for literally
+pennies, per test
+especially if you scale it up
+and especially if it wasn't done for profit
+it could be pennies a test
+you can also have different primers
+and different in one test
+test for multiple things
+and it would be basically
+like a system that's looking for different indicators
+and then tell you what
+what infectious diseases
+or what agents rather are present
+and what amounts
+you can do quantitative PCR as well
+that's another thing
+but it's a thing you can do
+and so you can make a test like this
+and in this one test
+very sensitively and very specifically detect
+RSB
+or flu
+or COVID
+or something new comes out
+and it's this new emerging thing
+you can't turn it on overnight
+but once you've got a sequence for it
+which we can now do very, very easily
+you can start adding that into your test
+within weeks to a month
+like almost no time at all
+it's one of the things that's amazing
+about molecular technology
+we have that ability now
+and so you can set that to PCR
+the antigen tests
+you have to raise antibodies for
+they're not...</p>
+<p>they're not perfect in a lot of ways
+a lot of false negatives
+you get a bunch of people that will take one test
+they get a negative and they're like oh well
+and you can get a false negative
+just because there's not good reactivity
+or because you need a lot
+of the antigen in the sample
+in order to see
+a strong positive
+and it's a much worse way of doing it
+we could have
+and we should have
+everybody at home having a thermocycler
+having like a spectrophotometer
+just like a little machine that you have at home
+and you have little kit
+those kits have all the reagents
+and then have all the indicators all that stuff
+do your test
+toss the kit into a little
+slot or something in the thing
+and then
+you know within
+an hour or whatever
+and not only do you know
+with the updated set
+of different agents
+that you're looking for
+what's there
+so you know if you have flu
+or influenza
+you know if you have flu
+or RSV
+or some rhino virus
+or COVID
+you could just tell that
+and you can also kind of tell
+like very sensitively
+when you don't like when you're not shedding it
+anymore this is one of the
+I think more important things
+so part of it is knowing when you have it
+part of it is sharing that information with people
+by wishing you like the CDC
+or some kind of an agency like that
+putting it into these prevalence
+like community transmission
+maps
+and then letting people use that as actionable
+information and then also you want to know
+when you're no longer shedding
+because as soon as you're
+if you resolve symptoms
+you might still be shedding for another week
+or two
+which means you feel good
+you go out into the community
+you start doing stuff
+and if you're not wearing a mask
+you're getting people sick
+you don't even know it
+versus you do these tests
+and the tests again are very cheap
+and you can just do them and you get them for free
+and then in that process
+you know when you're no longer shedding
+and you know when it's safe to go out
+and then
+you know just magic
+it's frustrating because it's so simple
+it's not like a complicated thing
+that
+I'm not saying like if we had flying cars
+then we could I'm not like postulating something
+that is if we had
+ten layers of technology that we don't know
+this is stuff that you could very easily do
+the day or even five or ten years ago
+and the fact that we haven't
+got it is just irritating
+it's just fucking irritating
+and so you go back to these charts
+and this is
+I'm pretty sure these are the same week
+they might be separated by a week or two
+but I think these are the same week
+and this other one
+the lower right hand corner
+is community levels in the US
+and community levels
+is a completely made up metric
+that
+it's just like it does not
+it's not a standard thing
+for epidemiology or infectious disease
+it sounds like
+the level of
+you know in fact this is really
+kind of dystopian like the name
+sounds like you're saying what
+what is the level of
+disease in the population
+like what is the prevalence
+it sounds like prevalence
+doesn't it?
+but what it actually means
+is not prevalence but it means
+well how
+crowded are the hospitals
+and is that just that
+lagging indicator?
+again because
+you don't get sick and go to the hospital
+until probably a week or two after
+you've been infecting people
+hospitals don't get crowded immediately
+they get crowded a couple weeks after
+there's a big outbreak
+and by then you know it's spread
+many, many times over
+so you're not
+it's annoying
+it's lagging indicator
+not very sensitive
+but it would have to be like an
+absolute catastrophe
+in order to get to like a
+map that is orange
+oh yeah this is another thing
+if you're not seeing it
+if you look at the left one
+high is red
+red looks bad
+you look at this one
+high is orange
+never can get red
+and again in order to get high
+you need cataclysmic
+and again it's not just hospitals
+it's a bunch of other things
+or mixed into that metric
+just
+because it's the most ridiculous
+ship
+and then they have
+on this thing
+the orange that they used for high
+not even red but the orange
+if you look at it next to the orange
+from the other map
+it looks nicer
+it looks friendlier
+the green is green
+it's not blue it's just like green
+so you have the same picture
+of the same fucking time
+and again
+I'm not 100% sure that
+these are the same day
+and time I think
+pretty sure they are but I don't have
+an exhausted set of these
+so and they're not well labeled
+I don't think there's a date
+either one of them
+but I'm pretty sure I got these
+and you can see one is red
+and looks terrible
+and one is green
+and barely has a little bit of orange around it
+and remember that in order to be orange
+things are really really bad
+so those orange spots in here
+that don't look that bad
+that's like critical
+failure of health care systems
+but that's really bad
+and so this map is set up
+the liberty to make it look like
+we solved the problem
+yeah look things are good
+we don't have to worry about it
+and it's fucking annoying
+Biden turned off testing
+he disabled the
+weird word I need to think about
+is it ableist
+he turned off basically
+the thing where we had the free
+house staff
+the free RATs
+it again the RATs are not great
+but what you should do
+and a real country
+you have unlimited
+tests
+if they have to be
+an intelligent test that can be
+ideally again PCR would be better
+but you have these tests
+and these tests are free
+you can get as many as you want or need
+and then if you have a household
+you think about this
+and somebody gets sick
+you want to test that person through the course
+and again these are not perfect to test
+so you probably test
+and even if it's negative you test again
+somebody starts comblessing
+you use those tests
+and you test a couple of times
+to see you know for me
+especially with an intelligent test
+I wouldn't consider yourself
+to not be
+shedding
+and so you get two negative tests
+spaced by 48 hours
+ideally again those would be PCR test
+but you know if you're stuck with
+just the intelligent test
+that would be something where you get two
+48 hours apart
+probably okay?
+maybe hopefully it's better
+sadly it's better than what
+most people are doing so
+what is the standard here
+but that would be a thing that you do
+and that already you know if you're getting
+four tests per household
+if you're one person like me
+and you get one scare
+four tests are
+probably not even enough for you
+along and now you have a household
+that could have four people in it
+that's one test the person
+or what if you have five people
+in one test that are you supposed to
+double up on them
+and then again you're not using one
+if somebody in the household
+gets sick you want to be testing
+all the other people in the household
+to see if they're
+infectious as soon as they get to be
+infectious and you want to be testing
+them probably every day or two
+and you can't do that with
+four tests per household
+that was a ridiculous thing
+and again also like these things
+are so cheap to manufacture
+and they could have been done
+this is one of these
+like the privatization disease
+that's probably able to
+to say too but whatever
+this thing where people think everything should be privatized
+it's such a problem
+because we had like 50 different companies
+making these tests because they were
+oh it was a nice easy way to make money
+right?
+did big government contracts
+and so you'd get these tests
+and they would have different instructions
+different
+a different protocol for each one
+the reagents weren't exactly the same
+it weren't really interchangeable
+so you'd have to learn how to take one
+and then the next time you got tests
+you'd have a different procedure
+that would not necessarily be compatible
+and it's just like so many things wrong with it
+and you have to have all the replication
+of each of these separate companies
+doing the same shit
+and different ways
+developing their tests
+manufacturing these things
+versus you could imagine
+that we just have a standardized
+like a national testing company
+and that company has
+you could even
+contract this stuff out to other people
+if you needed to, although I wouldn't like that
+but you could
+but you basically build standards
+for how we make these tests
+you build massive factories
+for making the reagents
+and setting all of this stuff up
+you make tests that are not just for one thing temporarily
+but they're like oh
+you just go and request them
+and you can get an unlimited number
+of tests that you can use for
+the code again, COVID
+and RSV and influenza and B
+and you just go with them
+go down the list
+hopefully you have like five or six things
+and maybe more
+if you have new stuff coming out
+then you add that in
+that would be nice
+so anyway going back to these two maps
+I really want you to look
+and this map on the right
+where it's like the worst is
+orange and then it goes yellow
+and green
+that is not as bad as it got
+that was like the first
+opening salvo
+changing the metric and using this
+coloring
+they also later on
+went to like for
+the wastewater testing
+literally shades of blue
+like the maps were literally
+just covered in shades of blue
+and like darker blue
+was worse and lighter blue
+it's so ridiculous
+how much
+the stuff was changed
+to confiscate stuff
+how much the metric
+was just made up to confiscate
+and not to convey
+accurate information
+how much testing
+got turned off
+how much not just testing but reporting
+and like you look at
+if you look at excess stats
+first off
+they reskilled the excess
+deaths
+based on a new baseline
+and the US
+the WHO I don't think quite
+did this
+as it was based on a bunch of
+half departments around the world
+and not everybody did it
+but in the US and the CDC
+they changed the baseline
+to a new higher baseline
+to make it look
+less bad
+and you just go through the list
+and again it sounds
+conspiratorial
+what sounds like you know you're just
+making shit up
+but that's stuff that Biden did
+and then when I emphasized
+it was Biden
+pushing his CDC director
+and he could have
+the most offensive thing
+and this is
+this is the last thing I want to talk about
+but this is kind of
+what we could have done
+and addition to
+the surveillance
+and having like a weather map
+and having like you know
+today
+you should probably go out
+and wear a respirator
+or you know maybe you don't today
+you don't need to today
+that kind of stuff
+easy stuff to do
+I want to
+talk very briefly
+about
+mRNA
+and I think this is like the mRNA
+in the room
+but if I had chapter titles on this
+I tried putting chapter titles
+in one of these
+and it didn't work
+and I'm going to add them
+at one point in the future
+but it's just like
+it's a giant pain in the ass
+already
+to make these
+and then
+extra layers of work on top of it
+and I have to build the pipeline
+to put those in properly
+I've also given up on the
+the transcript thing is a mass
+in Apple Music
+you're getting the Apple
+generated transcript
+which for some reason
+that's completely ignoring
+the transcript to that I put in
+which is
+yeah
+it's another
+but mRNA
+let's talk about that
+so I mentioned this before
+but the way that mRNA works
+mRNA is messenger
+RNA
+Rebonically a gasp
+a ribose and clay a gasp
+this is a sugar
+nucleic acid is nucleic acid
+and basically this is a way
+that we convey genetic information
+from our genomes
+from DNA
+deoxyribose nucleic acid
+and our genomes
+into proteins
+which are
+polymers of amino acids
+I'm not sure if that's going to mean anything to you
+but there are things that get coded
+for by the mRNA
+it's coded for by the DNA
+and that's how we make proteins
+and everything that we are
+to first approximation
+comes from these proteins
+and that the proteins
+are structural purposes
+like collagen
+or elastin
+or they are actually functional
+and they're enzymes
+that catalyzer reaction
+they make things go faster
+basically
+they make a certain chemical reaction happen
+more quickly and it would just spontaneously
+or they do other things
+but those are kind of like the general sort of thing
+that just means that
+in ourselves
+if you didn't have mRNA you would be dead
+you would be 100% dead
+you need mRNA to survive
+that is how you function
+it's literally just
+DNA gets
+transcribed
+or rewritten as mRNA
+DNA if the double stranded
+sort of sequence
+and then that gets kind of like
+opened up and one of the strands is the coding strand
+strand
+and that coding strand
+gets read
+by an enzyme
+or complex of enzymes
+but you know proteins
+and some other stuff
+and that gets
+copied
+basically into complimentary
+RNA
+RNA is a single stranded thing in this case
+and that complementary RNA
+is messenger RNA
+or at least it's the precursor to messenger RNA
+it might have some modifications made to it
+it might have other stuff happen to it
+but that's like the broad strokes of what it is
+and then that messenger RNA
+and again this is like again
+the details
+can get messy
+where it's coming from
+is it coming from
+mitochondria
+and nucleus
+where is it going all this kind of stuff
+there's a lot of other stuff that can happen here
+but this is the broad strokes
+and sort of the general
+dog of how genes work
+you come to the messenger RNA
+and then in that messenger RNA
+you have these three letter things
+so AUG and C
+and each one of these three letter chunks
+is called a codon
+and that codon
+basically codes
+codes for
+and amino acid
+so there's a set of
+I think 20 different chemicals
+and each one of them is like a little bead on a string
+and they
+get charged up on these things called TRNAs
+transfer RNAs
+that have their own little code
+complimentary code
+and that
+through a whole bunch of machinery
+matches up with the mRNA
+and then puts that bead on the string together
+and then they get connected
+and then you build a bigger and bigger string
+and the specific sequence of those things
+dictates the structure of the protein
+that you're making
+and then the structure kind of determines the function
+in broad strokes kind of
+don't worry about the details
+there is a lot of detail there
+but that if you understand the stuff that I just said
+at least to a high level
+you understand mRNA is not like a magical weird
+horrible thing
+it's literally you
+like it's literally like most of the mechanisms
+of stuff getting out of your genes
+and into actual practice being made for you
+it's how you work
+and then we go to
+well, SARS-CoV-2
+is a coronavirus
+and coronavirus is they're called coronavirus
+because they kind of look like a crown
+their structure is like they have the genome
+and then they have this thing around it
+don't worry about that right now
+but that's kind of the structure
+and the genome
+guess what?
+it's a single strand
+of RNA
+their single stranded RNA viruses
+and it's plus sense
+which means it's a coding strand
+which means the genome
+of SARS-CoV-2
+is mRNA basically
+again, I'm being a little sloppy with that
+but it's basically mRNA
+and that means
+that again, if you're worried about mRNA
+and you're getting infected
+you're not getting a little bit of mRNA
+from the virus
+you're getting a fuckload of it
+because your body is replicating virus
+and you're getting all of that
+and all of yourselves
+and not only that but the mRNA
+vaccines and one of the things that's beautiful
+about these things
+one of the reasons why
+like when I was in Virrology
+the first time to date myself
+in the 90s
+had that's a long time ago
+oh my
+holy shit
+we were talking like my first Virrology class
+that we're talking about how amazing it would be
+if one day we could build mRNA vaccines
+because what you could do
+is take the specific sequence
+for a specific protein
+that the virus makes
+and this would be something where you're not making a full virus
+you're not making all the proteins in the virus
+you're not trying to attenuate it
+so like some vaccines
+you have a live attenuated
+like a live weakened version of the virus
+so the bacteria
+and you're not trying to kill it
+so you have an activated vaccines
+where you have the vaccine
+is basically just virus
+or bacteria that's been killed
+and suspended
+you don't need either one of those
+so you don't need to grow it
+you don't need to do all this kind of stuff
+you just need to know what is the protein
+that if I build an immune response to this
+I can actually have protective immunity
+and if you can do that
+you're basically simulating having an infection
+your immune system looks at that
+it sees that it raises antibodies to it
+and other things besides antibodies
+there's certain T cells and B cells
+and a lot of other details
+but I'm being sloppy partially deliberately
+but also understand the extent
+that I'm speaking in children's language
+I'm trying to make my target audience here
+is that molecular immunologists
+it's like, hopefully you're listening to this
+and then, yeah
+so, losing my mind here
+just talking about this
+but basically, the virus is mRNA
+we wanted these mRNA vaccines
+because you can just take that specific protein
+that can definitely not become a virus itself
+it's only one part of the virus
+and you can have your body make it
+so you can have a very small amount of it
+in the vaccine
+you don't have to have a huge amount of protein
+that you're injecting people with
+having a lot of protein
+means you have to make the protein
+somehow
+and making proteins, especially if they're complicated proteins
+or anything like this
+it's a whole set of things that you have to do
+that are going to be specific to each virus
+that will be required in order to make a protein-based vaccine
+but if you can make an mRNA vaccine
+you can take just the mRNA that will be coding
+for a specific protein or a part of a protein
+build that, get your body to make that protein
+temporarily
+and then mRNA incidentally, your body is full of things called RNAs
+and the environment is full of them
+it's one of the reasons why actually mRNA is really hard to work with
+because the environment is extremely hostile to RNAs
+RNAs get chopped up very quickly
+and so they have a very short half-life
+it took a lot of work to make vaccines
+with our mRNA that would be stable
+so we made those
+and now you're able to do that
+and you're also able to update them very quickly
+because we have
+they're called DNA printers
+but we have basic mRNA printers as well
+we have the ability now to take a specific sequence
+like you have the letters A-A-G-G-C-A-C-T
+whatever
+and then you can make DNA in that sequence
+and then you can use that to make RNA
+and mass of amounts
+in that sequence
+or in a complementary sequence I should say
+and in doing that
+you're able now to make a vaccine
+against a completely novel virus
+in almost no time
+it's one of the things that's beautiful
+about these vaccines
+it's one of the reasons why they're so appealing
+now they're not perfect
+and the biggest reason that they're not perfect
+is not that they're dangerous
+or there's some horrible thing that they're doing to you
+it's just that they don't tend to elicit
+really effective immune responses
+that are really durable
+and we're working on this as well
+but they tend to elicit immune responses
+that they work for a little while
+and they kind of fizzle out
+and that means that you need to get boosted
+very often
+this in addition to the fact that
+RNA genomes
+when you're replicating an RNA genome
+you're using an RNA dependent RNA polymerase
+they tend to be much more error prone
+than DNA dependent DNA polymerases
+the things that replicate
+say your genes
+or like a herpes virus
+so if you are replicating these RNA based viruses
+you're getting a very high mutation rate
+and in that process
+that means that in the environment
+when you have a lot of people infected
+and you've just not really done anything
+you have a huge population of mutated virus
+out there
+basically every replication cycle
+you're getting some mutation or another
+which means that now you've got
+really rapid
+evolution
+because you have a lot of these different things
+and some of them are going to be able to do things
+that other ones couldn't
+and now you have
+all these variants coming from this process
+over and over again doing that
+over and over again challenging
+people's immune responses
+and challenging
+all the things are trying
+not trying to but basically
+inadvertently through the process of selection
+figuring out ways to work around your immune response
+figuring out ways to be more transmissible
+figuring out all this kind of stuff
+that's the problem
+with having like uncontrolled spread
+and so there's this policy
+you can kind of look it up
+it wasn't officially called
+air quotes letter-repe
+but there was this idea
+that
+it's not a completely ridiculous idea
+I will say in some sense
+although it's kind of horrible
+except it doesn't work
+for a coronavirus
+specifically would not work for a coronavirus
+because they replicate
+too quickly
+or too contagious
+and their mutation rate is too high
+but if you had something that was much more genetically stable
+then this letter-repe idea is basically
+okay we've got
+enough of the population has been vaccinated
+and this is the thinking that
+the people that kind of vaguely understood this
+we're saying
+we've got
+enough of the population has been exposed
+or has been vaccinated
+and the hospitalization numbers are down
+so if we let everybody get infected
+then it will rip through the population
+the hospitals won't get overwhelmed
+because now we're at this point where
+they're not going to be massively massively numbers
+or huge numbers of sick people beyond capacity
+and then
+ideally and again this is wrong
+but their thought was
+and when I say their thought was
+this has to be people that didn't know what the fuck they were doing
+because people who actually understand
+this stuff would know this is not going to work in this case
+but the thought was
+okay so now everybody gets it once
+and you've effectively vaccinated people
+as a group of natural infections
+and now they're not going to get sick again
+and they're just removed from the susceptible population
+because of that
+it doesn't work
+because as this is mutating quickly
+it's able to evade the immune response
+that was elicited to
+another variant
+and so you're able to get infected
+like a run of viruses like so I was go to
+over and over and over and over again
+it also has a immune-vasive
+and a immune-modulating properties
+so it's not just that it's mutating quickly
+but it's able to tweak
+and mess around with your immune system
+to basically get around
+some of your immune responses
+and immune protection against it
+and so between these two things
+let a rectidine work
+and couldn't have worked
+it was ridiculous to even think that it might work
+and all it did was leave us in the situation
+now we have unmitigated spread
+we have a huge population of infected people
+larger population of variants of these viruses
+and just it's leaving us with this
+I don't want to imply that it's intractable
+because you could still
+really limit the spread
+of things to contain it
+and get it down to basically zero
+yeah, not exactly zero
+but you can get it down to such a low level
+that and then if you had that
+plus surveillance
+very low levels
+let people go about their lives
+don't have to worry about masking
+except in healthcare settings
+you still don't get smart
+doctors and nurses
+you still fucking should wear your masks
+all the time no matter what
+just like you should still wash your hands
+every time no matter what
+but people in the general population
+who aren't really vulnerable
+could probably just go about their lives
+and be fine
+and then occasionally you'll have an outbreak
+you'll detect it because you have good surveillance
+you'll isolate people, you have contact tracing setup
+you can contain all of that
+and the outbreak will fizzle out
+and that will be it
+and then also if we had
+indoor air quality improvements
+it would make it much harder for those outbreaks to spread
+if we had the doctors and nurses
+always burning the fucking masks
+as a universal precaution
+then it would be harder for it to spread
+and now
+basically like
+not only would it be like this for COVID
+but inadvertently
+unintentionally
+in the same process
+as doing that
+we would eliminate or really knock down
+many other respiratory viruses
+it would just be a natural consequence
+of doing that
+and that could be where we are
+and it still could be what we could do
+but instead
+we get people like ending vaccine mandates
+which is going to destroy herd immunity
+which incidentally
+if you have other viruses
+that you know are not that stable genetically
+you can do some
+like a prior imagination
+to what happens when you allow
+uncontrolled spread of those things in the population
+a lot of people get infected
+a lot of virus
+which means lots of mutations
+which means lots of different chances
+to you know
+test immune surveillance
+and maybe work around it
+and then evolve
+to things that
+are immune invasive
+or that at least can escape
+the vaccines that we have
+and now
+best case scenario
+you have to create new vaccines
+and worst case scenarios
+that you just can't make a vaccine
+that's as effective
+against some of these things
+and then you have to really fight
+in order to do something about them
+and a lot of diseases that are like that
+are diseases that you really don't want
+their diseases that can cause
+things like immune amnesia
+and just wipe out your
+wipe out all of the immune protection
+that you previously developed
+from exposure to other things
+and from vaccinations
+and all that kind of stuff
+but it's not something
+yeah
+it's probably not the best thing
+yeah
+and so anyway that's where we are
+it's just
+it's just fucking annoying
+to me
+it's like it's horrible
+it's eugenicist
+and it's also wrong
+and misguided
+like the people who
+were making these decisions
+including Biden
+Biden himself
+no fucking clue
+not listening to the experts
+or if they are experts
+they were
+very misguided experts
+but mostly
+like just not
+listening
+and it gets to
+another one of these things
+that I hate
+about this guy
+and one of the reasons
+one of the ways that he's
+like Trump
+is just that these are
+like lazy students
+don't really care
+they don't want to do the work
+and because of that
+and because they've never
+really faced any consequences
+for the ship they've done
+and their fuckups
+we have our in a situation now
+where
+people are massively
+more prone
+to believing things like
+anti-vaccine
+ideas
+like vaccines don't work
+because they were told
+vaccines work in a way
+that they absolutely don't work
+and so of course they don't work
+the way that they don't work
+and we have
+many more people who are
+anti-vaccine
+we have less
+strong public health
+we have less
+you know
+ability to even
+understand stuff
+because people don't know
+Swiss cheese
+everybody should know
+by this point
+and you know
+when you're five years
+six years into a
+global airborne pandemic
+everybody should know about
+fucking Swiss cheese
+everybody should know
+you don't vaccinated individuals
+you vaccinate populations
+there are a bunch of
+things like that
+that could have been
+and should have been
+conveyed in public health
+messaging
+and weren't
+and instead
+we have people thinking
+vaccines don't work
+we have people thinking
+that you know
+it's not a big deal
+it's just a
+flu
+like the flu
+is not a big deal
+because the flu
+again the flu
+kills
+20 to 60,000
+Americans
+museums
+I should say
+every year
+just as a matter of course
+COVID right now
+is killing
+hundreds of thousands
+and
+both of those
+are going to continue
+indefinitely
+as they are
+and now
+granted hundreds of thousands
+of people
+in a scale of
+like a population of
+330 million
+it's not like
+it's not huge
+but it's a lot
+it's a lot of fucking
+people if it's your grandma
+or if it's your cousin
+or whoever
+probably a big deal
+and that's not even
+getting into
+long COVID
+it's not getting into
+the vascular diseases
+and neurological diseases
+and all the other things
+that come from it
+and it's also not getting into the fact
+that like
+we are
+primed right now
+for
+another terrible
+airborne pandemic
+like if there was
+something
+if you think about like
+bird flu
+and it really got
+to human
+transmission
+and head of mortality rate
+of like even just like
+five or ten percent
+but especially if it was like
+20 percent
+or 40 percent
+we'd be so fucked
+because in health
+like people would get sick
+they'd go to the hospital
+nobody in the hospital
+is masking
+so I just
+blows through the whole hospital
+and then
+not only does it take out
+the hospital and share
+in the hospital
+become an excess of transmission
+now
+you don't have the ability
+to deal with sick people
+because all the health care workers
+are
+decimated
+or worse
+and the
+hospitals
+blow up
+and can't do
+like their capacity
+is destroyed
+because
+you know
+one of the cool things about
+the capitalism
+is
+excess capacity is
+waste
+and so you can't have
+any kind of resiliency
+because
+excess capacity is
+what you need for resiliency
+and so
+we don't waste
+so now we don't have
+excess capacity
+so now
+we're
+just operating at a critical level
+and if you ever have any
+overflow
+things
+just implode
+it's one of the
+one of the big reasons
+why more people died
+earlier on in the pandemic
+was just
+more
+more
+more
+more
+more like the
+actual underlying
+sort of
+case mortality rate
+also again
+you know there's this idea
+that people have
+that you know like somehow
+magically evolution
+selects against
+pathogenicity
+but there's no reason to
+believe that because
+the trends
+the only way that would work
+certainly on like a long enough
+time scale
+the
+reasons of generations
+maybe
+but when you're talking about
+individual life times
+the only way that would work
+is if it was so
+lethal
+that it killed you
+before getting
+transmitted to other people
+and it definitely doesn't do that
+it infects you
+you spread it to a bunch of people
+and then it kills you
+or it doesn't kill you
+and you know there's
+zero selective pressure
+literally like you know I mean
+there's like a tiny, tiny, tiny
+little
+little
+and on the scale of human
+lifetimes it might as well be
+zero there's no real
+evolutionary select the pressure
+that it doesn't mean that it's
+going to get more pathogenic
+but if there's no pressure
+then things just kind of like
+diffuse
+outwards and things can get more
+and less and there's no
+directionality to it
+it's just chance
+and that's not good
+that's not like that's the
+thing with the pressure
+to change
+it's disappointing
+or it should be so much
+better and one day
+ultimately like I don't know
+what is going to happen
+or what it's going to take
+one day ultimately it will
+be better because
+and it's kind of tragic
+but like some
+horrible
+pandemic will come
+and it will be much worse
+and people will
+well I think something
+will weigh from people to
+is Andy Vax sentiment dissipates over many decades
+and then people start going like,
+oh, it kind of sucks to have your kids dying.</p>
+<p>Again, that maybe why weren't kids dying 30 years ago?
+I don't know, I was kind of weird.</p>
+<p>I mean, kids die all the time,
+but not in mass, not in huge numbers.</p>
+<p>Maybe we should figure out why that's happening.</p>
+<p>And then you start reinventing vaccines.</p>
+<p>That's just so ass-enined.</p>
+<p>It's very depressing when you realize
+civilization doesn't go in a specific direction.</p>
+<p>And things can progress.</p>
+<p>And it's just so depressing.</p>
+<p>And I do think, ultimately, we will get to a better place again.</p>
+<p>I just don't know what it's gonna take.</p>
+<p>I don't know how long it's gonna be.</p>
+<p>And I hate the,
+many, many people will die,
+many people will get permanently injured
+and disabled.</p>
+<p>Unnecessarily, because we are in the situation we're in.</p>
+<p>And that really fucking sucks.</p>
+<p>It's just like, I think I have zero doubt
+that at some point the apartheid and genocide
+and Gaza will end.</p>
+<p>And there's the book that's like,
+one day, everyone will have always been open against this.</p>
+<p>Yeah, one day, I'm confident, everyone will always,
+just like everyone now is always against apartheid
+and South Africa.</p>
+<p>Everyone now is always,
+there was always against the Shoah.</p>
+<p>You know, oh, I say that there are literal Nazis out there
+that should be armed, but you know,
+broad strokes, hopefully, most of us are on the right side of that.</p>
+<p>But you know, inevitably, where it's gonna go,
+it's like, why do we have to go through the fucking horror
+and the process of this?
+It's just irritating, it's just annoying,
+it's just depressing.</p>
+<p>Anyway, with that, this is it for the week.</p>
+<p>I hope you have a good one.</p>
+<p>It's wild that my time here in Bangkok is over.</p>
+<p>I could very easily, I think I've said this before.</p>
+<p>I don't think I would live here on a long-term basis,
+but I could imagine if I was in the position financially
+and could just like travel around and live
+different places for a while.</p>
+<p>I could imagine coming back here for a few months
+and like, showing out everyone's in a while
+and hopefully developing my tie
+so that it's not embarrassing like that.</p>
+<p>But, you know, I could see myself doing that.</p>
+<p>It wouldn't be the worst place to be.</p>
+<p>I definitely have a lot of places that have been
+as one of the nicer ones.</p>
+<p>I do, like, I can very easily live in Beijing
+or Chengdu or, you know, even Shenzhen,
+I can easily live in Paris.</p>
+<p>I love Paris.</p>
+<p>I could easily live in the Dred or Oliver Spain.</p>
+<p>I could even, like, Vietnam, I could do,
+wouldn't be my first choice, but I could do it.</p>
+<p>Soul was nice.</p>
+<p>I'm sure much of South Korea is also nice.</p>
+<p>Benchipan, I do, like, as well.</p>
+<p>I know the colonizer's stuff is bad and then yeah.</p>
+<p>The problem is, of course, there's no,
+if you start getting into the problems
+with different countries, any country has some bad history,
+but it's also, like, yeah, there's just pretty bad.</p>
+<p>But also, like, you look at Germany now versus Germany then.</p>
+<p>I still, I will say, I still, I have been to Germany.</p>
+<p>I've been to, well, just Munich, specifically, München.</p>
+<p>And I went there and I know that they,
+you know, did some level of denotsification.</p>
+<p>They do education and they, a lot of people are very,
+you know, regretful and hopefully learned.</p>
+<p>They talk about it.</p>
+<p>Unlike the US where, you know, basically just pretend slavery never happened.</p>
+<p>Or pretend that it was, like, good for people who were enslaved,
+a bunch of horrible bullshit.</p>
+<p>At least Germany kind of deals with that stuff a little bit.</p>
+<p>But still, when I went there, I was, like, a little,
+a little uncomfortable.</p>
+<p>And you're going to places and you're seeing, like,
+oh, these are places that, um, yeah.</p>
+<p>And I don't know.</p>
+<p>I just, I have, I have, like, a inherent aversion.</p>
+<p>Just not to say that I hate German people.</p>
+<p>It's just, you know, like, there's a little bit of me
+is like, uh, not quite, not quite, okay, not quite, okay.</p>
+<p>Yeah.</p>
+<p>Um, Japan, I can definitely see kind of similar on that.</p>
+<p>And I think unlike Germany is not really addressed a lot of the stuff in the same way.</p>
+<p>It's probably bad.</p>
+<p>I'm much closer to the US, unfortunately.</p>
+<p>But I do, like, you know, having said that, there are things that about Japan that I like.</p>
+<p>And then you, back and forth.</p>
+<p>But you, where, where is a good place to be?
+What is a, I don't know.</p>
+<p>And then you have to think about, um,
+am I being a colonizer wherever I am?
+Like, living in Hawaii would be nice.</p>
+<p>But also, you think about, like, a or a hally,
+b, your, like, not really wanted there and you're definitely being a colonizer
+and you're taking resources from people.</p>
+<p>And you're raising the, the rents and all of the stuff that's horrible.</p>
+<p>And some more way, if I was living here, I'm doing the same kinds of things.</p>
+<p>It's, it's very complicated.</p>
+<p>I don't know what you would do.</p>
+<p>And then you could go, well, okay.</p>
+<p>So being in the US and then fight against what's going on
+and try to improve things.</p>
+<p>But then, um, yeah, I, I will say actually,
+this will be the actual end to cap with us and then I'll talk about all that stuff later.</p>
+<p>But California, I think Oregon and Washington, and now Hawaii are part of a, uh,
+sort of, like, makeshift CDC to take up the slack where the CDC is failing.</p>
+<p>And I, and I'm, I'm giving new some zero credit here, but I do appreciate it.</p>
+<p>And I do think this is how you actually address this kind of stuff is build parallel systems
+and just ignore the, understand that the federal government is not legitimate
+and ignore them and do your own stuff.</p>
+<p>And definitely don't comply in advance and you actually be better.</p>
+<p>That kind of stuff.</p>
+<p>It's, it's good.</p>
+<p>I think that's, hopefully you do more of that.</p>
+<p>And hopefully you do it well and hopefully you do it better than, uh,
+like Biden's CDC, which was a fucking shambles.</p>
+<p>And, you know, it's like the Biden thing killed me because I, there was a time, like,
+my undergrad was microbiology.</p>
+<p>I was always very in-difirology.</p>
+<p>I grads, my initial grad was studying gyphirology and immunology.</p>
+<p>And I wanted really to work it, like a, a CDC or a U.S. Amrid or something like that.</p>
+<p>That was before I understood a little bit more of what, uh, the military isn't all like,
+but, you know, I liked the idea I really did.</p>
+<p>And then, you know, it's just like it's gone so fucking downhill.</p>
+<p>And in the current situation is such a fucking embarrassment.</p>
+<p>I'm, I'm very glad that I have that career path because it would be so depressing and devastating.</p>
+<p>I, I have friends who work at NASA and, like, the situation there is so depressing.</p>
+<p>And, like, you spent your whole life trying to get into this career and doing this career.</p>
+<p>And now it's just the thing that you loved is just torpedoed and it sucks at us.</p>
+<p>And anyway, uh, with, with that, I'm at your full note.</p>
+<p>Thank you. I will talk, uh, again, probably in like a week.</p>
+<p>再见</p>
+
+    </article>
+  </main>
+  <footer>
+    <span class="copyright" title="Copyright Scott Menor / SMENOR, LLC. All Rights Reserved.">&copy; 2025 </span>
+    <span> Not all who wander are lost.</span>
+  </footer>
+</body>
+</html>

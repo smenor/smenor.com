@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+  <meta property="og:title" content="Agnostic">
+  <meta name="twitter:title" content="Agnostic">
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta name="twitter:image" content="https://smenor.com/images/tangentsIconTwitter.png" />
+  <meta name="twitter:twitter:image:alt" content="site logo" />
+
+  <title>Agnostic</title>
+
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.umd.min.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class=" agnostic">
+  <header>
+    <a href="/" class="logo">
+      <img src="/images/tangentsChannelLogo.svg">
+    </a>
+    <h1 class="title">
+      <a href="/tangents/ep17-Agnostic/">
+        Agnostic
+      </a>
+    </h1>
+    <input type="checkbox" id="menuControl" />
+    <label for="menuControl">
+      <nav>
+        <span class="line"></span>
+        <span class="line"></span>
+        <ul><li><a href="/ai/" >「 AI 」</a></li><li><a href="/anomalies/" >Anomalies</a></li><li><a href="/bio/" >Bio</a></li><li><a href="/companion/" >Companion</a></li><li><a href="/ethics/" >Ethics</a></li><li><a href="/mechatronics/" >Mechatronics</a></li><li><a href="/portfolio/" >Portfolio</a></li><li><a href="/spite/" >Spite</a></li><li><a href="/support/" >Support</a></li><li><a href="/sweetgrass/" >Sweetgrass</a></li><li><a href="/tangents/" >Tangents</a></li><li><a href="/who_am_i/" >Who am I ?</a></li></ul>
+        <span class="line"></span>
+    </nav>
+    </label>
+  </header>
+  <main>
+    <article><audio controls>
+        <source src="https://smenor.sfo3.cdn.digitaloceanspaces.com/2025.11.06-Agnostic.m4a" type="audio/x-m4a">
+      </audio><p>Image: Thomas Henry Huxley in the 1860s. He was the first to decisively coin the term agnosticism. By Ernest Edwards <a href="https://ihm.nlm.nih.gov/images/B11455">National Institutes of Health public domain</a></p>
+<p>Full transcript:</p>
+<p>Hey there I'm Scott and this is Tangents</p>
+<p>Well, today is the sixth of I was going to say
+December for some reason, but November 2025,
+it is kind of hard to believe</p>
+<p>They're like a blink ago, I started my job,
+my last job at ASU, and that was in like
+two years ago, basically, a little bit more</p>
+<p>And then I blink ago after that, that job ended</p>
+<p>I was planning on going to Japan, South Korea,
+China, Vietnam, and Thailand, and then I did that,
+and then I was back</p>
+<p>And I've been back like two months now,
+and it's disturbing how fast time goes</p>
+<p>I mean, I know this is not the most profound observation
+that anyone could make</p>
+<p>But I remember when I was a kid, I was a kid,
+and like a week seemed interminable</p>
+<p>It seemed like forever</p>
+<p>And kind of in a bad way, in some sense,
+I mean, it wasn't a terrible experience,
+like I wasn't always complaining,
+but there would be things where you'd be looking forward
+to something, and it'd be a week away</p>
+<p>And it just seemed like a forever</p>
+<p>And now, I blink my eyes and years have gone by</p>
+<p>I've been, like, I'm back on Facebook,
+don't feel great about it, but I am</p>
+<p>And because I started my account there,
+I'm still connected to the people I was connected to before</p>
+<p>And there are a bunch of people that I'm connected to there
+who, and didn't link them as well,
+who I knew in graduate school</p>
+<p>And I look at these guys, and they're like,
+what the fuck happened to you, you're old now</p>
+<p>And, you know, so many of them also, the dudes,
+obviously lost their hair, they're bald</p>
+<p>And you're seeing these bald guys,
+and you're just like, what the fuck happened?
+And then of course, the weird thing is,
+I didn't actually, like, they're very old now</p>
+<p>I'm not, I don't know how that happens</p>
+<p>But no, I mean, like, we're all kind of the same age</p>
+<p>And it's just weird, it's just fucking weird</p>
+<p>I was just talking to somebody I used to work with
+after my PhD, and his wife is the sister of someone
+I used to date</p>
+<p>And her kid, who she had, after we broke up,
+less than a year after we broke up, not mine</p>
+<p>But, I have a history for some reason
+of being with people right before the end up getting
+pregnant, like, you know, just a month or two,
+and then they get with somebody else and have a kid</p>
+<p>In her case, I guess I don't want to talk too much about it,
+but I was not in a great place to be in a relationship
+that was sort of long term then</p>
+<p>There was someone in grad school who I really liked</p>
+<p>And I don't know that she ever would have
+considered me as even a potential partner</p>
+<p>But she definitely was very flirty, let's just say,
+and was very hot and cold</p>
+<p>Like, the first time we started talking online,
+this was back when we had the Google talk,
+or so I think that was what it was called</p>
+<p>She talked</p>
+<p>And it was Friday night, and she just message me out of the blue</p>
+<p>And we had, I guess that the transcripts
+are probably someplace, not that I want to go back
+and look through those, but we had a really good talk
+for hours and hours that night</p>
+<p>And I would kind of see her every once in a while,
+and we'd hang out a little bit, and then she'd get fucking weird,
+and then she'd be hot again and cold again,
+and it was, we'd never, we'd never, to be clear,
+dated or anything like that</p>
+<p>But it was just weird</p>
+<p>It was, and, you know, I was quite infatuated with her</p>
+<p>I was, it was one of my last real,
+like strong, lemurance kind of experiences</p>
+<p>I've had, don't give me wrong</p>
+<p>I've had a few sense, and not a few before</p>
+<p>But somehow with her, just was extremely, extremely interested</p>
+<p>And, you know, I knew that that wasn't gonna work</p>
+<p>And so, you know, ended up in a couple of other relationships</p>
+<p>But I wasn't really, I don't know,
+hadn't really let go of the idea of maybe</p>
+<p>And also, like there was this thing that, you know,
+with my ex-wife, I mean, it's not that I wasn't,
+like, didn't care for her, but we weren't, you know,
+she was the first person I was ever really with romantically,
+or physically, for that matter</p>
+<p>I kind of, like, soft-dated a couple people before,
+but then, you know, nothing had all serious</p>
+<p>One of, one of those actually, also, she had a kid,
+not long after we sort of soft-dated</p>
+<p>And, I don't know, soft-dated as the rape,
+but, you know, not really quite dating,
+but that, whatever it is</p>
+<p>Not, you know, not dating, per se,
+but, you know, like, fault-dated ish
+in the vicinity of a date, or several</p>
+<p>But, anyway, we sort of parted ways,
+and then she got with some English guy
+who, I think they were only together very briefly,
+but got pregnant, had a kid</p>
+<p>And that kid, I mean, years ago already,
+this is, you know, not the date myself here,
+but years ago, that kid was already 18</p>
+<p>And I think maybe going to school,
+I say going to school, I mean, university</p>
+<p>And then you just think about, like, the time
+and the, it's just wild</p>
+<p>So, and you think, also, like, if I would have had a kid
+with her, not that we were going to have a kid,
+but you know, it's like, at that time, just for time scale,
+I would have a kid who is probably
+could have a PhD by now for all I know</p>
+<p>It's wild, it's hard to wrap your mind around,
+how fast time goes</p>
+<p>And especially, like, it just keeps accelerating</p>
+<p>And I think about, like, how fast it must go for my mom,
+you know, like, it goes faster and faster for me,
+and she's had decades more</p>
+<p>So, it's just like, you</p>
+<p>And, I don't know, I think about that,
+and then I think, getting back to this person that I was with,
+was actually with</p>
+<p>We were together</p>
+<p>And I, of the people that I've been with,
+I think probably, you know, that, I guess in the scale of,
+like, if you have the perspective of all the relationships
+that you've been in, probably the one that I would have stayed
+with, except, like, a couple of things</p>
+<p>With one, again, I was still not really completely
+letting go of this other one</p>
+<p>That wasn't really even a relationship</p>
+<p>But, you know, and it was very,
+I don't know, she was, I don't want to get too much into that</p>
+<p>But it was, like, I've not had many people on Facebook
+where I've been disconnected and reconnected,
+disconnected and reconnected, even once</p>
+<p>And with her, it was, like, a half dozen times</p>
+<p>And, like, I wouldn't see her for nine months,
+and then we get chummy again, and then wouldn't see her
+for a little while, and then it'd be, like,
+every day we're having coffee in our office for a while</p>
+<p>And then it was just fucking weird</p>
+<p>It was just in retrospect and in perspective,
+it was just weird, and unfortunate</p>
+<p>But, I don't know, like, if she ever was interested,
+I don't know how that would have gone</p>
+<p>Yeah, it's one of those things, like, maybe the idea
+is better than the reality</p>
+<p>I don't know, I really don't</p>
+<p>But, I was with this other person, and I think,
+I think it would have been actually kind of okay,
+but her sister was, yeah, she got married,
+she was pregnant, she was having a kid,
+and there was, like, we weren't together that far
+or that much at this point</p>
+<p>And she's already really interested
+in having a kid and getting married</p>
+<p>And it's just, like, the weird thing is now,
+at this, at, by current, big age, not that big of age,
+but, like, in my current age, looking back,
+like having a kid doesn't seem like the worst idea</p>
+<p>Now, I can imagine, I'm not exactly jealous of people
+with them, but I do see, like, I watch a lot of pilots
+on YouTube</p>
+<p>And there's one that I don't really watch that much,
+but occasionally, and he has a couple daughters,
+and he's taught them to fly, and they fly together,
+and all those kind of stuff, and actually, I see that,
+and it's like, that kind of, yeah, I see some appeal to that</p>
+<p>I see some, I think that I have some things,
+some qualities, and I don't mean, like,
+in the sense of passing them on genetically,
+but just like raising somebody with them,
+I think they would actually be good qualities
+to the past on, and to maintain,
+and I think they would actually be,
+that I think they would be good</p>
+<p>I think they would be good</p>
+<p>They're the things that the world would be a better place
+with more people, with certain things that I have</p>
+<p>And, you know, like I'm saying, I don't know,
+maybe I'm just, everybody thinks too highly of themselves,
+or whatever, but I do think I have some things</p>
+<p>I think, like, one of them, and actually,
+this is the thing I wanted to talk about today,
+that's the title of this, is agnosticism,
+or agnostic, I think is what I'm gonna call it</p>
+<p>And the funny thing is, I'm not agnostic</p>
+<p>I'm absolutely not, I don't think at any point in my life,
+I have ever been anything that I would call agnostic</p>
+<p>I've basically always been non-religious</p>
+<p>I was raised without religion, and frankly,
+I am, I've talked about this a few times,
+but I'm very thankful that I was raised without it</p>
+<p>I'm very thankful that it wasn't really imposed on me,
+that I didn't, the thing here is I just,
+I see people who were raised with it,
+and it's just very difficult for them, especially,
+I mean, you know, like, I'm not saying like day-to-day,
+always they seem to find some community
+and comfort in it, sometimes</p>
+<p>But you see people where they lose a kid,
+or have some kind of tragedy before them,
+or whatever, anything, anything like that</p>
+<p>And you have this problem that you have to sort of resolve
+with yourself, especially when I talk about religion,
+I'm here talking primarily, like,
+Judeo-Christian sort of traditions</p>
+<p>But, you see people with these things,
+and they have this idea of a single deity that is all loving,
+and good, and powerful, and all those kind of stuff</p>
+<p>And then their kid died, and how do you deal with that?
+And it tortures them</p>
+<p>And I'm not saying like, anything could make that a okay thing,
+but I just, I find great comfort in not being religious</p>
+<p>Or for a lot of reasons, I think, you know,
+but one of the biggest ones,
+I did at one point when I was kind of like in high school,
+I sort of thought about like the age of the universe,
+and I was just, it was keeping me up at night,
+thinking about like how long a human lifetime is,
+and my perception of time at the time, especially</p>
+<p>And so, you know, you think about that,
+and then you think, on the planet at the time,
+I don't know how many billions of people there were,
+they were like six, less than probably less than seven,
+time is wild, another or over eight</p>
+<p>But, you think about that, that means every year,
+that obviously have people going to sleep,
+so it's not exactly, say, six billion, seven billion years
+of experience of, I mean, really,
+if you think like a third of your life,
+you're asleep more or less,
+that means it's really like,
+say there were six billion people at the time,
+I don't know how many it was,
+but just like, rough numbers, six billion people,
+and two thirds of that is actual subjective experience, it's time</p>
+<p>And so that means, what does that,
+four billion per year?
+That means that every few years,
+you've got the lifetime of the universe,
+worth of subjective time</p>
+<p>And you think about that</p>
+<p>And then on top of that, you think about like,
+well, that is a few years,
+the duration of human,
+like the extent to which humans have lived on the planet,
+even though the population was long ago, much smaller,
+do you add all that time up?
+And then you think about all the other
+is sentient beings on the planet</p>
+<p>And you add all that time, I'm up</p>
+<p>And it just, it really fucked with me</p>
+<p>And I was just thinking about how long the universe
+has been here, and that really fucked with me</p>
+<p>And then you think also about the heat death,
+or anything like this</p>
+<p>And it just things like that kind of mess with me</p>
+<p>And I don't think I ever really came
+to a durable transferable conclusion about all of that stuff</p>
+<p>Like it didn't resolve in a way
+that I could tell you this,
+and then that is going to comfort you</p>
+<p>But in going through that exercise myself,
+it's sort of at first overwhelmed me</p>
+<p>And then I sort of started accepting it</p>
+<p>And then I started being okay with it,
+and then more than okay with it</p>
+<p>And I, the universe that I inhabit in some sense
+is sort of chaotic and random, and there's no,
+I'm not saying like, it's just some extent to agnosticism</p>
+<p>But as far as I know, there's no higher power</p>
+<p>Now, the reason I say I'm not agnostic is agnostic implies,
+I think it basically is that you don't have any understanding</p>
+<p>And it's even impossible to know the nature
+or existence of airports God</p>
+<p>The problem with that is of course it assumes
+the context of there is a God or there isn't a God</p>
+<p>And it's specifically that sort of monophistic today
+of Christian type of God, especially Christian God</p>
+<p>And so you kind of think about it,
+and it's like, it's still like Pascal's wager,
+which it sounds, it's one of those things
+that gets sounds like a reasonable deal
+if you're coming from that tradition
+if you were raised with it</p>
+<p>And this is one of the reasons why, again,
+I'm very thankful I wasn't raised with it,
+because I think when people are raised with certain belief
+systems like these, even the ones that I know
+who have left them, that the people who have become
+atheists in time or agnostic or whatever,
+they never really fully sing to escape that framework
+that was laid out for them that they sort of like,
+God, when the cement in their brains was wet,
+they got the sort of spiritual understanding of the universe,
+like the universe works in a certain way</p>
+<p>And even when they take away the sort of formal religion
+or anything like that, they still have this sort of
+spiritual thing that they talk about
+and all those other stuff</p>
+<p>That the way that I see the universe
+does not have any of that</p>
+<p>And in fact, to me, that stuff doesn't make sense</p>
+<p>And like, I mean, part of it is also,
+and I don't mean to get all like super,
+oh, I'm a physicist, but I am a physicist</p>
+<p>And you think about what would be,
+what would it even mean to have a spiritual plane?
+And you can't see it, but I'm doing giant novelty
+ear quotes, or anything, what does that even mean?
+Do you have, because you could have something,
+let me really just do the exercise with me</p>
+<p>You could either have something that exists outside
+of the universe or, you know,
+and essentially like, in a way that you can't
+couple two, you can't connect to</p>
+<p>And then does that even have a real meaning?
+Or you have something that exists that somehow is connected
+to reality, and then how is that different
+than an electromagnetic field?
+Or, you know, in any kind of like the Higgs field,
+or whatever</p>
+<p>And so you think about that, and so it just sort of,
+it doesn't make it like there, it doesn't exist</p>
+<p>But to me, basically, it says, if it does exist,
+then it's amenable to scientific method
+and to the epistemology that,
+and I mean, obviously there is the good-o incompleteness theorem
+that says, you know, any logical framework
+has unanswerable questions within the framework
+and this kind of stuff</p>
+<p>So you could use that in way of your hands</p>
+<p>But you know, basically, as I see it,
+either that stuff exists in a way that is not really special,
+or it doesn't exist in any meaningful way</p>
+<p>And similarly, and this probably comes,
+I really kind of blame, obviously,
+like a lot of different things</p>
+<p>But I think our track, the next generation,
+really sort of did the nail on the head for meaning on this</p>
+<p>It just kind of eliminated the chance of me
+even ever thinking about any of this stuff
+as a real thing, or in a meaningful way</p>
+<p>Because in there, they have this character cue</p>
+<p>And cue comes from a civilization,
+which is basically from the perspective of humans
+omnipotent omniscient</p>
+<p>And you know, essentially very godlike
+in terms of, again, the sort of Christian god
+or the Judeo-Christian god,
+trying to be careful between,
+I don't wanna just munch all the stuff together
+because I know there are a lot of,
+a lot of details, and then if you go to other god systems,
+another religious systems,
+things get very complicated</p>
+<p>It's a problem, it is definitely also a problem</p>
+<p>It's one of the reasons that there are a lot of reasons
+why I also don't call myself an atheist</p>
+<p>Because atheists, agnostic says you don't know
+and you can't know, atheists says that you know
+that a god doesn't exist</p>
+<p>And my non-religious says that the concept,
+that it's a statement that doesn't have any meaning</p>
+<p>Like, what does it mean to say that a god exists or not?
+Because if you have an endothical,
+like, back to this Q thing, but what properties
+would your god have or gods have that really
+or distinct from something like that?
+Or even, you don't even have to go that far</p>
+<p>I mean, you imagine if you're a human being,
+you can get a pound of sugar
+and take that to an ant colony</p>
+<p>And that is like so much,
+they can inconceivable amount of resource for them
+that they just couldn't, it basically makes you on netizen</p>
+<p>If you wanted, you could pour molten lead
+into their colony</p>
+<p>That's so much energy compared to what they have access to</p>
+<p>It's so much material, it's so much destruction</p>
+<p>It's just, and you think about that sort of thing
+except now you're the ant</p>
+<p>And there's somebody else with a technology,
+whether it's an individual or a species
+or civilization or whatever,
+some kind of technical ability
+to muster that kind of level of energy,
+or that level of mass or whatever</p>
+<p>You know, they certainly with a flick of the wrist
+could flatten you</p>
+<p>I mean, you don't even have to get that advanced
+because humans already have,
+like, we've got thermonuclear weapons, right?
+They're not, they're not huge</p>
+<p>They're not like destructive on the scale of
+the planet going away</p>
+<p>But you can make a city go away in a blank,
+like literally you could make a building go away</p>
+<p>And you think about, from the perspective
+of being just an individual human,
+if you were trying to dismantle,
+it's an interesting thing actually
+because if you go back, I think it was the Assyrians</p>
+<p>They raised cities and had to just do a quick search
+to make sure I was not attributing this to the wrong person</p>
+<p>But yeah, it was the ancient Assyrians would raise cities</p>
+<p>And when I say raised cities,
+I mean, they would salt the earth,
+they would destroy everything</p>
+<p>And essentially, like a nuclear bomb went off</p>
+<p>But you think about the amount of time
+and effort it would take
+or a bunch of people to do that,
+versus the flash of light and explosion
+from compressing plutonium or whatever</p>
+<p>And yeah, especially if you have,
+do a little fusion after that or boost some stuff
+and do fusion fusion vision or whatever you want to do</p>
+<p>Any of that kind of stuff</p>
+<p>And that is our level of technology now</p>
+<p>If you imagine you have the ability
+to, with a snap of your finger,
+muster orders and orders of magnitude more than that,
+literally just Zarbama's all day,
+every day across the whole surface of a planet</p>
+<p>And that's not a big deal to you</p>
+<p>That's very god-like</p>
+<p>Now that's in the disruptive sense,
+but you could imagine also
+staying in the framework of Star Trek</p>
+<p>If you have replicators and phasers
+and all this kind of stuff,
+you can carve mountains</p>
+<p>You could build a building</p>
+<p>Or some intricate detailed artwork
+that would take a thousand artisans a thousand years
+to build</p>
+<p>You could do it in minutes</p>
+<p>And that's not that hard to imagine
+someone with that kind of technology</p>
+<p>Even if you don't have like actual replicators
+or not, something that you could have,
+you could certainly have like 3D printers
+that are very efficient and very fast,
+or something that's like that,
+or nanofabrication on a massive scale,
+or you could just sort of imagine
+and having that level of technology,
+how is that different in a meaningful way
+from something god-like,
+or something that you might call a god?
+And in fact, you might even say,
+if I have that technology
+and I wanted to impersonate a deity,
+how would you know the difference?
+Especially if you are coming from a civilization
+where you're like the ant</p>
+<p>If you want anything,
+you want a million tons of gold,
+it's like, okay, I mean you</p>
+<p>And it's there</p>
+<p>Just no effort</p>
+<p>It's not a big deal for me</p>
+<p>And to you, it's the biggest deal in the world</p>
+<p>Yeah, or whatever it is, whatever resource it is,
+you're in the desert,
+you want huge amounts of water,
+and I can snap, I shingers,
+and all of a sudden there's a massive lake in the desert</p>
+<p>You just imagine that sort of thing</p>
+<p>Somebody who's coming from a primitive society
+might very well think that is very god-like</p>
+<p>And you start thinking practically
+what would be,
+this isn't really where I wanted to go specifically
+but this is just part of why I'm non-religious again
+instead of agnostic</p>
+<p>But what would it take to say, okay, this is something
+that only what you're calling a god
+could do or could be?
+And I guess this does get into,
+if you're agnostic, you don't know the nature
+of that being</p>
+<p>You could say, well, there's something unknowable about it</p>
+<p>And I guess you could go to like Hindu traditions
+where deities are sort of outside of time and space
+and then things get a little bit more,
+yeah, there are things you could talk about
+that sort of maybe are a little bit different
+but how is that necessarily different, even?
+I mean, if you imagine,
+you're a super advanced technology
+or a species that just happens,
+yeah, you're not even that advanced,
+you just happen to exist outside of
+what we think of as space time
+and you exist in a different way</p>
+<p>What does that really mean?
+So I'm not questioning the distance
+or the existence of such a thing</p>
+<p>I'm not denying it, I'm not saying it exists</p>
+<p>I'm just saying, I don't know that that's any different
+than saying there's an alien technology and alien species
+that's just vastly more powerful than us, maybe</p>
+<p>And, you know, what does it really mean?
+So I think part of the thing that people need
+for that agnosticism is the structure
+where you have a specific kind of God
+or religious system in mind</p>
+<p>Because, I mean, if you take it seriously,
+like you don't know the nature,
+and part of not knowing the nature would be
+you don't know even what that is</p>
+<p>And so it doesn't, it almost means
+you wouldn't have that system,
+but what people really mean,
+I think when they say agnostic is they don't know
+about the specific, you know,
+basically the God that they were raised with,
+whatever that happens to be,
+with some small variations, you know,
+they have an idea of what that is,
+and they just don't know</p>
+<p>And this gets to, again,
+I started talking about a bit of Pascal's wager</p>
+<p>This is a thing that I noticed, I do,
+sometimes I go off on tangents
+and I don't complete the thought</p>
+<p>Even when I have notes, I have notes now</p>
+<p>I almost always let that thread hang</p>
+<p>But the Pascal's wager thing, if you have,
+the idea, I guess if you don't know it,
+is basically if you, whether you believe or not,
+if you believe, then, you know,
+maybe you get eternal reward</p>
+<p>And if you don't believe,
+then you get eternal punishment</p>
+<p>And so the wager is basically saying,
+well, okay, well, if that's the case,
+then you might as well just believe just in case</p>
+<p>And I guess that's very compelling,
+if, if you think that there's only one possibility</p>
+<p>The problem is it really falls apart badly
+when you start realizing, well,
+there are just on this planet,
+thousands and thousands in human history
+of different religious systems and different deities
+who are in many ways mutually exclusive</p>
+<p>So if you're gonna be doing Pascal's wager,
+you can't even, if you wanted to,
+believe in them all, just in case</p>
+<p>So now you have to start picking and choosing</p>
+<p>And now you're gonna really pick pickle
+because if you believe in, you know,
+the Christian God, and it turns out that
+it's actually the invisible, all-powerful bunny
+who doesn't like people who believe in that other one,
+now you fucked yourself, you know,
+your Pascal's wager, and then you can think
+they're endlessly many, not only incompatible,
+but like different things that if you believed
+in all the other ones, they would even just in case</p>
+<p>They would, yeah</p>
+<p>And then also there's that just in case thing,
+because there's like, if you imagine some kind of omniscient,
+this is something that actually gets to me about,
+and especially in Israel,
+there's this thing where they have a lot of technologies
+that basically, because I'm unsure about,
+you're not supposed to, you're not supposed to do certain stuff,
+right?
+You're not supposed to like flick switches and watch,
+turn on TV or turn on machines or any,
+you're not supposed to do certain kinds of work, basically</p>
+<p>I'm being very high level there, but you know,
+you're not really supposed to do stuff</p>
+<p>But there's a lot of like lawyer and God kind of stuff,
+so it's like, well, you're not supposed to do this,
+but what we'll do is we'll make a machine
+that randomly flushes the toilet,
+so you're not flushing the toilet,
+but you're getting the benefit of flushing the toilet</p>
+<p>And a certain point to me, it's like,
+I don't know, if you really think that there is a God
+and they have these rules for you, for whatever reason,
+and you're sitting there trying to game the system,
+I don't think you're gonna fool that being</p>
+<p>I don't really don't</p>
+<p>If you think that there's a God
+and you're just believing just in case,
+it's another problem with the pastels, what do you do you think?
+They probably know, and is that really believing
+if you're doing it just in case shit?
+And it also gets to another thing that gets to me,
+which is like, in grad school, there was a guy,
+he's, I think he's now an atheist actually, which is wild,
+but he was a young earth creationist</p>
+<p>He was getting his PhD, I think in chemistry at the time,
+and he, so young earth, so he understands chemistry,
+understands a lot of stuff that would tell you
+the earth is ancient, and when I say ancient,
+I mean, like a couple thousand years old,
+but because if his religious upbringing
+believed the earth was like 10,000 years old,
+or whatever, whatever they believe</p>
+<p>And yeah, believe also that people who don't believe
+are going to suffer eternal damnation</p>
+<p>This is one thing that, when I started realizing this,
+started really getting to me,
+because if you really genuinely believe that
+and you're walking around with that and you see people,
+how fucked up is it?
+Like, truly, and I'm not saying I want you
+to really proselytize to me or try to save me or anything,
+like this, I don't</p>
+<p>But if I thought that you were going to burn and pain
+and fire and torment and all this kind of stuff forever,
+I think I would probably try to at least tell you,
+like I try to go like, you know,
+maybe you should think about this, but they never do</p>
+<p>They never pretty much never do the only ones
+that occasionally would do that
+is like you get the proselytizers that come out to your door,
+or you get these people who are like hanging out
+just on campus or whatever</p>
+<p>And the watch tower drove as witness people</p>
+<p>And they're not even, I don't think that they're really,
+I don't know what their religious system is
+to be honest, I don't know anything about them specifically,
+other than the fact that they're out there
+and they proselytize</p>
+<p>And they don't seem to mind the fact
+that they bought a two-letter domain,
+which two-letter.com domain, you fucking expensive</p>
+<p>I brought this up, I've talked to them a couple of times</p>
+<p>I brought this up to them and it didn't really register,
+but somebody spent a lot of money, a lot of money on that</p>
+<p>And I don't know how much they spent actually,
+but I'm sure it was not cheap</p>
+<p>A four-letter domain is expensive,
+three-letter domain is expensive,
+a two-letter domain is fucking expensive, it has to be</p>
+<p>And they bought that</p>
+<p>And you just think like,
+how much fucking money did you waste on that?
+Maybe it's two-letters.org, I don't even know</p>
+<p>Whatever it is, it doesn't matter</p>
+<p>And don't follow it and don't go to their, the cult, but yeah</p>
+<p>It's just, I look at that and the whole idea</p>
+<p>It also also actually, as long as I'm talking about this,
+there are always in pairs and just like the Mormons,
+the LDS people who are going out and proselytizing to you, too,
+who, you know, like, I lived in Gilbert, Arizona</p>
+<p>And in the neighborhood that I was in,
+there would be kids doing their missions</p>
+<p>And they come out and they're on bikes,
+and they're always together, always in pairs, it's very important</p>
+<p>They say that it's for safety, I'm sure,
+or some other bullshit, but what it really is for is a bonding experience</p>
+<p>Because you're going out into the world
+and you're facing a lot of people who are not in your cult</p>
+<p>And for them, you know, some of them are going to be assholes</p>
+<p>Some of them are going to be hostile</p>
+<p>And even the ones that are nice, they're not probably going to entertain you
+and you're not in sense too much</p>
+<p>So that sort of stuff you are getting hardened by that,
+you're getting isolated</p>
+<p>And even if not that, they're just sitting out there,
+like you drive around Gilbert now, they're like seven again</p>
+<p>There are two fuckers out there sitting at a bench,
+either talking to each other, or sometimes they would not be talking to each other</p>
+<p>They look, some of them even look kind of like they're a couple,
+and they're just nothing to say to each other, which is weird to me</p>
+<p>But whatever it is, it's like, it's a bonding experience</p>
+<p>This is why they do it</p>
+<p>This is why cults send people out to recruit people</p>
+<p>Because a recruiting people is the thing that's at a cult grows,
+but also part of that is indoctrinating you further</p>
+<p>It's partly hardening you</p>
+<p>It's partly showing you, like, oh, see how hostile the world is,
+see how uninviting, see how rude people may be,
+or any of this kind of stuff</p>
+<p>And then people kind of have that experience,
+and then suddenly a little bit more inclined to stay in the fold</p>
+<p>You're more inclined not to go out and venture and escape,
+and all this kind of stuff</p>
+<p>Incidentally, also not to keep harping on this stuff,
+but I knew, I don't want to say anything specific that's going to identify people,
+but I have known in my life people who were in these cults,
+who I'm pretty sure, you don't know, but I'm pretty pretty pretty sure we're gay</p>
+<p>And you think about it also,
+if I was gay, my parents would have been fine</p>
+<p>Like it would not have been a big deal</p>
+<p>It would not have been like the end of the world, certainly</p>
+<p>I wouldn't have gotten excommunicated from my community and all this kind of stuff</p>
+<p>But some of these religions, if you are, either you do the conversion therapy,
+which is fucking ridiculous, or, and horrible torture,
+or, you know, like, the people that leave,
+whether it's that they're gay or just like, I've known people also who've left,
+and the people who've left, especially,
+and I'm thinking on the Mormons a lot, because I know several people who either,
+they weren't Mormon, and they lived in a Mormon community,
+and they were just shunned, and it was shitty, or they were Mormon,
+and they were gay, and fucked up their shit, or they were Mormon,
+and they didn't want their kids to have to be polygamous, so they had to move,
+or they were Mormon, and they decided that they weren't religious,
+and then they lost their entire fucking social network</p>
+<p>Like, not just the community members around, but like, they're fucking family,
+other than, like, one or two people abandoned them, and, and that</p>
+<p>I have some animosity toward people that are shitty like this</p>
+<p>And also, like, there's a certain, I don't mean, again, I don't mean to pick on a specific religion</p>
+<p>I'm not a fan of most of the major religions</p>
+<p>I'm not a fan even of the ones that are, I would say,
+warp in high, but especially like the, especially the Christian Catholic,
+all those kinds of derivatives, somehow, particularly not my thing</p>
+<p>And, because there are a lot of, it's that thing, you know, I like your Christ,
+but not your Christians, they're, that guy, they talk about, that they have the stories about,
+seems a clinical guy, seems like a pretty, you know, he's like,
+appreciates sex workers, is cool with people, likes immigrants, feeds people,
+very charitable, you know, turn the other cheekets, all of these things,
+they're, they're all fairly, I would say, noble attributes,
+but you actually look at the people in these religions, and they're fucking horrible people,
+and a lot of them also, I'm just thinking about Republican Congress people here,
+but you know, like, they're, they're supposed to be loving and caring and all this shit,
+and I swear, like, I don't think these people, I'm convinced a lot of the very religiousy
+people that you see, especially in government, if they really believed, I don't think they would act
+in the ways that they do, I don't think they would do the things that they say,
+and I really think a lot of them are more non-religious than I am, they just pretend,
+which is weird and gross, like it's worse than, I would rather they actually be genuinely like
+true believey kind of people, or really I would rather than that, you know, but never mind that</p>
+<p>Getting back to, uh, getting off that tangent and trying to get back to what I'm talking about here,
+the agnostic thing came up, because I was on, I'm on the loose guy, not a huge fan of the
+people that run the place, they are techno-libertarian, uh, giant air quotes on this, free speech,
+absolutist, and I always remember, I've talked about this a few times, sorry if I'm repeating
+myself, but I always remember when I was a kid, and I remember ACLU was defending Nazis,
+and I think it was my dad that I was talking to, I don't even remember who I talked to about it,
+but I talked to somebody about it, and I said, what, why, why, why are they defending them?
+And then I'd hear the story, which is what the free speech absolutely does always say,
+which is like, well, they have the whole marketplace of ideas nonsense, and, and then they have
+this thing where it's like, well, you know, Scott, it's very important, it's most important
+that we protect the right for people to have terrible ideas and speak about those,
+because if we allow their speech to be abridged, then in time that will just open the door
+to a bridging ours</p>
+<p>And the thing that's funny about this is this is the argument, this is actually
+a good argument, if you're talking about, you should not allow the government to strip people
+of civil rights</p>
+<p>You should not allow, I don't even think you should allow the government
+to detain people indefinitely</p>
+<p>I think that's actually probably pretty fucked up</p>
+<p>They certainly
+should not be allowed to deprive people of life, like premeditated murder by the state, is wild,
+the fact that anyone's okay with that is just absolutely ridiculous beyond ridiculous</p>
+<p>But also let the ability to take away people's right to vote, if you give the state the
+power to take away the right to vote</p>
+<p>Think about what that means</p>
+<p>Think about what that means</p>
+<p>That means there's something you could do, you don't even have to do it, just somebody can decide
+you did something</p>
+<p>And now you cannot vote, you lose your representation in the state</p>
+<p>And I always talk to people about this, and it's one of those things that people,
+I don't know if they just not thought about it or if they really are true believers in this idea,
+but I think it's one of these things</p>
+<p>I think that what it is, I think maybe I'm just being
+overly charitable here, but I think what it is is they never really thought about it,
+and then you talk to them about it</p>
+<p>And instead of really interrogating it, they kind of just
+default the trying to defend this position that they have, that it's okay to do</p>
+<p>But you should never, never, ever, ever, ever give the state that ability</p>
+<p>And you think about it also, it's like, well, I talked to people about that and they're always like,
+well, what about somebody who, and they come up with some horrible crimes that somebody might have
+committed, and also like, this gets actually to, I'm not, again, agnostic, but in my epistemology,
+my way of understanding what is and how things are and how you know stuff</p>
+<p>Basically, you don't
+know anything with absolute certainty</p>
+<p>You don't know anything definitively one way or another</p>
+<p>Everything is kind of an approximation</p>
+<p>And you could be really, very, very confident about something,
+but there's still like a sliver of doubt, no matter what</p>
+<p>And you could be very uncertain about things</p>
+<p>In fact, the default position is you just don't know</p>
+<p>This is a thing, I wish more people were
+just okay with, I don't know, as an answer</p>
+<p>And like, I don't know is the greatest thing that you
+could say, and the second greatest thing is I was wrong, I think</p>
+<p>Those are, if more people would
+be able to say those things, and we're comfortable with them</p>
+<p>It would help so much</p>
+<p>This is a weird thing</p>
+<p>I was at a coffee shop this morning, and there were two women talking,
+this is not related to that, but this is also a thing that I think, they were talking about
+one other kids was having issues with constipation</p>
+<p>And it was like, I guess, really,
+I'm not, there's no way, like, I don't even know who these people are, so I'm not
+developing private information about somebody that anyone would know</p>
+<p>Just some kid has constipation,
+very embarrassed about it</p>
+<p>And the fact that we are like, we're trained to be ashamed of just
+basic bodily functions and issues</p>
+<p>Like, it's, it's fucking weird, it's fucking weird, because we all
+have bowels, right? I mean, unless you're very unlucky, we all have physiological needs, we all have,
+you know, like, processing of food and things like this, and we don't talk about that shit</p>
+<p>You know, and it never mind talking about, like, reproduction and reproductive health and
+sex ed, and all that kind of stuff</p>
+<p>And if you wouldn't even get into that, this gets to,
+coming a little bit back full circle, the grad student that I was super
+infatuated with, you know, our culture doesn't teach you at all, like, how to deal with,
+and I'm not even going to say rejection, but just like relationships in a really good way</p>
+<p>And it's not just, we don't, like, sex, you just have this idea that, oh, you just know how to do it
+basically</p>
+<p>And you don't talk about it very much, and it's kind of very ashamed</p>
+<p>There's a lot of shame
+around it</p>
+<p>There's a lot of weirdness around it</p>
+<p>And you think about, like, relationships, too,
+like asking for consent is such a weird thing in our society</p>
+<p>Like, I mean, I'm not saying,
+you shouldn't do it</p>
+<p>I'm just saying that the way that our society is,
+asking if, you know, we can kiss or can I touch you or something like that? Can I hold your hand?
+It's weird</p>
+<p>And I don't mean that it's actually weird</p>
+<p>It should not be weird</p>
+<p>But we're trained
+to have some weirdness around it</p>
+<p>We don't have that protocol</p>
+<p>We don't have the social
+construct around it</p>
+<p>And it's just, like, the way that you have that, the way that you have this idea,
+like, there's so much stuff</p>
+<p>If you look at movies and, you know, it's interesting</p>
+<p>Actually,
+like, I think Romeo and Juliet was making fun of this more than anything, because I was just listening
+to somebody talking about this</p>
+<p>And in the thing, I'm terrible with names</p>
+<p>But in the beginning,
+Romeo is with, I guess, Juliet's cousin or something</p>
+<p>And she's not into him or something</p>
+<p>Something is happening</p>
+<p>It's not going very well</p>
+<p>And then he jumps</p>
+<p>He's like super-infatuated</p>
+<p>And she's the son all this stuff</p>
+<p>And then all of a sudden, he's into this Juliet, who is also,
+I think, like, 13, which is, you know, fucking, I might be off on the age, but, yeah,
+definitely too young</p>
+<p>They're definitely way the fuck too young</p>
+<p>They've known each other for
+no time at all</p>
+<p>I think Shakespeare's making fun of it</p>
+<p>I think he's, like, pointing out how fucked
+up it is</p>
+<p>But if we have this idea, this hyper-romantic idea that, A, you don't know if somebody
+and you should be super, you know, like, love it for sight or whatever, like this</p>
+<p>And then also,
+you know, there's this idea of, um, the airport's friend's own stuff</p>
+<p>And it, which is kind of ridiculous</p>
+<p>Because the, the relationships that I've actually had, especially the good ones, they started out,
+like, it wasn't, you have this social idea that you're supposed to ask somebody on a date</p>
+<p>And then it's, it's all weird</p>
+<p>And it's kind of like, there's a lot of pressure to it</p>
+<p>And then you have this stuff where everybody's kind of pretending to be somebody else</p>
+<p>And you're
+making a, a different version of yourself</p>
+<p>And then you, you get to know each other there</p>
+<p>And then you
+get more relaxed</p>
+<p>And then now you become, like, now you have to know that actual person</p>
+<p>The relationships that I've had that have actually been good and the, the way that I've preferred
+to, to get into a relationship with somebody is not, like, it's not even the friend's own
+thing</p>
+<p>It's like, you meet somebody</p>
+<p>And you get to know them</p>
+<p>And, you know, like, things just
+kind of progress</p>
+<p>Or they don't</p>
+<p>And we don't talk about this stuff</p>
+<p>We don't really have
+great models of it</p>
+<p>We have a lot of models, especially in pop culture of terrible versions of this</p>
+<p>You have a lot of models of, like, oh, somebody gets drunk and then they get taken advantage of</p>
+<p>And, you know, I mean, to, I say take an advantage of, I mean, that's, that's code for raped</p>
+<p>Basically, or, or, you know, I'm not saying that every time you have sex under the influence of
+drugs is rape</p>
+<p>But there's a lot of, like, really transgressive stuff in our pop culture</p>
+<p>And people
+just don't fucking, like, they take that to be normal</p>
+<p>They take, I mean, it's one of the reasons
+I think that they're stalking</p>
+<p>And it is also, like, you get to the whole bullshit, uh, I, again,
+with the air quotes that you can't see</p>
+<p>I need, I need a, a way to, like, end the thing I've, like,
+robbing air quotes</p>
+<p>Um, you know, because I'm like, I don't want to actually say something
+and have it sound like I'm actually saying it, uh, without the giant air quotes around it</p>
+<p>But, uh, and I got so, and I got so hung up on that, I forgot what the fuck I was going to
+talk about</p>
+<p>The, the whole idea of, like, not taking no for an answer, love it for sight, um,
+you know, that dealing with for you actually, that was it</p>
+<p>That was it</p>
+<p>That was it</p>
+<p>The mail
+along the, uh, Linus epidemic, air quotes, air quotes, air quotes</p>
+<p>Um, that whole bullshit thing</p>
+<p>I mean, I think about it</p>
+<p>Also, like, I, I was, uh, according to museum culture, I was kind of a
+late bloomer</p>
+<p>I never, like, I, I, I never, and there, there was somebody, my sister's friend
+had a sleepover, and we kissed, uh, like, 14 or something</p>
+<p>That was very consensual,
+and very sort of driven by her</p>
+<p>I didn't have been younger than that</p>
+<p>I don't remember</p>
+<p>But
+we're both, she might have been a year younger than me or something, but that was, that was a thing</p>
+<p>And then didn't go anywhere</p>
+<p>And I wasn't really, other than that, like the next time I,
+and I was not a very social person, like, in high school, really didn't have any friends</p>
+<p>I've been in talk to people, and you had, but that's not really any friends</p>
+<p>And then undergrad,
+for the first couple of years, I had, there were a couple of TAs</p>
+<p>There was one TA that I really
+liked</p>
+<p>There was, uh, there were a couple of TAs that I kind of got to know a little bit,
+but in terms of, I was never really very comfortable with people my age</p>
+<p>And I don't mean that
+in the relationship, like romantic relationship way</p>
+<p>I just mean, especially with the little kids</p>
+<p>I didn't, I never really felt that comfortable with them</p>
+<p>I never really felt like when I was a little
+kid, I always got along much better with adults</p>
+<p>I didn't, um, I didn't feel like one of the kids,
+so to speak</p>
+<p>And, you know, as I got older, I sort of grew, well, I don't know if I grew into it,
+or I just like, the people around me got to be the age group that I was, you know, feeling comfortable
+with</p>
+<p>And then sort of like the end of undergrad, I start connecting with people a little bit,
+getting to graduate school, and connect a little bit more, and then after I finished my masters,
+gotten to my PhD, and, you know, start connecting with people more, and also, and I don't know how
+you can engineer this</p>
+<p>I don't think it's a thing you can control, but I'm at somebody who every
+introvert should meet, uh, you kind of need one of these people, uh, socially extroverted and
+sort of person connector, uh, who has a lot of friends and does a lot of stuff and plans a lot
+of stuff, and you get, you get somebody like this in your life, and you suddenly, I've had a
+handful of them, and it's just like night and day</p>
+<p>It went, in fact, like from my,
+there was one point in time where I never, just never really was that social, and I kind of,
+I felt bad that I wasn't getting included in stuff, and then it almost overnight,
+I mean, it wasn't overnight, it was, you know, months, but at, at some point, it kind of flipped,
+and it was like every fucking weekend, I had shit to do, and in the weekdays, I had shit to do,
+not every day necessarily, but, like, too much, and then it started being like, I was invited to
+stuff, and at first, I was getting invited to stuff, and I was like, I have to go to fucking everything,
+and it was partly because I didn't want to not get invited, and partly because it was just,
+like, for so long, I never gotten invited to shit</p>
+<p>It wasn't like people excluded me, it was just
+to, like, nobody knew me enough to do it, but, you know, and I kind of felt like I wanted it,
+and then it got to the point where I was like, okay, this is not, I need time to myself,
+and now it's like to the point where almost to an unhealthy extent, I get invited to stuff,
+and I just don't want to, you know, but basically never want to do it, and this is not that I don't
+do stuff, and usually if I go out and do stuff, I actually enjoy it, but pretty much, like,
+even if I'm going to enjoy it, somebody invites me to something anymore, and I'm just, you know,
+there are some rare exceptions for the most part, hey, I get that, and I'm like, oh, it seems,
+it's not a thing I want to do</p>
+<p>It's a weird lip, and, you know, because there was a time where, like,
+anyone could have invited me to anything, and I would have absolutely done it, and, you know,
+I don't mean in the sense of being susceptible to social pressure and that kind of stuff,
+but, you know, like, to get to go someplace with people, I would have been, I would have been way down</p>
+<p>Anyway, rambling around here, the thing getting back to this agnosticism, I'm on blue sky,
+the people who run blue sky, I started talking about those, but they're left, they're not left,
+they are techno libertarians, and, again, with the giant air quotes, free giant air quotes,
+speech, giant airports, uh, absolutists, and I got the ACLU thing, defending Nazis, and all this kind
+of stuff, I am increasingly convinced that when people say they're free speech absolutists,
+what they really mean is that they want mid-white dudes to be able to say the inward and the
+f-word, I don't mean to fuck there, and, you know, just to be very unrestricted, it's kind of weird,
+because it's like, you're, you're a white dude, you could do anything you could talk about anything,
+you have a lot of stuff, you have a lot of privileges, and any kind of little limitation
+is unacceptable</p>
+<p>It's like, you know, you, you, how dare you not allow me to say,
+like, I mean, people literally basically talk about stuff like that, it's the most fucking ridiculous
+ass and I should, but these techno libertarians are like that too, and they're also not to get too
+much into the blue sky bullshit, but the second, like they did not want to implement
+blocking</p>
+<p>Blocking was part of the design of at protocol, which is the thing that they claimed that
+they were trying to build, and then you bunch of bullshit, but anyway, they did that,
+didn't want to implement blocking for the longest time, and then they finally implemented it
+because some asshole, I don't, I don't even want to say his name because he's a massive
+troll piece of shit</p>
+<p>He's, he's a journalist who is known, journalists is not the right
+word, he's like a writing entertainer or something, great shitty articles, and his main thing is,
+his whole shit is easy, but I think all themselves heterodox bullshit thing, you know,
+I'm a contrarian, and the contrarian part is like you're just an asshole troll,
+and basically his whole, his whole thing, and they're, they're a bunch of people like this
+is saying shit that is either transgressive or inappropriate or you're just fucking wrong,
+and then stirring up a shit storm, and then the shit storm gets him a lot of attention,
+and you know, it's how trolls work, and it just increases his profile, and then he's got more
+people, and then he gets to do it more, and he's just, I'm sure he gets paid really well for it,
+he probably comes from, I don't know his history, but anyway, the point is he got on here,
+and people started shooting on him correctly, but he got upset about it, and then he finally
+finally, people who were making the site into implementing blocking, so he could block people,
+that's why they implemented blocking</p>
+<p>They also, as part of that, I don't want to make this
+up loose cracking, but as part of that, they did it in a way that was kind of, they didn't want
+to do the blocking, so they made it in a way that just broke stuff, like it would block stuff,
+and it just disconnected threads, like if somebody, and if somebody blocked somebody in the thread,
+it just nuked everything, every interaction thereafter, and people, it actually, they called
+it the nuclear block, they didn't, not the blue sky, people, but the people using it,
+and it was, it was a nice, accidental feature, it made it, like if somebody was shitty,
+the trolling, all it took was you block them, and they no longer have your mentions
+the game traction, and it's magical, because people would just, there's a lot, people came on there,
+tried their anti-social bullshit, which works in other social media platforms, because most
+of them are designed so that, as my ex-wife used to say, negative attention is still attention,
+and so they would give people a reward for being shitty, because you're shitty, you say shitty
+stuff, and then you'd have a lot of interactions, and more and more people would see you,
+and people would start following them, and because they had a lot of followers, there's a
+thing, it's, it's, I guess it's this bandwagon thing that people do, but it's, it's still
+fucking annoying, people will follow people just because they have a lot of followers, you see,
+somebody's got like a million followers, well shit, I'm gonna be one of the million, I don't know why,
+it doesn't make sense to me, I see that and I'm like, yeah, I'm good, but just not to say,
+I don't follow people with a lot of followers, but you know, it doesn't, if anything it
+discourages me, but for some reason, for a lot of people that is attractive, it's an interesting
+thing, but, you know, they, they do that, and then they get interactions they get seen, and that
+means that some of them, because they're getting a lot of interactions, people will follow them,
+because they're being shitty, sometimes there will be people who are attracted to the, to the
+shittyness, and they'll follow them, and it just keeps building on itself, because they, the more people
+they've got following them, the more interactions they get, and then, you know, it's this exponential
+growth thing, and it's just, it's one of the things I really hate about the way these things are
+structured, that it just absolutely rewards the worst people, the people who, because it's negative stuff,
+not that there's negative embossed emotions and all that's going to stop, but, you know,
+the stuff where it's people being shitty and trolling and all this stuff, I guess you could call it
+negative, if you like, I'm, I'm not sure that's the right word, but whatever it is, anti social
+counter, you know, bullshit, that kind of stuff, it lights up people's amygdala's and gets
+much more traction than the, the good stuff, and it's annoying, because these people, I mean,
+it's like the, the right wing media stuff being more popular than the more boring stuff,
+it just builds and builds and builds on itself, and it's annoying, and I hate it, and it, you know,
+it's a terrible thing, that nuclear block, more time, prevented that, because trolling is no fun,
+being an asshole is no fun, if you do it, and then you get no pushback, you do it, you don't get anything
+out of it, and so people would do it, they disappeared, I mean, they, their interactions would just go
+away, and then they'd get no traction, and they'd have like a small number of followers there,
+and they had a lot of followers on Twitter, and so they just go back to Twitter</p>
+<p>Anyway, the, the thing that I'm getting to, with all of this, I'm on blue sky today,
+somebody came up with something about agnosticism, and it was, I wish I could remember the context,
+actually, now because I, it's the whole point of this episode is based on this little interaction
+that we had, and we went back and forth a few times, and they were explaining how silly they
+think agnosticism is, and I'm sitting there saying, like, I personally am not agnostic,
+and it is not something that would be within, within me, really, but I can understand that if you
+have a certain epistemology, like a certain way of knowing things, and you have a certain
+sort of framework for how the universe works, which basically puts you into this idea of a specific
+kind of God and religious system or non</p>
+<p>Then agnosticism is probably probably almost the
+correct answer subject to those assumptions, and we went back and forth, or I don't want to
+get into the logic of that, although I do think like philosophy of science is a, it's a course
+that I've taken, I think it's worth in, you know, studying empiricism, studying epistemologies,
+not just that one, but you know, like other ones too, to learn about other ways of thinking
+about stuff</p>
+<p>I think it's kind of important, I think, I really think like, I've never had a class
+that, and I don't want to get into the like the Steve Jobs sat in on, on type setting, and that's
+why you have post script and all those bullshit, but I do think every class that I've ever taken,
+whether it's Native American religious traditions or dating myself again at the time it was
+called the Women's Studies, now it's called Gender Studies, that kind of stuff, it's all been
+very beneficial to me going forward</p>
+<p>I can't think of a class optics</p>
+<p>Actually, undergrad optics,
+there was the only class, not even that was probably useful, but the professor for that class
+who, I guess you could probably look up, I think he's retired and we're just now, it doesn't matter</p>
+<p>It's probably pretty hard to figure out when I was there and who was teaching all that kind of stuff</p>
+<p>So
+it doesn't, I don't think I'm embarrassing somebody or talking shit about somebody specifically, but
+worst professor I've ever had, truly, in terms of teaching, because the way that he taught,
+especially, my memory is not as good now as it used to be, but it used to be if I was paying attention
+in class and I could understand how stuff worked, I just owned it</p>
+<p>And it's still true, if I understand
+something now, I just understand it</p>
+<p>Like I just, yeah, it's, I'm not saying it's easy, but it just
+like just sticks</p>
+<p>It's why I can, I could not use calculus for a couple of years and then figure it</p>
+<p>Like it might take a little bit of time to brush up, but it would come back to me pretty quickly,
+because I understand it</p>
+<p>Even like, reman versus lip egg integration and all that kind of stuff,
+I probably couldn't write some proof, so it would take some time, I'd probably have to do some work
+to figure it out, but I could get there</p>
+<p>But I'm not doing like a complex analysis proof right
+now that it's not going to happen</p>
+<p>But the stuff that I really understand, it kind of understands it</p>
+<p>And so if you understand it, you kind of own it</p>
+<p>I think that is, I know people think differently
+and they learn differently and all that's going to stuff</p>
+<p>But for me, especially with physics,
+like in all of the exams, there would always be this thing, the ones that I taught and the ones
+that I took, they'd always let you take a cheat sheet and a cheat sheet and air quotes,
+which was like a bunch of page or, yeah, one page both sided and formulaes or whatever bullshit</p>
+<p>And there are always people that would have like microprint, full both sides,
+dense text, like how to fuck did you write that kind of stuff? And in reality, you know,
+most of the stuff that you needed to know either, one of the better professors I had,
+the guy that I took a differential apology with and general relativity and advanced algebra,
+which was a very cool class</p>
+<p>I've talked about him before, but he, he's actually one of the
+few people that I'm like my professors that I'm actually still connected to on Facebook</p>
+<p>But he
+always said this thing, which was like, yeah, you, to do the proofs, what you want to do is learn
+how to garden and take a pack of seeds with you and the seeds are like the little things that you
+start with and then you learn how to, you kind of know where you're going and you take those seeds
+and then you can kind of work from them</p>
+<p>And he was right, it really, especially for the proofs,
+like that that we would do, it really worked</p>
+<p>I'm sure, like if you're trying to do like
+format's last theorem, it might be a little bit challenging, but for the proofs that we were doing
+in that class, it worked</p>
+<p>Yeah, that was a good class, rings and fields and groups and all that kind
+of stuff</p>
+<p>I miss, it was talking to a friend about this a couple of days ago or so,
+I miss undergrad</p>
+<p>And I mean, obviously, like part of it is just a year at a certain time,
+it's like a moment in your life where things are a certain way</p>
+<p>And I'm not saying like,
+it was not socially for me</p>
+<p>It was not a great time</p>
+<p>There were a lot of things that were not
+great about that</p>
+<p>But one thing that was awesome about undergrad for me, especially one semester
+I was working and working while you're going to school sucks</p>
+<p>But most of it, I was getting
+student loans living at home and so I didn't really have that many expenses</p>
+<p>I had a little bit of
+not disposable income, but I could go to movies or eat or stuff like that</p>
+<p>And I could just
+go to classes</p>
+<p>And some of the classes were not great</p>
+<p>Some of the classes were things that I
+wasn't that excited about</p>
+<p>But most of the classes were pretty interesting</p>
+<p>And most of the classes
+also, I almost forgot, well, I do kind of regret</p>
+<p>I would have liked to have taken more
+literature classes or history or a few languages, but it would have been nice to take more
+languages</p>
+<p>It would have been like undergrad if money was not an object</p>
+<p>And I was going to live
+indefinitely</p>
+<p>I always used to say that I would, and I would still would do this, like collect
+alphabet soup after my name</p>
+<p>I just get a bunch of doctorates and get a JD and get an MD</p>
+<p>I would do that for sure</p>
+<p>I don't think I would ever get an EDD</p>
+<p>It's kind of a weird thing</p>
+<p>That's interesting</p>
+<p>I don't know that I would get an MBA</p>
+<p>I might do it just like, if I was
+really going to live like hundreds of years and just be like essentially, you know, as healthy
+as you are biologically, you're like you're 30 and money's no problem and you can just do whatever</p>
+<p>Okay, I probably get an MBA just to just do it</p>
+<p>I PhD in psychology</p>
+<p>I would definitely do that
+and practice for a little while</p>
+<p>I probably practice surgery for a little while</p>
+<p>But then you think about the MBA, the business degree, you can't see the whinsing on my face,
+but it's not a pleasant look</p>
+<p>It's not like, it's more like it you</p>
+<p>Maybe I would do it just
+out of curiosity, but I don't know that I can tolerate it</p>
+<p>I probably get sick of it</p>
+<p>Probably not
+be a thing</p>
+<p>But anyway, getting rambling around here, rambling is what I do</p>
+<p>I guess if you're
+listening to this, you hopefully like the rambling because if you don't, you know, listen to
+either the wrong thing</p>
+<p>It's kind of the thing that you need to, I don't have an, or I don't have
+like a massive audience, but if you're cultivating an audience, you probably want to not perform
+too much that's too difficult or too far outside of who you are because if I was doing like a song
+in dance or if I was doing like jokes, imagine, imagine that you'd make a podcast and your whole
+thing is just jokes, just like material that you're working out</p>
+<p>And on one hand, you can get pretty
+efficient at, you know, taking stuff and understanding how to grab a garden and picking up the seeds
+and growing the jokes and all that kind of stuff</p>
+<p>You could do that too, but it's going to be hard</p>
+<p>Unless you're just naturally like, that's the thing you do</p>
+<p>And I do, the weird thing is actually,
+I do, I do joke around a lot, but it doesn't really come out in this setting</p>
+<p>It's more
+situational and in terms of relationships with people and you're like, I'm in a situation
+things happen and then I comment on them and it's kind of fine</p>
+<p>And or I do something weird,
+or whatever it is, or somebody else does something weird and I error mark on it</p>
+<p>That kind of
+down, if you're doing it and you're the people who start listening or the people who want that,
+and now you've got to deliver it and you just think about like, how miserable that must be
+if it's not your thing</p>
+<p>I can imagine like, I, today, I wrote an outline and I think the outline
+is actually not too bad as a thing for me to do</p>
+<p>Like, it gives me at least some kind of structure
+to hang on and some things that I'm like, okay, I want to say this and this and this and almost always
+when I listen to one of these, there are things that I just skip over or I'll like introduce something
+and then get side tracked and never come back and say the thing that I wanted to finish with
+or I wanted to finish up and it's kind of annoying to me</p>
+<p>And that even happens with the notes,
+but if I don't do notes, then that definitely is fucked</p>
+<p>But you think about like you could be doing
+this as something where you have a script, but you've written stuff down and you're just reading it</p>
+<p>And I guess for a certain kind of person, Simon Wissler, that works for</p>
+<p>It seems to be like a
+thing that he really enjoys and part of it is also, it's not just that he's reading the script,
+but he also, as he's reading the script, comments on it and it's kind of stuff</p>
+<p>It's interesting,
+it's entertaining</p>
+<p>For at least somewhat, I listened to one of his things with my mom and sister,
+they were not impressed</p>
+<p>And it also like, it's interesting, I guess it's a human thing,
+but when you're in an audience and stuff falls flat, even if you would normally like it,
+it makes you like it less</p>
+<p>And so I did not enjoy the one that I was listening to with them</p>
+<p>And it's kind of had a lasting effect</p>
+<p>I think also like I've heard maybe too many of his things,
+but never mind that now</p>
+<p>But you know, if you're doing something where you're putting in a lot of
+work, I understand why people get burnt out</p>
+<p>Because especially like I don't edit this this
+that or that much, and it's so much work just to edit it a little bit</p>
+<p>And especially like when I
+was trying to do videos, I think there's something nice, I do think like the, there's something
+nice about the video</p>
+<p>I like TikTok for the videos, but the problem is also at the same time,
+it's just like, I do, yeah, I don't know, do you really, do you really want to put in that much
+time and effort? Like if I had somebody to do the editing and all that kind of stuff and I could just
+record the video, I guess I'd probably do it, but even even like a minimal amount of editing on a video
+is so much time</p>
+<p>It's so much effort</p>
+<p>And if you really want to do like you make it, like I've
+done somewhere, I've put in a lot of time, did a lot of, did a lot of cuts, and you put in some
+figures, and you put, and you start doing that, and it gets like so much more time than the actual
+duration of recording it and putting it out there</p>
+<p>And you just think about like, yeah, I don't,
+I would not, if I had to do that every time, even if I had nothing else I wanted to do, like,
+nothing on my plate</p>
+<p>I don't think I would, I don't think I'd want to, and, yeah, I don't think it would
+be sustainable</p>
+<p>What I'm doing here, I somehow can sustain it, as long as I have time and opportunity
+to record these, it's something I keep doing</p>
+<p>I don't know why that is, it's been, and it's been
+something I've been doing for decades</p>
+<p>You know, again, I was my, my ex, who was the sister of my friend's
+wife who I just talked to today</p>
+<p>She and I, well, her kid is 14</p>
+<p>So we broke up 15 years ago,
+which is fucking wild</p>
+<p>And you just think like, when we get the knowledge other, she was listening
+to my podcast</p>
+<p>So, and that was not like, I just started it</p>
+<p>It was one that I was doing for years</p>
+<p>Before that, I just think about like, I've been doing this for a long, fucking time, and it's kind
+of ridiculous</p>
+<p>And the thing is also, like, I have zero interest in, I don't have a real interest
+in building an audience per se</p>
+<p>I don't have a real interest in monetizing this</p>
+<p>Just the idea of
+monetizing the hobbies is so gross</p>
+<p>It's such a weird fucked up thing about our society</p>
+<p>And the
+thing I also did sucks about it is, like, if I find out, like, I keep myself doing this deliberately,
+but I have a thing because you raised in this just gross society that when somebody starts talking
+about something that they do, you try to turn it into a fucking business for them</p>
+<p>And you're like,
+oh, you could, you could actually, maybe you could make some money</p>
+<p>And I'm not saying I do that,
+but there's a part of you</p>
+<p>And it's like, oh, you do those</p>
+<p>You could, you know, no, like art should not be,
+it's not to say that you can't do stuff for money and for commerce and all that kind of stuff
+to come in here</p>
+<p>Going back to Star Trek, you have Cisco's and the this restaurant from the father
+of Captain Cisco</p>
+<p>And I don't think they exchange money</p>
+<p>I don't, maybe they do, maybe they don't,
+I don't think they have to</p>
+<p>But he loves to cook</p>
+<p>He just likes to cook</p>
+<p>He likes having a restaurant,
+he likes the social aspect of it, likes the prop and all that kind of stuff</p>
+<p>And it's essentially
+post scarcity future</p>
+<p>So you could just do that</p>
+<p>And it does get to this thing, like, you see
+so many people who think you have to have a gun near your head to do stuff</p>
+<p>I know, it's like,
+nobody pays me to do this</p>
+<p>Nothing comes of this</p>
+<p>Nothing, there's no, you know, but I just do this</p>
+<p>This is a thing that I do because I like it</p>
+<p>And I think that's good</p>
+<p>I think if you like making paintings,
+you shouldn't have to make a painting that you're selling or even thinking about selling</p>
+<p>You just make fucking paintings</p>
+<p>You do sketches</p>
+<p>You write poetry</p>
+<p>You do equations on a blackboard</p>
+<p>I used to, I used to love when I was, when I was in high school and undergrad, I used to like
+get pieces of paper</p>
+<p>And I would just, especially, and I was, this came up recently,
+this gravitation book by, I'm, I'm Myesner Wheeler and Thorne took a second</p>
+<p>I was like,
+was that coming to me? But this, they call it the phone book or the telephone book</p>
+<p>Same,
+same professor that I was talking about before, that it did differential topology with</p>
+<p>Was, he is the one that called it the phone book for me</p>
+<p>But it's this big black, mine was a
+soft cover</p>
+<p>I think the soft cover is better</p>
+<p>I miss, it's the one physical book that I got
+rid of when I moved to France that I miss</p>
+<p>I had, you know, I had a box full of books</p>
+<p>And there were some that I liked</p>
+<p>There were, I had like a cow field theory one</p>
+<p>I had,
+guy who else did I have</p>
+<p>I had, I had a few other books that were, that were pretty good</p>
+<p>But I, the gravitation one, I miss</p>
+<p>I got that in high school way before I ever took
+calculus or anything like that</p>
+<p>And that book, it's, maybe I'm just overly romanticizing it</p>
+<p>But I'm going through the book and it starts out just like with a description of stuff</p>
+<p>And it introduces tensor calculus</p>
+<p>It introduces like vector transport</p>
+<p>And it, I will say,
+like it didn't get into like tensor bundles and, uh, I didn't get into a lot of like modern
+stuff</p>
+<p>But, you know, it's, it got me to a certain point with a lot of this stuff that I could,
+I could certainly, um, you know, like writing down, uh, the field equations and solving like the
+circular symmetric</p>
+<p>Uh, I, I, I didn't, I don't know how I would do on it now</p>
+<p>But, you know, I did,
+at the time, like I would sit there and I just take a piece of paper and you write down the
+coordinates and then you like solve the fourths child equation or something like that</p>
+<p>And, yeah, that was fucking cool</p>
+<p>I enjoyed that</p>
+<p>Or just like figuring out and thinking about,
+uh, relativistic path lengths and doing, you know, what was you learned integration, um,
+and especially you learn metric spaces and stuff like this</p>
+<p>And now you can start integrating path
+lengths</p>
+<p>And you can, you realize that like, oh, well, in this metric where you have space,
+the space or one, one direction</p>
+<p>So plus plus plus minus signature minus minus minus plus,
+depending on how you want to do it</p>
+<p>Uh, minus minus minus plus gives you like three spatial ones
+are negative and the time is positive</p>
+<p>And then also, you can, you can put Cs in there, but
+there's this geometric coordinates thing where time is just, you know, I'm going to try to see
+as one</p>
+<p>You use a unit of length in the unit of time that are the same</p>
+<p>So the speed of like
+becomes just one</p>
+<p>You could do that for all, pretty much all of the units, or most of the major units</p>
+<p>But anyway, you do that</p>
+<p>You the integration, you figure this stuff out</p>
+<p>And, you know,
+I learned so much about, you know, like, just like the twin paradox and all this stuff,
+not not really a paradox</p>
+<p>But, you know, and it built a lot of intuition and it was fun</p>
+<p>And there's that, you know, that, but that was a hobby</p>
+<p>It wasn't like I didn't need to be paid for it</p>
+<p>I didn't need to be paid</p>
+<p>I mean, I guess I did pay to go to classes</p>
+<p>But I would, if I, if money
+was no object and I was essentially retired, I just take, take classes</p>
+<p>Just take some, you know,
+and it feels like obviously at a certain point you take, you go through the course catalog of
+a university, you'll take all of the classes that you're interested in, given enough years</p>
+<p>But it would take a long time</p>
+<p>Like, you know, you can take, because you just think about
+like the languages</p>
+<p>How many languages could you take? And the languages each take, you know,
+you're probably not taking five different languages at a time, or maybe you are, but I think
+you probably want to take like one language at a time and kind of work on it</p>
+<p>Take another language, work on that, get better at it</p>
+<p>But I'm put the front say,
+I'm a bit of a Spanish, uh, John Gwen, Choto Nyongo, you know, you play with those stuff a
+little bit</p>
+<p>And, yeah, you, um, that would be interesting</p>
+<p>I think that would be cool</p>
+<p>Learn,
+architecture, learn art, learn mixed media, learn, you know, like take a fucking drama class,
+take take several drama classes</p>
+<p>I mean, I wouldn't want to do that as a career</p>
+<p>It's a thing that's horrible about the, again, it gets to the society in the way that things are</p>
+<p>But, you know, like, people have this idea that education has to be vocational training</p>
+<p>And, I mean, obviously, like, you need somehow to pay your way through life and always kind of
+stuff in the structure that we have, shouldn't have to be that</p>
+<p>I do think, you know,
+I really think, like, if you made the world in a better way where people didn't actually have to work,
+um, people will find stuff that is productive and useful</p>
+<p>And that there will be people,
+yeah, again, you don't have to have a gun to somebody's head to go out into the fields and harvest crops</p>
+<p>If you made it not miserable, like, I mean, think about it</p>
+<p>Wouldn't you,
+yeah, it's like, you spend like an hour or two a week</p>
+<p>You can go out there and just like chill in the
+fields and at a reasonable pace, do some picking in a comfortable set setting</p>
+<p>Doesn't seem like that big of a deal</p>
+<p>Are you getting enough people to do that?
+And now you've got an essential thing to, I'm not saying you'd probably want to do that with,
+like, cleaning the sewers or something like that</p>
+<p>There are things where you'd probably
+have to compensate people or do, like, figure out some structure to get people to do it</p>
+<p>But you don't need to have this thing where, like, if you don't do it, you're fucked</p>
+<p>You don't have to have this thing where if you don't do your shitty job,
+you're not, you're going to not eat, you're going to be out on the street</p>
+<p>You're going to be just miserable if you, if something goes wrong and, you know, you need surgery
+or you crack a tooth or you'd have an impacted molar or you, you know, whatever that you're just
+fucked, that you don't need that</p>
+<p>And I think really, it's kind of fucking annoying,
+because you think about, like, how much, there's also this aspect of, like, how much stuff do you
+really need? Because you don't need, it can't capitalism</p>
+<p>We have so much variety</p>
+<p>You have 20 companies
+and a bunch of people who duplicate all the same shit</p>
+<p>They're not, like, making, it's something
+that really annoys me, actually, between, my perspective on it has changed over time</p>
+<p>Like,
+the iPhone and the Android copying each other</p>
+<p>Part of, part of what's annoying about it is
+because you have this capitalistic competitive system</p>
+<p>Everybody wants to, you know,
+the race to the bottom</p>
+<p>Everybody's trying to duplicate the same shit that everybody else is doing</p>
+<p>There's not a lot of room for creativity in that</p>
+<p>And then you end up with, like, look at cars
+and they're all the same</p>
+<p>You look at, you go to the serial aisle and they're all the same boxes
+of the same shit</p>
+<p>Basically, like, in terms of composition and, you know, ingredients,
+all of those fucking cereals, including the boxes, including the ink, are basically the same
+shit with the different shapes and slightly different chemicals to the flavor them and color them
+and the coloring on the packages is slightly different than yelling</p>
+<p>But they're all very,
+very similar</p>
+<p>And, you know, you start going through that and you get, you go through the
+usey and grocery store and we have so much shit and so much fake variety and also never mind
+the, you know, like, everything, everything is, is like, just had the life cost optimized out of it</p>
+<p>Like, you have stuff that is, everything is, is made now to be just, there's something
+I don't know what it is</p>
+<p>I feel like I hear like people talking like in the background
+but like super muffled and in the distance, but I stopped talking and I, I don't know what it is</p>
+<p>It sounds maybe like it's just an electric hum or something behind me</p>
+<p>Whatever it is, it's very
+distracting</p>
+<p>Maybe it is people outside, but whatever it is, it's like, if I could actually hear
+what they're saying, it would be not so distracting because you can get to filter it out</p>
+<p>But the way my brain works, if I sort of like half hear it, I start focusing on it and then I'm like,
+if there's a problem to solve my brain in eightly wants to do that, which also goes to that
+thing that you're like, you don't have to pay me to do that</p>
+<p>You don't have to pay people to make
+like 15 different phones that look exactly the fucking same</p>
+<p>You don't have to, it's annoying
+think is also like you think about like Apple cranking out these giant air quotes AI processors
+and then they go to this iOS 26 shit just using really complex filters and all this processing
+shit super super processing intensive stuff that they do because the chips are getting too fast
+and you know it's like you keep making the chips fast here and so you keep making the stuff
+need more power and then it's just the reason that this annoys me is another way to do it,
+a better way to do it would be let's make an operating system that does look good and we keep
+refining it, but it's efficient, you know like it looks good but it doesn't have to be
+requiring like a fucking you know care of lobster machine running at full bore to render the
+screen, you know you could do something that's like nice but not that ridiculous and if you did that
+well then the processor from 20 years ago might still be fine and then you think about that it's like
+well okay what could you do that because we you still keep pushing the envelope and you have the
+three nanometer process or one point whatever nanometer extreme ultraviolet process and when you're
+doing that one thing that you can do with it is make really fast pretty efficient processors
+but another thing you can do with that is take those same processors from 20 years ago
+and make them use so little power that like if if you imagine you have a phone UI from 20 years ago
+and you can you could refine it a little bit but you have a processor that is the processor from then
+updated to a modern process so you don't have like 15 20 billion transistors in there you might
+have hundreds of millions maybe you have a billion or two doesn't really matter but you have a
+smaller number or maybe you have all of those but a lot of them are dark most of the time
+not actively processing if you did that you could get the processing down for your UI to next
+you could get to the point like with current technology if the software was better you could have
+a phone that would be charged once a week and it would just work you could I mean yeah
+obviously the radio is probably probably difficult for that but can you could do something like that
+if you didn't really crank it it's annoying to me actually because you can if there are certain
+things which are nice to be able to have a lot of processing power for compiling stuff is kind of
+processor intensive especially because the the compiler just keep getting better and better
+it's stuff and that's more intensive and you know like but you know for the most part for for
+day-to-day stuff you could have it really like I mean I'm just looking at my Mac right now
+if this was like a Linux machine from 15 years ago and it worked pretty well but you made
+something that just would last and instead of like doing planned ups and blessings you just make
+better and better versions of things and with the goal that it's gonna last a long fucking time
+be you know you focus on power battery life and yeah I mean you make it look again you make it look good
+you make it work well you keep refining it not optimizing it but you don't need to you don't need to
+build shit just to waste cycles you don't need to build the iOS 26 what do they call it liquid glass
+interface or some clone of that you don't need to build all the bullshit fake audible airports
+AI shit and and just waste cycles and cycles and have to build these fucking I talked about
+this last time but they're the fucking idea that you're gonna build just it's so it's so ridiculous you're
+gonna put data centers in some synchronous orbit I can't it actually really pisses me off I saw
+something else today that was oh I know what it was this is this will be the last thing I
+talked about because it's already an hour and a half and I'm kind of like fading I need to go
+for a walk but my mom sent me an article today from BBC and it was like it wasn't even quantum
+computers it said oh I just saw it and then I just scrolled the fuck off it said look quantum
+be bigger than AI that's the BBC news title and there's a picture of a person there holding
+some kind of quantum processor and the answer is now it it's not gonna be bigger than AI and
+the also audible air quotes AI the shit that they have now is bullshit it's just fucking bullshit
+and it's it's annoying in this case also that in like in both of these cases what is quantum
+mean like they mean cube it like quantum processors isn't there it's like what is nano tech
+mean to me when you say nano tech it means nano assemblers and like things where you have actual
+nano scale or you know sub nano scale features like single atom kind of things and machines
+that are at that scale it doesn't mean that you have titanium dioxide particles that are
+10 nanometers yeah it doesn't mean like quantum stuff I don't think people mean when they say
+quantum quantum encryption or quantum teleportation that's used in networking or stuff like this
+or you know like used to do phase arrays like optical phase array kind of stuff I don't think
+that's what they mean generally speaking now that's not to say that those aren't real things that's
+not to say that you know like there's room in astronomy you know if you're making a super powerful
+telescope to build an optical phase array and to have quantum teleportation for taking the phase
+information from photons and combining it someplace and having photonic and quantum processors
+that kind of stuff is real that's the stuff that you could actually do but this idea that
+some how quantum processors are going to be magical it's kind of bullshit it's kind of like we
+already first of all that the one thing that they would have been a little scary for is if you could
+build like a general purpose large enough like enough cube it's kind of processor we could
+attract old crypto systems very quickly very easily with them in principle at least you know
+like you could use shores algorithm and factor large numbers and the thing is now we've already
+got these post quantum cryptography things so even if you had that kind of a system it wouldn't
+magically solve that problem anymore these are these are things that just like even if you have a
+processor as far as we know there's no no algorithm it's not I don't think it's provable yet
+that you can't make something but so far as far as we know you can't solve and you just think about like
+okay well what are you going to do with that shit and you start going down the path and it's like
+there's it's not like a magical much faster version of a classical computer and also like you
+can't build because you have to have coherence over a large number of cubits to have them do
+useful stuff unless and unless you're doing like large processors that are just sort of repeating
+the same small problem over and over again many many times you could do stuff like that but like
+I mean you look at this picture that's in this article and I don't know how many cubits there
+are in the the thing but it's it's a pretty big fucking chip that probably has to be kept at
+cryogenic temperatures and I would bet it doesn't have that many cubits and again like that I'm
+sure there are applications for it and I'm sure there are applications for getting a couple
+orders of magnitude more than that but it's not really it's not going to be a very useful thing
+for most people for most you know it's not like you're going to play like kickass video games
+on that like I mean maybe maybe you take that technology decades out and you get to the point
+where you've got like phototic processors that can do real-time rendering that's indistinguishable
+from reality or or something like that but you know like in terms of the stuff that people are doing
+now and that they're going to do with these things in the foreseeable future there's no magical
+like application for them just like also like and I get I'm a guy who has been for a very long
+time in the machine learning and do like thinking computers and autonomous and semi-autonomous
+systems and that kind of stuff the stuff that people call audible air quotes AI now and again just
+like the quantum thing just like the nanotech thing they munch a lot of stuff together so like you
+have all of these things like people have been working on face recognition for decades but I
+in the 80s people were doing back propagation and doing neural networks and they were already
+starting to do stuff to like recognize characters and optical character recognition kind of stuff
+and handwriting and the in principle like faces and stuff and you just look at like the technology
+has incrementally advanced to the point where like we had I look up to eigenface paper I don't
+remember when that was but that was already pretty good pretty good I'm actually just looking
+it up now eigenfaces from the AT&amp;T Bell library and show me the year show me the year somebody show
+me the year I'm gonna go see awesome maybe um eigenfaces 2002 so this was already pretty good
+in 2002 and identifying faces and things have gotten incrementally much better since then
+and like independent of having really good deep neural networks face recognition pretty fucking
+recognition has been pretty good for a long time and is that is that AI I don't think so I don't
+consider it so it's I guess if you call up machine learning or something but a lot of that stuff
+is not even learning in any kind of meaningful sense like learning and thinking those are very
+different than anything that these things are doing and yeah like you look at these these large language
+models and transformers and all this kind of shit um they're they're very good well
+not actually I was gonna say they're very they're okay at like language translation like
+the very good I I've spent a lot of time recently the last couple of years and I know a lot of
+people have spent a lot of time and doing like irrevict to English translation um it it sucks okay
+it actually kind of sucks it's it's pretty good but it sucks if the thing is like they feel
+pretty good because you don't know the language as well but when you start really trying you know
+and they're fine for like oh I'm gonna write a letter and you have two people who basically are
+in the same domain and you're talking about stuff that's kind of similar and yeah it's okay it's
+okay but when you start really trying to have like a deep conversation with somebody in another language
+with big cultural differences and it's kind of stuff it pretty much is shitty and that is the
+best case that is what transformers were developed for and it's kind of like and then you know
+you have this whole thing with like all of this um I don't know the thing that really
+fucking pisses me off is like people work on these stuff like Sora and you know generating images
+and video that looks pretty good uh that's it doesn't look great still like yeah I mean things
+are incrementally improved but they don't really look great but they look pretty good and you know
+you can do text to video and that that's cool I guess but it also is like what is the what is the
+fucking point and for the most part like the amount when you think about especially like the resources
+that have gone into just just like the sheer amount of technical and compute resources like
+when I say technical I mean like engineering like people figuring shit out all that kind of stuff
+so that you could make videos that do a pretty good job of fooling people and then you get the
+point where or you can make a text that's just like those shooting people that's that's a great
+like that you have to understand this is not a good thing this is not something it's not really
+helpful all that really does is sort of confuses and confounds people you got like congratulations
+you got stuff where you can make just a fast corpus of bullshit like that's that's really
+like your goal is to be able to make something that is a thousand times bigger than Wikipedia
+and that kind of sounds like Wikipedia but it's all completely full of shit you could do that
+that's a shitty goal it's not a good thing that's not something that you should do it's not
+something anyone should want to do your goal is to make video that you could just say George
+Bach or George Bush humping a lamp post and then you get a video out of George Bush humping up
+but who thinks this is a good idea who really and it goes back to again education versus
+vocational training and in this whole problem I think a lot of it is like you get
+fucking computer science people who went in and they they weren't even interested in computer
+science they're just it's the same problem with fucking doctors they're not people who are like
+want to be a doctor that people who like really want to cure people there are a lot of people
+who want to make money and so they have some you know that if they found out that making widgets
+was the best way to make money they'd be making fucking widgets they don't give a fuck
+and so they went into medicine to do that or they went into computer science
+they just take computer science courses never take a fucking ethics course never take a philosophy
+course never take a fucking art course and you know or they were going to business because they
+want to make money you notice actually the problem with all these people the common thread
+is this bullshit like pursuit of making a shit set of money for no reason but you have like
+people do that and then they don't really study these other things and they never really ask
+questions like what is the fucking reason that you're doing this what is what is it good for what is
+the it's the most ridiculous thing also because like I for a long time I've tried to work
+on some robotics stuff and I've never been able to put together the resources and
+time and all that stuff to get very far but I I have a lot of applications for it you know
+I have a lot of stuff that it's like and when I say that I don't mean like you know oh that would
+be kind of cool I mean I can come up with a lot of stuff that would be really fucking helpful for
+a lot of people and then you see these people making this shit and first off they they make these
+ridiculous humanoid things with so many unnecessary degrees of freedom and also like you got
+something that looks like a person it's creepy because it doesn't work like a person you know it
+doesn't quite feel right person is not really a great form factor like evolution got us to this
+body plan but it's not it's not really great is you if you're just kind of like starting from
+especially like if you don't have a great control system and especially especially if you're doing
+this shit that they're doing which is just you know like throwing processing at it and then just doing
+high dimensional curve fitting like it really like it I say this in the most disparaging way possible
+what they're doing fundamentally is just very high dimensional curve fitting and the same sense
+of like if you ever took physics 101 and I mean at that level you do like some kind of thing where
+you you drop a ball and you you calculate or you roll a ball down and incline plane and you do
+timing stuff and then you you make a plot and you get that plot and you have 20 points right now you could
+do a order 20 polynomial and hit every single one of those points and you'll have something that's
+kind of a model for your thing you probably don't need that and that's what they're doing is like
+that there that got so many extra parameters you can fit stuff very easily if you have enough parameters
+and I say very very easily it's computationally expensive but you can do it
+it doesn't really tell you anything it doesn't really have any insight to it
+and it's just like this whole thing that they're doing is like why what the what the fuck are you doing
+what the what the fuck are you people doing and what they're doing essentially is like wasting
+so many resources so much time chasing after some bullshit idea building stuff that like what
+what are they what do they do they're trying to take away the the fun stuff that people want to do
+as hobbies they're like oh we're gonna make stuff that you know fuck you doing photo shop here's
+a thing that just does photo shop for somebody this shitty version of it doesn't come out
+great but now somebody else who doesn't have that and you just killed somebody's career like
+yeah they they're not not even that you're doing it well but you know there are people who
+have careers that are nice and graphic design and now you've kind of eliminated that there are
+people who have I mean it's it's it's like the same thing it really is like an
+in-stage capitalism kind of thing because it's it's the same fucking thing where you had to
+all the little mom and pop shops and you make Amazon and Walmart and now you have the
+Walton's have all the money that would have come to all the little mom and pop shops in all
+these fucking cities you have Jeff Bezos getting all the money that would have gone to all these
+little shops and all these little like you think about all the little industries it's because
+it's not just the shops it's also like manufacturing it's also like distribution it's also
+having like and and you just like copy stuff make cheap burdens of it race to the bottom
+and you know everything is garbage and you're selling it and it's just it's just sucks it's just like
+the most unsustainable thing and it's also like there's no good reason for it there's no
+like I guess if you want to have a world full of wasted shit that people wasted time and money
+on but Amazon like everything my mom and sister get a lot of Amazon shit it annoys me actually
+what I'm here but you know like it's just this constant constant influx of crap and one of the
+things you really notice about it is no matter how small it is it always comes in a giant ridiculous
+box or packaging that's like excessive and this is the whole they it is absolutely emblematic of
+what it is it's just like garbage it's just garbage waiting to be garbage it's somebody somebody made
+it somebody moved it somebody's a picker they picked it they put it on a truck somebody had they
+take that shit out of me you think about all the people that had to do shitty boring jobs
+so that you could have your little piece of shit it's just garbage that's going to go into the
+recycle bin eventually or just take up space and you know like it's just like what are you
+guys doing what are you doing just stop that shit like find better shit can do we don't that you
+need food right we need food we need to grow food somehow we need sanitation it's very important actually
+we need running water we need shelter there's these are things that you actually need
+think you're on how to solve those problems and figure out how to like let people be
+able to do like the stuff like pursue stuff that's interesting and do worthwhile stuff
+and you know build a society around that kind of shit think you're on how to make cities that
+don't suck you know figure out how do you and make cities where it's not just a bunch of people
+in traffic constantly figure out how to organize society in a way where people aren't just
+fucking sitting around dying in a car every day for hours every fucking day and to go to a place
+where they're going to do a job that they didn't really need to do that if you stopped doing
+that job the world would keep spending and you know it wouldn't matter and then the thing that's
+most ridiculous about all this stuff this is this is actually going to be the last thing I say
+but you know like the jobs that are actually essential like taking picking up the trash we do
+have way too much trash in this country specifically that we make too much trash but if somebody
+didn't pick up the trash I thought about this before I was in Paris I was living there during
+a trash strike and I visited New York during a trash strike and in both cases you know like you
+don't pick up trash for a week it adds up fucking fast yeah if you don't have plumbers fixing
+shit things get literally shitty if you don't have somebody you don't have surgeon surgeons are actually
+doing yeah to some extent useful and important if you don't have people doing public health
+people get sick if you don't have people doing food safety if you don't have people making food
+growing food people die people start to death and and you think about like all the stuff that you
+actually need all the stuff that is is nice too I mean like there are little treats that you can have
+that are nice to have but you know you could make good treats and you could make those in a way
+that's not just crap made at the cheapest possible way and with people at every level as miserable
+possible you could have stuff where it's like all artisanal it could be it made it scale too but
+it's all like artisanally done and nice and people are having fun and they're enjoying it and then
+you get a question that tastes good and not like you know some goddamn box full of 10 of these
+things that are all just crap and tastes like shit and they're still bad for you or they're worse
+for you than the regular one you know it's just like what are you doing what are you doing do
+figure that shit out it does it's not even that hard it's that's the frustrating thing because
+genuinely speaking not that hard you know to figure this stuff out just like it's not that hard
+to figure out how to make a city that's a lot better than the stuff we're doing you know and
+just just do it just fucking do it please because it's doing it the way that we're doing it now
+we're going to end up so fucked in so many different ways and it is not like you know we're
+going to dodge this bullet or you know like some magical technologies a lot of people are going
+to die yeah a lot of people are going to die very badly because people wanted to have too much
+shit and not even not even good stuff not even like stuff that made them feel good just to have
+shit for the sake of having shit and it's just like it's frustrating just like you think about
+we could have high-speed trains that are powered by the sun or by hot rocks and they
+wouldn't really cause that much damage and we could you know also you could have them set up so
+that they're wildlife paths around them to get across the train so you're not killing things
+in the process and you're not fucking up the environment and yeah you could you could make a
+better world you could make a much better world and you don't and because you don't and you have
+all these people trying to have like private jets and doing doing really carbon intensive stuff
+and having like a big fuck you truck on the street you're killing little kids and you're also
+like burning so much more gas like you could you could even if you're having private cars you could
+have so much more efficiency and like why not why not do that why not why not have a car that's
+powered by the sun that's actually kind of decent to drive gets you from where do you where you are
+to where you want to be and doesn't fuck everything up massively like you could do that you don't
+need to fucking giant ass truck with the bed that I was talking with my friend about this also
+but you know like he is an old truck and he likes it and he doesn't want to get a new one
+and I think he's very right for that and these new fucking trucks that giant can't see the kids
+they're a tank and when I say they're a tank I mean like literally the trucks rolling off the
+off the line today they're bigger than tanks from World War II like truly like heavier than
+and usually it's like why what the fuck are you doing you're going to the story you're going to
+fucking go to add here someplace you don't need that you don't and it's it's not even that you don't
+need it it's like why wouldn't you even want that why don't you get out of that what is your
+you're you're working now so that you get in this giant fuck you truck versus you could have a really
+nice car that's kind of comfortable and fast and gets you there fast and you know it doesn't
+waste a shit kind of resources you could have one of those Chinese electric cars that cost
+$8000 and is nicer than the the luxury ones that we have here you can you could do that
+and we don't and it's just like what the fuck why why why do you better think better imagine better
+imagine better you could do it with that as ever thank you and</p>
+<p>再见</p>
+
+    </article>
+  </main>
+  <footer>
+    <span class="copyright" title="Copyright Scott Menor / SMENOR, LLC. All Rights Reserved.">&copy; 2025 </span>
+    <span> Not all who wander are lost.</span>
+  </footer>
+</body>
+</html>

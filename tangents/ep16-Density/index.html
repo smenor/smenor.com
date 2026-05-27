@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+  <meta property="og:title" content="Density">
+  <meta name="twitter:title" content="Density">
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta name="twitter:image" content="https://smenor.com/images/tangentsIconTwitter.png" />
+  <meta name="twitter:twitter:image:alt" content="site logo" />
+
+  <title>Density</title>
+
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.umd.min.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class=" density">
+  <header>
+    <a href="/" class="logo">
+      <img src="/images/tangentsChannelLogo.svg">
+    </a>
+    <h1 class="title">
+      <a href="/tangents/ep16-Density/">
+        Density
+      </a>
+    </h1>
+    <input type="checkbox" id="menuControl" />
+    <label for="menuControl">
+      <nav>
+        <span class="line"></span>
+        <span class="line"></span>
+        <ul><li><a href="/ai/" >「 AI 」</a></li><li><a href="/anomalies/" >Anomalies</a></li><li><a href="/bio/" >Bio</a></li><li><a href="/companion/" >Companion</a></li><li><a href="/ethics/" >Ethics</a></li><li><a href="/mechatronics/" >Mechatronics</a></li><li><a href="/portfolio/" >Portfolio</a></li><li><a href="/spite/" >Spite</a></li><li><a href="/support/" >Support</a></li><li><a href="/sweetgrass/" >Sweetgrass</a></li><li><a href="/tangents/" >Tangents</a></li><li><a href="/who_am_i/" >Who am I ?</a></li></ul>
+        <span class="line"></span>
+    </nav>
+    </label>
+  </header>
+  <main>
+    <article><audio controls>
+        <source src="https://smenor.sfo3.cdn.digitaloceanspaces.com/2025.11.04-Density.m4a" type="audio/x-m4a">
+      </audio><p>Image: https://en.wikipedia.org/wiki/File:Road_Space_Requirements.png Road Space Requirements
+30 people in 20 cars 30 people on 30 bicycles 30 people in 1 bus by Transformative Urban Mobility Initiative (TUMI) <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0 International</a></p>
+<p>Hey there I'm Scott and this is Tangents.</p>
+<p>Well it is the 4th of November 2025 as I
+record this and when I've to talk about a few things and as I generally do I
+guess the last one of these I recorded on the first thought it was gonna be
+doing these like daily and it's been a few days but yeah we'll see we'll see how
+things go so I just watched I will get into this stuff I want to talk about
+but just a little purpose I just watched back to the future one two and three
+which are things that I saw when I was a kid and I remember very distinctly
+watching them really liking them all that kind of stuff and they're actually I'm
+kind of surprised how well they hold up and I think part of the time travel
+thing takes them out of time in a sense that you know like the 1985 stuff I
+you don't think about it being out of time because it exists in 1985 so
+you know it makes it a little bit more durable in the 1955 30 years prior to
+1985 also works 2015 is a little rough and it's it's interesting to me I was
+just thinking about this as I was microwaving my my dinner I got pizza today
+microwave a couple pieces of that and if you look at like a kitchen from 1955
+and you went to a kitchen in 1985 the differences at least in that kind of
+respect would be pretty stark like having a microwave it's a pretty big
+big thing it's not something that existed then and I guess convection
+ovens are kind of a thing although you know not really as a special
+more of an incremental improvement but when you look at sort of what they
+imagined 2015 to be a decade ago now and what it actually was it's and I
+know like predicting the future is hard it's very difficult and there are
+things like you tend to overestimate certain kinds of things and you underestimate
+other kinds of things so like the stuff like the flying cars obviously that
+was ridiculous overestimation there's there's no plausible path to something
+like that right now Mr. Fusion we don't have anything that could possibly like
+there's not even a nascent technology that could plausibly get there there
+are things like the I mean you could do like a new electronic excuse me a new
+electronic fusion and maybe you could you know but you're probably not
+putting just random garbage into the fuel light you're probably gonna have to
+put tritium or other like yeah they did anyway and then you know you think
+about like how are you gonna contain that and how you're gonna make it's we're
+nowhere near where like maybe and some at some point in the distant future they
+probably have some kind of a power cell that's very compact and very dense and
+essentially like a compact fusion reaction or reactor that could make your
+cars fly and they could do all kinds of stuff like that yeah we're not we're
+not anywhere near that you could get your 1.21 jigsaw from something like that
+maybe but we're again not really not really gloves and they have this
+rehydrateer thing which is just yeah you put a pizza in and like three seconds
+later you have a fresh hot pizza pretty pretty pretty far from anything that
+we could plausibly have anytime and anytime soon let's just say that
+now it would be cool I mean it would be cool to have like a replicator it
+would be cool to have something where you say tea or a gray hot and just like
+appears out of thin air but again no real plausible path to something like that
+anytime soon so it's just it's just kind of interesting to me how both the
+predictions are pretty pretty out there and I don't give you a wrong I enjoy
+I enjoy the like power laces and the self-drying jacket thing that's
+self-sizing and all of this kind of stuff it's cool but I don't know it partly
+and I'm not trying to say that things have stagnated because obviously on a
+long time scale things have not and there are a lot of technologies that for
+example they just did not predict like the cell phones that we had in 2007
+did not even come close to anything like that some things look radically more
+advanced than that and other things just not even it's like I started watching
+like a year ago the old original series of Star Trek and when you look at
+some of the stuff that they imagined like warp drive and transporters
+we don't have anything like those things we don't have any real plausible
+engineering path using not just existing technology but like we can't really
+envision something that could be in principle engineered to make those things
+work yeah at least in unless you go sort of like the most abstract sense just
+couldn't do it maybe and I'm not rolling them out as possible it is although
+there are pretty good reasons to suspect that warp drives at least that are
+super-liminal probably unfortunately don't exist or maybe it's fortunate I
+don't know it depends on your perspective but yeah because the way
+relativity works if you can travel faster than light you basically instantly
+get a time machine and when I say a time machine I mean like you can go to the
+past you can make clothes to time like loops and then all bets are off the
+the traveling across the the galaxy or the universe at super high speeds is
+about the least interesting thing that happens when you have a warp drive
+but anyway getting from getting from that I did them drifting way out of where
+I wanted to talk about the thing I wanted to talk about here is the reason that I
+brought that up is there was the word density you are my density destiny in the
+first one and the density thing and I know this is just this is completely random
+and disconnected but the density thing made me think and I'm in LA right now and
+I lived in Phoenix for many years and in both of these cases like I spent I've
+spent some a few months in Tokyo I've spent like nine months in Paris and it's
+really striking to me and I've lived other places I've visited a lot of decent
+number of places it's really striking to me how density works in terms of like
+cities and in particular like if you look it's it's dark out now as I'm
+recording this but if you could sort of look around the neighborhood I'm in it's
+a bunch of single family homes and each one of these single family homes has a pretty
+big footprint in terms of like the actual land use now maybe it has a little yard or
+something but it's a few people in a fairly decent amount of square meters and you
+know it's that next to that next to that next to that and this big just vast not
+quite endless but if essentially it feels like endless in all directions I could
+walk for hours and hours and hours and it'd be just more of the same and you
+look at the same stuff and if you imagine like you just picked these houses up and
+you stack them on top of each other don't don't do anything else just took
+these houses somehow stack them on top of each other like I don't know in a big
+building the amount like without changing the density of the city the amount of
+free space that you have for parks suddenly magically becomes enormous like you
+could have instead of having this thing that feels like there are a couple
+trees and they don't give me wrong there are a decent number of trees it's not like
+zero plants or vegetation but it feels very far from wilderness if you stacked
+people on top of each other you could build parks and it would essentially feel
+like you were in wild space like on you know not not not really I don't want to
+say civilized it's not the right word unspoiled space and similarly also you
+could look at that and then say well what if we do that and then we move some
+places together so now you still have the same stacked buildings but you have
+it arranged in a way that now you have a little bit more density you still have
+also these parks and the reason I talk about these parks in Tokyo it's really
+striking like if you there are cities where you walk around the city and I mean
+New York has obviously central park but there are a lot of places in New York where
+it just feels like dead and barren and I'm not saying Tokyo doesn't have that
+as well but there are a lot of places in Tokyo for example where you have these
+big parks or big like walking paths and they're next to a river and it just
+kind of feels a little bit more natural I'm not going to get I'm not using
+Tokyo is like the best example of this but just it sort of shows you a glimpse of
+what might be almost kind of possible if you did a really good sort of
+rational design for a city and especially if you had a way to quickly I
+obviously this is tricky because you have a bunch of existing homes and you
+have to get people to be willing to relocate or move their shit or whatever but
+if you had the ability to just take you know a big chunk of LA and convert it into
+stacked buildings you could get so much so much more and another thing that comes
+from that density if you do it well aside from just being able to have these kinds
+of unspoiled spaces is now you can put in and again New York has a decent subway
+not great but it's decent LA in some places has kind of surprisingly not
+terrible subway and in fact if you go on the subway itself it almost feels like
+a real city you don't get the same feeling like where you can and again I'm not
+not the whole Tokyo but Tokyo or Paris or New York you could just kind of walk
+around in a lot of areas and if you get tired you just go okay well fuck
+this I'm done walk over to a subway station hop on a train and then take the
+train and maybe do a transfer and then you're back wherever you're wherever you're
+going if you're here or if you're in Phoenix which is even worse than LA and
+this regard you could walk in some direction and first off in LA is at least like
+there's some green there's some density some things are not terrible like this
+Phoenix there are islands of that but for the most part it's just this vast
+suburban sprawl that just goes on in every direction and you could drive for an
+hour in almost every direction if you're in central Phoenix literally you
+could head in a direction go an hour and it's just suburban sprawl continuously
+and it's this low density everybody gets their own private house which means
+everybody has to figure out maintenance which means everybody has to have their own
+lawn mower because you know a lot of people have ridiculous lawns that don't
+really belong in the desert everybody has or you have to hire people to do it
+everybody has there's just so much duplication of resources it's such an
+inefficient way to organize things and so wasteful as well in addition to just
+being like a terrible use of space and I talked to some people about this I
+posted something on no I guess in LinkedIn and Facebook about it and somebody
+said something I don't remember where but basically said you know like oh I
+can't can't stand being stacked at the idea of having somebody on top of me is
+terrible and blah blah blah and it's so annoying and I will say I had I lived in
+an apartment in Phoenix that was like a four story apartment building and I had
+to move because the upstairs neighbors had ridiculously heavy feet and yeah
+I was at any time I was in there yeah I hope that's didn't I don't
+hope that didn't just blow out your speakers I'm sorry but it was a terrible thing
+it was a horrible experience but the thing is a socially you know like you
+don't need to walk like that it's something it's definitely something that you
+can learn to not be an asshole it's it's not like intrinsically I'm
+trying to like to am sure there are people that can't regulate that but I'm
+always part you could do something about it but also more importantly than
+that it's possible to build things that are insulated well and this is one of
+the things that Phoenix really fucks up there are places I had another friend
+that said something about you know like well they they thought the same thing
+then they moved to an apartment in Scottsdale and it was just silent and of
+course if you live someplace that's well built and it's well insulated it's
+very quiet even if you have neighbors you don't have to like my sister's place
+not super well built expensive but not super well built and she has a
+neighbor that's not even attached and in her I'm standing in the kitchen right
+now and for some reason the neighbors right next door I don't know what they're
+doing but they're walking or whatever it literally sounds and that this is a
+three story building literally sounds like they're above me like it's it's
+the weirdest thing and I can I suspect probably what it is is the you know it's
+like some kind of resonance thing or like the structure of their place is
+similar enough to this that the frequency that things happened to to click
+at over there are similar over here and then if they're stepping in a certain
+place that distribution of frequencies resonates over here and then it
+sounds like the same kind of thing I don't know if that's the case or not it could
+be you know making up the story but it kind of makes sense to me there's
+something definitely going on because it really does feel like there's somebody
+above you even though obviously there's not but it's it's weird I don't know
+what it is but again you can build things that are not like that you can
+build things with proper insulation and another advantage that you get with
+this kind of structure is like if you look at the volume to surface area the
+more surface area you have for unit volume the more heat dissipation you have
+so the more either heat coming in or heat going out that you have so that means
+more insulation more climate control it's it's less efficient just in
+general and so if you stack things on top of each other and you do it well you
+could have things where you have less insulation or you use less power to
+maintain a comfortable temperature that's that's not that complicated you could
+do a lot of things and I just like the way that all this stuff is done and the
+thing I think that fundamentally it comes down to is like everybody is
+optimizing for themselves personally without consideration of anyone else and
+when you do that what that ends up doing is making things fuck for everybody
+including yourself incidentally I've talked about this a few times but like I'm
+a pilot and being a pilot is kind of cool it's kind of fun but a it's
+ridiculously expensive like in practical and unless you make a fuck ton of
+money it's very expensive and it's kind of weird actually I follow people on
+on YouTube who for example have a serious SR22T turbo it's it's like a
+over a million dollar plane and I don't know how I don't know what these people
+I mean I do kind of like know what they do for a living I don't know how they're
+making the money that they're making but they have enough money to pay for that
+and it just doesn't it doesn't almost add up it's kind of weird like they
+the and I understand also like the amount that some people make is just so
+unfathomable and that you know you see like a glimpse of that and that the
+person that has like a million dollar claim they're poor compared to the
+person as a 10 or 20 million dollar jet who is poor compared to the person as a
+50 million dollar jet who is poor compared to the person that has a multi-hundred
+million dollar jet you know it it stacks up pretty badly and of course when you
+start getting into that territory you start seeing the people that are a way
+above you and so the stuff that it seems like a ridiculous luxury to standard
+plug-in and in those circumstances it's like oh that's that's pathetic that's
+sad like they they see the serious as sort of like a poor person you know like oh
+that's that's cute right you know that's or maybe it's a hobby thing but it's
+not really a thing that you would want to do and I understand that because it's
+yeah and this is kind of what I'm talking about if you fly that a it's it's
+let it gas which is fucking weird the fact that we haven't gotten rid of
+let it gas and they're they're slowly phasing it out and there are there
+technical like there are good technical reasons why they haven't I'm not
+trying to say oh you should just do it in that you know there there there is a
+reason that stuff is the way it is they're phasing it out slowly over time but
+it's it's it's obscene that we've got let it gas still in 2025 and knowing the
+damage the tetraetha lead does to people it's it's just wild and then yeah
+the piston small single engine piston aircraft and again like a serious it has
+the cap system the service the airframe parachute it it makes it relatively
+safe relatively but that engine fails and you're kind of fucked and you know
+like the best case scenario and you're coming down and you use the parachute
+you're in a situation we're using the parachute as viable are you gonna land
+on somebody's house are you gonna you know like what happens there and then it
+has this crush stuff underneath which keeps you from getting really badly
+injured but still yeah you're getting a few G's you're getting enough G's to do
+some damage it's not great for you and then yeah you're probably not gonna be
+in a fire but you could be good there was a I don't know if it was FedEx or UPS
+or DHL or something something just I can't remember what it was it was like Louisiana
+to Hawaii just literally today had a failure this is a jet plane by the way so it's
+not like a single engine plane had an engine fire and a failure and then took
+off and immediately crashed and crashed full of fuel to go all the way to Hawaii
+so pretty bad outcome and that's that's a jet engine that's a thing where you have
+more reliability of ideally more maintenance although I I do wonder with stuff
+like this you know if you don't maintain stuff well and it's expensive to maintain
+it eventually things fail and because it's expensive and because people are trying
+to cut cut corners and cuts costs and all those kind of stuff and again they're
+optimizing for short-term personal benefit without sort of long-term or
+collective benefit in mind not certainly not optimizing for the crew they don't
+care about that they just want to pay the least amount of money for things and
+certainly not for the people that are gonna be endangered by this stuff or any of
+this stuff because of that problem I think a lot of companies are not
+maintaining stuff at the level that used to or they should be certainly but
+anyway going back you have that even if you have a jet like the serious is
+like puddling around in the sky you can go like if you're going from Phoenix to
+say Sedona it's a nice kind of half hour 45 minute flight it's not too bad you
+can go to the grand canyon you can even go to Colorado and it's not that bad
+or even LA is not that bad expensive but not that bad but when you start going
+on anything longer distance than that it's really annoying because you're gonna
+have to land you don't have a bathroom on the thing so you gotta pee if it's
+if you're single pilot even if you had a bathroom on the thing and people do
+have like urinal kind of they I mean they I can't even remember what they're
+called but it's like a thing that you can pee into they have that sort of
+stuff and if you oh look at this mom Donnie was just elected mayor of New York
+city so I just got a text message saying this and fuck yes hell yeah and it's
+fucking like fuck chuckles by the way shumer I will get back to this
+thought I wanted to talk about it just the number of fucking Democrats vote
+blue no matter who who would not endorse this motherfucker and I'm not like
+I don't think endorsements are really I have in effect I have very serious
+problems and doubts about electoral politics and especially like the
+popularity contest stuff and all that I've talked about this I think the
+last time and a couple other times but you know that I and I don't think
+endorsements are that big of a deal but it is the standard thing to do and
+chuckles I'm pretty fucking sure voted for the sex pest voted for the asshole who
+should not have even been running should not have been like the fact that you
+let people like this run like the fact that that motherfucker had any kind of
+career at all at all after the shit that he did it's just it's just fucking
+ridiculous it's laughable it shows how low your fucking standards are just like
+the main Nazi guy like the fact that that guy didn't get drummed out the fact
+that there are people defending him it's fucking wild and ridiculous it
+fucking bizarre and anyway I'm gonna take a minute now and just enjoy this
+and message some people and then I will resume so hopefully it won't be too
+much of a disruption but you won't even notice the time passing okay I'm
+processing this and I gotta say it feels fucking good it feels fucking good I
+needed I'm not saying I needed a win I mean you know obviously things are okay
+for me I'm not like in a terrible terrible position I have you know a place to
+stay I have a roof over my head I have food I have you know relatively
+comfortable situation even though it's not ideal but I will say this motherfucker
+winning and all the fucking assholes like oh we're gonna leave New York if he
+wins and all these fucking islamophobic like openly openly islamophobic
+things about how it's like in 9-11 kind of fuck you fuck you fucking people you
+absolutely big assholes get the fuck out get the fuck out leave the keys behind
+that you know New York is not your city go fuck yourselves it just irritates
+me it fucking irritates me don't get me wrong also it's fucking beautiful like
+chuckles today literally fucking today said he voted for somebody and he'll
+something something like whoever is the mayor wouldn't even didn't have the
+fucking balls to say that he didn't vote for Mombani obviously didn't vote
+for fucking Mombani did like fucking asshole fucking asshole needs to
+resign asshole needs to fucking resign and he's not the only one like so many
+these just you know like you guys you have had so much fucking given to you
+so much shit you have the ability to retire you have like think about how
+many people in the US could retire and you could be so fucking comfortable I
+don't even know what his net worth is but it's comfortable enough he could
+retire his is fucking retirement plan which most of us like he's got a fucking
+pension you know what a pension is you know what a pension is like pensions
+this is how pensions exist anymore my dear they're about there my dad worked 29
+years and 11 months for national steel and that's that's kind of an odd amount
+of time it almost sounds like 30 years but it's just not quite 30 years you
+know why because this the company got acquired and there was a bunch of other bullshit
+I'm not I don't want to get the details too much but the basic thing is at 30
+years you would have found his full pension and because it was 29 years and 11
+months and you know like basically got fucked out of the full pension deliberately
+so by design and now like a pension is just not even a thing people can you you can't even
+conceive of the notion of it people in the fucking government they have them and when I say
+people in the government I mean the fucking senators have them and it's just irritating it's
+fucking irritating it's one of the things that really pisses me off about the main Nazi guy
+because this motherfucker A he went to private school he's not a poor kid he went to private
+school could have gone to a nice university but instead volunteered the join-up and went off
+and they did a tour and they did another tour they did another tour and they did another tour
+that I think that was for right and then he worked for fucking black water as a mercenary like it
+it's just it's just disgusting and that motherfucker could potentially be a senator which would
+mean not only does he get a almost 200 thousand dollar a year salary which is not going to be
+his only salary but you know like plus staff which would be into the millions of dollars plus a lot
+of travel benefits plus health care plus retirement plan and six years of job security and
+all this did you just do not let this motherfucker get into the goddamn sent do not there are other
+people there are hundreds literally hundreds of thousands of people at least by my math based on
+demographics and the number of registered Democrats in Maine it's order of 200 thousand people
+who are eligible in Maine to be a senator and you're picking this guy with the fucking coat and
+cough for 20 years with the black water mercenary who like I mean like the more I learn about them
+too like oh he the one thing that sounded like halfway good about him it's like oh he said he was
+a socialist or a communist once well yeah except he completely disavowed that it took a bunch of
+brow-beating before he said anything about the Nazi tattoo or anything about it but without any prompting
+the motherfucker went off in disavowed and you could just search for this but there's been a bunch
+of articles disavowed being a communist and being a socialist which would have been like the one
+nice thing about him and no he won't do that it's just it's just like the guy could go fuck himself
+and the fact that people are sitting there saying like oh you got it we got it we got to take
+what we can get no one fuck you fuck you I'm so fucking tired of that bullshit it's so I'm not
+like I'm not a great politician by any means I would not want to be in elected office to be honest
+but I ran I've run a couple of times I ran as a green in within Andy Biggs's district so
+Gilbert Arizona a little bit of a right-wingingish kind of place but I ran openly as a very
+lefty green candidate wearing a mask and I swear to God the only reason I didn't come close to I mean
+I still I still did pretty well I have to say I feel pretty good about how I did but there were two
+seats three candidates no Democrat even running bothered the I mean there was one person who kind of
+like half-est ride but and and to her defense the signature requirements for running for these
+offices are ridiculous so you know she didn't put in the time in the effort the money to get them
+but also they are exorbitant there to be fair but she didn't get ballot access I had ballot access
+so it was like green Republican Republican two seats if you mother fuckers would have voted for me
+like you know that the the house and the Senate in Arizona are like two seats from tipping
+do you know what one or two seats would do and especially like if it's one or two seats
+that somebody like me instead of just a Democrat that's a powerful fup in position to be in
+it's not like I'm yeah anyway I don't want to the main reason I don't think I won is if
+there don't lot of Democrats didn't vote for me because they saw a green and they're like fuck you
+there's no you know you should have voted for me if you guys it would have sucked for me I would have
+done the job but it would have sucked I wouldn't have been too excited about it but I I know
+with a lot of confidence because I talked to a bunch of people granted I didn't do I didn't
+didn't do polling so maybe I'm just speculating here maybe I'm not right I think I'm right
+I am pretty fucking sure that a bunch of Democrats did not vote for me bunch of Republicans voted for
+me because these two Republicans were assholes I met them both their garbage people
+they're both in the state house now of course terrible people fucking horrible people
+but a bunch of Republicans and independence voted for me I and quite confident of that
+and these are the independence also like the Democrats are always talking about how oh we got to go
+for the independent you don't know who the fuck the independence are like this is I hate all this
+shit this middleing bullshit like oh well we have to go in the in the middle the air quotes
+middle between the Democrats who are right of Reagan just to be clear they are right on many
+issues of Ronald fucking Reagan who was the the example of terrible right wing politician
+and then you have between that that's the the leftist point that they're starting from and the
+guy damn fucking white nationalist crystal fascist and our go capitalist radical Republicans
+someplace between those two is where they're going to try to put themselves that's why they
+abandoned trans people that's why they abandoned immigrants that's why all this other bullshit
+and they did all that stuff and completely alienated people like me who otherwise would have been
+you know and you know they like the funny thing is it doesn't even look like Harris lost
+because of the genocide which is pathetic the genocide should have done it for but even with that
+she could have won but she did all this other shit chasing after people who were never going
+to vote for her never going to vote for her nobody wants for public and light she's chasing after
+them giving a middle finger to anyone even left of Reagan and the of course you lost a fucking
+course you lost it's pathetic the only thing she had to offer was marginally better than Trump
+and even that is generous because like in the fucking debate she and Trump got in an argument
+over who is more pro-frakin in a time when we're in like a pivotal point in the climate catastrophe
+or we could actually still do something to not be in like a horrible fucked up position
+and you two are arguing over who can get us their faster like fuck you fucking pieces of shit
+anyway I'm I'm just enjoying this I really am I'm not I'm not trying to be like better
+and giving too much of a middle finger here and obviously you have to reach across the island
+and there's everybody's mayor and I think it's still fuck all you people fuck all you people who are
+sitting there talking about how and they don't also like the Islamophobia the red scare bullshit
+all this other shit this stuff like oh we can't have socialized medicine every other in fact
+I'm not even going to say every other because they say every other developed country implies
+the US is a developed country every developed country has universal health care every developed
+country has some form of if not like free education the amniere free higher education
+or very inexpensive higher education every developed country has like social safety nuts of
+some form and the United States is not a fucking developed country this is how you know this is
+like they're they're the tells if you look at safety for example the US is not close the US
+is ridiculously dangerous now it is true like even being ridiculously dangerous it's not as dangerous
+as people imagine but compared to a lot of places it's fucking dangerous it's fucking ridiculous
+your the life expectancy here is decreasing and it's not that great your healthcare sucks
+your healthcare and it's like it's people will always say oh we have the best healthcare in the
+world if you can pay for no even if you can pay for it even people who have money they can pay for
+now if you have a certain amount of money I will I will give you like if you have so much money
+you can have a private doctor and like real concierge career maybe you're in an okay position but
+even then it's dubious because pe private equity taking over everything and they're doing the
+concierge stuff they're not they're not your friends they're not taking care of you but if you're
+a normal person and when I say a normal person I mean even if you're making like hundreds of thousands
+of dollars a year and you have air quotes good health insurance your experience if you ever
+needed if you ever get really sick if you ever have a bad accident or your kid gets cancer
+or whatever the fuck you're gonna find pretty quickly that shit sucks that fucking shit sucks
+you will have millions of dollars a dead very easily or it'll certainly drain whatever savings you
+have and you know it never might also like if you get if you age in this country they will do
+all of this stuff that will just rob you of your money rob you of any assets you have and then
+you know you're just fucked it's not gonna really extend your life it's certainly not gonna
+improve your quality of life but maybe maybe you'll live like an extra six months or a year or something
+but it'll suck it'll be miserable and it will completely eliminate any good experiences that
+your your family has with you and anything you can hand down to them and it's just it's just like
+it's so fucked here it's so fucked does not need to be this way it does not need to be this way
+this is one reason why I do wish and I understand like people don't have the resources to travel
+which is kind of a fucked up thing about this country I do think the right to roam which includes
+having an ability to do it and I'm not saying everybody should be flying around the planet all the
+time but there should be ways like high speed trans for example and you know maybe electric or
+nuclear boats that let you travel places without having a huge carbon impact and with those things
+you should be able to see other places and if you see other places and you learn about other stuff
+you start looking and you're like why is it so fucked up here if you go I talk a lot about Japan
+because I've been there a few times but you go there or you go to China or you go to France or Spain
+or you know like most other countries most other air quotes developed countries the
+actually developed countries there's fucking high speed train like high speed train powered by
+nuclear reactor so it's essentially carbon neutral they travel thousands of kilometers
+across China in hours it's it's wild it's wild how fucked up and shitty it is here
+but anyway I'm I'm kind of I'm simultaneously like really enjoying this and also just
+unloading a little bit because I'm fucking irritated with all these people
+but keep making things worse the keep you know like truckles needs to fucking retire
+and when I say truckles I'm focused on him because he is one of the more prominent Democrats
+but I mean even even even the guys that I like even even like a Bernie needs to retire
+even the only Democrat that I can think of at a national level who I even feel like a little
+maybe she could stay is Rashida and I'm a little nervous even about her just as I'm as much as I'm
+talking about mombani and I like him I'm technically notice I'm not I'm mostly talking about other
+things that are negative but you know there's a lot of positive stuff about him he's pro cop right
+he's not my favorite kind of position on that let's just say you know Rashida is a Democrat
+and the fact that she's a Democrat even with all the party going against her even with them
+trying to primary or all this other bullshit I still worry but I've never seen anything specific
+from her that gives me pause and I've only seen good stuff from her so you know maybe she's okay
+but I just I just remembered Katie Porter that fucking video of her chewing ass out of a
+a staffer though I don't know if I talked about that before but if you haven't seen it
+and this is one of those things also like you could tell and I I'm going to talk a little bit
+about literacy because there's there's a literacy that people like there's the obvious literacy
+which is you can pick up a piece of text and read it that is a sort of literacy right but there's
+also a literacy which is you could read between the lines you can understand more than what is just
+there at the surface level you can read a piece of work and understand like what is the author
+trying to say kind of understand what is the context in which this exists what is it mean
+what is what is the significance and and it's not just written material it's also things like that
+video and you can see like there's a difference between somebody is just somebody who is like stressed out
+and somebody you know like pushes a little too hard at the wrong time and they snap at them
+that's the thing that happens right that's a that's a thing that could happen to all of us
+but when you do that you catch yourself pretty quickly you apologize pretty quickly
+if you watch that Katie Porter video what you actually see is her being just completely shitty
+to her staffer who just got in the shot and the staffer corrects her on something that she was
+bad and mistaken on and she choose them out completely and the way that it comes off there to me
+is this is a person who has a nice kind of mask that she puts on in public and that's not
+who she is she's the person who like the actual Katie Porter I'm pretty sure is the one chewing
+other stuff and it's also like you you look at that there's other reports of stuff like this it's
+not like there's not the first time that you've heard about this is just the first and worst
+video that I've seen of redoing it and you look at that and it's just like this is your fucking
+governor and your governor to real candidate who's good and like again California is not a small
+state right you have lots of people who are eligible to be governor here first off we don't really
+need and I'm not saying that you can't have white people be in office but we fit we fit we've
+don't we don't have harm you know there's there's something like this state has plenty of other
+people who could be in office maybe maybe give them a chance and of course also I'm not saying
+that just because somebody happens to be black or brown they're automatically good like
+have a fucking threshold because there are plenty of people who are terrible who just happened to
+look a certain way I will say actually the mayor of Los Angeles I'm pretty fucking pissed off at
+and I I'm so irritated with myself here because I should have known I should have known that she
+was a piece of shit but you know like I Coruso terrible person he's a Republican
+Rianna's a Democrat this is the problem because all these fucking things and this gets back
+to that main fucking Nazi guy you get you you have so many people who could run for these
+offices they make it very difficult the access requirements for running for office are huge
+this is one of the reasons why a lot of people don't do it because in addition to not
+really understanding civics and not learning about it getting ballot access is a giant fucking
+pain in the ass if you have resources and you're plugged in it's not that big of a threshold it's
+not that big of a hurdle but if you're just a regular person and you want to run for Congress
+or for mayor of Los Angeles or for mayor of New York for that matter it takes so much effort just
+to get on the ballot it's ridiculous and then once you're there it takes so much money and effort
+in time that you you basically have to be a little bit rich you have to have something going for
+you you have to be very known in advance or be extraordinarily charismatic or have you know a few
+things kind of in your pocket that are helping you otherwise it's just not a realistic thing
+or you have to have so much time there's a reason that a lot of people like the people who actually
+end up getting on the ballot who are not in the sort of normal sort of path they're either
+people like Andy Biggs who won the fucking lottery like you look up how he got well it wasn't the
+lottery I guess it was the publishers fairing house or whatever so some kind of you know basically
+won the lottery equivalent he did that and he's like well I've got this money now I'm going to run
+for office that will get you in you can pay to get ballot access absolutely you can pay to have
+people do an image for you and make all your your stuff and get you the point where you're kind of
+presentable and that the threshold is low right if you're somebody who's extremely like you're
+retired and you have an extreme amount of time and a lot of energy and a lot of ability to do
+stuff that can get you in yeah you can convert a little bit of you know sort of horsepower
+elbow grease so to speak you could convert that to the equivalent of money you're going to spend
+a lot more time in effort than somebody with money or who's plugged in but you could still do it
+and the other one is like if you're a deadbeat dead cinema kind of person a guy ego or you're a
+space cinema kind of person like Mark Kelly and your wife was was she a senator or she I think she was
+a representative I don't even remember what the fuck she was it was before my time but whatever
+her's wife was you can you can get in to the party and then they set up this thing where it's like
+okay well the second that you go you're going to have all these donations and you're going to look
+this is I'm sure what happened with this so sparking may not see guy do a bunch of stuff
+so behind the scenes all of a sudden you come out of the gate and you look like you're an explosive
+just overnight sensation because you had a lot of help and you had a lot of people kind of
+pulling for you and doing stuff for you um you know it's not real let's just say that and then
+you can get on there and that's that's one way to get it and what it should be and in Germany
+in other places it's a little bit better on this random people should be able to go in fact it
+should be random people running for office and in fact also if it's I've said this in the last
+one or maybe two ago if you recognize the name of somebody on the primary ballot and there's
+somebody else you don't recognize the name of by default you should vote for the person who's
+name you don't recognize if somebody who's name you don't know asks you to sign their thing
+their petition to get ballot access probably sign it there only hesitation I have there is that
+the way that it's set up which is fucked up is at least in Arizona you can only sign one for each
+so you can't sign like five different petitions you should be able to you should be able to
+say okay you want to be secretary of state sign years old sign years old sign and in fact also you
+shouldn't even have to it should be like if you want to be secretary of state or senator or any
+kind of statewide office you personally and you can't send a proxy to do this you can't pay people
+to do it you can't it has to be you you have to go around to like each district or whatever
+and get signatures it doesn't have to be a lot of signatures it could be five signatures
+from each county or something like that or maybe it's 20 signatures I don't really care there's
+some threshold that is reasonable it's like enough that it's not going to be like
+everybody doing it but it's not ridiculously intractable right that should be the threshold
+and then each time there's a primary should be a lot of people right and personally I
+talked about this before but I think certification is the right way like it shouldn't even be
+people deciding that they want to run because the people that decide that they want to run
+probably are you know like almost by definition not the people who should be in those positions
+and I include myself there like the fact that I even thought that me running is a good idea
+probably a red flag and certainly like if you look at like Trump or Hillary or genocide Joe
+or or Harris or space cinema or deadbeat dads cinema or the main Nazi any of these people
+none of these people should be in office none of these people should be anywhere near the levers of power
+chuckles nobody should you know he should have been at most like a one or two term or
+and then go off and do something else it's ridiculous that he is in the position he's at
+it's ridiculous that Pelosi is able to decide she's not going to run again and just keep running
+and going until then that's that should not be the fact that that happens the fact that you
+have people that just do this their whole lives I just hear my mom's cat is just staring at me right
+but the fact that you have that should be a red flag that's something like it's a problem it
+means you don't have an actual democracy he's he's really staring in totally at me it's very
+distracting in which I had a picture of this I don't have my phone with me it's over in the other
+side and if I move over there to get it he's going to he's going to bolt so there's no way I'm going
+to get a picture of this but it is funny and it's distracting but anyway hey Snoop what are you doing
+what are you doing um totally blew my mental stack I have no idea what I was going to talk about next
+I guess what am I what was I going to talk about I have the I'm looking at my notes
+I had the Trump thing in back to the future I thought about talking about that I don't really
+want to talk about that I'm much more excited about on Donnie right now and uh don't really want
+to think about that I do think one thing I do want to talk about actually is I was reading this
+shit um I don't know why I'm on fucking LinkedIn I I know I don't kind of why I'm on LinkedIn
+but I should be on LinkedIn isn't there's nothing good that comes from being on LinkedIn if I'm
+if I'm being completely honest it's just a waste of time it's just a terrible place to be
+but but but I come to I come in here and they have the like trending stuff and in the trending
+stuff you know one of the things they have uh today was this thing by the CEO of Google
+and he's like our our TPUs are heading her tensor processing units are headed for space
+inspired by the history of moon shots from quantum and reading this because it's yeah
+from quantum computers to autonomous driving project sun catchers exploring how we could one day build
+scare scalable machine and it's ML but machine learning compute systems in space harnessing
+more of the sun's power which in its more power than a hundred trillion times humanity's total
+available like any moon shop level one and so they they talk about these you know early research
+so shows that our new TPUs uh survived without damage when tested in a particle accelerator
+to simulate uh low earth orbit levels of radiation which I I'm really yeah either they're using
+very large features or I really might my suspicion is it's like what what is the dose and what
+is the duration when you talk there's a lot that goes under radiation testing and you like you
+could put anything you could stick your head in a particle accelerator and if it's a brief enough
+blast and the doses in that much you might be fine you could also you know sit there for hours and
+hours and be cooked um you know if you put chips in space and you have cosmic rays
+it's not good for you it's not good for the chips the chips will fail there's a reason that we use
+technology in the space that is very like the features are large the stuff is like decades old
+it's rad hard and all this kind of stuff but never mind that one now never mind that now the thing
+about being in space the thing the reason that the stuff is ridiculous completely fucking ridiculous
+is like you look at all these um and I I'm that word is escaping me for some reason
+you look at all these data centers and they're extremely extremely thirsty they take ridiculous amounts
+of water what do you think they're doing with that water what do you think that they need that water
+for it's per cooling and for the cooling like all the power that you put into the thing is going
+to come out as waste heat that's that's just how energy works that's not like that's the basic
+thermodynamics that's night somebody who's taking you don't even have to take a semester
+of thermodynamics you should just kind of know that but you put energy in and even if you do work
+that's useful with that it's going to eventually just be waste heat so what do you do with all
+that heat and space you don't have lots of water and even if you had lots of water you are stuck
+with radiate of cooling and I mean I guess if you had a ridiculous amount of water you could do
+evaporative cooling with it that's not a very sustainable way to do stuff because it's just like
+evaporating off into nothing but if you're just doing radiative cooling you look at the space station
+you see all those solar panels and then they have these other things that are about as big as the
+solar panels those are to radiate away heat and the space station doesn't have like huge amounts of
+power that it's using I mean that the I guess it depends on what is your scale of huge amounts of
+power but compared to like the power density of say a data center not a huge amount what are you
+going to do with all that fucking heat there's just it's is that feasible there's no way you can have
+a huge data center lying in space in a sun synchronous orbit they're talking about so that's
+it's in it's at least somewhat radiation protected because it's not in like higher
+but it's still it's going to be in a place where it's in the sun all the fucking time
+the sun is putting in a lot of energy now you make get a lot of power out of that you get a lot of heat
+coming in from that you got to balance the heat off somehow and you got to radiate away all that
+extra heat so you gotta have like it's just I don't know the whole thing irritates the shit out of me
+because it's just and then he says
+however significant challenges remain like thermal management and onboard system reliability
+I just kind of like wave those you know just just kind of like casually throw those out
+thermal management is a complete deal breaker for this it's it's not like a trivial thing it's a
+thing that is going to kill it or I guess you can I mean certainly you can have processing
+on the edge and you can do like small amounts of compute for certain things but you're not putting
+the fucking data center in sun synchronous orbit it's certainly I guess if you have like massive
+amounts of space infrastructure and you can build huge radiators you could do it but we're not there
+we're not anywhere near there and if you're launching shit you're just it's just that feasible it's
+not fucking feasible and it irritates the shit out of me because this kind of also like you look at
+him the fact that he's CEO fucking pisses me off but never mind that now he's CEO he has
+he went to the Wharton School at an MBA from there yeah that's just like fucking but he also has
+a masters in material science and engineering from Stanford and then batch physics and technology
+from IIT so the masters in material science and engineering you would think would cover thermodynamics
+and the thing that bothers me is like if you understood the least amount about thermodynamics you would
+know this is not fucking feasible and it's just like I don't know you think about also the amount
+of power like the amount of money that is going to go into this the do space kind of stuff
+making chips and going you're like launching them I don't get me wrong I do support and like
+general interest kind of stuff I like basic research it's very important to do it's very useful to
+do and you know I completely support that that's not what they're doing though they're doing this
+air quotes moon shot to put server farms in sons and granos orbit and it's just pretty much
+ridiculous and the fact that you have people running companies like trillion dollar companies
+allocating tens hundreds of billions of dollars for these projects it's just so misguided
+it's the opposite like I'm sitting here at the beginning talking about how you know if you
+rationally designed a city and you did it well you could put in a bunch of density you could have
+you think about like just looking around here you could have all these people in smaller homes
+currently with a lot more space and that space could be much more comfortable you could have gardens
+and parks and all those kind of stuff around them you could have a bunch of restaurants and shops
+all over the place within easy walking distance and highly accessible so if you're a wheelchair user
+you can get right to them you can go like five minutes from wherever you live and you're on a
+fucking train and then you go from that train to a train state and you know like a little local
+light real kind of thing or better get a subway you go from that subway to a train station
+and then you get to that train station and you can go a couple thousand kilometers away in you know
+a day and you're doing that on sun power that mean literally in Phoenix
+or an Arizona weather you could power trains going up and down the state with solar going a
+few hundred kilometers per hour and it would be like I took this bus I think I talked about this
+I took a greyhound from Phoenix to the flag staff a couple of months or two ago
+and it was okay it was fine not my favorite thing I wouldn't do it again
+ended up taking a car back with some other people that were there wouldn't do it again
+and you think about the experience of doing that like the frequency it was two two greyhounds a day
+do that trip if you go from like say you live in Tokyo or Kyoto and I'm sorry I could go
+back to Japan but if you are there during the normal days especially like a weekend
+every five minutes literally every like three to five minutes there's a fucking high-speed train
+a shinkansen going from Kyoto to Tokyo and like or Osaka and you're just like every
+fucking five minutes that's there you don't have to go through security you just get to take it
+doesn't cost that much it's not like cheap cheap but it's pretty cheap it's powered by hot rocks
+or in Arizona it could be powered by the fucking sun there's a place where fucking solar is a good
+thing because you have like heat dissipation you could actually do something with it you have
+sun falling on the ground anyway the heat is still there no matter what you're doing
+and you know like the if you look at the US power consumption you could put a solar farm
+and I'm not saying that this is a thing that you do practically because but you know in terms of
+the actual energy used by the US it wouldn't even be that much of Arizona like there I've seen
+maps of this it's a shockingly small amount of Arizona could give you the power that it would
+take to power the whole fucking country and you think about also like in Arizona the time that you
+have peak demand is exactly the time that it's the brightest out which means exactly the time
+that you get the most solar and people sit there and they're like oh well you have to what
+have what you do when the sun goes down you have batteries first of all but also when the sun goes
+down you don't have to run the air conditioning as much you don't have to use as much power
+the time when you need the most power the time when they have like the biggest loads when they
+spin up the fucking coal fire of plants is during the hot summer sun sunny times and that's when
+the solar does the best and you know like you think about like they started putting solar on the
+Jimmy Carter's not perfect but solar panels on the fucking White House which Reagan of course took off
+in one of the many ways that Reagan's a piece of shit but you know you put those fucking solar
+panels on every house in Arizona and you don't even need a grid necessarily now the grid is nice
+because it can act as a battery and you can have centralized batteries and things like this so instead of
+having like individuals having to maintain their own systems you can have that for everybody or you
+can have like a small battery at home and then you have like the grid that you know but if you
+would have done this decades ago Arizona would be a net power producer instead of you know like a
+place full of dirty power full of natural gas and full of coal plants still and all this kind of
+shit it's just it's so fucking annoying that we don't do that it's so annoying that you know like
+you look at that greyhound it was like two or three hours to get from Phoenix the flag staff and you
+know not very comfortable and everybody's coughing and it's gross versus again like shit
+constant or TGV kind of thing or the Chinese bullet trains a few hundred kilometers per hour you do
+that math and it's like less than an hour you go from Phoenix to flag staff and of course also you
+have a train in both ends so you're not like you have good public transit and you just look at
+like that that could be there and it's powered by the sun and it could be frequent and it could be
+automated you know like automated cars or thing you can do automated trains or a technology that we've
+had for decades and decades and it's only better now and if you want to make them even better still
+you can easily and we don't have it it's just so fucking annoying the place that we are and this is
+and I guess this is actually I'm going to be wrapping up because you know I'm about an hour seems
+like a good place to break the thing about Maldani that I really just want to tap off here
+is just better things are possible and I'm not again I don't think he's perfect the cop thing
+bothers me you know all this kind of stuff but the faculty one I hope launches a thousand other
+campaigns you know how it starts like making people realize what's possible realized what they
+fucking should have and he's going to be the mayor and he's not going to get everything that he wants
+he's not going to be able to do everything he wants but he's going to fucking try if he even does
+10% of the stuff that he's setting out the deer and people start seeing what you can do what is
+possible what else is possible you know what else can you do and this is this is also why I
+get so fucking incensed with the Democrats because they do shit like you know we're going to do a 5%
+solution we're going to you have the student loan crisis which is trillion's of dollars and we're
+going to help you know a few hundred billion dollars of that in such a small amount that actually
+it gets washed away by interest almost immediately which is fucking beautiful and it's not
+to say that it didn't help people but it doesn't help that many people that much and it could be
+so much fucking better it does not need to be like this and you start seeing the possibilities
+I just hope that people will start understanding how fucked they are and I don't mean an
+permanent way but I mean just in the way that we're like there's no reason to spend hundreds of
+this is one of the reasons I talk about cops all the time we spend hundreds of billions of dollars
+a year on fucking cops in this country on law enforcement for nothing it doesn't make us safer
+they don't even really solve crimes you know like only 5% of what cops do has anything to do with
+violent crimes and most of that is after the fact and most of that doesn't actually help anybody
+and certainly doesn't prevent anything and it's like you're spending all this money you know what
+actually does reduce crime giving people money making people comfortable giving people education
+giving people a safety net giving people better lives that shit makes you safer that shit keeps
+people from doing crime because people don't need the fucking steel people don't need like there's
+there's no point to it at a certain point if everybody is comfortable you're not like why
+why would you do it it's just silly like it's not to say that crime goes away completely
+but it can mostly go away it would be like a weird anomalous thing like this good anyway and I
+don't even want to get into that it's just better things are possible let's do better things let's
+imagine more and again like everything that exists in the world that people have made it never it
+wasn't like handed down by God in that way everything around us is somebody's shitty idea
+or a good idea but you know somebody's idea some confluence of ideas some confluence of stuff
+that people did together we hit the world is what we make it make it better so congratulations again
+Mamdanee and if you're thinking about running and you're not a shithead please do
+and again I don't even want to talk about like beyond electoral politics and all that kind of stuff but
+it is important it does matter I think it's not there are other things that need to be done
+that are probably bigger in the long term but in the short term and it's also one of these things
+where I think you know you have to you have to press all the buttons and hit all the levers that are
+around and that's one of them that we have so anyway with that thank you for listening congrats again
+Zijian and one thing this is the last thing I'm going to say I looked at the transcript that
+I have a lot of generated from my last one and it always fucks up that Zijian Zijian is like
+see you later basically in in Chinese it fucking pisses me off and I can't add my own transcripts
+for some reason like it doesn't it doesn't accept my transcripts when I add them in I'm sure
+it's something that I can work through and figure out but I have like a dozen other things I'm trying to
+do it's not a really big high priority for me to get you know because the transcript is good enough
+but it irritates me it's said bye bye at the end I didn't say fucking bye bye I said Zijian
+so Zijian anyway sorry seriously thank you fuck Tim Cook</p>
+<p>再见</p>
+
+    </article>
+  </main>
+  <footer>
+    <span class="copyright" title="Copyright Scott Menor / SMENOR, LLC. All Rights Reserved.">&copy; 2025 </span>
+    <span> Not all who wander are lost.</span>
+  </footer>
+</body>
+</html>

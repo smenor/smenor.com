@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+  <meta property="og:title" content="Sweetgrass">
+  <meta name="twitter:title" content="Sweetgrass">
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta name="twitter:image" content="https://smenor.com/images/tangentsIconTwitter.png" />
+  <meta name="twitter:twitter:image:alt" content="site logo" />
+
+  <title>Sweetgrass</title>
+
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.umd.min.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class=" sweetgrass">
+  <header>
+    <a href="/" class="logo">
+      <img src="/images/tangentsChannelLogo.svg">
+    </a>
+    <h1 class="title">
+      <a href="/sweetgrass/">
+        Sweetgrass
+      </a>
+    </h1>
+    <input type="checkbox" id="menuControl" />
+    <label for="menuControl">
+      <nav>
+        <span class="line"></span>
+        <span class="line"></span>
+        <ul><li><a href="/ai/" >「 AI 」</a></li><li><a href="/anomalies/" >Anomalies</a></li><li><a href="/bio/" >Bio</a></li><li><a href="/companion/" >Companion</a></li><li><a href="/ethics/" >Ethics</a></li><li><a href="/mechatronics/" >Mechatronics</a></li><li><a href="/portfolio/" >Portfolio</a></li><li><a href="/spite/" >Spite</a></li><li><a href="/support/" >Support</a></li><li><a href="/sweetgrass/" class="current" aria-current="page">Sweetgrass</a></li><li><a href="/tangents/" >Tangents</a></li><li><a href="/who_am_i/" >Who am I ?</a></li></ul>
+        <span class="line"></span>
+    </nav>
+    </label>
+  </header>
+  <main>
+    <article><h1>Collective shared infrastructure for an open and sustainable Internet</h1>
+<p>It has always been ( relatively ) easy for an individual or small group to self-host a website or with a small amount of traffic. The problem comes when things grow and storage, processing, and bandwidth demands inevitably grow to a point where it becomes necessary to find another way to pay for them.</p>
+<p>The cost of hosting anything with substantial traffic at Internet scale is prohibitive.</p>
+<p>Furthermore building and maintaining Internet scale services requires a deep understanding of distributed data structures, algorithms, and architecture. It is easy to build something that works for a small group of people but incredibly difficult to build something responsive and robust that works reliably at scale.</p>
+<p>There is also enormous duplication of effort in setting up Internet scale infrastructure. The effort required for one person/organisation to build and maintain their own distributed database or email server is considerale, but these are problems that are independently solved over and over again by anyone building for the Internet.</p>
+<p>Finally, there is a huge problem with digital data disappearing. Archiving and retaining shared data is a core value and component of Sweetgrass.</p>
+<!-- Economic model -->
+<p><a href="https://sweetgrass.online/">Sweetgrass</a> is an autonomous, ad-hoc co-operative collective organisation which builds and maintains FLOSS ( Free/Libre and Open Source Software ) for Internet-scale infrastructure.</p>
+<h2>Autonomous</h2>
+<p>As much as possible Sweetgrass is intended to be self-managing without requiring large-scale hierarchial organisation.</p>
+<h2>Ad-Hoc</h2>
+<p>Participation in Sweetgrass networks is dynamic and voluntary, enabling and empowering people to voluntarily support each other.</p>
+<h2>Co-operative</h2>
+<p>Sweetgrass networks are owned and managed by their members with the deliberate intention of preventing dependence on particular providers, concentration of wealth and power, or prohibitive hosting / distribution costs.</p>
+<h2>Collective</h2>
+<p>The whole is greater than the parts.</p>
+<p>Sweetgrass allows many people to share common resources and management to give them all more capacity than any could afford individually.</p>
+<p>A low-traffic static website will generally use a tiny fraction of the capacity of the infrastructure it is hosted on. With Sweetgrass, many people can cooperatively share their unused hosting resources to give all participating members additional capacity and resiliency at a lower cost.</p>
+<h2>Lightweight</h2>
+<p>As much as possible, Sweetgrass strives to be lightweight - favouring serving small, static, text-based objects like html files to reduce infrastructure requirements and take maximal advantage of things like caching. The code, itself, is also intended to be minimal leveraging existing standards as much as possible to reduce the complexity of ongoing developmet and maintainence.</p>
+<h2>Open and Democratic</h2>
+<p>Anyone can contribute to Sweetgrass.</p>
+<p>If it's missing something you need, you can add it.</p>
+<p>If something can be better, you can improve it.</p>
+<p>The hosting, architecture, and DevOps are all free and open so you can share your resources with the larger community, syndicate others' content, or you can use it to manage your own.</p>
+<h2>You own your data.</h2>
+<p>We don't mean that you can download your data in some obscure poorly documented format.</p>
+<p>You <em>own</em> your data including the source code for it, and everything needed to transform and host it.</p>
+<p>You can self-host your Sweetgrass instance anywhere, or you can share it with family or millions of friends.</p>
+<p>You're not building yet another Facebook or MySpace page and making connections that you'll eventually have to throw out and rebuild. If you plant Sweetgrass, you can keep it as long as you like and you can even hand it down.</p>
+<h2>Social Contract</h2>
+<p>Anyone can self-host and manage their own Sweetgrass instance, but participation in Sweetgrass networks is predicated on agreement to abiding by an explicit and dynamic Social Contract.</p>
+<p>The core <a href="https://sweetgrass.online/agreements">Sweetgrass Social Contract</a> explicitly states the ethos and assumptions made by members of the Sweetgrass Community. It includes <a href="https://en.wikipedia.org/wiki/The_Four_Agreements">The Four Agreements</a></p>
+<ul>
+<li>Be impeccable with your word</li>
+<li>Do not take anything personally</li>
+<li>Do not make assumptions</li>
+<li>Always do your best</li>
+</ul>
+<p>Agreements can be mandatory for participation or you can unilaterally commit to them without requiring others to.</p>
+<p>Sweetgrass is structured such that sharing resources is voluntary and predicated on agreement with the social contract. You can at any time change your mind or make new terms - but when you do you, you will only share resources with those who agree to them.</p>
+<p>Every participant can decide at their own discretion whether or not someone else is in violation of an agreement.</p>
+<h2>Justice</h2>
+<p>Within the core <a href="https://sweetgrass.online">Sweetgrass.online</a> network, justice is less arbitrary but equally democratic.</p>
+<p>Participating members can still make case-by-case decisions for themselves, but you can also defer to someone else's judgment. They can individually make decisions or further defer to someone else's.</p>
+<p>If you lose confidence in someone else's judgment, you can elect to rescind all of their past decisions, or, by default, adopt them and make your own going forward.</p>
+<ul>
+<li>Transparency
+<ul>
+<li>People must know what they are accused of</li>
+<li>People must see and be able to add evidence</li>
+</ul>
+</li>
+<li>Presumption of Innocence</li>
+<li>Due Process</li>
+<li>Right to Muster a Defence</li>
+</ul>
+<p>All members of the Sweetgrass community can make decisions for themselves, or they can elect to defer judgment to someone else or to a set of randomly selected jurors who have opted-in.</p>
+<p>Govornance of the Sweetgrass-Online collective is similarly by consent, deference to soemone else, or sortition among one or more people who have opted-in.</p>
+<h2>Archival</h2>
+<p>What happens on Sweetgrass stays on Sweetgrass.</p>
+<p>As a very general rule when things are added to the Sweetgrass network, they are presumed to be retained within the network.</p>
+<p>Individual participants can elect to remove ( though not alter ) data from their own instances, but that is strongly discouraged without good reason.</p>
+
+    </article>
+  </main>
+  <footer>
+    <span class="copyright" title="Copyright Scott Menor / SMENOR, LLC. All Rights Reserved.">&copy; 2025 </span>
+    <span> Not all who wander are lost.</span>
+  </footer>
+</body>
+</html>

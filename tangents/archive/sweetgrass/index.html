@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <meta name="description" content="Peer-to-peer protocol">
+  <meta property="og:description" content="Peer-to-peer protocol">
+  <meta name="twitter:description" content="Peer-to-peer protocol">
+  <meta property="og:title" content="Sweetgrass">
+  <meta name="twitter:title" content="Sweetgrass">
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta name="twitter:image" content="https://smenor.com/images/tangentsIconTwitter.png" />
+  <meta name="twitter:twitter:image:alt" content="site logo" />
+
+  <title>Sweetgrass</title>
+
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.umd.min.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class=" sweetgrass">
+  <header>
+    <a href="/" class="logo">
+      <img src="/images/tangentsChannelLogo.svg">
+    </a>
+    <h1 class="title">
+      <a href="/tangents/archive/sweetgrass/">
+        Sweetgrass
+      </a>
+    </h1>
+    <input type="checkbox" id="menuControl" />
+    <label for="menuControl">
+      <nav>
+        <span class="line"></span>
+        <span class="line"></span>
+        <ul><li><a href="/ai/" >「 AI 」</a></li><li><a href="/anomalies/" >Anomalies</a></li><li><a href="/bio/" >Bio</a></li><li><a href="/companion/" >Companion</a></li><li><a href="/ethics/" >Ethics</a></li><li><a href="/mechatronics/" >Mechatronics</a></li><li><a href="/portfolio/" >Portfolio</a></li><li><a href="/spite/" >Spite</a></li><li><a href="/support/" >Support</a></li><li><a href="/sweetgrass/" >Sweetgrass</a></li><li><a href="/tangents/" >Tangents</a></li><li><a href="/who_am_i/" >Who am I ?</a></li></ul>
+        <span class="line"></span>
+    </nav>
+    </label>
+  </header>
+  <main>
+    <article><h1>WHITEPAPER: SWEETGRASS PEER-TO-PEER PUBLICATION PROTOCOL</h1>
+<p><strong>An Open, Ethical Framework for Internet Scale Hosting and Distribution</strong>
+<strong>Version 0.1 (Pre Prototype)</strong></p>
+<hr>
+<h2>1. Executive Summary</h2>
+<hr>
+<h2>2. Core Technology</h2>
+<hr>
+<!-- ## 3. Ethics
+
+## 4. Development Roadmap  
+### Phase 1 (2025–2030): Open-Source Tools  
+- **Soliton SDK**: Release simulation libraries (Warpx/PIConGPU mods).  
+- **Citizen Science Kits**: $50k desktop plasma rigs (crowdfunded).  
+
+### Phase 2 (2030–2035): Pilot Grids  
+- **100 MW Testbed**: Partner with **ISPs** (use fiber optics as waveguide conduits).  
+- **Ethical Audits**: On-chain reactor inspections via **UN Energy DAO**.  
+
+### Phase 3 (2035+): Global Deployment  
+- **1 SDFEN Node/Village**: Prioritize **energy-poor regions** (Sahara, Arctic, Pacific Islands).  
+
+---
+
+## 5. Call to Action  
+### 5.1 For Researchers  
+- Contribute to **GitHub.com/SDFEN-Org/core**.  
+- Experiment with **low-B soliton guides** (see *Appendix A*).  
+
+### 5.2 For Policymakers  
+- Draft **SDFEN Accords**: Ban kinetic-energy weapons derived from fusion waveguides.  
+- Fund **$10B Prize** for 1st 100% ethical GW-scale reactor.  
+
+### 5.3 For Citizens  
+- Run **node validation** on home GPUs (stake tokens for reactor votes).  
+- Advocate for **SDFEN education** in STEM curricula.  
+
+---
+
+## Appendix A:  -->
+<hr>
+<h2>TODO refactor and remove the following:</h2>
+<p>Cryptography has become synonymous with blockchains and things which ludicrously attempt to create artificial scarcity in an inherently abundant realm.</p>
+<p><a href="https://redshoecollective.org/sweetgrass/">Sweetgrass</a> is a counter to that.</p>
+<p><img src="/images/Sweet_Grass.jpg" alt="Sweetgrass"><figcaption><a href="https://en.wikipedia.org/wiki/Hierochloe_odorata#/media/File:Sweet_Grass.JPG">https://en.wikipedia.org/wiki/Hierochloe_odorata#/media/File:Sweet_Grass.JPG</a></figcaption></p>
+<p>One of the big challenges of building anything for the internet is that as the number of users increases, the amount of storage, compute, and distribution resources required to support them increases at least proportionately.</p>
+<p>Anyone with a bit of work can build a website or back-end for an application that can support possibly even hundreds of concurrent users, and they may even be able to pay to host that, but those infrastructure requirements very quickly get out of hand as the network grows.</p>
+<p>This, in turn, means that it's not enough to build something good and useful, but you have to figure out how to pay for it — and that cost is essentially unbounded. Even with hundreds of thousands or millions of users, the operational costs for hosting and back-end computation will be prohibitively expensive for almost anyone to run for free, and, at the scale of something like Facebook or TikTok it is simply not feasible for anyone other than a massive corporation or government to host.</p>
+<p>Even for something like a simple, static website hosting into perpetuity is costly and / worse impractical. So much content that was formerly hosted someplace on the Internet is gone forever now because whoever was responsible for maintaining it couldn't or became disinterested in doing so.</p>
+<p>At the same time though, every user accessing the network is doing so from a device which, itself, includes storage, compute, and communication capabilities. In principal, if it was possible to harness those resources for hosting and archiving, and if any single device is capable of supporting even just a few others, then anything could grow to arbitrary size without requiring huge amounts of expensive dedicated infrastructure.</p>
+<p>There are some very big challenges in implementing direct peer-to-peer alternatives - in particular existing internet protocols and firewalls do not generally support making direct connections between devices, applications running on those devices are not guaranteed to be running constantly or to be responsive when the users aren't using them, and there is risk to storing arbitrary data and executing arbitrary operations from an unknown and untrusted third party.</p>
+<p>Sweetgrass addresses these.</p>
+<p>At its heart, Sweetgrass is based on post-quantum cryptography in order to allow people to attest to their own identities, to vouch for others, and to sign their works.</p>
+<p>Eventually it would be nice to update internet protocols to directly support peer-to-peer connections but in the meantime Sweetgrass uses a combination of mesh networking and a limited number of dedicated servers to manage routing and to mirror connections from one user's device to another.</p>
+<p>The more people who use Sweetgrass, the stronger and more capable the network becomes.</p>
+<p>In principle, and in time, Sweetgrass can essentially replace all of the services hosted by Amazon Web Services ( AWS ) and the like.</p>
+<p>Further, Sweetgrass is built from the ground up with an offer/acceptance mechanism that allows creation of networks where users have agreed to a social contract, along with a system of governance and a jury/peer-based means of adjudicating disputes with transparency and due process.</p>
+
+    </article>
+  </main>
+  <footer>
+    <span class="copyright" title="Copyright Scott Menor / SMENOR, LLC. All Rights Reserved.">&copy; 2025 </span>
+    <span> Not all who wander are lost.</span>
+  </footer>
+</body>
+</html>

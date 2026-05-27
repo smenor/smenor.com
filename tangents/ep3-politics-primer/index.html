@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+  <meta property="og:title" content="Politics Primer">
+  <meta name="twitter:title" content="Politics Primer">
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta name="twitter:image" content="https://smenor.com/images/tangentsIconTwitter.png" />
+  <meta name="twitter:twitter:image:alt" content="site logo" />
+
+  <title>Politics Primer</title>
+
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.umd.min.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class=" politics-primer">
+  <header>
+    <a href="/" class="logo">
+      <img src="/images/tangentsChannelLogo.svg">
+    </a>
+    <h1 class="title">
+      <a href="/tangents/ep3-politics-primer/">
+        Politics Primer
+      </a>
+    </h1>
+    <input type="checkbox" id="menuControl" />
+    <label for="menuControl">
+      <nav>
+        <span class="line"></span>
+        <span class="line"></span>
+        <ul><li><a href="/ai/" >「 AI 」</a></li><li><a href="/anomalies/" >Anomalies</a></li><li><a href="/bio/" >Bio</a></li><li><a href="/companion/" >Companion</a></li><li><a href="/ethics/" >Ethics</a></li><li><a href="/mechatronics/" >Mechatronics</a></li><li><a href="/portfolio/" >Portfolio</a></li><li><a href="/spite/" >Spite</a></li><li><a href="/support/" >Support</a></li><li><a href="/sweetgrass/" >Sweetgrass</a></li><li><a href="/tangents/" >Tangents</a></li><li><a href="/who_am_i/" >Who am I ?</a></li></ul>
+        <span class="line"></span>
+    </nav>
+    </label>
+  </header>
+  <main>
+    <article><audio controls>
+        <source src="https://smenor.sfo3.cdn.digitaloceanspaces.com/2025.08.28-politics-primer.m4a" type="audio/x-m4a">
+      </audio><h2>Episode Transcript</h2>
+<p>Hey there, I'm Scott, and this is Tangents. It is the, well, actually, as I'm recording this, the 27th of August 2025. Probably going to put this up on the 28th, so I've already marked the files as that.
+But it is 10.06 a.m. here in Bangkok where I'm recording this, and I went out for coffee, came back, back to my hotel, and let me just preface this by saying a couple, well, a few days ago when I recorded the last episode the first time, maybe I guess it was a week ago now, I fucked it up because I was recording in the bathroom because I was trying not to bother.
+My neighbors, it was like 10 p.m. at the time, 2200, or maybe even like 2130 or something like that. I didn't want to bother people by talking in my own hotel room, and this morning I get up, and of course I have insomnia.</p>
+<p>I was up at like 630 or something, I don't know, maybe earlier, and I get up, and I'm moving around, and at some point before 730, I know definitely was going on by 730, but at some point by then, my new hotel neighbor is bumping ridiculous house music.</p>
+<p>And I went out for coffee, and I kind of rolled my eyes, and I recorded a little bit and sent it to the sort of family group chat.</p>
+<p>Went out for coffee, went around, did some stuff, came back.</p>
+<p>it's now 10 10 almost and uh that's that the rave is going on and it's even louder and it's
+just more ridiculous and i just i i can't like first off i'm not the kind of person i i understand
+that people like loud music i am not the person that enjoys loud music just to begin with i i've
+never like it doesn't make sense to me as a thing i don't need to understand it but it just never
+has um i guess i kind of get how you know like oh i feel the vibrations but you know that is it's
+like blowing up fireworks or something like that i get the interest that you have in that one time
+very briefly and then it's kind of okay i've done that box checked i'm good um i don't understand
+the appeal for some people that this holds like it's something that you want to do over and over
+again and i really don't understand why at like 7 to 10 a.m uh you're you're doing this it's just
+fucking weird to me like it would not appeal to me just to listen to it even if nobody is being
+bothered by it and then to be in a hotel where you know there are people above and below and next to me
+uh enjoying my my rave doesn't fucking like it does not compute it does not fucking compute to me
+um i i just like my i i go a little bit excessive on this but my general thing is basically
+a not to bother people you know just to the minimal extent possible i don't want to the maximal
+extent possible and i don't want to bother people i i just don't want to be in the way and if i do
+bother people i want to minimize that as much as possible and to the extent possible you know i i
+i listened to that thing where it's like you know leave the campsite better than you found it
+that's kind of generally like if i if i'm renting a place or if i'm staying someplace or whatever
+i'm not saying that i'm going to have it perfectly cleaned and all that kind of stuff but i try as a
+very general rule to leave things better than i found them you know that's my my thing and i
+definitely am not going to be like annoying people going out of my way to annoy people it's
+fucking weird it's fucking weird so now four minutes in actually you know now that you've
+listened or stopped listening already um or we've filtered out some people what i want to talk about
+today is i i was talking to a friend yesterday and she mentioned kind of offhand like how fucked up
+things are in the u.s and then i sent something about uh how you know the the right-wing parties
+um in japan gained a lot of seats in the lack the last election um she's like you know you kind of lost
+me at politics and it occurred to me and this is not necessarily for her although it would be awesome
+if you know she listens and finds it useful but this is kind of a thing that occurred to me is just
+i normally spend a lot of time with people who are very deeply uh enmeshed in politics they're
+i will not necessarily say that they are well informed i know a lot of people who are
+very poorly informed or very disinformed um and they but they have strong opinions on it
+and they find it at least kind of interesting but i think there are a lot of people out there
+who don't really pay attention and and in fact deliberately this has been a tactic that people
+have used uh they've been turned off to the stuff and i'm not saying that like electoral politics
+is going to accomplish really much of anything at all but i am saying you know like there has been a
+deliberate uh long-standing sort of thing that people have done to get people to think yeah voting
+doesn't matter and you know like it's all just bullshit it's all a show and it kind of is and
+it's kind of true but also to some extent there are things you can do within the framework of the
+system um you know like i i'm not someone like i i did not vote for harris i almost didn't vote for
+genocide joe because at the time he was i already knew crime bill joe he was jim crow joe um he was a
+terrible fucking person and he would one of the big issues for me is abortion rights and this is a
+guy who in 2019 this is not like ancient history this is not like him saying roe went too far in
+the 70s which he did say um but this is in 2019 he was for the hyde amendment and the hyde amendment if
+you don't know uh if you're not like deeply into this stuff is a thing that goes basically on the
+federal budget and it says that no federal money can be used um in any way to fund abortion and
+it's a it's a fucking terrible thing it has dire consequences and it's it's just like it's one of
+these things where you have these people that act like and think i do think some of them are sincere
+sincerely misguided but sincere they think they're saving babies or some bullshit in reality what they're
+doing is making it extremely difficult to give basic health care to a lot of people and i don't
+want to get into this this is not the point of this episode but like abortion is a medical procedure
+it is indicated in certain circumstances and you know like usually the things that they focus on
+that the one most abortions happen very early in pregnancy and the ones that happen late
+um the the ones that people like to focus on those like people are not carrying uh pregnancy
+to like eight months unless they want to have a baby like people get there and then they get in some
+kind of medical emergency or you know the the fetus is dead like this is a thing that happens or it's
+going to die or you know like there's something horribly wrong that is going to put that and uh the
+pregnant person's life in jeopardy or is putting it in jeopardy and so they you know and again this
+is extremely rare when it does happen and when it does happen it is you know it's not like a thing
+that people are going out of their way to do it's something that they're doing very grudgingly and it's
+very traumatic for them already and you know like but the people who like to pretend they're saving
+babies and all this bullshit they really focus on this and they really demonize the people getting
+them done and it's it's you know if you're superficial when you're like not really paying
+attention it's easy to stand from the sidelines and go like oh that's just horrible but when you
+actually look into it and and again i'm not going to make this episode on this i will make an episode
+someday on on abortion um but it is unambiguously just a reasonable thing it is not a bad thing it is
+it is medical care it is just like um getting an appendectomy it is life-saving medical care
+and it is something that should be between the pregnant person and the medical providers it should
+not have anything to do with the federal government other than that we should have universal health care
+and it should be covered under universal health care like a thousand percent so anyway getting on
+from that uh the thing i wanted to talk about is basically and i think my audience here um this
+could be for anyone but the the people that i'm really trying to speak to are either a people who
+are not paying attention and they don't know much about a lot of this stuff and b also you know i i am
+gonna kind of say some things that i think are not broadly known and i think they're things that
+everyone should know and hope hopefully for you this is all like old hat old hand old hat i don't
+even know which one and it won't be news to you but for people that it's not um i think it's important
+and i think it's stuff that we should all know and now i'm like 10 minutes in this is this is my
+problem i'm sorry i'm very verbose so first of all um everything you've been told especially if
+you're in a if you're a usean uh usean would be someone from the united states america is a you
+know much bigger than just the united states so usean and also it yeah let's just say it works well
+because the usean population uses a lot of resources way more than most people in the world
+but if you're a usean everything you've been told is a lie now i i'm i'm obviously exaggerating
+somewhat uh but not really all that much you know useans are among the most propagandized people
+in the world seriously i i know that it seems like oh no other people are propagandized we're not we're
+totally not pro no you're very very propagandized i'm sorry and people listening from the outside are
+like yeah no shit they like to them this is such a no-brainer um and it's so obvious and it's ridiculous
+it's like it's like actually and and this i don't want to put people off uh but this is like if
+you're standing outside of both the red and the blue mega groups and you see these people it's it's
+so obvious they're both cults it's so obvious that they're both like completely out of touch with
+reality and rabid and you know they're they're not really interested in any issues they if you ask
+them about specific issues they will say they have nominal positions on certain things but then
+you look at the candidates that they support and they obviously obviously don't give a shit about
+them you know whether it's trump or gavin newsom or biden or harris or any of these other people
+they do not align with the the principles and the the things that people claim to support
+so anyway that's now that i've lost like completely all the audience that i'm trying to talk to
+um i i just want to say like i i went to public school i got a fairly good education in public
+school relatively speaking and the u.s and in the 12 years k through 12 i i swear without exaggeration
+i got the u.s like we we didn't cover most of history um certainly not most of the history
+either of this country or any any region in the world uh like we dabbled we we we sort of like
+covered all of chinese history over the course of like a couple days like and i'm not even really
+that much exaggerating like in my k through 12 we touched on it a couple times over a couple days
+all the dynasties all the just bang um african history mostly did not cover egyptian history
+in the sense that it connected a little bit with um with like greece and rome and all that kind of
+stuff we touched on very briefly uh the whole cleopatra and uh and all of that stuff um we touched on
+it right uh but very very light very very lightly and european history similarly although a little
+bit more depth and then you know like oh 1066 the battle of hastings and blah blah blah and then you
+get to the u.s foundational myth and we covered that shit i swear damn near a dozen times you know
+dozen years almost every fucking year and we didn't spend like five minutes talking about it we spent
+weeks talking about it and studying it and most of it is complete bullshit complete and utter bullshit
+uh you know like i mean some of the the things obviously you know things get valorized things get
+kind of uh glorified and myth mythologized um so you don't expect things to be like exactly
+high fidelity to what actually happened uh but what we really studied is just complete complete
+disconnect from reality so you know it's like oh these guys didn't like living under the tyranny of
+the of the king and they were these wise uh the founders they were these wise people who blah blah
+blah no these these were people who were rich kids um and when i say kids i mean like legitimately
+late teens early 20s um you know these were not old wise mature people these were rich kids uh most of
+whom in fact owned i'm using air quotes but owned slaves to the extent that any human being can own
+another human being uh they were slave owners slave holders um and they they weren't really
+interested in most of the things that they espoused that they were interested in other than like a not
+paying taxes didn't like paying taxes b they didn't want to be told what to do by somebody else and c they
+wanted uh the rights the you know people act like are foundational important rights um you know freedom
+of speech and all this kind of stuff for wealthy white landowners that that was they didn't want them for
+everybody they certainly didn't want them for uh for Black people or for brown people or for red
+people or for yellow people they wanted them for just people that looked like them people that were
+extremely rich and people who were mostly terrible like mostly legitimately terrible i i mentioned this
+in another episode but you know like i the first time i watched hamilton and even before i watched it
+you know like i heard about it for a long time and then i started listening to it and it's like oh this is
+awesome oh this is awesome and then i watched it and it was fucking great i i've seen it twice in fact
+and both times in pentagius in la um i didn't buy the tickets my sister did she likes shows but i went
+and the first time i actually really loved it i really and and i'm saying this to kind of point out
+my own shame because i thought it was fucking fantastic and then i learned more and i mean i always i
+always kind of knew some of the stuff but i learned more about these people uh they're getting valorized
+by that thing and really like they're terrible people like for the most part everyone in that
+thing um was a terrible person you know that is some to greater extents than others and some you know
+had like some were particularly awful and some were kind of like marginally awful and even of the
+terrible people you know if if washington wanted to he could have been the empire or the emperor
+the king or whatever uh the fact that he didn't do that it was like he went out of his way not to
+uh it was a good thing it definitely like it could have gone much worse and in most revolutions
+uh you'd have a worse person there but still kind of an asshole kind of pretty fucking terrible person
+and so you know that's just where we're starting and before them and during and then after
+uh this country i say this country i'm in thailand right now so that country um was built on and i
+mentioned this in a previous one i say it all the time uh because it figures endless repeating it was
+built on top of a genocide on a scale that would make hitler blush um you know like literally we don't
+we don't actually know the numbers it's kind of hard to figure out but we know order of magnitude
+it was order of magnitude somewhere around 100 million people lived there prior to european
+contact and now it's true many of them died from diseases and many of those diseases just got
+propagated in uh naturally well naturally after initial contact and you know so it wasn't like a
+deliberate act there but that wasn't everybody that wasn't you know like millions and millions of
+people were killed deliberately and driven off of their ancestral land and you know even the ones
+that survived um like their kids were stolen kidnapped and then put into these things they
+called and i'm using again air quotes here but indian schools and these things were basically a way to
+systematically commit cultural genocide by which i mean they they were not allowed to speak their
+original language they were not allowed to wear their own clothes they were not allowed to practice
+any of their uh any of their traditions and they were forced into christianity the religion of the
+colonizers they were forced to use the language of the colonizers and punished for not doing those
+things and basically this was a way to just sever uh countless generations innumerable generations
+of tradition and of um you know continuity and these are i was talking to somebody else today about this but
+you know like we live in a world where food grows from the ground in trees and you can just like
+literally like walk around and pick it and eat it that is the situation that we live in and people
+and it wasn't just in north america but people all around the world a lot of indigenous people
+generally speaking um before european contact had and again i'm not trying i want to be very clear
+here a i'm not saying europeans are the fucking devil and b i'm not saying this was just europeans because
+if you go through the history of asia or africa or you know there there are a lot of a lot of bad
+things but before yeah i'm focusing kind of like broad strokes here i'm trying to trying to give you a
+little bit of a refresh on the u.s particularly so the colonizers that colonized there before their
+contact um and the other places that they went and who were like europeans going to the americas going
+to africa going to other places uh indigenous populations were working like literally 10 to 15
+hours a week of light work you know not not like toiling for 10 to 15 hours and then chilling out
+uh like a little kind of tending to stuff little kind of like you know cleaning things up do a little
+bit of stuff here do a little bit there and the rest was essentially leisure time like they could do
+what they liked with it and the time that they were working uh again it was not toil it was like
+light work it was stuff that they could do with their families and their friends um it was stuff
+that they could do voluntarily if they didn't want to do it one week they could take some time off
+they were very you know it was a very different situation and these colonizers come over and they
+see people chilling out and they see people like relaxing and you know having essentially it yeah i'm not
+saying it was like a post-scarcity society exactly but and again also i'm painting everything with
+broad strokes things were not a monolith even within a specific uh you know group not a monolith
+and certainly many different groups i'm you know broad brush but a lot of people are sitting there
+and they're in essentially a life that would be pretty comparable to what you might imagine a post-scarcity
+society would be like you don't really have to work um you have people caring for people who are
+sick and elderly um in many cases and again broad strokes uh just just assume the broad strokes is
+there i'm not i'm not going to keep interjecting with that but just keep that in mind uh but then
+these colonizers come in and they're like these these lazy bastards and they basically said you know
+like well stop that you guys have to work and toil and you have to like it's super important that
+you and and you have to do this regimented uh like you can't just have food forests food forests are
+kind of silly you need to have organized structured uh you know farms and all this kind of stuff and
+all those things are very inefficient very labor intensive uh they're things that are sort of almost
+by design set up to essentially like strip the land of all of its resources and destroy it versus
+like the food forest you have an ecosystem which kind of takes care of itself and also you know like
+if things ebb and flow you can move from one place to the next and all this versus you know you have
+this this farmland uh and you have monoculture there crop monoculture and you end up with things
+like uh taking all of the uh the nitrogen out of the soil and you know if you do crop rotation you can
+kind of make it work uh but for the most part you need fertilizers you need pesticides you need a
+bunch of stuff whereas in the food forest um all of that stuff kind of and i'm not again i'm not
+saying everything is just magic and it takes care of itself but it kind of does with a little tending
+you can do a lot and the entire not only the entire continent but much of the world was sort of
+cultivated by humans um in various populations to be that kind of a situation where you know it wasn't
+necessarily the natural state that you could just walk into the forest and find a bunch of food
+but people made it that way people over many many generations made it so that you could basically be
+anywhere uh you could eat something you could find uh you know the stuff that you would need
+to sort of survive and be relatively comfortable and uh that was not a good thing for these europeans
+and they came in and they completely like nuked it they completely destroyed all of that stuff
+and it's just it's it's fucking ridiculous like honestly it's hard to convey how much worse things are
+um and how much worse people made things and this was this was again you know like this is just one
+example um so anyway we got the the genocide yeah and the genocide of course uh still ongoing
+like even to this day um and it definitely again you know you i know people that kind of like wave it
+by they're like oh because of the diseases pre-contact uh you know when i say pre-contact i mean like
+you know people in some part of the country that never even saw europeans were wiped out by diseases
+the europeans brought over but even even then you know it wasn't just like magically they they were
+gone and then the land was free there were still people all over the place you know it wasn't like
+you completely wiped out everything just a lot of people um and then you did the various forms of
+genocide after that and then of course also yeah the the country was built and i mentioned slavery
+before but it was built uh on the blood and sweat and tears of slaved enslaved people you know people
+who were held as property and forced into you know horrible servitude uh not that any servitude
+is good but you know like just fucking horrible situations and just fucking evil like absolutely evil
+stuff and of course there were also like indentured servants and people being exploited all also that some
+rich fuckers could live essentially lives of leisure in some vague sense uh like what everybody used
+to be able to live uh prior to european contact and it i can't emphasize enough and again i'm not
+saying like that they're i don't want to imply oh things used to be perfect and now they're terrible
+um there were things that were not as great there were things like now if you have uh appendicitis i
+mentioned that before you can get an appendectomy if you have a infection you can get antibiotics
+if you have uh you know and you can go through like we some technology is really nice uh dentistry is an
+interesting one because prior to the uh the development of sort of purified sugar and certain aspects of
+agriculture um people's teeth were by and large quite good and you know so we obviously still you would have
+problems occasionally or trauma or whatever uh but cavities were much less of a thing a lot of the things that
+we deal with and that we need modern dentistry for were not problems uh to to such an extent
+and uh we've made them much worse and we've developed ways to address some of that stuff so
+yeah but we are we are here and you think about also i think this is a thing that um yeah it's very
+difficult because i'm trying to make this at a very high level i want to get through it in about an
+hour but i also want to go into enough or enough depth so one thing that is important to understand
+is also that the economic systems uh and obviously again nobody's a monolith a lot of different groups
+but by you know broad strokes the economic systems did not have a concept of uh private property uh or
+property like land ownership for example um it is not to say that you didn't have personal property
+like you could have stuff that was kind of yours that you held on to that you made or that somebody gave
+you and it's sort of yours but you didn't like own this plot of land you didn't what it would which
+is a ridiculous concept at the beginning you didn't own this animal or this it's just you know and the
+stuff that you did have um that their economy was not based on a sort of um tit-for-tat transactional
+system where it's one of these lies that you know like just like you get fed this bullshit lie about
+the u.s foundational myth we get lot we get fed this lie about like well people this is the economic
+lie story that we're all told uh people used to do exchanges and they would barter and they would
+figure stuff out and then eventually like they started using instead of i'll trade this for that
+they would figure out like well okay i'll trade this for this number of shells and then
+uh or some other you know stones or whatever coins eventually and then you can exchange those
+for something else and this is how currency was developed and blah blah blah this is not actually
+if you look at indigenous populations and the history this is not how things worked uh or continue
+to work in places that are uh pre-contact or minimal contact still existing today um in in reality what
+actually happens the way that things happen are people have stuff and people make stuff and they
+make an excess of stuff often and if somebody needs something that somebody has made or collected or
+whatever and they have more than they need uh they give it to them they just give it to them openly
+uh you call it a gift economy there there's a whole lot of stuff done on this and study it's not
+you know i'm not making up some like bullshit um that's some hippie shit no this is this is the way
+things were in most human populations including european populations by the way if you go back far
+enough it was predominantly gift economies and then people sort of figured out aha i can make up this
+bullshit lie and uh you know sort of through force and through other things uh and through just
+conning people with this bullshit framing uh i can get people to toil for me and do much more work
+than they need to uh in order to enrich me uh while i'm sitting on my ass and that's you know
+it goes through like you can go through not just the feudal period but prior to that um then you have
+kings and this kind of stuff and then uh you end up with sort of a mercantile like merchant uh trading
+economy and then you end up with the sort of capitalism that we have today um none of this is
+i hesitate to use the word natural because nothing is natural when it comes to humans but none of this
+is really like reflective of anything that people used to do it's all just made up bullshit and i think
+it is important to understand that so many of the things that we take for granted as just like innate and
+natural are completely made up bullshit that transactional exchange and you know having money and all this
+kind of stuff or needing money and especially you know like having something that is a currency
+that that is not a thing that we necessarily need at all you know and it's not to say that there aren't
+like scarce resources and you don't have to worry about allocation and this kind of stuff but for the
+most part if you look at other organisms um that that's not the way things work you're not like
+trading um even like people like the frame it's interesting how much this framing i'm going to talk
+a lot about framing here and in the future but a frame is sort of the structure for how you understand
+something how you put the world into some kind of um an organized story right and the framing
+with capitalism is basically um you know you have scarce resources and you want to exchange them
+and so you need some kind of a currency of exchange either you do direct uh barter exchange or
+you convert to a universal currency and then eventually you have this like a fiat currency that's completely
+disconnected from anything at all and uh you know like it's a funny thing like if you look at um
+like banks the way that banks work now they just i want you to understand how made up all of this
+shit is uh they they will take money and people give them a little bit of money to hold on to
+and then they loan out um some multiple of that like it's not like they're loaning out the money that
+they're holding on to they'll loan out like five times ten times whatever they actually have
+and then of course the people who get those loans can put that money in a bank and then the bank can
+loan out more money based on that imaginary stuff and it's just like piles and piles of imaginary
+bullshit it's it's just because everybody thinks of stuff in a certain way and has this framing and of
+course that framing means that it's not just how you see the world you don't just see like oh this
+thing has a certain this pin that i'm holding has a certain value and the work that went into
+making it is worth a certain amount and so when i buy it i'm giving you know the person who owns the
+factory a certain amount i'm giving the person who actually did the engineering for a certain i'm
+giving the person who worked in the factory a certain amount we have we have this idea this is not
+this is not the way things work but that kind of framing when you look at say atp in organisms people
+will sort of twist that into a currency exchange and to some extent i mean don't get me wrong
+information or energy there are like things that have an innate value and they do get exchanged but
+in cells you know it's not like the cell is necessarily hoarding these resources if you look
+at organisms and you look at ecosystems the way this normally works is and this is the way people work
+and again i'm not i don't want to twist everything into this other framing i'm just saying you know
+like giving you a counter frame and sort of suggesting maybe there are other ways to look at
+things but the way that things tend to work is basically you have resources in the environment
+and you take what you need to some extent maybe you take a little bit more and you make stuff
+using that that you need and then you spit out waste products and those waste products might
+be like oxygen and oxygen is useful it would it's actually a poison but it's also useful for a lot
+of other things to do a lot of other stuff with uh and and oxygen is so abundant in the environment now
+that we basically don't you know it's essentially free it's there for the taking water in nature would
+be kind of there for the taking other than in deserts and there are a lot of details i'm kind of
+glossing over but again broad strokes i know it's it's like a horrible reflexive thing that i keep
+talking about that so anyway that is sort of how we got to yeah a lot of stuff and i don't want to get
+into in this episode like the civil rights movement and history of the political parties in the u.s
+and all this kind of stuff i will talk about that later but what i want to i'm going to jump
+way way way way ahead to where we are kind of today um and where we are today is in the world
+uh there are a lot of people in pretty dire circumstances like don't get me wrong uh you
+know there are a lot of people who are very comfortable very few people in air quotes developed
+countries are truly truly starving like they're like to the point where they're really emaciated and
+dying because they're not getting enough uh nutrition but a lot of people are living pretty
+miserable lives a lot of people that are working very hard are living pretty miserable lives and
+they're needlessly sick and they very well may be now malnutrition malnourished uh you know which is
+to say like you might have enough caloric intake but you're not getting you know in the u.s especially
+like it's so cheap and easy to get processed foods that are shitty and terrible for you
+and it's very difficult and expensive to get safe fruits and vegetables um whereas in most of the
+world and especially in you know you go back at a certain point there were no processed foods it was
+all like air quotes natural stuff uh and again i don't want to imply that air quotes natural stuff
+is intrinsically good um obviously you know there are plenty of things that are poison there are plenty
+of things that are you know not great for you um there are plenty of things that you know like
+if you just ate certain things uh even if they taste good and even if they're kind of nominally air quotes
+good for you um there are a lot of things that you could overdo that's all i'm saying and there are things
+that well and i don't want to get too much into that stuff but the point is anyway where we are now
+there are a lot of people in this system that we've built um and again all of this stuff is just
+made up and like some asshole human beings long ago thought of it found ways to get people to work
+for them essentially um and the way things are structured actually you know you have it's kind
+of an interesting thing because you have it's easy to focus like uh you know mao and well not just
+but a lot of a lot of sort of revolutionary people really focused on the landlords and that the
+landlords were probably at the time a little bit more at the top of the of the pyramid so to speak
+than they are today but at that time people would focus on them and uh you know for for good reason
+because uh if you own in some sense air quotes own the ability to exist someplace like you need
+shelter you need food and somebody has some kind of control nominal control over that um that can
+that person can force you to do labor or they can force you essentially into the servitude whether it's
+actual like overt slavery or just you have to somehow get so many of these shells to give to me
+before you can just to survive otherwise you're going to be out in a horrible situation
+that's you know that's a pretty terrible person and especially when you think of like what are the
+actual underlying costs and quote-unquote owning something like that versus what are you giving
+somebody and also similarly like when you're you're working what is the value that you're creating
+your your efforts that your labor is creating versus what are you getting for that and again
+like at all these layers in our society we have all these i i want to say middle people but i'm
+going to say middlemen because um deliberately gendering it no it's just like you have these
+people who are intermediaries who essentially are just there they just exist to add friction to the
+system and you know take a cut and they make things worse for everybody they're not actually
+contributing they're not actually essential in any way but they're there to take their cut
+and then give you some diminished version of whatever whether it's your boss or whether it's
+you know the bank or whether it's a landlord or whatever and at at the moment the way things are
+you know you've got this sort of structure but above like again you can focus on the landlords and
+i do not think landlords are good people as a general rule you know but but i i know i own property or
+i'm a landlord myself or my friend is a landlord or whatever you want to say probably not the
+greatest thing like i understand you're just doing or they're just doing what they've been told is the
+right thing to do but it is intrinsically kind of evil to force other people to do shit that they
+don't want to do in order to give you shit that they don't want to give you um in order to simply
+survive and and obviously like you could maybe survive on the street if you wanted to but probably
+not and it's very difficult and you can't really yeah i mean i think about i think about this a lot
+like there was a time in history where if you didn't like the way things were you could just like
+wander off into the to the wilderness and you just disappear and you can kind of fuck off and not
+have to deal with people or or at least not have to deal with the people that you were dealing with
+before uh you and then certainly like you didn't have to pay rent to somebody you didn't have to
+uh and then but anyway i don't want to get too much into the weeds there but the point is you got all
+these people now we have this other layer on top of that where the landlords themselves who are again
+terrible doing terrible things they're really essentially working for people who are above them
+um like people who are running the banks people who are the owners of corporations and stocks and all
+this kind of stuff and we're like even the people that are exploiting you uh even the if you're
+exploiting people you're exploiting people but you're being exploited at the same time and we've got this
+sort of hierarchy where people are always kind of like clamoring to get up to the top of the ladder
+or to advance um they're they're using this sort of or they it's not like a one person decided this
+it's kind of a collective delusion but everybody is sort of trying to improve their situation
+at the expense of others and it's easy to tell yourself like oh i i can't actually do the right
+things here because it will destroy my life or it will cost me a lot in order to to help somebody
+and so you end up with a situation where you have layers and layers and layers of people exploiting
+other people making things worse adding friction to the system also the a very small number of people
+at the top like on the planet with eight billion plus people uh literally like order of like thousands
+of people like a fraction of a fraction of a fraction of a percent are the ones that are like
+really on top of the pyramid and everyone else below is just kind of working and exploiting people
+and fucking people over in order to further enrich those people at the top and the ones at the top
+do not give a shit about like the continued habitability of the planet or anything and they
+have so much like they could not conceivably use everything that they have even if they lived a
+thousand lifetimes like they just couldn't do it uh and they want more it's this disease i i hate i
+don't want to use this as like an ableist thing but it's like this horrible hunger that is insatiable
+that these people have they cannot ever be satisfied they cannot ever be satiated and they just want more
+and more and more and it doesn't matter what the cost is and it doesn't matter that they can't
+possibly use they just want to be able to be at the top of the pyramid and have more than everybody
+else and have more than they did yesterday and it's just fucked that's the situation that we're in
+and so because of this and then we have a bunch like a long history basically my entire lifetime you
+have all of these parties um and getting back into the actual politics of today here but we have
+these parties like the democrats in the united states uh like labor in the uk labor in australia
+and canada and a lot of places in the world and these parties are sort of nominally nominally better
+than the the right-wing parties kind of but they've also and i'm not again i'm very far to the left i'm
+not in any way saying good things about the right-wing parties uh or the the center right the more
+center right parties i'm just saying like these other parties that you think of many people think
+of as kind of left-ish even in other countries by the way but in the u.s especially like what you
+think of as a left-leaning party is actually to be generous to them center right and really a little
+bit you know the democrats are right of where ronald reagan was on immigration and a lot of other
+issues and uh you just think about like how fucked up this is and so what what kind of happened is they
+weren't always like that none of the parties obviously were always to begin with they were
+all just fictions created by people and what they stand for and all this kind of stuff has changed over
+time the dominant parties in countries like the u.s even where you have kind of a two-party system
+um those those parties have changed over time and the way that these things have kind of changed or
+one way that they've changed is after reagan you have bill clinton um i'm going to focus on the u.s a
+lot here but i'm yeah a lot of these things kind of have echoes in other countries so if if you're in
+another country maybe you're bill clinton is somebody else but uh it's a tony blair or whatever but
+whoever it is yeah you have these people who made reaganomics and made this idea um this sort of
+neoliberalism um i mean i'm throwing out that word i'm not going to really define it here but this is
+the the concept the the sort of general political philosophy uh it's a very the idea is in some sense
+good because you have uh freedom and free markets and blah blah blah um and this sort of fundamentally
+though capitalist uh currency exchange uh transactional idea everything has to be it's a
+weird thing it's it's actually quite quite sick and twisted because it's like everything has to make
+money uh you can't have public services that are just public services uh it's totally antithetical
+to any kind of a gift economy and and again like one of the reasons that human civilization
+developed initially and one of the reasons why we are and have been so successful as a species
+is because we work together and we improve our collective situation together and like societies exist
+uh partly and largely really so that if you get old if you get sick somebody's there to take care of you
+and uh you can help other people later on and or or maybe you helped other people and also like
+your value is not intrinsically in it's not measured in terms of what you do it's not measured in terms
+of like it's not like you have to help somebody and then they'll help you just like that's how the
+fucking thing works people help each other that's that's i i know that like i know a lot of people
+will argue like oh the human nature is blah blah blah uh i i think that is if you look at people
+in indigenous societies that tends to be how they are that's not to say that they're always like that
+it's not to say that people don't do horrible shit uh there are plenty of examples of people in
+indigenous societies uh that are horrible and brutal and yeah so again but i do think like by and large
+if you take a kid and that kid is raised without really too much acculturation like they're not
+indoctrinated into a culture and they see someone in pain or they see someone in need their impulse
+and you know i don't have kids of my own but i've seen enough kids in the wild to kind of gather this
+i mean i was a kid the natural human impulse is to help the natural human impulse is to you know do
+something it's to to sort of take care of each other to take care of other other organisms other
+other sentient beings that's sort of if if we have any nature to speak of i think that's a lot of it
+and then everything else is kind of layered on top of that and again like people are people people are
+individuals some people intrinsically have more or less of that uh some people don't and and all of
+this but i think by and large you know take an average person uh they're probably between neutral
+and a little bit uh benevolent just just a little bit um so anyway rambling on you have people like
+bill clinton who took ronald reagan's extreme sort of uh everything has to be it any any public
+organization has to make money every everything like the post office has to make money the air
+traffic controllers have to make money they and also it's all got to be run under a sort of
+capitalistic thing like you know we we want to minimize the the costs and maximize the and blah blah
+blah and what you end up with is a system which is very brutal very harsh um it completely undermines
+social safety nets it completely undermines any kind of you know services that people would get
+including things like universal health care this is this is another thing also like in the u.s you have
+another layer of like one of the reasons why almost every um modern civilization that is air quotes
+developed has some form of universal health care has public transit has nice parks and walkable cities
+and all this kind of stuff one of the reasons why the u.s doesn't have that um one of the biggest
+reasons is just straight up racism because it you know like prior to the civil rights era um in the u.s a
+lot of cities a lot of villages had public pools they had things that were kind of nice collective
+places to be and then uh there were a bunch of supreme court decisions um and and laws that made it
+so that everybody could have access to those things and a bunch of white people who were fucking racist
+didn't like that they didn't want to share it and so rather than sharing they paved over their own
+fucking pools rather than sharing they divided up their cities they made the city unlockable they
+they put up barriers they tore up and again there were also like a lot of other factors at play but
+one factor in destroying public transit in the u.s which used to be pretty good like la used to have
+an actually really good trolley system and then it got torn up partly because of the auto industry
+but also partly because if you have a good public transit system then and you have civil rights
+then people that have darker skin can go other places people who don't speak english can go other
+places and it's easy and you have a much easier upward mobility and then we can't have that we
+can't have that we have to have everything divided and separated out and so that is that is a big factor
+there but i'm kind of rambling on but coming back um just want to make sure that you understand
+the reason that we don't have a lot of good stuff is fundamentally racism um there are other factors
+again but that is a number one in the u.s and you have uh again um reagan and bill clinton's air quotes
+welfare reform and then also like tough on crime was a big thing and this is a bipartisan a lot of
+these things are very bipartisan i i want people to understand like it is not just the republicans
+that are super pro cop it is not just the republicans who are super pro uh capitalism and uh running
+everything like a business everything everything has to be a business it can't be a public service
+it is it's bipartisan it is fully bipartisan and uh you know you have democrats who either are doing
+the same stuff or they're offering absolutely zero opposition to it and and similarly in other
+countries you have this air quotes left ish giant ish party uh versus and in other countries of course
+you have many parties you know i it's it's difficult to talk about all this kind of stuff without getting
+into like tons of weeds i'm trying to give you broad strokes uh but we have the democrats who are left
+er than the republicans left of the republicans but they're still a right-wing party uh or like
+legitimately right-wing and because of that people have gotten into a point where like at one point
+in time uh the u.s had a top tax rate of like 94 that the nominal um marginal tax rate marginal tax
+rate this is another thing that like uh it's very important to understand that the way that marginal
+tax rates work it's not like if you're hitting that 94 all of your money is taxed at 94
+it's all of the money past a certain level is taxed at that level so whatever the marginal rate is uh you
+know for the first chunk is very low you get that and then the next chunk from some amount to some
+other amount you're paying that much more and so on and so on and then for any amount over a certain
+amount that you make 94 of that was taken and at that time we had social programs we had a lot of
+things that were making things better for a lot of people making it very easy to go to school
+uh get an education to have retirement to to live fairly well for a lot of people and that got chiseled
+away over time slowly and we've gotten to the point now where you have a bunch of people who are
+hungry and tired and desperate working multiple jobs and this this is at different stages but it's
+kind of happening around the world uh working really hard and not able to survive and they see
+that they're in a position that is much worse than their parents were at the same age and when they
+were working much less hard uh which is not to say like maybe your parents worked very hard but if they
+worked as hard or if you worked as hard as they did um and you're an average person and they were an
+average person you would probably be way way behind where they were at the same age and especially like
+you go to their parents well i guess it depends on your generation and all this kind of stuff but you
+know if you go back to say the boomers uh they were able not in a like great job to have a house
+uh that car to be comfortable to pay for their kids education which was very cheap uh it and in some
+cases free like literally free or damn near free you know like people could go to university
+and uh in in many schools again like california state schools used to be free now they're very
+expensive but in many places you could go to university and like do a summer job and in your
+summer job which would be maybe not even full-time uh but even if it's full-time you have enough time
+and money to go out have fun uh to pay rent to pay for the rest of the year in your university
+and you come out with basically no student debt wasn't even a thing and then you'd graduate
+with a degree and no debt and you had a good time like and also you didn't have to spend the entire
+fucking time while you were studying also working and that is gone that's blown away from the u.s
+the thing that's scary is also like if you look at other countries uh even if they're not where we
+are uh a lot of them are getting there like the national health service or national health system
+in the uk has been slowly eroded and it's much better like i would take nhs over the u.s air quotes
+health care system any day but it's been fucked over and it's been dried out and slowly over time
+um is being destroyed and many of the companies that are responsible for fucking over u.s health
+care are in other countries doing the same stuff uh many of the people and country companies that
+have fucked over our education system they're in other countries doing the same kind of stuff and
+they're making the same kinds of things like making education too expensive making university
+education too expensive and again i don't want to say like you know it was magical and perfect in other
+places but a lot of things were a lot cheaper or free and they're getting worse in a lot of places
+and so people are experiencing this and they again quotes left party is not doing anything or they're
+not doing anything to help like even when they get into office they're not helping in any way they're
+helping uh capital they're helping the people with lots of money but they're not helping most people
+and then you have the these right-wing fascists who go around and they don't tell you that it's
+because of uh or maybe they do kind of like give you a bit of a lie that with of the best way to lie
+is to have a little kernel of truth there so you kind of say oh it's these uh these elites that are
+doing and and you know it's these uh left parties that are doing this that's because you're getting
+you're paying too much in taxes or some other bullshit and they give people simple simple answers to
+very complicated problems usually they like to um to point to other people like it's oh it's the
+immigrants oh it's the and you know it's some other group uh some other people in some other country
+or someone who's not you or it's trans people or it's uh muslims or it's whatever and any any group
+that is not the sort of dominant majority group of that country very easy to use as a scapegoat
+and so they're selling people that and they're saying like we're gonna make everything you know
+we have these simple solutions we have this hard problem things suck and listen to us and elect us
+and then we have these simple solutions for you and they're getting you know it's not just trump
+and the u.s and in fact in the u.s if you go up and down state legislatures there are a bunch of
+many trumps there are a bunch of other fucking terrible people there are a bunch of people who are not
+you know like as gross and obviously terrible as trump but they're basically just as bad
+um including in his administration and congress and so on and those are people that are there
+there are people that are all over the world and they're getting you know a lot of play out of this
+because you don't have somebody uh who has any real entrenched power who offers any kind of uh
+either an alternate framing that actually works or you know any kind of an answer and that the real
+answers are not you know unfortunately like things tend to be complicated there are not like quick
+fixes for a lot of things there are not things that are you know like if you imagine crime so crime
+first of all this is not a problem like and i'm not saying that crime doesn't exist but there's this
+whole idea in the u.s that like crime is rampant and blah blah blah and crime certainly exists but
+for the most part if you look at the statistics crime rates are very low now it's much safer in a
+lot of other countries to be sure uh mainly because in the u.s anyone can get a gun very easily and you
+know so it any kind of crime that there is is intrinsically much more dangerous there but you know if
+you if you look at crime rates in the u.s most cities including the places which are you know
+supposed to be crime and you know crime written horrible dystopias uh new york or chicago or dc or
+whatever they're the crime rates are very low right you're very safe there you're you're not as safe as
+you are maybe here or sure surely if you go to like beijing or something you'll probably be safer
+go to tokyo you'll be safer uh but you're you're very safe uh and most of the people that are not
+like that are experiencing the effects of crime uh very often are sort of let's just say involving
+themselves and again broad strokes not not universally but it's a very common thing so
+anyway um people focus on this they make up a problem like that they make up a problem like
+immigration immigration is not actually a problem in the u.s period there's no crisis at the border
+uh there's no problem with there's literally no problem with immigrants or immigration
+immigration uh it is a made-up fictional problem that the right-wingers have made up so that they
+have an excuse so that they have a reason to send troops into cities to increase the number of police
+that there are to increase you know like to make things horrible for a lot of people and the problem
+the real fundamental problem is not just that those people exist and that they're telling people these
+lies and that they're selling easy solutions the real problem is that the democrats or the opposing
+party to the extent that there is one are using the same framing they're using the same they're
+telling you the same stuff like harris didn't say there's no crisis at the border you're being
+fucking silly she didn't say that crime isn't a problem she didn't say like these are the actual
+problems she didn't say that you know like a lot of people are struggling and we need to work on that
+she went with the same framing that trump had she's like oh yeah there is a crisis at the border and
+this is how i'm going to deal with it there is a blah blah blah this is how i'm going to deal with
+it and by doing that a you're accepting and you're using the same just complete bullshit framing
+so you're spreading it you're not giving an alternate way to see things b you know if you're
+using that framing you're probably not the one you know i mean aside from the fact that like the people
+that she was chasing after are very largely racist and they weren't going to vote for her anyway
+but also like if you're if you believe in that kind of shit uh you're going to go for the the bigger
+fascist you're going to go for trump you're not going to pick this sort of like republican light
+and it's such a ridiculous problem because these parties do that kind of stuff and then magically
+there's no opposition and then magically trump wins and that's you know where we are not only in the
+u.s but kind of around the world people like trump when because there's no real opposition there's no
+counter frame and the people who are supposed to be opposed are reinforcing the same shit that these
+people are claiming and they're offering a less strong and less simple solution so of course people
+pick the the stronger strong man they pick the stronger uh easier solution because that's just how
+the fucking shit works when people are telling lies and it's it's such a fucking problem and the
+republicans will sit there and they make up like oh trans people are blah blah blah and the democrats
+are so many the democrats do not protect trans people it's the most fucking infuriating thing
+actually because like gavin newsom is anti-trans fundamentally deep hard stop and it's not just gavin
+newsom uh budigich or biden or harris they're all fucking anti-trans they're not like you they're
+not talking about trans people they're not helping trans people and yet the republicans point to this
+as like oh those those woke democrats and you know the bunch of bullshit that they say and then they
+blame it on trans people and the democrats just fucking accept that they act like you know oh yeah
+they're right this is a real problem and we have to abandon trans people not that you were with
+trans people to begin with but you have to abandon them oh yeah the republicans are right and now we
+have to abandon immigrants like you fuckers you absolute fuckers um or my favorite one it did not
+my favorite one but one of my favorites as well you know like harris in the debates was arguing with
+trump over who is the bigger fracker like she's super pro fracking and we're in a fucking climate
+catastrophe right now things are going to get much worse but things are already bad and you can see
+that they're bad and that there's no party sitting there no dominant party in power or anywhere near
+power saying like this is a fucking you know planetary emergency and we have to do something about it
+and you know that there are people that are doing that but they're not the democrats they're not anyone
+with any kind of real power and so you have you know like no real opposition and so it's kind of like
+this thing like oh you have to vote for me because trump is worse um and you do that over and over
+again and then you don't help people and you don't offer like real explanations for why we're where we
+are and you don't offer real solutions even if they're slow and kind of take some time and then you
+have the republicans who are saying like oh this is where we are and we have these problems and it's all
+their fault and so vote for me because i'll fix it really quickly for you and it's not shocking
+that they fucking win it's not shocking that like it what was what is your plan like you're never
+gonna have any republican ever win again because that's the the vote blue no matter who always vote
+for the republic or for the democrats against the republicans that's the the only way that works
+and it's not a viable solution even if the democrats were actually okay and the democrats are
+actually pretty shitty they're they're not as shitty in many ways as the republicans but it's like
+the do you want the fast train the express train to fascism or do you want the slow train there's no
+train going the other way i i want to be on the train that's going the other way i want to be i
+like and this is one of the reasons i live well i live i am i aspire to live outside of the u.s
+uh but one of the reasons i love being outside of the u.s even in the cities with shitty public transit
+and the parts of the world that i go to it's much better like bangkok doesn't have the greatest
+public transit network uh there are a lot of things that i don't like about it but it's so
+much better than almost anywhere in the u.s like okay you go to new york city it's pretty good there
+are parts of chicago where it's pretty good there are parts of dc uh where it's pretty good there are
+parts of san francisco where it's pretty good la even has parts where it's pretty good but for the
+most part in the u.s um and in even all the cities that i said or that i mentioned they're decaying
+or like la is actually investing in it but for the most part it's not a great network but just
+sort of a nominal kind of marginal shitty i mean i'm using random words there that don't really mean
+exactly what i mean but just a random city in europe probably has a better public transit system
+than almost any city in the u.s uh you know it's certainly like the app the the best case maybe it's
+not as good but on average certainly you roll the dice you go to any u.s city versus roll the dice and
+go to any european or asian city um and you're probably going to get much much much better in a
+random city anywhere else in the world especially a city that's not like under active development
+then you know it's kind of like getting someplace if they're already built up a little bit it's probably
+going to be better and you're probably also going to be like one of the things that's remarkable
+especially like anywhere that i have been traveling uh you you go places and it's always walkable
+it's always like being a pedestrian is not the worst thing in the world and you can actually get from
+place to place and you're not like standing if you if you walk in arizona uh you feel like a weirdo
+you feel like you're doing something wrong and i i really mean that like there are places where
+there are people walking but for most of the city like there's nobody it's it's not only a desert in
+the sense of you know like being dry and all this it's a desert in the sense that there's just nobody out
+it's it's creepy it's fucking weird it's like a dystopian movie um like a post-apocalyptic movie
+and it's not just because you're like out there in the summer when it's fucking hot it's like even when
+the weather is nice there's very few people out and the people that are out like you feel like
+there's something wrong and it's it's a real problem it's really depressing uh but anyway
+the the the place that we are is is sort of there and the the way forward and i don't i don't want to
+go i'm already like two hours like an hour and 10 minutes i don't know why logic always starts
+there must be a good reason for this but it starts at one colon zero zero zero zero instead of zero
+zero colon zero i guess it's maybe like the uh the standard thing in the u.s where the ground floor
+is the first floor and they're starting like the first hour is is a one so it uh i would much rather
+the counter start at zero but anyway i'm an hour 10 minutes in i'm not gonna go into like what we
+should do um or where we should where we should go next but that's i do think there are answers to
+that and i think a lot of them uh come from people understanding sort of where we are and a lot of
+them come from having a much better understanding of this and not just being like oh well um the
+republican republican bad and democrat good they're both bad they're both bad but it's pro wrestling
+and the idea that they're even in opposition to each other in any way that is meaningful um it's
+pure theater and i wish people would understand this because i talked to so many people who are
+absolutely convinced it's just like oh the democrats they're totally trying to oppose this stuff they're
+just you know they're they're they're not as strong or they're not as what no they're not trying
+to oppose it they're very strong when it comes to opposing bernie sanders they they organize and i'm not
+it like bernie sanders is good he's left of center but i'm i'm much further left than he is
+and i have i have some problems with him because he's actually like very aligned with the party and
+very much you know not acting in opposition to it um i could go on for that or with that for a long
+time but he's much better than the vast majority certainly any of the democratic candidates the that
+we've had other than him uh much better much better and the party can massively you know mount
+a defense against him if they could mount the same kind of defense against trump trump would never have
+gotten elected would never have won um and instead you know hillary clinton this is one of those things
+like it sounds like a conspiracy theory but you can search for this you will find it in the new york times
+um in politico and uh yeah you just go the hill uh the atlantic a bunch of other stuff um they always
+wanted trump just search for that hillary clinton and you'll find this thing called project or called
+pied piper and the pied piper thing was a thing that they thought it was a strategy it was a terrible
+strategy but it was a strategy and it's it's this like playing fifth dimensional chess thing um they the
+idea was basically like trump couldn't possibly win and so if we get him the nomination then we can
+just like sail into the white house this this was hillary clinton's thing and the whole you know the
+entire party was kind of behind it and again it sounds like a ridiculous conspiracy theory but it's
+fully well documented it's it's it's not like some ridiculous idea that i'm just making up and you look
+at that and this is the wisdom that these people have they thought they had no idea where we were
+and this is a thing that i want you to understand like obviously don't just listen to me and assume
+that everything i say is correct and and certainly understand that everything that i'm saying you know
+it is a rough sketch a first pass at understanding stuff it is you know like the the chalk outline it is
+not like rough then it is not i'm not giving you a bunch of details and everything that i've talked
+about you can go and talk at length about everything else and you know like there's a lot of stuff that
+i'm i'm sort of deliberately omitting or i'm glossing over because the reality is always much more
+complicated and you know if i made this like exhaustive uh first off i'm not like yeah i i know more
+about this stuff than a lot of people but i am not by any means qualified to like fully like
+exhaustively go into full depth on all of this kind of stuff but also even to the extent that i i know a
+lot more that i'm talking about here if i did like you you wouldn't listen you just like yeah you need
+to initially get kind of like a very rough cursory idea and then maybe go into some of these things and
+maybe start thinking like oh that's scott maybe maybe he's not completely wrong maybe he's not
+completely yeah he's he's a little extreme i'm not extreme but yeah maybe maybe i should look at
+maybe there's something to that and then you kind of like go and peel back the onion a little bit
+go go do a little bit of research that's all i'm asking you to do um but anyway that it's just
+frustrating it's just very frustrating to me so she got trump and i'm saying she it's not it's not just
+her because james carville and a bunch of other fucking people got us trump this party not actually
+offering any kind of opposition and destroying uh social safety net the the air quotes welfare reform
+that her husband did got us trump you know a bunch of things got us trump um harris running on
+being super pro fracking and being anti-immigrant and not really helping any of the core constituencies
+like literally alienating all the core constituencies of the democrats and taking away any reason why
+somebody might vote for them like you know i didn't vote for her specifically because of the genocide
+in raza um i i wasn't going to do it i couldn't do it i was ready to vote for her for like a couple days
+and then she and her husband and spokespeople and all these other people kept coming out
+and saying over and over again and beating the drum like um not only do they you know support uh israel
+completely unconditionally um but you know like they're just going to keep funding it keep doing
+all this stuff and apply zero pressure to to end this thing which like i i cannot tell you how many
+uh over the last couple of years how many kids i've seen blown up or burned alive uh people in
+hospital beds you know just burned alive mother screaming um while her kids are burning to death
+in a tent right in front of her but burning to death because the tent has been bombed uh with bunker
+busters that came from my country that that we gave to to this country um yeah like and i mean i talk to
+people there pretty much on a daily basis and like there's always a fucking drone buzzing in the sky
+um not not a hundred percent always like they they don't do it just enough so that it's not like a thing
+that you can filter out they do and i'm sure they've calculated like what is the right amount of time
+to have this thing annoying you uh where you can't filter it out and you kind of can't get used to it
+and they they do that it's psychological torture and then they're blowing things up they're they've
+completely leveled the city um and and they're starving people to death you know like there there's
+an absolute embargo um an absolute you know blockade of anything getting in and out and it it's
+fucking horrible and even before that it was very hard to get out uh it was very expensive to get
+out but now like people can't get out and i talk to a lot of people and the refrain that i hear most
+often is that people would just like to die um because they either they just want the suffering to
+end or you know and i'm not i'm not a religious person so this part sounds pretty bad to me but they
+want to die so that they'll have few food in heaven i i think that this idea of an afterlife
+obviously like it's unknowable whether it exists or not uh i i would say i lean toward probably not but
+i i certainly admit that i don't know because how would i know but this idea that something exists
+after this life i think it gives people uh a it gives people an excuse b it gives people this idea
+that you know like it's oh you can deal with all kinds of bullshit because this is eventually a
+good reward um and it also gives you this idea that you know like oh it's it's fine that mitch
+mcconnell is a fucking horrible person because and he'll die with a smug grin on his face in his own
+bed comfortably that's all fine because eventually after he's gone he'll suffer for it and i don't like
+this first off i'm there's a whole like i don't want to i'm not into punitive justice even with
+somebody like that uh just to begin with although i would to see him suffer would not make me feel bad
+but i i don't you know that's not the the goal it's not the goal it's not to to see him in a worse
+position or to see him miserable the goal is to make things better and to prevent harm from being
+done and to restore to the extent that harm is done to do what you can to undo it and to get people
+to a better place to get him to not be a fucking horrible person or if he is going to be a horrible
+person uh to get him out of power and to get him out of a position where he can actually hurt people
+like that would be the thing that you would do uh to me that's just that's just me i'll i'll probably
+talk about that more and something else later but you know it's just like broad strokes uh but this
+idea sort of i think it gives people a salve uh sort of like a feeling of yeah it removes some
+pressure to some extent it takes away some of the edge like if you think oh this is the world this is
+what exists and if it's shitty or if it's a paradise that's on us we can make it better or we can make it
+hell um and a lot of people are intent on making it hell but it could be a fucking paradise
+um very easily by the way it's not like you have to mass you don't need like massive amounts of new
+technology or anything we could today make it a paradise like legitimately fairly easily it wouldn't
+be tomorrow you couldn't quite snap your fingers and do it but we could make it pretty quickly if
+we got together and we did it um we could make things much better we could make things so much
+better for so many people all around the world like there's no reason for anybody to starve to death
+right now in the world more food rots every year than you need to feed everybody and yet millions of
+kids not just in gaza are dying just every year of starvation like completely human made famines and
+things like this and you know like the entire existence of my life and for much of this country
+certainly post-world war ii um we've bombed people we've blown up shit we've made things worse in a lot
+of countries and that doesn't need to be that way it doesn't need it we've you know like my country has
+propped up dictators and overturned democratic revolutions many many times um yeah it's just it's
+it's fucking annoying it's really and it does not have to be this way and i think that there's a
+danger a real danger in this idea that you know a this idea that there's some omnipotent being out
+there um who's just you know like because once you start thinking that it's like well why do things
+suck and then you start coming up with these ideas like oh things suck for some people or for you
+uh because you know you did something wrong and god is punishing you and the people that are
+really successful god is like shining a light on you know the prosperity gospel bullshit and it's
+very easy to come up with that kind of stuff and that gives you a reason not to the change things not
+to improve things um and then it's also very easy to think like well you know that there's just like
+intrinsic justice in the universe and so we don't really have to impose no there's the justice
+there's there's no justice but what we make there's no um consequence for things that's innate but what
+we make and and i think this is important also like i like the idea of karma and to some extent
+obviously it sort of exists naturally like there are effects to doing shit but consequences are largely
+created by people and the absence of consequences um makes things worse the absence of concerted effort
+and like looking like this is what we've got we don't think maybe there's something better later on i
+don't know but we know we've got this um we should fucking make it better and the absence of that
+makes things worse and it is a massive problem that i know also it's torture because again i talk to
+people in in graza and it's not just there but you know like if somebody's kid dies like why did god
+do this and and i am so thankful i was raised without religion i am so thankful on a daily basis
+especially when i talk with people like this um for that because by being raised without it i don't have
+this torture you know i did this not to say that i haven't had an existential crisis or things like this
+i've had to deal with like the the vastness of the universe and the the length and the you know
+massive scales of time and things like this but i haven't had to deal with like why does life suck
+why is this horrible thing happened um that you know like the this being that i'm told is omnipotent
+and omniscient and loves me um why why have they done this horrible shit to me like i i see people all
+that on a daily basis like why what did i do to deserve this you didn't fucking do anything like
+that and there's a lot of i think there's a lot of relief in this idea it's not good it doesn't make
+you feel great about it but understanding like oh the universe is kind of random and the things like
+that people don't deliberately steer one way or another um that's just random it's not you know
+it's not like a condemnation of you or it's not like oh you're being rewarded for being a good
+person no it's just kind of largely random and then people do stuff that's not random and a lot of that
+good or bad people don't think like oh well we could actually make things better we could actually
+you know like people don't need to be blown up they don't need to be starved to death people don't
+need to be like forced into this situation where they have to do a gofundme because their kid gets
+cancer or or because they were in a car wreck and they're just you know like injured or because they
+had covid and you know they've got like a permanent uh disability from it you know so i i see people
+a lot of people ask like why do you wear a mask all the time one of the reasons is that i'm not
+rich and i know way too many people with um you know just long covid and they're like there are
+extreme examples like physics girl um you should check her out if you if you're not familiar but like
+a lot of people think they have permanent brain fog they lose the ability to smell uh they they have
+you know like brain damage from this shit they have cardiovascular damage from this shit it is causing
+their lives to be much worse it's making you know the stuff that is essential to do in life uh much
+harder and already like i i struggle enough to get stuff done i don't need another thing standing in
+my way i struggle enough uh to be able to focus i don't need something i don't need fucking brain fog
+and to be tired all the time i i don't need that i don't want that and you know there's a whole other
+thing about like the abandonment of public health and this is another place also this will be where
+i end but this is another place i will make an episode just on this one but where both parties
+have been terrible you know like early on in the pandemic it was like the the democrats were the
+ones wearing the masks and the republicans weren't and part of it you know people were talking about how
+it was virtue signaling and i i think actually kind of was because as soon as you got biden into office
+you know trump a couple hundred thousand useans died under trump terrible right and many of those
+were preventable if we would have acted fast we could have put the fucking brakes on this shit
+but didn't and let it go uh and then he said and i probably i'm repeating myself and i know i'm
+repeating myself but i probably i'm three episodes and i'm probably saying something i've already said but
+i'm gonna repeat this ever ever more um until people get it he said you know well if we just
+stop testing it'll magically go away but he didn't do that right he didn't stop testing biden had all
+the time had all the time to prepare all the time to get ready came in and his approach was we're gonna
+stop testing uh we're gonna change the reporting because i don't like uh people look at the maps on
+the cdc website and it's all red and orange that doesn't look good uh so we're gonna change the
+metrics on that we're gonna change the coloring on that again i i will make an episode um and a page
+where i show some of this stuff because it is fucking ridiculous and because he did all this stuff and
+because he got people to stop masking and because also because he told people um that vaccines like
+vaccines are not magical personal shields vaccines are a public health tool that do protect you to
+some extent but the big reason that you have vaccines the main thing that they do is protect
+society protect us collectively um so if you vaccinate enough of the population you don't have enough
+susceptible people in the population to get infected and to spread things and then diseases collapse they
+can't go from place to place so they just die out and you end up with you know things essentially
+either not necessarily getting eradicated although we've done it with smallpox and we've almost done
+it with a few other diseases um but at the very least they go to low low low levels where they're
+very controllable and you can just do monitoring and they're basically non-existent and then if they do
+pop up you can contain them and you can deal with them and then people don't die or people die on a
+much lower rate than they were um that's what you know you vaccinate populations not individuals um
+but biden sold them as like this oh you get vaccinated you can just take off the mask that's that's not how
+the fucking shit works and by doing that he promoted anti-vaxxers because people saw oh it doesn't
+actually work that way because of course it doesn't uh they didn't he didn't explain like
+swiss cheese i can explain to a fucking six-year-old like uh if you vaccinate somebody it offers imperfect
+protection it offers protection but it has holes and that mask offers protection but it has holes
+and you know cleaning the air having better ventilation better filtration offers protection
+but it has holes and when you put these things layer on top of layer on top of layer those holes
+don't all allow you know this is the swiss cheese model layers of swiss cheese the holes don't all
+overlap and then you have smaller and smaller gaps where things can get through and in that defense
+and depth um you're offering much more protection that's how fucking shit works that's how public health
+works and you know this this whole idea about vaccines being for you personally versus a thing
+that we do to make society better and and for us included by the way because you know because everybody's
+getting vaccinated then you're much less likely to get measles you're much less likely to get whatever
+other disease um it's not just yeah it's it's kind of an interesting thing because you're taking this
+individual action which is helping us collectively which is prevent in turn protecting you individually
+that's the thing that's protecting you individually it's not that the vaccine personally immediately
+protects you it's that if enough people are vaccinated and you have other public health
+measures then you will be protected and and never mind also like people get freaked out about
+like this mrna stuff um if you're upset about mrna uh covid is a plus sense single-stranded
+rna virus that means it is itself mrna like it is literally mrna and you know if you're upset about
+the virus if you're upset about the vaccine the virus is the fucking it's a piece of the of the
+vaccine is a piece of the virus literally just pulled out and designed so that you can get protective
+immunity and develop protective immunity without getting sick um that's that's what it is and they do
+have like adjuvants in them they have things to elicit an immune response which can trigger
+some kind of an immune reaction and most of being sick is an immune response to a disease so it can
+give you like some symptoms and this kind of stuff and nothing is perfectly safe of course but like if
+you look at the relative risk the risk of getting vaccinated is very very small and the risk of getting
+covid is much greater and you know so it's like it's a complete no-brainer it's it just fucking
+pisses me off and now we have the situation where you get fucking trump in office and first off vaccine
+uptake went down to shit under biden and now trump is talking about like trying to pull all the covid
+vaccines because um anti-vax junior rfk junior is pushing these just ridiculous concepts but they're not
+just about like the covid vaccines which yeah but he's also pushing this nonsense about um like
+gardasil these hpv vaccines hpv like if you're a woman um or someone with a uterus i guess i should say
+uh under 30 35 one of the leading causes of death and it's a horrible death is uh cervical cancer
+and most of the cervical cancer comes from hpv infection and gardasil can prevent hpv infection
+and prevent cervical cancer and massively it's very effective very low risk and you know like it's
+just like why would you not why would you not do that if i if i had again i don't have kids if i had a
+daughter it would be criminal i think it would be just evil to not get her vaccinated it's just
+and and of course you can also get um it's not just for for women although you want to vaccinate
+both boys and girls because even if it was just for women again it's a public health measure and
+you're preventing your son from giving somebody else's daughter something i'm sorry that i'm using
+very gendered language there but yeah but also um you know penile cancer anal cancer throat cancer
+oral cancer these things are also caused by hpv and they're also very easily preventable by gardasil
+and by i keep using gardasil but hpv vaccines there are other ones um that's just for some reason the
+one that i have in mind but it's just it's fucking infuriating that this guy and this guy is just a
+massive quack and he's in a position of power now and unfortunately biden and the democrats have
+really elevated this guy and this these kinds of notions because they've sold this bullshit idea
+of how vaccines work as a magical personal shield versus a public health intervention uh that is
+gonna that is gonna do it for now i'm an hour and a half and this seems to be like the right amount
+of time um my voice is about to to die and uh and also like i i feel like i probably probably have
+bored you enough for this episode i will be back soon uh probably not in a couple days i'm gonna try
+to do i'm trying to do this about once a week uh but i'm not on a fixed schedule and i am traveling
+which is making things complicated uh but i i will put up another one soon this one i just i was talking
+to somebody yesterday i got um i got the idea i really wanted to to expand on it and then i've
+got a lot of stuff that you know i just like always like talking about uh but i have a bunch of i have
+so many things that i just want to say and i i appreciate you listening i hope that it's helpful
+i hope that it's interesting and i really hope more than anything uh that it at least i don't i'm not
+i'm not expecting to like change people's minds but what i want to do and the way that i see all of
+this kind of stuff it's kind of like geology it's kind of like you know i'm a grain of sand blowing
+in the wind and i'm individually not doing that much right but enough grains of sand over enough
+time enough things in the water in the wind and you can carve the grand canyon and i'm hoping
+aspiring that in time in concert with a lot of other people and with things that you know you're doing
+yourself uh that things change and then things get better and that maybe you start thinking like
+oh maybe this is uh the situation that we're in or maybe maybe the democrats are not such a you know
+depending on where you are depending on what your your system is and what what you're thinking maybe
+the democrats are not such a good party um if you're a red maga person maybe trump is not such a good
+person maybe maybe these fucking fascists who are selling you this bill of goods that is like
+you know complete bullshit and a bunch of scapegoating maybe that's not actually in your
+interest either if you're somebody who's not political and you're like you know politics
+affects us all it's unfortunate it sucks um it would be nice to not have to worry about this shit
+i i would you know i think it would be really nice to not have to just constantly think about this
+and it doesn't have to be this again it does not have to suck like this all the time
+um but for the moment like it always it affects us but for the moment it really affects a lot of
+people and the consequences are not just there if you're an immigrant but you know like anyone
+is really facing dire kind of consequences and the undermining of public health the undermining of
+like i i've been in places where there's very poor air quality and taking away environmental
+regulations makes the air worse it makes the water worse it makes the food more dangerous
+and it's nice to be able to say like oh i can get a fucking drink of water and not have to worry
+that it's gonna poison me i can breathe the air without my eyes burning and without feeling like
+it's killing me i can i can get food that is safe to eat you know it's nice it's much better to live in
+a place like that and it's much worse not to and it's also nice to have public parks it's nice to have
+wilderness reserves it's nice to have things like that and you know you have these forces of i hate
+using the word evil because evil implies kind of like um the supernatural thing it's not it's not a
+supernatural thing it's not like some extrinsic thing but there are people and you know forces at
+work which are like collective it i'm trying to frame this so that it's not sounding like a religious
+thing but it's it's basically like in society a bunch of people acting in concert uh can do things
+and those things can be good or bad and you have these collective forces at work uh conspiracies
+without conspirators i would call them where you know a bunch of people making decisions in their
+own self-interest are doing things in a way that looks concerted and to some extent there might be
+coordination but to the most to the to the greatest extent or to the bigger extent it's just like
+people acting in their own immediate self-interest doing things and all because they're all similarly
+interested in similar situations making similar decisions and they're destroying a lot of things
+that are not coming back like if you take away wilderness it's very hard to to get it back if you go to a city
+like new york and you see uh you see uh central park that is an amazing awesome thing and there are
+well that i i there's some negative history there as well but uh that will spare you that right now
+but it's unfortunately it's one of those things where you look at it and it's like uh it's not as good
+as you thought but where we are now ignoring the history having something like that in the city
+um is nice it really is nice and there are a bunch of people that look at that and they're
+salvating and they're like oh i could just build condos there and i could make so much money and if
+you do that and if you build a bunch of litter there once it's gone it's really hard to get something
+like that back especially in a dense urban area and you know i don't think people appreciate or
+understand how easy it is to fuck things up and how hard it is to try to to recover them at all
+especially something like that especially something where it's like oh now we have building upon building
+upon building and you want to restore it to the wilderness that's really hard and uh it's just
+i and the the way things are the way things are going is not good and it's very detrimental to a lot
+of people and you know living in a country where people can be disappeared for nothing i want to
+say like this this will be really the last thing that i talk about but the u.s is and has long been
+a fascist country like it's not just trump that is making it possible to like disappear people off the
+street um police in general are bad uh they they do a lot of harm and to the extent that you don't
+realize it's been like this i think it reflects a lot of privilege and it reflects a lot of like
+not pushing up against the boundaries because i've known people who actually protest and do stuff
+and uh over the years and they've run into this kind of stuff and they you know it's not a surprise to
+them it's not like a massive change to them it's like incremental and the people that you know it
+it's new to are people that are formerly privileged or or still quite privileged but they don't have
+that exposure they've not pushed up against the edges so they didn't really realize that we're in a
+cage but we are um anyway i i i could go off on another rant on that i will talk about that as well
+more later i think with that um i'm going to to finally end this so hour 40 minutes on thanks
+again as ever um i will be back soon and uh stay tuned
+you</p>
+
+    </article>
+  </main>
+  <footer>
+    <span class="copyright" title="Copyright Scott Menor / SMENOR, LLC. All Rights Reserved.">&copy; 2025 </span>
+    <span> Not all who wander are lost.</span>
+  </footer>
+</body>
+</html>

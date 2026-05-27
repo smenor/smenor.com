@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+  <meta property="og:title" content="The Wheels on the Bus">
+  <meta name="twitter:title" content="The Wheels on the Bus">
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta name="twitter:image" content="https://smenor.com/images/tangentsIconTwitter.png" />
+  <meta name="twitter:twitter:image:alt" content="site logo" />
+
+  <title>The Wheels on the Bus</title>
+
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.umd.min.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class=" the-wheels-on-the-bus">
+  <header>
+    <a href="/" class="logo">
+      <img src="/images/tangentsChannelLogo.svg">
+    </a>
+    <h1 class="title">
+      <a href="/tangents/ep10-the-wheels-on-the-bus/">
+        The Wheels on the Bus
+      </a>
+    </h1>
+    <input type="checkbox" id="menuControl" />
+    <label for="menuControl">
+      <nav>
+        <span class="line"></span>
+        <span class="line"></span>
+        <ul><li><a href="/ai/" >「 AI 」</a></li><li><a href="/anomalies/" >Anomalies</a></li><li><a href="/bio/" >Bio</a></li><li><a href="/companion/" >Companion</a></li><li><a href="/ethics/" >Ethics</a></li><li><a href="/mechatronics/" >Mechatronics</a></li><li><a href="/portfolio/" >Portfolio</a></li><li><a href="/spite/" >Spite</a></li><li><a href="/support/" >Support</a></li><li><a href="/sweetgrass/" >Sweetgrass</a></li><li><a href="/tangents/" >Tangents</a></li><li><a href="/who_am_i/" >Who am I ?</a></li></ul>
+        <span class="line"></span>
+    </nav>
+    </label>
+  </header>
+  <main>
+    <article><audio controls>
+        <source src="https://smenor.sfo3.cdn.digitaloceanspaces.com/2025.09.26-the-wheels-on-the-bus.m4a" type="audio/x-m4a">
+      </audio><p>Image: https://commons.wikimedia.org/wiki/File:The_Wheels_on_the_Bus.jpg</p>
+<h2>Episode Transcript</h2>
+<p>there I'm Scott and this is Tangents.</p>
+<p>Well it is the 26th of I was going to say
+February I don't know why.</p>
+<p>I'm looking at my the date in my Mac and it says
+Friday 26.</p>
+<p>I don't know why.</p>
+<p>I don't know why I have it set in English.</p>
+<p>I usually
+have it in French or Japanese or something for some reason.</p>
+<p>I think I know
+what happened.</p>
+<p>I changed it to English and I never changed it back but anyway it
+is Friday not February.</p>
+<p>The 26th of September 2025 a minute in wasted on
+that.</p>
+<p>So I am sitting in a hotel in Tempea, Arizona which is kind of where I've
+spent a lot maybe even most of my life not in the hotel but in Tempea.</p>
+<p>If I was
+going to live in Arizona I don't know that I'd want to be in Tempea
+specifically but it is one of the nicer parts but at the same time yeah
+I've got some mixed feelings and so I'm going to I have a few things I want to
+talk about and then I have kind of an ex-temporaneous shall we say exercise
+that I want to do.</p>
+<p>So I'm going to kind of jump into it.</p>
+<p>I came here well I
+flew back from Tokyo about a week ago.</p>
+<p>I guess a week ago Sunday.</p>
+<p>Today is a
+Friday.</p>
+<p>So five days ago and that was an LA.</p>
+<p>I stayed with my mom and sister for
+a couple days.</p>
+<p>I like three nights and then Futa Phoenix and I came here for a
+couple reasons.</p>
+<p>I'm seeing some people and hanging out with some people and
+also kind of more importantly there was Arizona Board of Regents meeting.</p>
+<p>Yesterday morning in Flagstaff and I wanted to go to that and in going to that well
+I should probably give some context for that.</p>
+<p>Basically I've been working with
+the Union United Campus Workers, the Campus Workers United, you know the
+Campus Workers I believe.</p>
+<p>Arizona for a couple years maybe three years I don't
+even have I've lost track it's probably closer to three.</p>
+<p>I've always been
+kind of Union curious but I've never been a Union member until my last job and
+I will say like even I've had a mix of jobs and employers and I never really
+felt like the need exactly for a Union but I always felt like organized labor
+was a good and important thing that I wanted to be involved in and I found out
+I don't remember what prompted me to look for it.</p>
+<p>It was probably annoying with my
+boss but whatever it was I found out the ASU and all of the state universities
+have a Union and this Union was it's kind of nascent it's not they call it
+a pre-majority Union so I don't know what the actual numbers are but it doesn't
+have the majority of the faculty staff and student workers but as a decent
+number and they're pretty engaged politically I have a lot of issues that I
+really care about and for a very long time I've been like it just to be clear
+I'm not like saying that electoral politics is not something that is worth
+engaging in at all although I have very big misgivings about it especially
+given the duopoly and the whole I've talked about those things a lot in other
+episodes I'm not gonna delve into it but I'm not really that invested in it
+I generally I vote every major election and I look at that as kind of like
+such a minimal basic thing I don't really consider it any kind of
+activism at all and I've been very interested in trying other other
+avenues whether they're organization especially for like reproductive rights
+you know but the better social issues medicare for all or better is my
+preference really and I've been looking at it organization outside of a
+electoralism so the union was a big place for that and there are a bunch of
+things that are kind of badly fucked up in Arizona and one of these is that
+they're currently wasting like a billion dollars plus a year on vouchers for
+private schools and these things like they they originally kind of started
+out with semi good intentions which were if your public school didn't have
+the ability to support especially the students then you could use these to get
+the care that they needed I think this was even from its inception a terrible
+idea because what you should do and what should be obvious here is if the
+school doesn't have the ability to support those needs they should support
+those needs they should develop that ability that is that's that's the whole
+fucking way public school should work public resources should work that way
+public services the way people have twisted these ideas to to be like oh well
+the post office has is losing money they're not making they're not a
+fucking business they're not they're a public service they're an essential
+very important public service they're not meant to be making fucking money it's
+not like the goal it shouldn't be the you know the street lamps or the sidewalk
+or the open roads are not meant to make money it's it's a basic service we
+invest in collectively and it makes things better for all of us and they're not
+their public goods but I don't even want to get into the details but
+basically these are things that we should just be doing public education high
+quality public education is one of those things now I do have misgivings
+about some of the ways that it's used for propaganda especially like I've
+been talking about this a lot and thinking about it a lot lately but in K through
+12 I went to public school and in K through 12 I don't know it was every year
+but feels like basically every year at least for a little bit and often
+for probably like longer than any other subject about a dozen times order of
+we covered the foundational myths of the United States the same Revolutionary
+war bullshit which is interesting given the Kirk stuff because people are like
+oh political violence has no I don't even want to get back into the Kirk's
+stuff but it's kind of funny seeing all these people especially people who I
+know are like huge fans of Hamilton which I also I've had a very big flip on
+that I used to like it a lot and now I think oh this is just sort of rebranding
+and whitewashing interestingly enough in black faces not black face but
+actual black faces whitewashing of racism and child slavery and a lot of
+horrible shit that the the air quotes founders were engaged in but again
+never mind that now people who I know like that stuff and they're familiar with it
+they're not like they know about the Revolutionary War and all this talking
+about like political violence has no place what the fuck country do you
+yeah and I'm not even saying you'd have to get involved or understand like
+all the wars often wars that are not called wars that the US has been
+engaged in but just the fucking Revolution like how do you not know about that
+how do you not know about like how we have the weekend and it is just ridiculous
+it's just completely ridiculous and I think like between mass of amounts of
+ignorance and active I don't think that people are necessarily doing it on
+purpose but they've definitely been disinformed they've definitely been
+propagandized and they're repeating that and so it's it's funny although
+and they sort of disturbing way to see people just sort of going like oh well
+there's no why would you ever you know it's it's a little anyway I don't want
+to get into that now eight minutes then but I kind of get to get to get more
+to the crux one of the things that my union has been doing and I didn't go
+yesterday in the capacity of a union member in fact I'm I can't remember what
+it's called exactly but I'm no longer employed by ASU so I'm no longer an
+official union member I'm like a community supporter or something I still
+pay dues at least or I will until I run out of money but I'm not like a I'm not a
+union member exactly I can't vote so but I do participate we've been going to
+these Board of Regents meetings for almost as long as I've been a member I
+think the union has they're started one or two times before I started but
+they've been doing this and in the Board of Regents meetings they have a
+public comment period and the public comment period actually jumping back
+to the the vouchers and things just to put a cap on that before I get back to
+this they have gradually expanded this stuff and are now again over a billion
+dollars a year and it's going to public you're not the public schools it's
+going to private schools often with totally different standards often religious
+schools almost always to people who like the the vouchers do not cover the
+full tuition so it is not something where like anyone is able to get in and
+also these schools just to sort of juice their numbers they very selectively
+pick and choose their students so the public schools have to teach everybody
+which means that if you look at the metrics they're not going to be great
+often but if you're able to pick like the air quotes best students then when
+you do that you go in and now you get you know high test scores or you know
+high college admissions or whatever metric you want to look at they look
+good so it looks like they're successful but it's kind of a causation correlation
+thing it's like well if we pick the top performers they happen to perform better
+than most people that's you know it's it's very circular but people don't really
+understand statistics don't really understand causation cause and effect or any
+of this kind of stuff so anyway getting back to the board of regions I don't
+want to someday I have to do an episode just completely on that because it's it's a
+giant cluster fuck and it's so incestuous like there are so many people
+Republicans in the state legislature and I don't want to I don't want to let the
+Democrats off here because the Democrats started this shit and they keep
+voting for it and expanding it and it's very bad and you know it's definitely not
+one particular party at fault here but in particular there are a couple maybe
+a few Republicans in the state legislature who also own these charter
+schools or private schools whatever the fuck they're called and they collect
+millions of dollars of public state funds from these things and enrich themselves
+with it and it's really you know like so many things in government I mean I
+always talk about Pelosi I talk about her specifically because A she's
+particularly agrieges and B I don't want people to just think oh you're just
+shitting on Trump because Trump is very open about his corruption and all
+of this kind of stuff but you know A it's bipartisan B it's not new and C you
+know people like Pelosi doing this shit have established that nobody's good
+nobody's doing the avoid even the appearance of them for priority thing
+which everybody should be doing and so because of that because of that we end up
+having this situation where people like Trump could come in and say well you know
+or either he's saying it or implying it and people are saying this about it but
+they can sort of say well you know he's corrupt and all this stuff but he's
+just doing what everybody does but doing it openly and he's not lying
+about it which is kind of true if you have no concept of scale or degree like
+he is kind of doing the same stuff and it's I really do fault the Democrats
+for this because if you avoid even the appearance of him for priority you have
+a moral high ground to stand for him to criticize people who absolutely do not
+and I would say yeah these doing orders of magnitude worse but then we're
+doing bad enough stuff that it's easy to understand why a lot of people look
+at them and they don't really see much of a difference especially if they're
+not paying that much of a very much attention and especially because like I'm
+not gonna defend I keep coming back to Pelosi she's not the only one a whole
+bunch of fucking people in Congress who engage in open insider trading I'm
+both parties yeah it's it's it's just disgusting anyway to the to the
+board of regents who also do by the way this kind of same kind of stuff at
+least one of the regents owns property was just talking with somebody about
+this yesterday owns property around the U of A and Tucson and is renting
+a student that exorbitant raids and is also deciding like things about on campus
+housing and what people can do and how the the number of conflicts of
+interests like just open brazen conflicts of interests people have everywhere
+and every organization in politics today and business is just fucking wild and
+it's you know it's no wonder people don't trust anything because it's just
+untrustworthy you'd be kind of silly and foolish to trust these people but the
+board of regents they're picked by the governor and then there's an approval
+process and all of this but basically their political appointees by the
+governor they have a certain fixed-links term I think they can be re-appointed or
+I'm not exactly sure all the details but basically they come in and some of them
+have been there for a long time some of them last and some of them are like old
+Democrat appointees some of them are new Democrat appointees some of them are
+Republican appointees the newest one they were talking about yesterday and
+bragging about was Jimmy McCain John McCain's son who incidentally I just
+to vent a little bit here I don't know his current registration but I assume
+Democrat at least was registered Democrat for a while but prior to that he was
+an independent or an Arizona snow party preference and then prior to that he
+was a Republican and this is one of these things I get very in-sense about
+because the Democratic Party you have you have all these people who ruined
+their party destroyed their Republican party to the point you know like they
+their rock stars they went to a fucking hotel destroyed their room and they
+did it to the point where they had to leave it themselves like they could not
+any longer stomach being associated with that party they fucked it up that
+badly and then they come into the Democrats and not only with open arms are
+welcomed in and they're not on like probation they're not sold you know
+like you can sit here with us but you know your your voice is going to be
+diminished they're getting to dictate things like policy positions they're
+getting pandered to like these are people who are politically homeless and then
+you have this party who they've joined into that has made itself I mean I don't
+even think you can call it a big tent because the tent is now excluding people
+like me people like me who have these ridiculous obscene ideas like immigration
+should be fairly stand very fairly easy you should like maybe maybe there's
+some threshold to it but basically if you want to come into this country and
+work here you should be able to just like my grandfather did it should not be a
+big deal if you get sick there should be health care for you like a real
+country the cities should be walkable the cities should have you know they should
+be accessible as well like if you are a wheelchair user you should be able to
+get around to see you should be able to have public transit that is good and
+worth the damn which I'm going to get to in a little bit just basic shit
+right stuff that other countries enjoy and if you travel around the world just a
+little bit you go to actual developed countries and I like I see a lot of
+people say like the the US is the only developed country that I don't consider
+this country to be a developed country and I don't say that just to be provocative
+or as an exaggeration I think if you make a list of fairly basic standards that
+I would consider just basic requirements for being a developed country like you
+should be able to get any job and if you're in that job and you're working you
+should definitely be able to get housing and eat and be okay and when I say
+housing I don't mean like you know you have a closet someplace where you have to
+have five roommates I mean you should be able to get like at least a private little
+studio apartment personally I think housing is a human right this is another
+thing I don't think I don't think it should be required that you work to get
+that it should be decoupled from it but definitely if you are working it's
+indefensible to be working and still have to be homeless that is
+fucking disgusting you should be able to get education for free and when I say
+education for free I and a high quality as well not just like you know you can
+get kind of like make shift shotty garbage I mean basically like K through
+12 plus university plus graduate school as far as you want to go whatever
+terminal degree you want or continue indefinitely you should be able to do
+that and not end up with a fuckload of student loans you should be able to get
+sick and get the health care you need if you get in a crash or your kid gets
+cancer that should not financially destroy you and you're legacy yeah there
+are basic things that I would say are requirements for being a developed
+country and I don't think like and I'm not just trying to make a list I just
+want to be clear I'm like I'm not trying to just sit on this country if I made a
+list completely on the abstract of things that I think really make you
+qualify as a developed country I don't think this country you should be able
+to turn on the tap and drink the water and not worry about it that's a requirement
+for a developed country you know like basic basic shit and this country does
+not qualify you should be able to walk around or go to school or go to a
+fucking concert and not have to worry about getting shot that is a basic
+hard- pardon me requirement for being a developed country and you just go through
+the fucking list and I just don't think we qualify I don't think I don't think we
+can qualify and I'm going to talk about the public transit specifically in a
+bit which is how I got to well how I got up to the flag staff yesterday or two
+days ago but I want to go through the Board of Regents meeting a little bit
+first so we get the Board of Regents have been going to these meetings and been
+talking to them these are these are full of assholes they're all when you
+actually look at who these people are they're basically people who just
+donated to the governors and then as kind of like a thank you bought their seats
+they got their nominations in exchange well I mean you know is there a
+quick pro quo I don't know but you have to be kind of silly to think and
+hot these are people that make a donation yeah you may again I know correlation
+does not equal causation but you make a huge donation and then you get an
+appointment and they happen in that sequence is not like you got the
+appointment then you make the donation although even then you could coordinate
+yeah it doesn't necessarily require like that there could still be causation
+but you've flipped the apparent sort of order of things but anyway that is a
+that is a thing to me that it's pretty fucking disgusting they should not be
+political appointees they shouldn't be people who bought their seats and they're
+all assholes they're all fucking horrible people and getting to the Jimmy
+Kane guy he is now I think a Democrat but he's basically a you know older like
+not unreasonable and I mean you can't see me I'm not on video but I'm making giant
+air quotes when I say not unreasonable Republican you know he's a guy who is
+sort of like you know like his his like his dad a little bit you know not like
+the current crystal fascists white nationalist just openly horrible people and
+I do want to say like you know I've talked to a lot of Republicans a lot of the
+people when you start because I keep seeing people think like oh well Trump is
+so unpopular and they don't like Trump and blah blah blah if you actually talk
+to Republicans and I'm not I'm painting with a broad brush anytime I paint with
+a broad brush understand I'm not saying like every single Republican this but
+by and large if you talk to Republicans who say you know whether they're
+never never Trumpers and begin giant air quotes or they're just air quotes
+regular Republicans you talk to them and they will tell you they don't like
+Trump they'll tell you they you know they of course they had to vote for him
+because this is not me but they thought that Biden or Harris was a
+comedy which is fucking ridiculous here is incidentally who just called
+Trump a communist to keep their dictator like the people throw away around this
+fucking word in this country like I I'm not saying communism is great I have
+complicated feelings about it but the way people have no fucking concept either
+either have no concept or they're deliberately maligning the term now it is
+it's just wild it's just fucking wild the idea that a fascist is like it's
+fucking ridiculous but anyway you know they couldn't vote for Biden or
+Harris because they're a comedy they're they're socialist and the thing is
+like these are fucking if you put them on an absolute multi-dimensional
+political scale they are sort of Reagan the era of Republicans like they're
+there are people who would have fit very well in the Republican party of the
+1980s they would have been like just at home there and which is weird
+because Biden of course has been a Democrat since the set well I guess
+probably it's whole life but he's been a Democratic senator sitting and the
+active politician for a very long time before Reagan so anyway getting through
+Board of Regions giant assholes I I really do not think that they should be
+political appointees they should be if you gave me my drillers I can snap my
+fingers and change things they should be appointed by and removable by the sort
+shared governance with the universities by which I mean the the students the
+faculty the staff debatably the community should all have their own when I say
+community I mean community members that are not necessarily affiliated with the
+university they could be alumnus or alumni or just people who live in Tucson for
+you a bear people who live in Tempe for ASU or people who live around the
+state maybe you just have one whole community one for the whole state and then
+you have the three I think that's what I would do you have the three for each
+university but either way each of these should have their own sort of
+Congress they they have some kind of government for these but it should be
+probably refined a little bit and actually have some real power and they should
+get to pick the region regions they should also have a way to remove the
+regions yeah maybe it takes a two thirds supermajority or something but they
+should have like an impeachment process so they they could do that and then the
+regions answer to them rather than you know whatever their interests are and it's
+kind of funny because the the previous chair who stepped down recently I don't
+know why she stepped down but she's she's no longer chair she has a defense
+contracting company and basically I don't think it's exactly an exaggeration
+to say that she traffics weapons like truly maybe she's you know doing logistics
+that are not exactly weapons but she's definitely weapons adjacent if you
+want to be really generous to her and probably also traffics weapons just straight
+up the current guy is a tobacco lobbyist I mean you know like it is just like
+if you if you wanted to find like a fucking evil bastard he was a tobacco lobbyist
+he got drummed out of McCain I wasn't present enough in this meeting to
+put this into my little speech but he got drummed out of McCain Jimmy McCain's
+dad's presidential campaign for representing a huta and Myanmar there's a
+dude there who is like a drum pusher I do just they're horrible people they're
+generally fucking horrible people the best people on that board are she and then
+there are student members but they have this thing where they can't vote for
+like a year or two and it's it's a very convoluted in fucked up it's not it's
+not at all a democratic thing and they get to make decisions on the future
+course of university education in this state and one of the decisions that
+they're making and generally you know I mean they get to pick the university
+presidents for example who they do this you know they they have a bunch of
+assholes like crow who are just terrible fucking people and again they're not
+like crow should not be running shit definitely shouldn't be running the
+university definitely shouldn't it like there should be fucking term limits I
+think too like he's been the president of ASU I think since before I started
+graduate school I don't even remember when is when he started but it's it's now
+2025 and I'm you know I'm not old but I'm not that young and he's been
+president for a long time and I think it's like yeah you're done just fucking
+go let's replace you and let's not replace you by doing like a nationwide
+search and finding some other horrible asshole to the sit and you see let's
+let's do it like if if given my brothers it would be somebody who comes from
+not necessarily a faculty member for the university although I think that would
+be the right choice but it should be someone that the again students
+faculty and staff of the university get to pick and and the regions should
+vet and all of that kind of stuff and again the regions picked by and
+removable by the students faculty and staff in their sonnets and their
+house or whatever the whatever the representative structure is but anyway I
+went there and this is this is the the little two-minute public comment I
+gave I should say I was kind of shocked that they let me talk because the last
+public comment first off I said fuck a couple times maybe like I am so
+tired of you fucking assholes or something like that so I would have understood
+if they didn't let me go and I also I had a speech prepared last time but I
+got I get so fucking incensed like I got up there my eyes rolled back and I was
+just talking and I actually get a video of that if it's available someplace but
+it was it was fucking annoying I'm so sick of these people and so I was kind
+of expecting them to not let me talk again and they do have an official rule
+that like if you talked in the last six months then you know we're gonna we
+might not let you talk again is like the so this was less than six months ago
+and they also have yeah anyway they had another person who came after me
+who basically like filibuster the thing and I had mixed feelings on that but
+it was it was nice it was fun I enjoyed it but I know it's also like
+antagonizing these people who are again assholes and today yesterday
+yesterday morning they had this video which I should put a clip of it in
+here although you don't need to see it but it was like the before you're flying
+on a plane kind of video they made and they're explaining what their policies are
+what their procedure is and how they're picking the speakers and it really like
+as I'm watching this I'm sitting there going like there's no fucking way
+they're gonna let me talk there's just no way but they did they let me talk
+to their credit they also there were a bunch of unite here I think they're
+unite here local 11 members who are the sort of like hospitality worker
+at the universities who incidentally you know like as bad as it is for
+faculty and staff they they these have this hospitality workers I guess
+actually you should have students faculty staff and hospitality workers or
+whatever the although to me that should be in staff whatever they are they
+should be represented as well in the board of regions but again you're
+everyone who works for the university works with the university has
+a vested interest in the university and I don't mean like the businesses although
+if you again if you want maybe we have a community thing that they can
+kind of get you know but easily overruled but they can kind of get a voice or
+they get a region to the whole state yeah people representation they just
+don't let them dictate fucking everything it's all I'm saying so anyway
+and incidentally that it gets the last thing is they're they're doing a
+bunch of shit to basically make the universities in Arizona sort of wings of
+like defense contractors they're basically trying to make them R&amp;D wings for
+Northrop Grumman and for Raytheon and all these kinds of things pretty fucking
+gross to me I don't think it's something that that should be that way so this is
+the thing I I spoke about again I hope the hospitality workers get a better
+contract because they like these are people they don't have benefits they don't
+have you know they're they're living on a nine-month contract and then they
+have to get like financial assistance like basically food stamps and kind of
+stuff for the the gap they don't have enough money to cover rent they're not
+getting paid fucking anything like the well paid ones again in your quotes
+are getting paid less than 20 bucks an hour and most of them are getting paid
+minimum wage it's it's just a fucked-up situation again with no benefits no
+way to to deal with you know massive healthcare issues if they and I always
+think about this like if if one of them had a detached rent now they'd be so
+fucked they'd be so fucked because you know getting a vet for every
+trectomy was not cheap getting the recovery for that was not easy or cheap
+or quick and it just sucked it was very annoying I don't recommend it so
+anyway rolling up I got there listen to everybody else talk and yeah I
+they called me again kind of fucking amazed my performance now will probably
+not be the same as it was then but it's not up yet I thought about actually
+taking the audio clip from their stream but as of at least when I checked
+last which is a little bit ago they wasn't there so they're probably editing
+it and just you know doing whatever the which is kind of weird also because it
+should be public record and it should just be up I don't think it was even
+streaming yesterday but never mind that now this is what I said hi I did my
+undergrad in PhD at ASU and Emma former employee I don't think that tobacco
+lobbyists who sold cancer to kids and got kicked out of a presidential campaign
+for representing a whom to in Myanmar or people whose company's traffic
+weapons or drug pushers dressing up in suits pretending that they're
+respectable and decent should be undemocraticly determining their direction of
+higher education in this state simply because they donated to politicians and
+bought their seats here on this board how many people have you indirectly murdered
+it's staggering article 11 section six of the Arizona State Constitution says
+the university and all other state educational institutions shall be open
+to students of both sexes and instruction for anish chubby as nearly free
+as possible that is your job here not to further enrich yourselves or your
+oligarch benefactors or to turn our universities into R&amp;D wings of the
+military industrial complex my hundreds of thousands of dollars in student loan
+debt says you're doing a terrible job meanwhile you have ice terrorizing
+students and your hosting visuals for disingenuous pseudo intellectual
+photobader crystal fascist white nationalists who put your students at risk
+got your professors assaulted and said innocent people getting shot and
+killed this is his words not mine by the way was a fair price to pay and
+worth it for our giant air quotes God given right to what I would characterize
+as man-made point-and-click murder remotes great job you should all be ashamed
+you should all be removed and replaced thank you so that was my that was my
+speech from yesterday I don't know that it did anything I definitely do know
+the one of the unite here guys afterwards said that it was a good speech you
+appreciated it so I felt good for that I do feel like it's something that is kind
+of worth yeah it's kind of worth going I don't feel bad about it it's one of
+those things actually like there are things that I do where I feel like oh
+that was kind of a waste or it was kind of not worth it this one I felt like
+yeah as much of a pain in the ass as it was to get there and it was a pain in
+the ass to get there and you know flying all the way back from Japan and
+all those kind of stuff I didn't incidentally exactly plan my return to
+coincide with that I just kind of knew how much money I had and where I was
+gonna run out and I also wanted to be here because my mom's birthday my sister's
+birthday and some other things are happening in October so you know I kind of
+well I knew vaguely when I wanted to be back I picked the time I picked the day
+based on almost nothing it was kind of random but some I coincidentally and
+some I intentionally bad ended up being a couple days before or a few days
+before the Board of Regents meeting and since that was the case I flew out to
+Arizona then I planned that oh well back I flew out there Arizona and then I
+you can't fly directly incidentally from LA to Flagstaff or I guess you can I could
+fly myself because I'm a pilot required to mention that every part or at least every
+episode I have to say I'm a pilot but I could fly myself if I spent like thousands
+of dollars renting a fucking plane and never mind I'm current technically but I
+am current instrument rated pilot technically but I'm also like I don't think
+current enough I'm proficient enough that I would feel comfortable without without
+some practice and without doing some stuff so I could do that or if you're
+taking commercial flights there's just nothing the or maybe there was one and it
+was like 400 bucks and it was a giant pain in the ass when I took was like a
+Southwest flight who incidentally I should probably I'd like to phase out I'd
+like to find somebody else but my mom and sister live really close to Burbank
+Airport and LAX is a giant pain in the ass Burbank to Phoenix is pretty easy so
+I did that and then you get the Phoenix and it's like how do you get from Phoenix
+to Flagstaff and Phoenix to Flagstaff is like a two-hour drive maybe a little
+bit more without traffic and it gets up a little bit closer to three hours with
+traffic LA to Phoenix depending on how you're getting there and all that kind
+of stuff it's like a six if you're driving a Tesla like a seven-hour drive
+with the charging and yeah I just I was just again in Japan and I went from
+Tokyo to Kyoto which is a rough order of magnitude comparable to the distance
+between LA and Phoenix kind of coincidently but kind of not and you take
+Shinkansen there and it costs less than a Southwest ticket there's no
+security that you have to go through really it's pretty easy pretty comfortable
+and you get on there and it's very quick and also this is very important
+because they're building some high speed trail or high speed terrain high
+speed trains in like LA to San Francisco and then LA to Vegas but you look at
+the plans for those like the plans for these are basically like some place
+that would take like an hour plus from where my mom and sister live in
+North Hollywood just to get to the station to get the train to go to Vegas and I
+think the San Francisco one is comparable like you should have a central
+and peripheral stations around the city that are very quick and easy to get to
+from anywhere in the city and then you get there and then you can take the high
+speed train and also and like I don't know that their high speed trains are
+actually like Shinkansen T-T-J-V-A Chinese high speed rail whatever those
+trains are called I don't think they're the speed that compares to those but you
+know again again they're kind of a thing that is improving I guess slightly
+slowly over time in this country the the the contrast between that and like I
+went to I went to China and I went from Beijing to Chengju
+Chengju I don't know I'm probably I'm sure I'm watching that pronunciation
+sorry Chengju I'm putting I'm putting in a different syllable letter that's
+not actually it's like Chengju but also with it never mind I imagine I didn't
+say that or imagine I said it correctly that's a fairly long train ride it was
+like a six and a half hour train ride so you know longer than you probably would
+want but still going 350 kilometers per hour on a lot of it and it was
+an easy to get to the station it was pretty fucking cheap it was it was just
+like such a delight versus being here and dealing with all the bullshit you
+know you have to go through security is not that bad to be fair but you still
+have to deal with it you get on the plane you have to get to the airport like at
+least 50 minutes early probably and you get there and then I will I will say
+this get to Phoenix Sky Harbor and you know you walk a little bit but then there's
+the Sky train and the Sky train kind of almost like if you squint and use your
+imagination a little bit feels like you're in a real country and then the
+Sky train goes to a station for the the light rail which is not like a metro but
+it's you know again also if you squint and really use your imagination you
+can almost imagine it's like a real city and then you get that and if you're
+just coming directly to any place on the light rail line it's not terrible like
+it does again it feels vaguely reminiscent of a real city like it feels like
+I might my thought there is basically like you get to order of 250 and
+assuming Phoenix is still inhabitable assuming like things don't go cataclysmically
+bad I kind of think that there will be actual like high maybe well I don't
+know about high speed rail but there there will be friends and you know like
+actual like a metro system the light rail will not be so ridiculously
+confined like yeah the metro doesn't go to Scottsdale it doesn't go to Gilbert
+and both of these cities are like highly opposed to it for no fucking reason other
+than like well the their reason is basically purely racist and purely
+anti homeless like they don't they don't want to let the poor people come into
+their cities they don't want people who are not white to come into their cities
+so they don't want the fucking trains and it's really fucking annoying and the
+thing that's kind of disgusting about it is the way that the train is set up the
+way that all of this stuff is managed the way the city is built and all of
+these things if you go on the train there are a lot of fucking homeless people
+because the city doesn't do anything like you do not support fucking homeless people you
+don't have like they do have shelters and things kind of but they're mostly like private
+and they're not adequate they don't have cheap to free housing they don't have like good
+support they don't have like you should be able I have said this before but you should
+legitimately just be able if you live in a city or even if you're visiting a city like
+I know the hotel lobby would be fucking furious about this but you should be able to go to a
+city any city any not just major city but basically any city and get a free room and
+when I say free room I mean like literally a free room maybe if you want it's at a scale based
+on income but I personally think it should be free and you go there and it should be clean
+it should be well maintained it should be comfortable and you should be able to stay there as long
+as you want and in that room you should have ideally it now maybe maybe you have a laundry
+machine that's just in the facilities but ideally you have one in the room you certainly want to
+have a shower comfortable bed basic supplies and you know I don't know have access to a kitchen
+or something would be kind of nice and also I would I would say food is a human rights you should
+have that as well and I mean restaurant lobby would probably not be super thrilled about that too
+but yeah those are things that you should just have but it independent of that I came here
+and the distance between Phoenix and Flagstaff so once you get here is such that at I don't remember
+the exact number but action constant speed should take you know you're I mean you're not going
+the high the full speed the max speed the whole time so to be fair it's not going to be 45 minutes or
+whatever you would calculate if you just like whatever the distance is divided by 350 kilometers per hour
+and I think it was about that but you know you'll you'll slow down you'll have some other
+things in the end you might have a stop in between but when you add all that stuff and it should be
+no more than an hour an hour and a half they get between here and Flagstaff and it should go maybe
+not necessarily from city center to city center all it should but at least like from a place where
+you're at a met like a transit station that lets you without walking along distance out and being
+exposed and all this kind of stuff lets you just go to there's a dude walking around with an umbrella
+that I swear he took off of a table some Flicks it's it's raining outside so I'm just watching
+I said incidentally actually this is this is a side I have been opposed to umbrellas
+basically my whole life I don't know what it was I just to like I hate the idea I don't like the idea
+of carrying around something and this last time like when I I meant to mention this in a previous one
+but either way I was in Kyoto and my friend who I was traveling with got an umbrella in Tokyo
+and she was she brought it with and basically like then I didn't need a lot of persuasion but kind of
+just light nudge plus seeing her have that umbrella got me to get one to try it out and it's so
+fucking better it's so fucking better than like you know having a hat which is what I used to do
+I mean first off if you have a hat I'm a person you know I'm not I'm not saying that I am
+completely immune to social pressure by any means I feel it I feel like if I walk around the
+Tokyo or Kyoto and I'm wearing a hat or wearing sunglasses I'm definitely
+aware that some people are judging me like and I'm not just reading that in like I I'm good enough
+at reading people and social cues I can see like you know walking down and you see someone's
+looking at you and you just like and that that's super thrilled not that you know like anything that
+I do is going to fit in perfectly there but I could feel it versus if I don't wear that I don't
+feel it or I don't feel it for that reason but you know having having a hat
+was a thing that I used to do and I always got annoyed with like baseball caps because they're
+fucking worthless I don't understand you like they kind of I don't get me wrong I get that they look
+cool just in the abstract but you know the sun and unless you're standing in one particular place
+with the sun and one particular place you're constantly they're talking your head to rotate
+the the bill of that thing so it's blocking the sun or you're rotating the hat and it's just like
+such high effort to have that thing so I got like the hat with a brim that's like that far out
+the goes all the way around because to me that's like it just makes it you know it looks
+dark it looks darky I fully admit not like the I don't feel like super cool wearing it but that's
+what I used to have and then I went even to step further and like you know I'd feel the sun
+beating down on my neck and at a certain point I finally and I thought about this for years before I
+did it but I finally got one of these hats that has that little flap that goes down your back so
+it's got the full brim around it and that little flap and for years that was what I more and it's
+actually pretty good like it does a pretty decent job of blocking the sun it's hands free which is a
+big deal and the ones that I got I could fold up and stick in my pocket which is a huge deal for me
+because I don't I don't want I don't like carrying around extra shit I definitely don't want to have
+like a backpack or something that or a man bag a purse I don't I'm saying that the race of
+we as a person is fine it's fine you can where wherever you want I don't want to carry around
+stuff as I just don't and so you know putting it in my pocket it was kind of nice but the thing
+had some problems so it would always like I would sweat especially being in Arizona and especially
+like if I'm going hiking or something I would sweat and then the thing would get sweat stains didn't
+help also that like you know with that sweat you get like a chromatography thing going on with
+the sun block and it would just like draw it in there and then you'd have in addition to sweat
+stains the sun block stains which would look like sweat stains but even worse and so it was kind
+of I don't know what the fuck is going on there a bunch of but I don't know if the if you
+heard it in the audio a cop car went by but there I can see the train tracks from here and
+like four or five cops have just gone down that's weird something is going on anyway
+if you hear something in you it's it's 15 to 41 as I'm recording this right now so
+or maybe it's just random who knows um where was I oh yeah the hat so that that was a good thing
+it was a nice thing that I used for a long time and I'm not saying that I'm done with the hats
+but I finally got this fucking umbrella and I don't know why I was so opposed to the truly
+and I will say they're not perfect like one big issue with umbrellas and one of the reasons that
+I've resisted them is just wind they they require a certain amount of sailing
+proficiency in order to carry them around when there's a little bit of wind and
+sometimes the wind overpowers you then and sometimes you know I guess if it was a
+optically clear but UV and infrared reflective umbrella it'd be better so you could see through it
+and use it as a shield but like I was walking into the wind earlier today and I had to have the
+umbrella straight in front of me and I kept checking to make sure that one was there but
+it's not from just looking dorky you know it's hard to see it's not the
+not the easiest thing to use not the cleanest thing to use but but
+if there's no wind and you're using that for the sun it blocks the sun pretty well
+the one that I have is UV opaque well you know I mean nothing is opaque opaque but you know
+decently so it's like SPF 50 or something equivalent so basically the factor opaque it's
+like the same that I'm using for sunblock or maybe I don't know exactly what it was but
+it's pretty good and it's supposed to do the same for infrared it gets hot because it's black
+but but still it's it's pretty nice and the big thing is you're not sweating into it
+and the one that I have and this is kind of a key thing it folds up and I can stick it
+it's a little bulky but I can fit it in a pocket and fitting it in a pocket again it means
+the I can walk around and have that thing in there and I don't need to be carrying it around all
+the time now when it's when it's out when it's deployed you do need you do need to have I'm just
+looking at the water rushing into the storm's sewer and it's kind of almost hypnotic and there's
+just a little river in this street in front of me almost take a picture of this I don't know that
+this will be my image for the for the episode but I would kind of love to make it that if I could
+although I'm looking at this and it's definitely not does not convey what I'm going for
+but we'll see if I can if it works if you happen to see that and the the image for the thing
+then you'll know that's what that's what it was but yeah the umbrella is pretty fucking nice
+and for rain and again it's not perfect for rain you know it's very mask like in a sense that you know
+it's decreasing the amount of rain that hits you but you're still getting wet especially if there's
+some wind and it's often wind with the rain here in Arizona but it does a good job of keeping you
+pretty dry and you know especially if it's just like dumping on you and not a lot of wind
+the difference between walking around with that and walking around without it is like even with a rain
+code on just night and day and the rain code I used to use but I never one day there will be
+material that is actually good for raincoat and that material will have this thing that basically
+it will breathe really well it will be a very waterproof it won't be like the durable water
+resistant stuff that they have or Gore-Tex where you wear it and it's just like either washes off
+or it just makes you fucking muggy like it you're just sweating under it it will be
+comfortable it will be breathing and it will keep you dry and it will be light and just you know nice
+if we didn't little criticism of capitalism that we haven't got that material yet but we will
+we will have that material one day assuming society doesn't collapse before then in all of that kind
+of stuff but it's an incidentally annoying thing that I find that just you know like Gore-Tex
+was invented decades and decades ago and when it was invented it was a fucking cool thing but now
+it's just embarrassing that that's almost the best thing that you have and it's it's just like
+analgesics we have insides and then we have opiates for pen killers there should by now if you had the
+research if you did the research right by now we would have figured out drugs that were anti-inflammatories
+and basically had no side effects we would have figured out drugs that could kill pain but not really
+anything else so you just feel normal but you wouldn't have the pain like it would just make you feel good
+I mean I don't mean you've been actually making you feel good it just make you not feel bad you just feel
+okay it wouldn't be like an opiate where it does make you feel good it would be more like oh I just
+don't feel excruciating chronic pain and that should just exist that's something totally is doable
+and if you spent probably like five to ten years researching it and had some of the doctors who
+were now out of work doctors being PhDs we're now out of work doing research and they were funded
+and all this by now we'd have we'd have those drugs we'd have a bunch of other drugs that would be
+so much better and we don't because the financing system the funding system for academic research
+is not great and then the incentives for like drug companies pharmaceutical companies are primarily
+to you know find stuff that's off the shelf and package it get you know like patent protection
+and just sell it at an exorbitant rate and they do that and that's where we are but there's not
+really a really a good system for drug discovery and a lot of it yeah it's an interesting thing
+because like if you talk to people that aren't familiar with this they feel like the drug companies
+are actually doing that research but in reality and it's not to say that they don't do any research
+they do some but in reality most of the new drugs that come out and again they're very limited number
+are coming from universities and there are things like that Hep C drug that was bought for
+billions of dollars and then they made that up because even though if they would have sold that
+you know reasonable price they could have essentially eradicated Hep C they didn't want to do that
+but they sold it at a ridiculous price per pill like thousands of dollars per pill and
+you know you can get cured of Hep C if you're rich and if you're just a plebian then you can go
+fuck yourself you can just have your liver just fuck off and die and and in fact other people in the
+process rather than eradicating it which yeah it's just like the way the I know I come back to
+capitalism a lot that the way that we organize society and everything we do and all this kind of stuff
+is so fucked up and so needlessly bad it's just it's just disgusting so anyway rambling on
+I really thought that by this point in the episode I would have gotten to my little
+extemporaneous thing I won't get to that soon I think all the way I'm kind of winding down
+we'll see if I have the the ganas to keep going but um I don't even know what I was talking about oh yeah
+does the abore meeting and the way that I got there was there's notion constant there's no high
+speed rail so I thought like okay I'm gonna see what the equivalent is what would you do
+if you were somebody living in this country or visiting this country and you didn't want to
+don't want to rent a car and I would really I am sure well I'm not sure that I'm going to
+end up having a car again but I probably will end up having a car again one day I fucking hope not
+I would love to not need one but I definitely for as long as I can I'm going to try to be places
+where they're walkable and they have public transit because I'm just tired I'm like having a car
+is such a ridiculous expense and the thing you know I mean it's it's like layers of commitment
+of expense and it is one of these things also that like locks you into a minimal monthly
+burn rate that is it like even if you that I get really fucking annoyed with a lot of apple stuff
+and one of one of the things sorry for the drawing change but one of the fucking things that really
+irritates me a lot is just the the way that audio is managed just in general um but I I don't know
+how this happened I have had the alerts like emergency alerts and all that stuff turned off on my
+phone for a long time and I maybe I turned them back on but I think that it turned it back on for
+me at some point I know first of all that like actually the amber alerts were turned on
+I I don't give a shit about those and I know you know like generally speaking those are like
+one of the parents kidnapped their kid I don't need those alerts and it's also like it's not actionable
+it's basically I put it in the category of sort of between copaganda and just like straight up
+propaganda like once to make people feel like things are really dangerous and scary and so they
+send you these alerts that you can't do anything about it's not like you're gonna get the alert
+and then walk down the street and see a kid yeah you know it's just it's mostly just so that you
+can be like scared so that you can just like ask you to have the ask you police they send you messages
+and it's like oh there's somebody scary on campus doing something and that actually usually
+actually doing something but just you know like we saw this suspicious character on and then they
+hours later say things are okay like all clear but anyway I turn these things off they were back
+on and I'm using my AirPods to record this I still need to do something better than that because
+you can hear the audio is not great with these but there's something that I have with me
+and they're easy and then oh all these things I've got it connected to my computer and for some
+fucking reason there's an emergency national weather service store morning thing for some fucking
+reason alert came through on my phone bonus vibrating and it overtook the AirPods that were connected
+to my Mac and brought them over to the fucking phone so while I was while I was recording and so
+I had the alert screaming in my ears which thank you Apple and also it interrupted my flow and
+interrupted the little thing just fucking irritating also also also as long as I'm talking about
+those one thing that irritates the shit out of me aside from the fact that I can I I have not been
+able to turn and I'm a fairly technical person I'm I say that with you know a little bit of
+humility but also like I'm pretty fucking technically capable like I can make computers do what I want
+pretty easily I can talk to them pretty easily all this kind of stuff I have not been able
+since I got or since they got rid of the analog headphone jack and analog dial to control volume
+I have not been able to have the volume on my fucking headphones my AirPods or whatever the
+you know whatever I've been using I've not been able to have that down to a comfortable level like
+especially in a quiet room like in an noisy environment it it it it it turned it up a little bit
+just to compensate for the noise incidentally they're also I feel like they're the equalization
+on them is like big at the high end big at the low end and down in the middle which is like the
+opposite of what I want because I don't want I want like voice to be enhanced I want to hear
+very crispy and cleanly what people are saying and I don't want to hear all the background
+bullshit as much you know not that stuff down give me the off anyway it's just irritating
+because I think when that stuff is down you have to turn the thing up to compensate and then the
+overall SPLs are just higher than you need and then you know you're doing hearing damage which
+I'm sure I'm absolutely fucking sure these things are doing hearing damage and I have like I turn it
+down to the very minimum level and on my Mac like I use the option shift volume down and I can
+get it to a quarter of the normal volume down sort of scale and it's still too fucking loud and
+a quiet room and then you take it one more notch and it's all the way off you know the fact that
+they can't figure this shit out just irritates the fuck out of me and then on the iPhone you do that
+too and you can drag it down with your hand instead of using the volume controls which is
+really annoying and very touchy and then they turn the fucking volume back up like you're walking
+around listening to a song or something and the song is it almost almost a comfortable level
+but still too loud and then you start getting it louder and like you can just watch it go up and
+it's like motherfucker I turned it down for a fucking reason I don't and the thing that's most annoying
+about that is they have like they they do have like an auto level set thing for volume control
+I have that disabled I turn that shit off and it still does this and I have a friend who is
+prepared and like he needs the brightness all the way up just to just to see and the fucking
+brightness auto adjusts itself down all the fucking time like you know let people control their
+fucking devices it's it's really just irritating shit anyway anyway never mind to also the like often
+um did just the last little complaint about this for now but the alert levels like
+you have an alarm or something or a message and I would get like an incoming text sound
+and things would be okay I keep my phone on silent now because of this but things would be like
+at an okay level relatively speaking I'd have it down at the lowest level again and then all
+of a sudden you get one and it's like excruciatingly loud like actually I'm not even exaggerating
+I'm absolutely certain that this thing is causing hearing damage and you know it's just it fucking
+pisses me off where was I anyway I I guess I get so distracted by this it's just just
+irritates the shit out of me irritates the absolute everything fucking shit out of me and Apple
+has like that they're doing this fucking Apple intelligence stuff I will believe you guys can do
+some kind of Apple intelligence maybe if you ever figure out something as hard as volume control
+and brightness control um you know like figure that shit out first make my calendar actually
+sync and work like show me alerts that are notifying me about calendar invites and appointments
+consistently and reliably because often I you know I've gotten months the get comes and goes
+sometimes it works sometimes it doesn't but I've gotten months where no matter what I do
+I would not get notifications for for kind of fucking calendar meetings and
+you know I'd have to get a text message from somebody saying hey Scott are you coming to the zoom
+is like what the what the fuck and then you look at the calendar and it's right there at the
+there's an alert set for the moment of and for five minutes before or an hour before whatever
+I didn't get any of the fucking alerts and it's just like figure out basic shit and then we can talk
+figure out how to make maps work worth the damn like on the maps on both the phone and the
+and the Mac if I search for something like I wherever I am I guess if you're staying in one place
+it doesn't affect you that much but I've been traveling a bit right if I go into maps right now
+and I type in coffee it looks for coffee in north Hollywood I'm in fucking to be like the very first
+option like if I hit enter coffee in north Hollywood if I click the top one coffee in north Hollywood
+not coffee nearby not coffee in the map region that I'm looking at it's just like the fact that they
+can't do shit like this and I'm not I'm not talking about like really like subtle nuanced
+tricky stuff I'm talking about just like basic everyday kind of shit that anyone using a Mac
+would actually fucking want that would be you know figure that stuff out figure that stuff out
+first so getting back to that if you have a car the minimum monthly burn rate that you have
+with that car is such that you know like you you can't reduce your cost below a certain number
+and maybe you have an older car that is paid for you still have insurance that you have to pay
+for you still have basic maintenance that you have to pay for if you want the car to to last
+and if it's an older car good luck not having it break down and good luck not having like some
+some compressor or an alternator or whatever fails and it has to be replaced in a cost of
+thousand bucks or the air conditioner breaks or whatever it is something breaks down on that car
+and it takes maintenance and it's it's just a consistent continuous thing you don't have to be
+in the situation I was in which I deeply regret and I'm glad to be fucking out of it but
+I when I was getting paid a lot better I got a Tesla Model 3 and I very foolishly got a shorter
+lease I don't know why I didn't just get the longest and not at least alone I got a shorter
+loan because I wanted to pay it off more quickly and which would have been fine if I kept that
+income it was not that big of an expense relatively speaking with the income that I had but then
+I lost that job and then I didn't get paid for a year plus and then the job that I got
+paid like a third of what I was getting prior and then it went from being like not that much money
+relatively speaking to literally half of my paycheck like one of my paychecks was going to the car
+for the eleven hundred per month for the loan and then like four hundred a month for the insurance
+so like fifteen hundred a month was my take home on the paycheck one paycheck was going to that
+another paycheck was going to rent and then what do I do for food what do I do for and yeah
+like it's a real fucking problem it's a real annoying fucking problem and again you could get a
+car that's cheaper than that but you have the new car and you have the fixed expenses for that
+or you have an old car and then you have the random stochastic expenses that you never
+can predict when they're going to come up and also are you going to be without a car like
+Prunos what's going to happen is it going to be something that like even if you have the money for it
+are you going to end up having to not have a car or have a rental for a week or two
+I'd you know or somebody hits your car guy who knows what the fuck is going to happen
+but it's it's really there was a thing on blue sky this morning somebody said like what are
+your biggest complaints about or what is your biggest complaint about having a car or about cars
+something like they're driving or something like that and I was very pleased to see like a good third of
+the people who responded maybe it was a quarter but a huge chunk of the people that responded
+all said you know we're upset because some some version of just driving like the fact that you can't
+have a city where you could just not have a car and it's one of these things like if you live in
+this country people have decided cars and cities that are built around cars are somehow freedom
+but they are just a ball and chain that everybody is attached to and you know most people
+especially people that are working they either have to have a car or if they can't afford a car
+they have to convert like you know like in Phoenix there are buses but the frequency is very low
+there's light rail but the frequency is very low and it doesn't go that many places
+and if you live someplace and you need to get to and from work and you can't afford a car
+the thing that you can do is like take buses and then you know maybe it takes an hour and a half
+or two hours to get the work and two hours to get back home so that's an unpaid half of a day of work
+potentially that you're spending dealing with transit you know it's fucking annoying and it's not
+free either like it's not expensive expensive but if you're using the light rail twice a day
+it's four bucks a day in a month that's like 60 bucks all right I can't even do the math
+in a month I guess that would be four bucks a day five days a week so 20 bucks a week
+times four so it's like 80 bucks in a month give or take and you can get like discounts and
+things like this but it's still a decent expense just to do that and again the light rail is not
+it's not very high frequency and it's not very fast like it goes from tempede to sort of
+Mesa ish to downtown Phoenix to a little bit out and you go down to those distances and it's like
+it takes as long as it takes to drive in a car even with you know if there's traffic maybe it's
+cutting a little bit of time but it's also it's a light rail going through the roads so it has to
+deal with traffic as the wait for stoplights and stuff like this it doesn't go very fast it's like
+and it's it's only two cars which is weird it's compared to like being in Tokyo where you have
+these trains that are racing through and they got a big fucking cars full of people and then you
+have the light rail here and it's like two cars lumbering along they come every like 15 minutes there
+it's like two minutes maybe if you're on a low frequency one it'll be like every five minutes
+a train comes and it'll be six to eight cars at a there's plenty of space and if that one is full
+wait another five minutes and there's another one or during rush hour wait a couple minutes two
+three minutes and there's another one the difference is just wild it's just absolutely fucking wild and
+you know again you have the shinkansen and this is the thing I wanted to talk about I still haven't
+gotten to the extent for any of this thing I'm probably going to talk about that but we'll see
+I got energized by my complain about the AirPods and the fucking notification
+almost all these notifications too like I do think that the emergency weather alert or
+like if something serious is happening I'd kind of like to know but I don't want my phone to be
+screaming at me I don't want to just take over the AirPods and scream at night ears and interrupt
+my recording I'd like to just have like a little notification and see it but anyway um yeah I
+wanted to see what you would do if you're trying to take like a reasonable sort of equivalent of train
+and there is a train incidentally that goes from LA to flag stuff but it's like a 12 and a
+half hour train ride it's like you know I just I can't I can't can they how ridiculously slow
+that is and and of course also that's not from like the door that you're leaving 12 and a half
+hours that's like you have to get to the station first and then it's 12 and a half hours and that
+puts you at a station and then you have to get from that station to wherever you're going
+yeah it's not like oh it takes you from here to here and it takes 12 and a half hours total
+the difference between that and chin constant which again would be like two and a half
+maybe three hours between LA and Phoenix and it would be powered by sunlight
+or nuclear power or whatever being something that's pretty but probably sunlight could do it
+um it's it's infuriating it's fucking infuriating I wish more people understood how badly
+fucked you're getting in this country not just from like the healthcare situation although
+you're getting fucked on the healthcare situation we're spending like over a fifth of our GDP
+per capita basically by any any metric that you air any like scale you want to look at it
+per person you're spending like 20% plus of the GDP on healthcare versus other countries
+that have universal healthcare like and you know it's much cheaper and better quality and
+better outcomes and all those kind of stuff and they'll spend 8% or like on the high end like an
+expensive one would be 12% or maybe you can find some that go off the 15 or something but they're
+rare and they're kind of like um Cadillac plans essentially so so to speak but you know there
+are places where it's like 6 to 8% and their their outcomes are better the quality of care is
+better and also the doctors are more doctors and fewer payers and nurse practitioners and all
+of this kind of stuff there there are so many layers are just fucked up in our system
+because like one of the reasons why we have so many of those and so few doctors is because
+doctors are kind of scarce artificially like every every year if you look at the number of people
+that apply to medical school it's so much more than they actually admit and there are yeah there are
+constraints like they have so many residency slots they only have so many slots in the school and
+all of this kind of stuff but you could expand both of those easily and go like you know
+ratchet them up over the course of time build more medical schools make them free and so on and so on
+and in doing that you know get a fuckload more doctors and then we'd have much better care for
+everybody and also the doctors could give you you know you could have people who are actually like
+not just there for the money but they're to really help and give much better bedside manner
+not be there sitting there fighting with the insurance companies spending tons of time you know
+just and actually having to pay an extra person to deal with that kind of bullshit and
+what it could be much better it could be so much better but because that false scarcity exists
+and all of these other things we end up having a whole a need and people who have filled with
+people who are less qualified and less trained and it's just it's just a mess and the doctors
+are pissed off at the people that are less qualified and trained but also you kind of can't blame them
+because they couldn't get in a medical school because you guys have constrained the medical school
+stuff and you only have so many residency slots because you're using Medicare and Medicaid to
+pay for those but you could you could fund those other ways you know I mean it's certainly like you
+look at all the money that we waste on defense and the cops but you could have free medical
+education easily fully funded residency programs for everybody that wants to go and you know I mean
+you you definitely have like standards and requirements and stuff but you don't have to weed out
+a bunch of people who have exemplary like imcat scores and volunteers and they're volunteered
+and have great references and all that kind of stuff who would be good doctors just so that you
+have like a tiny number of slots and you keep it as like an exclusive profession but anyway
+it's it's just annoying I I can't believe I'm an hour 20 minutes and before I finally get to this
+so I figured out how to get there and the way to get there is a grayhound which is a boss
+and the grayhound that I was on was I think going from St.</p>
+<p>Louis originally and so you hop on it
+and it's for some reason in Arizona the only options the get from Phoenix to Flagstaff are like
+10 something A M or 10 something P M and if you go and either one of those you get there at like
+130 is either in the afternoon or in the morning and I A A I already had my my tickets to fly here
+for the afternoon B I didn't I didn't want to get like I kind of switched to the morning
+but I didn't want to get here at a point where it's like okay you have to go into the grace
+the grayhound station to be there at 10 30 or whatever it is so that is after you get off the plane
+it's at least probably 45 minutes to an hour you won't of margin so you have to get in at like
+9 30 or or earlier and then the flights like an hour and a half and you have to be there earlier so like I'm 30
+eight o'clock so I would have had to leave it probably like 7 7 30
+I didn't want to deal with that to get there at a reasonable time and then still you're there
+you know the whole day and what are you going to do for the rest of the day I don't know
+so I went on the later one and I went I I think it was 10 45 that it actually
+left but or 10 30 something like that PM 22 let's say 45 and I was able to get there
+first on the light rail which is going to is slow I went back to the airport I took the sky train
+sky train takes you to the 24th street station and then once you get there you get off the thing
+and you have to like walk and it's not well marked so first I left the wrong door
+and they closed it at 9 o'clock so I couldn't get back in and go back out the right door so I had to walk
+around the thing in a place where there was no sidewalk because of course why would there be a sidewalk
+it was just it was just like a fucking pain in the ass and then it wasn't
+a way away it was a 15 minute walk I think from there to the to the Greyhound station
+but it was it's just like put the fucking thing like build a tunnel connect it with a bridge do something
+make it like you're actually thinking about people wanting to do this make it like something that
+is not a nightmare fucking pain in the ass to do if you're in Tokyo in contrast
+depends on where you are but probably if you're anywhere in central Tokyo five minute walk
+maybe 10 minute walk if you're going to be like on the high end you get to a metro station
+get on the train 15 minutes later 20 minutes on the high end
+you're at Tokyo station right and then you go from Tokyo station you could buy your
+shinkansen tickets then a train leaves on especially on busy days and weekends and stuff but
+I think most of the time there's a shinkansen between like Tokyo and Kyoto every three to five minutes
+like no bullshit like it's completely fucking ridiculous and they're they're decently crowded
+by the way so you you get your ticket and you know you you want to get it with enough margins so
+that you can get up to the tracks and you know all that stuff but by the time you get there
+you don't even again you don't have your ticket you buy the ticket you run up there
+get on the train and it's like an impromptu thing like you could just decide to do that on a weekend
+and then like two and a half hours later you're in Kyoto and it's it's fucking awesome
+and you're sitting on a train that you can walk on you don't have to deal with the bullshit
+of like if you're in the window seat you have a stranger there getting you know like that you
+have to sit there and debate like do I wait these people up do I get up and pee or do I wait until
+and then eventually you have to pee and you just give up and you're forced to have a uncomfortable
+social interaction even if you didn't know the person who was sitting next to you there's
+enough room even in the like not green cars like this sort of normal plebian car there's enough room
+that you could get up and not disturb somebody and you know it's it's just it's wild
+how different it is and how much better it is versus here and so and you know like there are some
+stations that are a little bit far and you're walking a little bit like in Tokyo station
+the distance between the should constant part and the metro part for some of the metro lines
+is a little bit of a walk but it's all underground it's all enclosed or you know like there
+there are places where you'll have to walk from one station to another but it's pretty quick
+pretty short it's not a big deal it's like go down an elevator or an escalator rather and then you
+walk five minutes and you go up another one and it's not I'm not saying it's perfect I want to be
+clear like it's not perfect but it's so much better it's so much fucking better so I get to the
+station and I'm there and it's just like you feel an on-shin constant and when I say shin
+constant fill in the Chinese high-speed rail or Tijiefe or any of the other there are a bunch of
+different high-speed rails in different countries but whatever it is for the country that you're
+talking about the difference is like this is a thing in a real country which just normal people use
+and when I say normal people I mean you know like not like poor people I mean like not the poor people
+aren't normal people but I mean like a whole cross-section of the country uses it a whole cross-section
+of demographics use that and they take it and then you know it's that's just normal and this
+instead it's all set up kind of almost deliberately to make you feel like a third-class citizen
+and it's like and I'm not I'm not trying to disparage the people that are taking the train or the
+the boss rather but basically it's concentrating for people who are poor it's concentrating for people
+who are not you know it's not that just focus on socioeconomic status but it's mostly people who are
+very low socioeconomic status and they don't have the money to take alternate transit because they
+made it suck and it's horrible and it is cheap relatively although not that cheap so you're ending
+up with people who you know have more money not taking it and also who wants to go like the frequency
+is so low and it's so slow that who wants to deal with that inconvenience versus some alternate mode
+versus like imagine if there was a fucking train the train would be so much better a real high-speed
+train too I don't mean like the ones that amtrak is like constantly bragging about the go oh we got a
+high-speed train and they're so awesome that they can't actually get up to the top speed on their
+current tracks and or they can barely ever and they're like this is the train that it looks a little
+bit more modern I guess but it's basically what Japan was farting around with in terms of speeds
+and quality of ride and all that kind of stuff in the sixties or France or any of these other
+countries like in the sixties again literally it's so ridiculous and awful so anyway you're there
+feel like a third-class citizen and you get on the thing and and again I'm not trying to
+disparage with people that are on it but it was like a fucking hospital like you know I
+every time I go to the airport there are people who are visibly like since the pandemic started
+there are people who are visibly quite sick and obviously not mass and obviously not taking any
+precautions for other people or anything like this it's really irritating I don't like it but on this
+bus I don't know how many people are on the bus but it's a very small tiny commuter flight
+worth of people if not if even that and at least like three to five people are coughing
+and a few people weren't coughing consistently but like every once in a while you know like
+disgusting kind of and one person to to her credit at a mask she was very sick though and didn't
+sound good and her mask was like a cloth mask not a 95 but she was at least wearing something
+and those cloth masks like I I don't want to get into the details of these masks but the person
+who's sick wearing a cloth mask is probably better for transmission control for in terms of
+like you getting sick being near there then you wearing it in 95 with somebody like that not
+now of course both people wearing it in 95 is better it's even if you're wearing a cloth mask
+and they're wearing a cloth mask it's better than just them but you know at least it's just
+much easier not to get the shit in the pool than it is to get in the pool and filter out the
+shit after it's there so to speak so anyway she was at least wearing something but there were
+other people that were not and there's not great ventilation on this bus and I'm sitting there
+thinking like yeah in 95 is not a perfect protection I get my eyes or mucosa which means that if anything
+lands there and it takes hold you can get infected through that path I definitely was not taking off
+my mask my mask go a fucking time but yeah I'm sitting there and I'm just like it's going to be
+a goddamn miracle if I don't get sick unfortunately I didn't get sick but yeah it was now I will say
+that as annoying as it was and all this kind of stuff it's nice not having to drive
+I've driven up to flag stuff many times and being there especially at that time and being able
+to just sit there in the dark and kind of relax it was kind of nice now of course I got the flag
+staff and the station is just like it flag stuff is not that big they'd be fair but the station
+was a half hour walk from my hotel I deliberately picked a hotel that was relatively close to where
+I was going and relatively close to the station but still I have our walk and yeah it's just like
+I don't know it's just the I don't mind walking to be fair although it was like 130 in the
+morning when I got there and it was kind of chilly and so walking in the cold at 130 in the morning
+and wanting to just get to the hotel and take a shower and get the bed it was a little annoying
+especially after being on the bus and yeah it's just like I don't know I fortunately I came back
+yesterday with some friends from the union some of the organizers and it was such a better experience
+it's just such a better experience but either one is not as good as a fucking train like taking a
+goddamn train it's just and when I say train I want to be very clear I don't mean like a shitty
+amtrak I don't mean like taking a train that is like an ancient fucking diesel electric hybrid
+train I mean like an actual proper high-speed train from the 20th, 21st century not like from
+the not a 1900s train you know not something that's like a locomotive so to speak an actual
+fucking train and it's just like the fact that this is not a thing here the fact that
+people with you know a lot of money and a lot of lead time are slowly kind of building
+slight maybe thinking about high-speed rail networks across the US and various places
+and putting little legs in and they're still not going to be very good or very adequate or very fast
+it's it's it's fucking irritating and then I know people like the the two criticisms that I always
+hear and just to preempt these because I I can hear people criticizing before it's like well
+Scott the US is very big China's fucking big China is fucking big China's huge
+Europe is also big by the way Europe you think of individual European countries and then at that
+big but when you look at Europe as a whole it's pretty fucking big and yet each one is a little
+country but each state is a zone of fucking state you know it's not that different between the two
+you're making a pull-should excuse this is similar to like free mobile
+also like 20 euros a month or maybe it's 15 euros a month for better service than I get from
+team mobile for like I don't know 7080 bucks a month that's 15 20 euros a month is like order of 20
+bucks a month so you can get sell plus high-speed plus yeah and in some of the way we also they
+have a home internet for order of the same price and you can get them bundled together and you
+save like 5 or 10 euros a month and it's just it's just the difference between being there
+in a real country and being in this underdeveloped shiphole is just ridiculous I of the
+countries that I visited you know Japan South Korea China Vietnam and Thailand the only one that
+feels at all like the US to me is Vietnam and that's because you know not really like I mean
+don't get me wrong there are places in the US where you have some kind of public transit that's
+not completely fucked yeah you Chicago Boston DC especially New York San Francisco I think New York
+is the of the cities that I've been to in the US New York is really the only one that I would give like a
+complete fairly decent check to although even there the be fair it's not it's not great great
+like they're not maintaining it well but it's still better than any place else that I've been in the United
+States but you know you you look at that and like Vietnam was very underdeveloped and
+it's getting there like they're building there they're actually by the time the the US has this
+a latest San Francisco train if they do finally build it and not cancel it that's going to be
+shitty they will have a high-speed train that goes up and down the country you know from my coach
+humanity up to uh to Hanoi and it will be so much fucking better it will be like and you think about
+there like the cities I think they're developing but they are developing they're not like stagnant
+and you think about like well part of the reason the the country is kind of struggling a little bit
+is because they're not being supported by the sort of international community in the US especially
+and you know like we're deliberately probably fucking things up for them and they're still
+yeah like you could live very comfortably there there's there's a lot of poverty that be fair
+but also you look at it and it's like things things seem like actually not that bad but it seems
+very much like here and I've had people kind of push back on that and say you know like well some
+things are better there and then here which I think is true like the healthcare system is probably
+in some yeah yeah I'm not saying one is great and one is terrible but things are
+things are not clearly like better or worse and one of the other as a general rule and I think that
+is a condemnation of this country that it's not like massively objectively better and it's
+certainly like compared to the other ones does not come close at all does not compare it I guess
+this next one would be like Thailand was there was a lot of poverty there and they obviously
+really are hypercapitalistic but at least like in Bangkok there are you know it's not a great
+realm that work but it's it there's a couple decent realm that works and you can get around fairly
+well you know especially if you're not like completely going arbitrarily anywhere
+it's just like and then when you go to as soon as you get to like soul or Beijing or Tokyo or Kyoto
+or can do shins and any any like real city and a real country the difference between that
+in the United States is just fucking it's wild it's properly fucking wild and the fact that like
+you know if you're in Hong Kong you can well Hong Kong is maybe a bad example because it's
+kind of China it's kind of not but say you say your inshins then you can take a high speed train
+to a lot of other cities from there and it's it's a much better experience than when you get
+to that city there's going to be a metro system when you're in that city there's a metro system
+and it's going to be walkable now it won't be perfect and I'm not again I'm not saying like
+any places perfect but it's just like night and day when you're in this country and you compare it
+to these other countries it's just ridiculous it's just over the top ridiculous and wild
+so anyway I'm I feel like I'm rambling at this point but it's it's annoying it's greatly annoying
+I don't think I'm going to take that bus again but it shouldn't be like that it should be like a
+thing that anyone would want to do it should be at least as convenient as driving and really better
+because a you know wherever you are in the city five ten minute walk you should be able to get to
+not just the light real but something fast that takes you directly to a transit center
+that is a station that you're not going to have to go out and be exposed to the weather but
+you'll just be like a short walk to the train station and the train station takes you to where you're
+going and then somewhere we there there's you know a nice metro around and that takes you
+basically wherever you're going to go and it should just be like that it's not like I feel like
+I feel like I'm talking to somebody about like they're just the most basic shit like
+you should in your house be able to if you have to pee in the middle of the night or or poop
+you should be able to go to a room and in that room there should be something there that you can
+do that in you don't have to go outside and you don't have to freeze or boil but you should just
+be able to be there and then remove the waste you don't have to deal with it and then you should
+you can you should be able to wash your hands with soap and you know like it it's like that level
+of basic shit and I feel like at the same time that I'm explaining this if I was telling this to most
+Americans most museums I should say most of the museums if I was talking to most people I think
+people would just be like you're you're talking about fantasy wild impossible shit
+stuff that's not possible and so anyway the other thing that people say the other thing people
+say is like well it's not just that it's big it's that China has dictatorial powers and they can
+do whatever this country uses fucking imminent domain for sports stadiums that they've
+still people's houses they build sports stadiums with public money for billionaires like
+you can build a fucking train you you can build trains in this country you just have to have the
+world to do it you can build public transit and the thing also that irritates me I'm like I'm
+in tempi again I mentioned this before they had a train that used to come through tempi
+and they're building something which it's lovely I like it they're building like a walking path
+and stuff where some of these tracks that were in disused are and it's kind of nice but I'm
+sitting there also thinking like well if you wanted to build a train through tempi now your options
+are increasingly limited because you're doing this now and like where would you build it like where
+you had it before was a nice it might it might have been great tracks it might have but it was a place
+right it was a place it was clear and that you could put a train you could put a modern train in
+and now you don't have that anymore and you know now you get developments blocking where the tracks
+would have been and now you're gonna have to use that I'm in a domain because you're patching
+this stuff up like this and it's it's almost a thing where like you look at that and you're like
+is this I'm not saying that it's like inspiration but you know you kind of wonder like our
+car companies and oil companies and all these things deliberately trying to fuck things up
+so that strategically yeah if somebody wants to build stuff that doesn't suck it's very hard
+and very expensive and requires a lot of unpopular decisions I don't know I don't know but
+it's just it's fucking irritating so anyway well it should I'm an hour 45 minutes or 41 minutes
+into this I okay so that is hour 40 minutes of various just random shit I will say like this is
+just a cap that off buses like there's nothing intrinsically wrong with buses buses are very nice
+especially in places where they're kind of spread out and you need like last mile stuff to get
+from the train station to you know someplace where you're further away from a train station
+especially like in the suburbs especially like in your developing city or country
+you you don't have the train build out so you need the bus and hill as a stop gap until you build
+the train buses as just like a long term long distance option sock they're not they're not
+great one they're not the the best they're not the way to do it it's just it's just ridiculous
+anyway the thing I wanted to end with and this was originally my plan I just thought that I
+would finish all that other stuff in like 45 minutes not an hour 40 minutes but the thing I wanted
+to end with is sort of a little bit of a thought and like almost a meditation or thinking out loud
+about where I'd like to be and you know sort of what I would like to be home you know and
+sort of how I'd like things to be and I think this is a thing that's it's an exercise that's worth
+doing from time to time I don't think I think a lot of people would put a lot of pressure on
+the skin of stuff because it's like you're thinking of what you want to do and make it like forever
+and I'm not talking about forever you know anything is open to reconsideration anything is open to
+you know changing your mind or you learn new stuff or things change and you go someplace else we do
+something else but just at this moment in time sitting your in tempi having just done my
+couple months traveling around some parts of Asia and thinking about like where do I want to be what
+do I want to be doing and I know like a few things just absolutely I do not want to be in a job
+that I have to physically go into an office for I yeah I'm not saying I won't do that but if I
+can avoid it if it's something that I can not do that is absolutely very strongly my preference
+I just I'm kind of done with it I'm kind of irritated with that situation and I don't want to
+do it again I don't think like I've done it I've had the 95 thing to and I've done sort of much more
+unstructured stuff and the unstructured stuff is just better and I think also like I think that's
+something that should be open to everyone you know just like strictly speaking I know a lot of people
+physically can't get a job but isn't like that and it shouldn't be that fucking way you should be
+able to you should have a lot of flexibility you should have the ability to actually take
+there's another thing that people in the US museums like if you tell them what it's like in
+other countries where people take months off every year they think you're full of shit they'll
+think like oh that's like a rich person thing no just people in France can take a month off
+and when I say take a month off I don't mean that's like their entire vacation I mean they'll
+have like six to eight weeks of vacation and they can take four of them off at once
+and go on a long trip or just kind of chill out or relax or whatever it also also they have
+a decent social safety net and I mean again not perfect it's not like you know like they're
+not flaws to this but they do have a decent social safety net and within reason you know if you
+lose your job or something you can get assistance you can actually like live fairly well and not
+get kicked out on the street but again not perfect not you know like but it's it's it could be
+much better it could be so much better in other places but anyway that's that's the thing I want
+I want the ability to have a lot of flexibility that is you know I'd really given my
+brothers light to not have somebody it I've had bosses that were okay I will say that I've had
+I remember like brand-class and John Duce and I two of my bosses at Intel both of these guys
+were really great they they sort of they they gave me enough flexibility and freedom to figure out
+what I wanted to do and they gave me enough constraints to sort of like knowing what I could do
+where I was you know constraints and training wheels to get somewhere and you know like um
+everything I learned about Unix and being like right now I'm very proficient and it
+came from John Duce and a lot of the web stuff came from brand-class and unfortunately you know
+things have changed like John has retired long since and Brian moved to Texas I wouldn't want
+to go there I don't know if he's still with Intel I haven't talked to him in a while but
+his wife randomly uh was a doctor in her residency when there was in Texas someplace
+I should look at that but anyway maybe I shouldn't be mentioning random random people's names
+and I think I don't think there's any problem with that though but these were people who were
+very helpful at various points in my life and you know then I've had really shitty bosses like
+the guy after Brian was terrible one of the one of the worst bosses that I've ever had the one thing
+that I can say for him is that like he had no idea what I could do or what I was doing or how to
+find ways to make me productive and make me fit in well and all of this kind of stuff and so
+he just let me kind of like linger for a while and then eventually just didn't renew my contract
+and which was fine because I was kind of like I mean it would have been nice to have the money but
+it was also like uh floundering is not fun floundering you know it's nice to the feel like you're
+accomplishing something you're going to work and doing something for a purpose and when you're
+just kind of like going there and warming a seat it kind of sucks it really kind of sucks even if
+I'm very self motivated and directed but you know it's still like you feel very limited and that
+it's shitty I don't recommend it so yeah with with job kind of stuff and I'd like to
+the nice thing is like if I'm living someplace and I think this is a hard constraint too
+like obviously you know I want to live someplace where I can visit my mom and sister often
+if I could live someplace that was nicer with them that would be my preference but I don't think
+I don't know how that's going to work because they're very deeply committed to LA and I just
+think about like LA I mean LA does have a metro system it's not a great one but it's it's okay if
+you were like Phoenix if you were on one of the lines and you're one of the major stations
+and you know you didn't want to go anywhere that's too far off of the station or off of the
+the tracks off of the rails off of the lines you could you could get by with it you could kind of
+vaguely feel like if you're riding on that train or you're in the station for a moment you kind of
+almost feel like you're in a European country or in an Asian country or like any country that's
+actually developed but then of course you then you get it off and you kind of
+reality asserts itself but you know it's just not my first choice I'm not ruling it out but
+it's not it's not a place I really want to be and it's it's frustrating so you know I mean
+of the places that I just was I don't think I'd want to live in Vietnam although living there
+would be extremely cheap extremely cheap but I don't think I want to do it I could live in
+Bangkok I could like I know a couple people there and the cost of living is actually ridiculously low
+and if I had some kind of source of income that was external from the country and I live there
+I get them pretty comfortably pretty easily but it's not my first choice I also feel like tie
+so I'd eat crap Capcom crap I'm probably fucking up the tones but you know you could you could learn it
+you could learn it you could I if I started working while I was there on reading it and I definitely
+did not get the whole alphabet or I guess it would be more of like an average and I don't even know
+if it counts as an abjad but basically they have the consonants and they have vowels are kind of
+separate and they float around the consonants which is sort of like Arabic or Hebrew or
+an abjad so maybe it is I've taken linguistics a couple of times undergrading grad level and I don't
+remember but you know it's it's a phonetic thing that the tones are not like terrible terrible
+Vietnamese Vietnamese I feel like I'm botching that that one the tones were really fucking hard
+I like and my memory is not what it once was which is not helping but I struggled so hard there
+just to say thank you and hello and the basic basic shit and in Thailand a people speak English
+very well and be I think Thai is tractable or more so but you know and then China was nice
+I could see living there I could I mean don't get me wrong I could live in a lot of places
+but I could live there it wouldn't be that hard the the great firewall would be a fucking annoying
+pain in the ass it was it was irritating as a guest as a visitor but actually live there just like
+and then you think about it you're like I don't know the the one thing I really am not a huge fan of
+there and you know then Vietnam as well is just like the pushiness and like it to contrast it like
+in Japan people cute and like queuing is a very big thing and it's really nice it's really
+fucking nice and orderly and it works well with my personality you don't have to you don't have to be
+like super assertive or really push or anything like that you could just kind of comfortably
+follow the rules and the rules are you know some of them are not explicit but they're easy to understand
+for the most part and if you do that then things just kind of work fairly smoothly within reason
+obviously there is a lot of bureaucracy and that could have said I could totally live in Japan
+but in China you know like people are not queuing and they're like it kind of was ridiculous
+it's ended on the city obviously like the character would be different but that very generally like
+people would just be standing in front of the elevator or standing in front of the door when the
+subway opened and the doors would open and they just walk right in while people are walking out
+it was the most ridiculous like I wouldn't record it because you know obviously you got a lot of
+pictures of people there that you couldn't get permission from and they probably wouldn't
+super excited about it but just the experience of it was so fucking ridiculous and wild
+it's just like any any more non-avelists a lot of fires because I used wild and ridiculous a lot
+but it was it was so just absurd like if you guys would just stand off to the side and let people
+off the fucking train or off the elevator we could all get in and out way faster and way easier
+but instead what you're doing here is just kind of weird annoying and to be fair I've talked
+to some people about this and it sounds like a lot of this might be kind of a holdover of like
+older generations had more scarcity and so it's like when you have scarcity you feel like you're
+going to get left out of things so your impulse is sort of like the chickens like clamoring over
+each other to get food versus you know if things have not been scarce for a while you've been
+kind of okay you could be very orderly because you're assured that you know being civil and
+following these rules is not going to fuck you out of whatever you need it's a thing that I don't
+like about the US because you do need not do the same extent but you definitely need to push your way
+in a little bit and I'm not a fan of that it's not it's not natural to me it doesn't feel like I can
+do it but it's not a thing that I want to do it's just not you know that so anyway of all the places
+that I was and and also like I could live in South Korea but I don't think I'd want to as much
+either I'm really I'm all the places that I've been on this trip Japan and particularly Tokyo
+although I could take a live in Kyoto I could feel like to a lesser extent but I could live in Osaka
+I could and probably some other cities I wouldn't want to live in the Gano
+Nagano I don't know how you'd say it exactly but yeah I wouldn't want to live there
+although visiting is nice but you know there are there are places I wouldn't want to live in one of the
+sea the little villages that they don't have any public transit and it's just like one bus line that
+goes down it that I don't have a pass on I want to be someplace where you know there's not just
+a shinkansen station but a nice metro and you can get around easily and all that kind of stuff but
+I could live there I could live in France I could live in Spain but I think the thing you know I want to be
+someplace I don't need like a massive massive space but someplace fairly comfortable
+it could be like the size this room that I'm in now is probably I don't even know it feels like it's
+like at least 32 maybe even 40 square meters the hotels that I was in in Japan were like 20
+something square meters and maybe maybe they got up to 30 I don't know and some of them but
+it's it's interesting to me how much more efficient they were with space because like here is a big hotel
+the bathroom is huge but it feels not that big whereas their everything was objectively very small
+but the use of space felt like they were at least trying they just that side but I don't know what
+the size would be but you know having a place and having like a home base where you actually can just like
+keep your shit would be really nice having a like this is just where I go and I can chill out here
+having my whiteboard would be a big thing being able to cook would be a big thing
+having a walkable city that I can just explore and yeah at a certain point you do explore
+enough that you've kind of like I've gone to New York enough times or I've gone to Paris enough times
+that I think I've gotten to Tokyo enough times I'll eat Kyoto as well but I don't really I'm not
+saying I don't need to explore it because like all of these places you could spend years and years
+going to try different restaurants and going to different neighborhoods and getting to know places
+but at the same time you know on a large scale on a sort of like macro scale I've kind of
+yeah I've gone through all the around these small I've looked around I kind of know what's
+where it might take me a little while they're kind of reorient myself but I basically
+basically pretty comfortable with the cities you know it's a different thing living someplace
+than visiting it but being someplace where if I wanted to go for a walk or take the metro I could
+if I want to get to the airport it's not that big of a deal if I want to you know do just like
+any kind of day-to-day stuff I want to have a grocery store like five ten minutes walk away
+that's a big hard requirement for me I'd like to have I mean ideally would be like a
+but these are really but you know like some kind of a bakery nearby would be really nice
+having a coffee shop nearby although if I was living someplace
+kind of feel like I should just get into if that making my own coffee well at least yeah
+I go back and forth on the cake up idea but those pods are annoyingly kind of nice and convenient
+when I say that I mean you know generally not necessarily specifically that but
+there's something nice about that it's not it's not great coffee but you know or
+or you know they have these machines that just make the coffee for you and kind of
+do the full capuccino for you it's not a great cat it's not the best capuccino you've ever
+had but if you press the capuccino button and something comes out that's pretty capuccino is
+it's yeah you hit the espresso button and it's like it's not it's not the best espresso you've
+ever had but if you are just like having your coffee in the morning it's good enough
+or or even like I had when I lived in Paris I had a French press I still have that French press
+but it's at my sister's place right now actually but I had a friend a little French press
+and I had you know I just got like vacuum packed ground coffee I didn't even use a grinder there
+of a cartoon war I don't remember which which flavor it was or which kind but it was not like
+the best coffee in the world but it was pretty good and then I got one of the things yeah you just
+get like a box of milk that is ultra high temperature pasteurized so you don't have to refrigerate it
+and you do that and then you have your little pastry you get your punch chocolate in the morning
+and it's just lovely it's just like I can be very comfortable and content in that kind of
+a situation just you know like I definitely like I've had some people suggest like work where you're
+traveling I don't know I just like anything that you do that you really like that you do
+like you convert your hobby to something that you're monetizing or like if I started getting paid
+to record these things I'm sure it would become work at a certain point and it would become painful
+although I I don't know I I really go back and forth I'm like what can I do because I
+there's a temptation to try to do consulting work although I haven't had a lot of offers on consulting
+work recently definitely I haven't had a lot of job offers recently like that there was a time when
+I was getting the upper release study stream of them and I had people could get me stuff and
+I don't know the last few years it's been hard I don't know if it's because of just the overall
+economy or like I'm getting older or I'm kind of you know like a little bit of a pain in the
+S I'm not a pain in the S but I mean you know like I'm a little outspoken so I'm probably not doing
+myself any favors with my social media but you know whatever it is whatever it is maybe my letters and
+my CV slash resume are not as good as they could be I don't know but you know I've just been like
+getting dead air trying to apply to shit like not even not even rejections just like it's
+it's just you send it out and it's gone it just disappears into the void and also like I'm
+thinking about it and it's like I've applied to a bunch of stuff I don't even know if I want to
+do it if I got it like if a friend who works at Apple and I just like look at that and it's like
+you know I mean don't give me wrong I would I would take something now especially if I could
+make money for a year or two or a few years but I don't really really want to work there I don't really
+want to work in that kind of a job I really like really like the given my brothers what I would do
+I like I have a few projects that I can work on that I think would eventually generate money
+I would so rather just do that I would so rather just guide myself and work on my own shit and
+you know it's just it's really frustrating to see the situation where it's like how do you
+how do you make that a thing how do you and I don't know I don't know I'm also like I've had a few
+businesses and I'm very I'm very motivated I work hard and I'm self guided and all of this kind of
+but the business side of that is not is not me selling is not me dealing with customers is so
+like I'm I'm good at talking with people I'm good at explaining stuff that people I'm good at
+understanding what they're trying to get or achieve and how to do it but actually just like interacting
+with people I get I'm talking like it's making me physically tired just thinking about it right now talking
+about it yeah it's like oh it's just it's just horrible and I don't know you think about like
+consulting work too and the thing about consulting work is you only have so much time and the consulting
+work I don't know I mean this is I guess fundamentally comes down to why so many companies like
+monthly subscriptions because they're kind of shitty just in general but or at rent is really it's
+pretty pretty pretty fucking shitty but also you know it's sort of a very low effort and a thing so
+once you get enough of those you've just got your not made you got your baseline covered and
+I don't know I just I just go back and forth on this and it's like I would I would very much
+I would like to not have to deal with like selling shit and I would like to not have to deal with
+a lot of customer service kind of I just I just fucking hate capital services the thing
+if I if I had my like I really have like a magic wand and I can do anything I'd have like
+I'd probably just be a fucking professor but in a sense of not constantly chasing after grants
+you can write a publication or two a year maybe maybe more if you want to but you don't have
+like a huge pressure to and you can work on interesting stuff and maybe I teach a class every year
+but probably not too many and I just like I don't know I'm I spent so much time in my life like
+working really hard trying to build stuff and like every time I tried to do it every time I wanted to
+because I have my own stuff that I want to work on and I couldn't I couldn't figure out how to pay for
+that so I tried to do first I tried to raise money for it I couldn't do that and then I got
+I did get money for something that was like a side project that was tangentially related to that
+that I thought would generate something but it ended up being like I didn't realize like how much
+it's fucking expensive to build a physical product and especially like you need to get FCC certified
+you need to get you all certified you need to make it so that you know you can you can actually
+mass produce it and sell it and all this kind of stuff it's painful and expensive and I raised a
+couple hundred thousand for selling like that but I still you know I probably would have needed another
+maybe even the same amount to get everything to conclusion to the point where I could actually sell
+something and realistically like that was very cheap like if you're a company doing it you'd
+spend millions of dollars developing that kind of a product and it's just like I don't know it's
+frustrating how like what what is it that I can I because I know I have all these I'm pretty technically
+skilled I'm pretty able to do a lot of stuff I just don't know what I could do that would pay
+decently enough that I wouldn't hate I wouldn't be miserable and and that yeah I could just
+you know say I can't see you know I can't see something that would pay enough to be okay
+and not be miserable and you know like you started adding a few constraints there and it's just like
+what would you do I don't fucking know I don't fucking know I'm I'm an husband another
+think about this and kind of rumenate on it and then I will I won't make a longer one on that one
+someday but I think that's probably enough for now I'm already in the two hour six minute mark so
+that's that's a pretty long one of these I think it's yeah I do understand that this can be useful as
+a sleep aid but I probably probably don't need to listen to to me blathering on about this
+and like debating with myself over what I want to do and you know like just going back it finishing
+up the thought on the if you're consulting you can only you only have so much time right you'll
+me you can't like consult on a million things at once so you can't really scale that business
+and so you can only make what you make from it it's not like you're making a product where you
+can just mass produce the product it's not like you're making a online service where you can just
+sell it to more customers or something like that you're just making something and you're
+getting paid to do a certain amount of work and then you do it and then it's done and then
+what comes next and it's just like that what comes next thing sucks and then are you how do you get
+paid enough because with a consulting I and granted I I know I'm not a great negotiator and my
+former business partner very clearly was not but yeah it's just like I I never could negotiate
+enough for that that it would really cover the expenses involved in doing that and on top of that it was
+just like you know you're once a job is done you don't have a lot of ongoing you know like
+if you nice to have maintenance they just baked into that kind of stuff or something so that you
+just have a reliable baseline that you can you can pull from instead of you know we would get
+big contracts and then we'd have no contracts for a while and when you have no contracts for a while
+it really fucks you it's really it's lumpy it's like any kind of freelance work it's very lumpy
+you get people doing these you know net 90 kind of things so you do the work and then
+you build them and then you get paid like three months later maybe and soften if you get paid it's
+after a fight it's like you don't there there there are customers to be fair I don't want to say
+everybody's terrible but there are people who you'll send them a bill send them the invoice and they
+will just pay and it's fucking easy and you don't have the fight and it's never a big deal but so
+many people like if you do that kind of work you have to fight you have to sit there and go like
+fucking pay me fuck you and you know like if you try to negotiate and you figure out what the
+actual expenses are and how much something is going to cost most of the people will just like go
+I don't want to do that I'm going to just pay some dude and india to do it and you know it's just
+irritating it's just fucking irritating and I don't begrudge the person who's not taking enough money
+for it who's living someplace for the cost of living is much lower
+and you know all this stuff but it's just like it's very fucking annoying the the talk to
+somebody and it's like I'm giving you a very good deal here this is cheap like realistically
+you should be paying a lot more for it and I'm giving you this and then they feel put upon and like
+you know like they're giving you an obscene amount of money for something like if you're a normal
+if you're just normal level of rich the cost of developing products is very high and you know
+just like me with the switch you know you probably are going to spend into the by the time you're
+actually like selling and doing stuff into the millions of dollars that develop physical
+long word products and you can depending on what it is if it's something like really simple
+and you don't have to do that many iterations prototyping it and it's only mechanical
+doesn't have a lot or the electrical part is very simple maybe you can do it a lot cheaper
+but you know things get really fucking expensive pretty quickly and you know especially you know
+they feel like even if you're doing like CAD you're doing CAD just the price of solid works
+is ridiculous the price of all of them is ridiculous and so just paying for that is a lot
+just paying for your time is a lot and paying enough to be able to you know actually do the work
+and have a little bit more and cover you know other expenses and all this kind of stuff
+it's just it's very annoying it's very annoying it makes me like I I keep thinking about trying to
+find some kind of like an online monthly recurring thing that I could do even though find that
+really gross but you know like just something just something that doesn't it's it's very annoying
+I just don't know you know like there's a part of me that kind of wants to make something and sell
+that but then I think about like all the stuff that I want to make would take so much time and
+money to develop and then after you've got it you know like the manufacturing optimizations and the
+cost optimizations and all that kind of stuff more money in time and then at a certain point
+you've got it you're making it you're selling it and now it's a sales problem so you've got to
+figure out sales and you have to deal with that shit and it's just it's just like so many layers
+of pain in the ass and I don't know I don't fucking know I hate I hate that we have to deal with this
+shit I just it's it's such a and I know also like I make I'm a cutely aware that I'm speaking
+about this from a very privileged place and that you know like for a lot of people the stuff that
+I'm complaining about is like a fantasy dream like having a job that like my last job I wasn't
+out on a roof in the sun in the summer in Arizona for example that's a big deal and I'm sitting
+you're bitching about it but at the same time yeah that's it should be better for all of us it should
+just be better for all of us I don't know I think with that I'm I'm not exactly tired but I'm
+just like just talking about this stuff is just depressing me and it's I can feel the weight
+of it physically so with that hopefully by now you're asleep you're enjoying and you're not
+actually hearing this anymore so I'm just going to speak very very calmly and say as ever thank you for
+listening and</p>
+<p>再见</p>
+
+    </article>
+  </main>
+  <footer>
+    <span class="copyright" title="Copyright Scott Menor / SMENOR, LLC. All Rights Reserved.">&copy; 2025 </span>
+    <span> Not all who wander are lost.</span>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+  <meta property="og:title" content="Off Rails">
+  <meta name="twitter:title" content="Off Rails">
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta name="twitter:image" content="https://smenor.com/images/tangentsIconTwitter.png" />
+  <meta name="twitter:twitter:image:alt" content="site logo" />
+
+  <title>Off Rails</title>
+
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.umd.min.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class=" off-rails">
+  <header>
+    <a href="/" class="logo">
+      <img src="/images/tangentsChannelLogo.svg">
+    </a>
+    <h1 class="title">
+      <a href="/tangents/archive/rails/">
+        Off Rails
+      </a>
+    </h1>
+    <input type="checkbox" id="menuControl" />
+    <label for="menuControl">
+      <nav>
+        <span class="line"></span>
+        <span class="line"></span>
+        <ul><li><a href="/ai/" >「 AI 」</a></li><li><a href="/anomalies/" >Anomalies</a></li><li><a href="/bio/" >Bio</a></li><li><a href="/companion/" >Companion</a></li><li><a href="/ethics/" >Ethics</a></li><li><a href="/mechatronics/" >Mechatronics</a></li><li><a href="/portfolio/" >Portfolio</a></li><li><a href="/spite/" >Spite</a></li><li><a href="/support/" >Support</a></li><li><a href="/sweetgrass/" >Sweetgrass</a></li><li><a href="/tangents/" >Tangents</a></li><li><a href="/who_am_i/" >Who am I ?</a></li></ul>
+        <span class="line"></span>
+    </nav>
+    </label>
+  </header>
+  <main>
+    <article><p>I've been using <a href="http://rubyonrails.org">Ruby on Rails</a> since sometime around Rails 3</p>
+<p>Recently I had a project that made me think maybe I should try it again so I went to the site and watched DHH's traditional 15 minute video.</p>
+<p>Most of what's in there looked so straightforward and easy I thought「 why not 」and tried it - and <em>MOST</em> of what's in there legitimately was that easy.</p>
+<p><em>MOST</em></p>
+<p>But a casual aside that got almost no attention was the new built-in deploy system <a href="https://kamal-deploy.org">Kamal</a> for building and rolling out <a href="https://www.docker.com">Docker</a> containers had basically no explaination.</p>
+<p>Now I have a lot of experience deploying Rails apps with <a href="https://github.com/capistrano/capistrano">Capistrano</a> which is far from great but I see this and think to myself「 hey it looks so easy and it's the preferred / default so why not try it ? 」</p>
+<p>「 Why not 」indeed.</p>
+<p>A few days later「 why not ? 」was clear af.</p>
+<p>Every step of the way was a massively frustrating pain in the ass.</p>
+<p>Probably wasn't a <em>great</em> sign that I was only able to find a few walk-throughs for setting up Rails 8 deploymenets with Kamal. I read through a few and pick the one that was the most step-by-step becuase I just wanted to get things going and didn't want to take any risks.</p>
+<p>So I follow it and one of the steps was to create a Docker repository on <a href="https://www.digitalocean.com">DigitalOcean</a> ( I'm trying to get off of AWS and this seemed like an opportunity for that though now that I'm starting to use containers I can at least in theory move much more easily ).</p>
+<p>This also turns out to have been a mistake because the username for DigitalOcean is my email address but the command line tools <em>REALLY</em> dislike symbols like @ but don't show enough information to have made that obvious.</p>
+<p>I wasted so much time gritting my way through issue after issue and finally <em>ALMOST</em> got there and this repository thing was One Last Thing™ and I finally got it going and I go to GitHub and file a <a href="https://github.com/rails/rails/issues/55341">bug report / issue</a> for this sincerely hoping that these might be reasonable people who want to know that there is something massively annoying and frustrating awaiting anyone who follows their tutorial</p>
+<p>I will admit perhaps I wasn't as diplomatic as I could have been but given my frustration I think I was pretty measured and / again I'm writing this with the hope that they'll update their how-to and make it easier for others so nobody else will have to go through the small hell trying to get started that I did.</p>
+<blockquote>
+<p>I've been spending <em>DAYS</em> trying to figure out how to setup and deploy with Docker ( to a digitalocean drop but literally anyplace seems equally as difficult )</p>
+<p>You have <a href="https://github.com/dhh">@dhh</a>'s 15 minute Rails 8 demo which blasts past this part and kamal like it Just Works™ and after going through multiple ( non rails ) HowTos it very much does not Just Work™</p>
+<h3>Steps to reproduce</h3>
+<p><code>rails new myproject</code>
+[ setup Kamal / docker credentials / etc ]
+...
+<code>kamal setup</code>
+<code>kamal deploy</code></p>
+<h3>Expected behavior</h3>
+<p>There is a simple, straightforward, <em><strong>well documented</strong></em> procedure for setting up Kamal deploys ( ideally using Rails credentials rather than the separate .kamal/secrets but if you insist on using that <em>EXPLAIN HOW</em> ) that if followed actually lets people deploy their rails projects</p>
+<h3>Actual behavior</h3>
+<p>Just nothing works and every step is a huge pain of googling and trying to crawl through broken glass to get to the next step.</p>
+<p>I've been at it again for <em>DAYS</em> and I'm still not able to get <code>kamal setup</code> to successfully complete</p>
+<pre><code>#21 exporting to image
+#21 pushing layers 0.9s done
+#21 ERROR: failed to push registry.digitalocean.com/actuallyMyRegistryNameHere/pdcs:2fdd71f89eb4b704907e4f01652bbee84bee0a88: failed to authorize: failed to fetch oauth token: unexpected status from GET request to https://api.digitalocean.com/v2/registry/auth?scope=repository%3AactuallyMyRegistryNameHere%2Fpdcs%3Apull%2Cpush&amp;service=registry.digitalocean.com: 401 Unauthorized
+</code></pre>
+<p>The contrast between my experience there and @dhh's demo could not be greater</p>
+<p>I'm sure this is stuff that you worked out and now after some time and effort have going smoothly but / again it has been an absolute nightmare for me to try to work through and I would so much rather spend my time developing than wasting it trying to get the 「 magical / way easier than capistrano 」 deploy system working</p>
+<h3>System configuration</h3>
+<p><strong>Rails version</strong>:
+Rails 8.0.2</p>
+<p><strong>Ruby version</strong>:
+ruby 3.4.4 (2025-05-14 revision a38531fd3f) +PRISM [arm64-darwin25]</p>
+</blockquote>
+<p>This turned out not to be taken well. First someone named zzak said</p>
+<blockquote>
+<p>Kamal is documented here: https://kamal-deploy.org/docs/installation/</p>
+<p>The Rails issue tracker is intended for reporting bugs in the framework.</p>
+<p>Kamal page links to a discord and discussions for community support, please direct your questions there.</p>
+</blockquote>
+<p>Again Rails ships with Kamal, DHH's demo talks about how great Kamal is and how they've fine-tuned their Docker wankery to work with Rails and blahblahblah and my goal here is to get him to add the tinniest bit of how-to to tell people how to get everything going ( now that I know how to do it it'd take a fraction of this post and because of this experience, I'll never tell. If you insist on using their crapware and they insist on not documenting it, you both deserve what you get there )</p>
+<p>Pressing on, DHH adds</p>
+<blockquote>
+<p><a href="https://github.com/zzak">@zzak</a> is right that we don't use the issue tracker for usage help, but I'll still offer you the pointer that the error you're wrestling with is in the error message. It looks like you're using Digital Ocean as your registry, but you've taken a sample path &quot;registry.digitalocean.com/actuallyMyRegistryNameHere&quot; without changing the placeholder (see &quot;actuallyMyRegistryNameHere&quot;) and that's probably your issue. I'd recommend just using Docker Hub for starters, as that's just easier for most people.</p>
+<p>AI is also a great help for these kinds of questions. I popped in your error message into ChatGPT and got a bunch of pointers that are very likely to help you solve the root cause of your problem.</p>
+<p>All the best on your learning journey!</p>
+</blockquote>
+<p>Now I have to tell you I fucking hate [ audible air-quotes ]「 AI 」and telling me to use it for help when I know what trash it is was really not the right thing to say to me in this situation.</p>
+<blockquote>
+<p>I eventually switched to docker hub and got it working after several other steps but I have to say recommending the ecological catastrophe plagiarism machine ChatGPT / audible-air-quotes「 AI 」is really not encouraging here. ( aside but the entire reason I was using a digital ocean registry instead of a hub.docker.com registry was that I only found a few tutorials for deploying with Kamal in Rails 8 and setting it up that way was what one of them recommended doing it that way; that was one of several completely avoidable frustrating diversions / wastes of time an official howto would have easily prevented )</p>
+<p><a href="https://github.com/zzak">@zzak</a> kamal ships with Rails, is clearly the default / preferred deployment system, and is in the 15 minute Rails 8 demo. It'd take an extra minute or two of video / a very short howto to get people spun-up on it and I guarantee if I ran into this issue others have just gritted through it and others still probably got frustrated and gave up.</p>
+<p>I'd like to think that you two want people using your framework and not needlessly immediately starting out with a bad / frustrating experience and then directing them to a BS factory to「 solve 」their issue when they point that out to you and suggest what I'd say is a an incredibly obvious and reasonable solution that I'd imagine you could put together / record and have up and running in an afternoon.</p>
+<p>..but what do I know ?</p>
+</blockquote>
+<p>DHH blasts off:</p>
+<blockquote>
+<p>You clearly don't know how to address people who give you gifts for free with the grace and gratitude such gifts warrant. I'd advice you to learn better manners before you ask people to volunteer their time to help you use software that you received for free. You didn't buy anything here. We're not your vendor and you're not our customer.</p>
+</blockquote>
+<p>To which I reply:</p>
+<blockquote>
+<p>Pot, kettle, man.</p>
+<p>I've solved my problem and don't need this howto anymore.</p>
+<p>I'm taking <em>MY</em> time here to convey <em>MY</em> experience and <em>MY</em> frustration in the hope that <em>YOU</em> can avoid putting other people through the same experience when they're trying to use <em>YOUR</em> framework.</p>
+<p>Don't worry though I'll never make that mistake again with you.</p>
+</blockquote>
+<p>and he responded:</p>
+<blockquote>
+<p>Seems like your misunderstanding of the open source gift exchange is terminal. Bye.</p>
+</blockquote>
+<p>and blocked me.</p>
+<p><img src="/images/blockedByRails.png" alt="DHH Blocked me from the Rails GitHub repository" title="Blocked by DHH/Rails on GitHub"></p>
+<p>「 Terminal 」indeed. I'll never even think about useing Rails or anything else DHH is in any way associated with for another project again.</p>
+<p>Postscript - when I started this journey I started two different Rails projects thinking I'd run them in two different containers on a single server and finally migrate my other stuff out of EC2 as I've been trying to for literally years ( I stopped buying anything from Amazon a long time ago but have had stuff running on AWS forever because it's incredibly sticky but recently losing my job has given me time and iimpetus to finally do it and to get off of gmail which was its own <a href="/tangents/posts/google/">horrible journey</a> I'll finish writing up one day ).</p>
+<p>Anyway I got one of my projects deploying and the other one despite as far as I can tell having an identical configuration in basically every way for some reason won't work just as the icing on this horseshit cake.</p>
+<p>Post-postscript - IDK why I didn't look earlier but just checked out the GitHub page for <a href="https://github.com/basecamp/kamal">Kamal</a> and of course <em>OF COURSE</em> it's a Basecamp project ( that being DHH's company; just LMFAO at this dude acting like asking for a little howto to use <em>HIS</em> deployment system with <em>HIS</em> platform was spitting in his hand after he graciously stepped down from Olympus and bestowd a beautiful gift upon me; asbolute 🤡💩 )</p>
+
+    </article>
+  </main>
+  <footer>
+    <span class="copyright" title="Copyright Scott Menor / SMENOR, LLC. All Rights Reserved.">&copy; 2025 </span>
+    <span> Not all who wander are lost.</span>
+  </footer>
+</body>
+</html>

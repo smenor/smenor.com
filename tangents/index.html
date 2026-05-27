@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <meta name="description" content="Eclectic explorations of science, technology, policy, and power with emphasis on tyranny, structural violence, and how spreadsheets can be deadlier than bullets.">
+  <meta property="og:description" content="Eclectic explorations of science, technology, policy, and power with emphasis on tyranny, structural violence, and how spreadsheets can be deadlier than bullets.">
+  <meta name="twitter:description" content="Eclectic explorations of science, technology, policy, and power with emphasis on tyranny, structural violence, and how spreadsheets can be deadlier than bullets.">
+  <meta property="og:title" content="Tangents">
+  <meta name="twitter:title" content="Tangents">
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta name="twitter:image" content="https://smenor.com/images/tangentsIconTwitter.png" />
+  <meta name="twitter:twitter:image:alt" content="site logo" />
+
+  <title>Tangents</title>
+
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.umd.min.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="tangents tangents">
+  <header>
+    <a href="/" class="logo">
+      <img src="/images/tangentsChannelLogo.svg">
+    </a>
+    <h1 class="title">
+      <a href="/tangents/">
+        Tangents
+      </a>
+    </h1>
+    <input type="checkbox" id="menuControl" />
+    <label for="menuControl">
+      <nav>
+        <span class="line"></span>
+        <span class="line"></span>
+        <ul><li><a href="/ai/" >「 AI 」</a></li><li><a href="/anomalies/" >Anomalies</a></li><li><a href="/bio/" >Bio</a></li><li><a href="/companion/" >Companion</a></li><li><a href="/ethics/" >Ethics</a></li><li><a href="/mechatronics/" >Mechatronics</a></li><li><a href="/portfolio/" >Portfolio</a></li><li><a href="/spite/" >Spite</a></li><li><a href="/support/" >Support</a></li><li><a href="/sweetgrass/" >Sweetgrass</a></li><li><a href="/tangents/" class="current" aria-current="page">Tangents</a></li><li><a href="/who_am_i/" >Who am I ?</a></li></ul>
+        <span class="line"></span>
+    </nav>
+    </label>
+  </header>
+  <main>
+    <article>
+<h1>
+<a href="https://podcasts.apple.com/us/podcast/smenor-tangents/id1835144518" target="_blank"><img src="/images/US-UK_Apple_Podcasts_Listen_Badge_RGB_062023.svg"/></a> or <a href="https://open.spotify.com/show/5s1sFAXxhSCPGZjd3t4YL1" target="_blank"><img src="/images/spotify-podcast-badge-blk-grn-165x40.svg" /></a> 
+</h1>
+
+<div class="disclaimer">Caution: do not listen when operating heavy machinery.</div>
+
+
+<a href="/tangents/ep18-the-jab/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/3596_popularity-of-the-first-name-coral_correlates-with_the-number-of-biological-technicians-in-missouri.png" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">The Jab</span>
+	  <div class="summary">Vaccines, epidemiology, superstition, magical thinking, and the perception of risk</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.12.07"><span class="location">Phoenix, Arizona</span> 2025.12.07</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep17-Agnostic/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/ThomasHenryHuxley.jpg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">Agnostic</span>
+	  <div class="summary">Meandering discussion of religion, agnosticism, philosophy of science, epistimology and journalistic malpractice</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.11.06"><span class="location">North Hollywood, California</span> 2025.11.06</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep16-Density/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/Road_Space_Requirements.png" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">Density</span>
+	  <div class="summary">Thoughts on urban density and parks vs suburban sprawl</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.11.04"><span class="location">North Hollywood, California</span> 2025.11.04</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep15-Sweetgrass-Online/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/Sweet_Grass_3k.jpg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">Sweetgrass-Online</span>
+	  <div class="summary">Meandering discussion on money, econommics, politics, healthcare, sortition, web hosting, theory/philosophy of justice, social contracts, the so-called paradox of tolerance, due process, scaling, and sweetgrass</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.11.01"><span class="location">North Hollywood, California</span> 2025.11.01</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep14-0000003-percent/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/Water_drop_001.jpg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">0.000003%</span>
+	  <div class="summary">On Graham Platner and the demistocrats&#39; aversion to standards when it comes to</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.10.28"><span class="location">North Hollywood, California</span> 2025.10.28</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep13-recalibrate/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/Caliper.jpeg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">Recalibrate</span>
+	  <div class="summary">A few remarks on my last episode and changes going forward</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.10.11"><span class="location">North Hollywood, California</span> 2025.10.11</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep12-greta/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/Greta.jpg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">Greta</span>
+	  <div class="summary">On Greta Thunberg and reflecting on the last two ( and almost 80 ) years. Image of Greta Thunberg from Wikimedia Commons by Kushal Das</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.10.07"><span class="location">North Hollywood, California</span> 2025.10.07</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep11-james-franken/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/al-franklin.jpg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">James Franken</span>
+	  <div class="summary">Complaining about endless SPAM from James Carville and Al Franken and the party / people devoid of standards or depth of analysised beyond being 「 vibes-based 」 Image via KABC/The Atlantic</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.09.27"><span class="location">Tempe, Arizona</span> 2025.09.27</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep10-the-wheels-on-the-bus/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/The_Wheels_on_the_Bus.jpg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">The Wheels on the Bus</span>
+	  <div class="summary">Talking about public transit in developed countries vs the US, the Arizona Board of Reagents, and a brief meditation on broad strokes of where I&#39;d like to be and what I&#39;d like to be doing.</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.09.26"><span class="location">Tempe, Arizona</span> 2025.09.26</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/inflections/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/saddle_point.png" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">Inflections</span>
+	  <div class="summary">Fairly rambly / unstructured discussion about the end of my trip, returning to the US and the way sometimes in life we have opportunities to make big course changes without expending much effort ( though a lot less on that than originally intended )</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.09.20"><span class="location">Tokyo, Japan</span> 2025.09.20</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep9-words-have-meanings/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/IISC_EqualityEquity_300ppi.jpg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">Words Have Meanings</span>
+	  <div class="summary">Discussion of trigger-words and terms that people use and are put off by withouth understanding what they mean ( partly through ignorance and partly due to deliberate obfuscation ) Image Interaction Institute for Social Change | Artist Angus Maguire.</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.09.17"><span class="location">Tokyo, Japan</span> 2025.09.17</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep8-pack-lightly/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/Packing_Wrights_Biscuits.jpg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">Pack Lightly</span>
+	  <div class="summary">Talking about travel - where to go, why, and how; Image from The History Trust of South Australian, South Australian Government via Tyne &amp; Wear Archives &amp; Museums</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.09.16"><span class="location">Tokyo, Japan</span> 2025.09.16</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep7-charlie-kirk/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/crowder-change-my-mind.jpg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">Charlie Kirk</span>
+	  <div class="summary">This is not actually about Charlie Kirk, himself, but some things that his death has brought up and that some friends have mentioned and asked me about. Image Crowder who is completely fungible with Kirk Change My Mind debate-me-bro meme</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.09.15"><span class="location">Tokyo, Japan</span> 2025.09.15</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep6-swiss-cheese/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/SwissCheese-ver3.0_episode_version.png" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">Swiss Cheese</span>
+	  <div class="summary">Public health and the roll of vaccines and other interventions, the bipartisan road to hell that got us here and「 literally everything is covered in literal shit 」</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.09.06"><span class="location">Bangkok, Thailand</span> 2025.09.06</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep5-the-demistocrats/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/gilbert-gottfried-aristocrats.jpg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">The Demistocrats !</span>
+	  <div class="summary">Discussing some of the many problems with the so-called「 Democratic 」party with emphasis on their leadership and the moral and ethical bankruptcy endemic in their rank-and-file membership with emphasis on why I tend to talk more about them than the christofascist anarcho-capitalist Republicans. Image of Gilbert Gottfried © THINK FILM/EVERETT COLLECTION</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.09.04"><span class="location">Bangkok, Thailand</span> 2025.09.04</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep4-the-crazy-ones/">
+<section class="synopsis">	
+<img 
+  src="https://smenor.com/images/Steve_Jobs_Headshot_2010.jpg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">The Crazy [ sic ] Ones</span>
+	  <div class="summary">Advertising; The Crazy Ones script that I got and started reading here I *thought* was fake audible-air-quotes「 AI 」slop but it turns out it was ( I think ) probably just a longer / less edited and refined version ( I hate that crap so much; it makes everything impossible ). Image by Matthew Yohe, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=82773576</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.09.01"><span class="location">Bangkok, Thailand</span> 2025.09.01</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep3-politics-primer/">
+<section class="synopsis">	
+<img 
+  src="/images/tangentsLogo.svg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">Politics Primer</span>
+	  <div class="summary">A brief history of the US, colonisation, where we are, how we got there, and a bit about what needs to be done</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.08.29"><span class="location">Bangkok, Thailand</span> 2025.08.29</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep2-sounds-like-a-whisper/">
+<section class="synopsis">	
+<img 
+  src="/images/Tracy_Chapman.jpg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">Sounds like a Whisper</span>
+	  <div class="summary">A bit about how much of a scam everything currently passing as audible-air-quotes「 AI 」is, The Demistocrats ! and travel. Image By © Hans Hillewaert, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=7279259</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.08.25"><span class="location">Bangkok, Thailand</span> 2025.08.25</time></span>
+	</div>
+</section>
+</a>
+
+<a href="/tangents/ep1-hello-world/">
+<section class="synopsis">	
+<img 
+  src="/images/tangentsLogo.svg" 
+  alt="Default image description"
+>
+	<div class="snippet">
+	  <span class="title">Hello World !</span>
+	  <div class="summary">Episode / post 1 redux / re-introduction / re-starting tangents</div>
+		<span class="signature">By Scott Menor — <time datetime="2025.08.15"><span class="location">Hà Nội, Việt Nam</span> 2025.08.15</time></span>
+	</div>
+</section>
+</a>
+
+    </article>
+  </main>
+  <footer>
+    <span class="copyright" title="Copyright Scott Menor / SMENOR, LLC. All Rights Reserved.">&copy; 2025 </span>
+    <span> Not all who wander are lost.</span>
+  </footer>
+</body>
+</html>

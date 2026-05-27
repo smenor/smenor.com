@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+  <meta property="og:title" content="Inflections">
+  <meta name="twitter:title" content="Inflections">
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta name="twitter:image" content="https://smenor.com/images/tangentsIconTwitter.png" />
+  <meta name="twitter:twitter:image:alt" content="site logo" />
+
+  <title>Inflections</title>
+
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.umd.min.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.0.1/maptiler-sdk.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class=" inflections">
+  <header>
+    <a href="/" class="logo">
+      <img src="/images/tangentsChannelLogo.svg">
+    </a>
+    <h1 class="title">
+      <a href="/tangents/inflections/">
+        Inflections
+      </a>
+    </h1>
+    <input type="checkbox" id="menuControl" />
+    <label for="menuControl">
+      <nav>
+        <span class="line"></span>
+        <span class="line"></span>
+        <ul><li><a href="/ai/" >「 AI 」</a></li><li><a href="/anomalies/" >Anomalies</a></li><li><a href="/bio/" >Bio</a></li><li><a href="/companion/" >Companion</a></li><li><a href="/ethics/" >Ethics</a></li><li><a href="/mechatronics/" >Mechatronics</a></li><li><a href="/portfolio/" >Portfolio</a></li><li><a href="/spite/" >Spite</a></li><li><a href="/support/" >Support</a></li><li><a href="/sweetgrass/" >Sweetgrass</a></li><li><a href="/tangents/" >Tangents</a></li><li><a href="/who_am_i/" >Who am I ?</a></li></ul>
+        <span class="line"></span>
+    </nav>
+    </label>
+  </header>
+  <main>
+    <article><audio controls>
+        <source src="https://smenor.sfo3.cdn.digitaloceanspaces.com/2025.09.19-inflection.m4a" type="audio/x-m4a">
+      </audio><h2>Episode Transcript</h2>
+<p>there I'm Scott and this is Tangents</p>
+<p>But today is Friday the 19th of September
+2025 and it is 1712 as I'm recording this</p>
+<p>I always I don't know why I want to
+tell you that but obviously as zero relevance or impact when you're listening</p>
+<p>But but I am less than 24 hours before my flight out of Tokyo tomorrow which is
+it's why I I've been out of the country out of the US rather I don't even know exactly
+probably almost two months I think it's that quite two months but almost two months
+I first left when was it I don't even remember I think it was the trying to figure it out 19th of July
+so 19th of August 19th yeah about two months damn near two months wild I don't even know what to say
+I decided well I mean I mean I go I don't have like a specific outline this time
+this is going to be more just extinct perics than peraneous and probably will be my last one
+for this trip well I'm in Japan and it might be my last one for a little while because
+a little more complicated to record one of these when I don't have my own space and I'm going from
+having my own hotel room to the living with my mom and sister probably want my own space for a little
+while I will be I guess in Arizona next week so I'll probably record one of these then but it's
+going to be spotty for a little bit frustrating thing I mean I am so I'm very fortunate that I
+have people to stay with right I'm very very fortunate that I'm not going to be like on the street
+despite not having a job or any source of income at the moment I'm kind of working
+on that although I have to say like first off I've been applying to a bunch of shit and I'm
+continuing to apply to a bunch of shit and the frequency with which I get any kind of response at all
+is just fucking nil it's I mean it's that is zero exactly but it's like one application out of
+dozens I'll get somebody to return thanks but thanks for sorry you're not a great fit
+and often you know it's like oh well you're not we looked at your application turns out
+you're not qualified and then the actual application and the qualifications are things that I'm
+worked way more than qualified for and it was in my application so I'm not sure
+what the fuck is going on there but I got those for a few community colleges that I was going to
+try to teach that and it was like yeah I I more than meet all of the qualifications
+word for these things and the funny thing is I don't want to be a professor at a community
+college I I know what's involved there I know how much work it is I know what the compensation is
+and it's just so much more work than I care to put in for what they're going to pay me and
+there's not really any job security it's like it's just like not a lot of upside and it's just
+you know I mean honestly it's a thing that if I was not in a kind of desperate position I wouldn't
+even consider and I only really applied because a friend from my union is kind of recruiting people
+she wants to unionize the community colleges in Arizona and so she's recruiting people to
+to be profs there and I'm just like I don't know I like teaching don't get me wrong I if I could
+like if I could really define what I'm doing I'd just pick and choose stuff I wouldn't mind
+teaching a class like one class every year or so maybe every three semesters would probably be
+more ideal or maybe even every other year yeah be like an ongoing thing that I would do
+and it does it is one of those things that you know the more you teach especially the same class
+the more efficient it becomes the every every every season every semester ends up being a
+little bit unique and you get different set of students some people have different stuff that they're
+good at and some things work and some things don't and I always try to dial it in and adjust
+for for the class but still if you're teaching the same class like the first time you teach it
+even if you get a syllabus and you've got materials for it the first time you teach it is
+so much fucking work so much well I guess you could be extraordinarily lazy and not do any work
+then it's gonna suck but if you try to do it at all well if you try to put in like even just like
+a little bit of time and effort to try to make it an okay class where you're actually teaching
+stuff and it's not excruciatingly boring and you're actually like you know you thought it through
+let's just say that if you do that it takes so much prep time and then if you're grading shit
+like even if you have TA's grading with you or air quotes graders I guess you could again it's one
+of those things you could be super lazy and just do like multiple choice or something that's
+really painfully easy that you could just automate even but if you're actually like to me that
+that is just busy work for the most part if you put something into a test or a quiz that can be
+answered in multiple choice usually not always but usually you're just wasting people's time
+more often than not like the purpose at least as far as I'm concerned of especially test
+sequences but also homework partly as to practice partly as to get some experience and partly
+it's just as a sort of guide you know like really to see where you are what you know what you need to learn
+and to kind of figure that stuff out I'm not interested like if I'm if I'm teaching I'm not
+interested in testing to sort of sort of sort of sort of people I don't really think that that's
+I don't I don't believe in that just fundamentally I think you know I I'm more of like a
+past fail kind of guy I do think you know there's like strong like exceptional past and then there's
+like okay you pat you did the work you got the stuff and then there's kind of like yeah you didn't you
+didn't get it and hopefully not too many people are in the latter category I I fucking hate
+and I think this is a thing that I don't know exactly where it comes from but it's fucking painful
+like the last time well I guess I thought of courses since then but the last time I took a
+erototic course the was Gil and I and it was this course that we made up and it was basically like
+high performance computing for people who are not computer science majors so like how to use a
+super computer for people who are in a discipline that is not computer science and we did that and then
+you get people in there and they're they're always like generally speaking the most annoying
+students that do this shit are the ones that already have fucking AIDS so that they've got they're
+doing well they got an A and they come in and they're trying to get like extra extra credit
+and for which is odd also because I always offer a couple things for extra credit and
+some people take me up on it but not many and it's not that hard it's like teach it fast you can
+teach one of the uh a lesson basically and I think that's worth a decent amount of extra credit
+and I I'm not sure if it's like the most fair thing because some people have a lot of social anxiety
+looks looking into a mirror right now but some people are very uncomfortable getting up in front of
+a class and teaching and I would for that reason I gave all their options as well but I think that the
+teaching thing is you know it's like a presentation is fine but to actually teach something like you
+put stuff together you make a lesson plan you teach it I think it's a I think it's a good way to learn
+there's there's a thing in medical school which is watch one do one teach one and I think when you do
+that you really learn things in a way that you don't otherwise and you also you know I mean it
+shines a light on what you don't know which is what I think is the real purpose of a test or
+a quiz because it's so easy when you sit there in the lecture to listen and you're like oh yeah I
+got this I understand that I don't need to I you know it's clear it's I've just got it
+I then you actually start really digging in like you you work a problem whether it's
+and and I I fucking hate homework is a general rule especially because like as a professor it's a
+lot to grade takes a lot of effort and time again you can do it as multiple choice but if you're
+doing it well it's not going to be multiple choice it's going to be like something is written up
+and you got some work that you've done and you know it's it's it's not something that's just going
+to be like you got a C I mean like you had four options and then C was the correct one I
+not that you got a C as the grade but those are the things that are easy to grade and when you do
+the more complicated stuff and again like this is if you have a grader it seems appealing it seems
+like a great thing but if it's not somebody who's a domain expert and whatever you're teaching
+and especially if you're teaching something that's a little nuanced and your assignments are a
+little bit abstract and open went ended it's really difficult for somebody to like figure out a
+rubric and and grade I mean this is one thing actually that and maybe I'm just ridiculous here but
+one of the ways that it really optimizes when you teach again is the first time you grade something
+at least this is how I generally do it and I'm not I'm not saying this is an efficient door
+optimal way to do it but the thing that I like to do is at least kind of scan through everything
+and sort of see pretty much what everybody's done it's really and the reason that I landed on this
+is I used to like you just start grading and then as you're grading you notice patterns and you notice
+some people are just not getting certain things and like it's a lot of people are not getting certain
+things or something that you thought was not going to be obvious like almost everybody got
+and learning that kind of stuff helps you calibrate it and then it helps you grade it and I think
+that kind of stuff really like at least for my taste means that you have to kind of grade first
+without scoring anything I go through all the stuff and then you make your rubric or you might
+have like an outline of the rubric but the real rubric for grading for me comes during and after
+I've gone through everything just just because of that calibration and also I mean just I'm kind
+of saying or it was going to kind of say that you know like that is a nice thing that you can do
+and then you do it once and then the next year it's easier but as I'm as I'm talking about this
+it's it's a little more difficult than that because it is certainly it's not even possible it
+every year unless you literally just record yourself and you repeat that you're going to teach
+things a little differently and to me I mean the the way a class works it's much more of a conversation
+than just I mean you're still lecturing but the way that I would want to teach given my drillers
+is that you know you kind of see where the class is and you have really a conversation with people
+you're sitting there and you're sort of learning what people are interested in learning
+where they're coming from and every every time I've taught a class even if it's the same class
+you get like a different flavor it's you know I mean I guess if you had a large enough class
+maybe you start getting like a blend and it sort of averages out but if you have 20 30 people in
+the class you're going to have just just by random fluctuation and chance you're going to have
+some that are really strong in some things some you know one year everybody's got calculus and
+they just got it down and then one year like people barely barely have scratched it and that means
+that the way that you're going to teach stuff if you're actually doing it well is going to change
+and the way that you're going to grade stuff and the rubric that you make is going to change and so
+it ends up being a lot of work to do it well which is one of these things like actually it gets to
+another kind of annoying thing about the giant air quotes audible air quotes AI if you actually
+had like the the best way to teach if you could actually do it would be to have essentially like a
+personal tutor like the idea of an actual artificial intelligence that could know everything about
+you know what you know know how you learn and know how to explain and how to give you like the
+next layer of information on any subject that'd be fucking awesome that would be like you wouldn't
+need to grade or test or do any of that kind of stuff because you could just have that thing
+constantly assess you and the assessment wouldn't really be to score you but it's to the sort of see
+well where do we go next what do you have what are we what are we going to work on and that would be
+that would be great that would be amazing and I do think like you could do something like that in time
+eventually but the shit that people have now that passes for giant again air quotes AI it's
+not artificial intelligence it's not intelligent at all it's just like stochastic parrot nonsense
+literally just pulp from the corpus the stuff that it was trained on and it's it's set up to
+extract statistical patterns from that and then regenerate them or regenerate things that look like
+the training data and so you end up with stuff that I mean it basically just is this
+slop that is to some extent plagiarized from the training data and you know it's not really
+it's not it's I don't know it's it's hard to describe all the ways that it's not actually
+anything that would pass for intelligence and it's one of these things also like I understand
+I mean don't get me wrong I I have also had the same first experience where you start playing with it and you're like
+oh wow this is amazing but I also have had that same experience with infinite screen on
+now blue sky and before Twitter this is just an app like a bot basically that is constantly
+I mean the name kind of says it it's just sort of screaming it's like ah ah ah ah ah ah ah ah
+changing the number of ages each time and then if you mention it then it replies also with that
+and it does this in a way that you know obviously there's no intelligence there it's just like
+statistics and like the length of the ages and the delay between when it responds and when you've
+mentioned it change and those things make it feel very much like there's a entity there like
+there's an intelligence but obviously it's just random shit and I think that really gets to the
+magic trick that is this LLN shit because it definitely I agree feels kind of like a person
+feels like you're interacting with something that has a presence in intelligence but what's really
+happening is you're just getting against statistical nonsense and it's generated from stuff that
+was written by people who have intelligence and a perspective and all that kind of stuff so because
+it's coming from that it's able to simulate it it's able to give you something that feels kind of like
+it but then you know that's that's like the first brush you're like wow this is amazing
+I then you start like asking it some questions where you know the answer they're leaving some
+stuff out of your prompt and it really falls apart really fast like it's it's so bad it's all
+so bad it's frustrating to me because a lot of people just don't have like the the understanding of
+stuff to be able to assess it well and a lot of people who are in a position to allocate funds and
+like give give people like sample and fuck tons of money are just taken in by this magic trick
+I don't judge people who are just like random everyday people especially when people are telling
+you like oh this is this is the way to do this I don't I don't judge people for not getting it
+but like VCs the people of the venture capitalists who are giving him money investors these kinds of
+just and it's not just them but I mean like up and down the executive stack of all these massive
+companies and you just have all these people falling for this shit and it's just like I never really
+had a opinion of a lot of you people I never had a high opinion of general CEOs or VPs but you see
+how quickly and easily these people are taken in by again just a cheap magic trick
+and it's just like I don't know it's frustrating it's just fucking frustrating I say this is
+somebody who tried to raise money for something real and failed miserably it's just fucking annoying
+to me that people are selling this shit that you know really is not it's not intelligent at all
+and they got people just buying into it and sending like billions and billions of dollars on this
+crap and you got people the one thing that I do get some hope from is like I'm on Facebook
+I shouldn't be but I got back on for a variety of reasons and I've stayed on for a little while
+for a few reasons but I'm there and I keep seeing always fucking like all these fucking ads
+for this garbage and the comments are like there are some people who like I think they're people
+they might be bots they feel very chilly they're just like you know I don't I don't think they're
+just random people I think they're like people who are involved in some way or they're being paid
+or whatever to say good things usually crap and then you get a fuckload of bots saying
+good things and often they're poorly written like they're all saying the same stuff with the same
+misspelling verbatim and it's just ridiculous which is like if you have an LLM the one thing
+LLMs are good at is generating random crap that kind of sounds and looks superficially right
+you could you could just generate a bunch of comments and the who the fuck is going to look at the
+comments and really delve into them and if the comments are short enough it could be plausible
+but they don't even seem to bother with that they just like throw crap there and it's just so sad
+and then the part that gives me hope though the part that I take some some happiness in
+is that every single one of these has a bunch of people first off a bunch of people
+angry reacting and laughing and second a bunch of people just like crapping on it and often
+like the ones that haven't bothered with the bots or the shills it's just people laughing at it
+or crapping on it in the in the remarks and you know you look at that and it's like how are you
+people not fucking embarrassed to be paying money to show people these fucking ads and it's so lazy
+it's so like you can you can see like somebody is asleep at the wheel they're paying for these things
+they're not cleaning up their responses and then there there are these things where it's like
+weeks old or months old and it's just people crapping on the thing and if you look at that and
+anybody monitoring this shit are you just you just set it up one day and you got to going
+and you're like that paying attention you don't care I don't know if I was if I was selling this crap
+I would at least pretend I would at least like go in and look through that and say oh yeah we
+should delete these comments because these comments are really making us look bad and they don't
+they don't fucking like it's so phoned in and lazy it really offends me it deeply deeply
+offends me and again they're getting paid up scene amounts of money for this shit and it's
+frustrating as fuck anyway if if you could really have like a genuine artificial intelligence
+that would be a great teacher like or it could be but we don't have that you have artificial
+I hate using the words stupidity because it's it's a very ableist language but I'm trying to think
+like what would be an alternative that's not that I'm not sure whatever it is you have just this
+artificial garbage just flock that is just a regurgitated pulp of stuff that is plagiarized mostly
+and it's massively resource intensive and it doesn't actually you know it depends on the
+the one that you're looking at but to some extent or another and often to a very large extent
+it has like no ability to to reason or do anything that's yeah and you look at it it's just like
+such dog shit and it's frustrating again like how do people not see it but anyway if you
+had that it would be it would be the way to teach or it would be a way to teach another thing that
+you could do that we actually could do without having to make that kind of crap is literally what
+I just said learn one or watch one learn what watch one do one teach one so you know you you have a
+physics problem you're learning chemistry and you know you're like well what is the stoichiometry
+of this reaction we have hydrogen gas we have oxygen gas and we're going to mix them together
+in some proportion and given ignition source and the product is going to be water and so you know
+in terms of volume or mass figure out like what is the stoichiometric relationship
+that is to say like what is the proportion of hydrogen that we mix with oxygen
+that when we ignite it forms a certain amount of water and you know maybe not even obviously
+we all know H2O I think and so it's two hydrogen atoms for every oxygen and in reality oxygen is usually
+atomic oxygen but it's O2 gas and the hydrogen is H2 gas so it's still two molecules of H2
+for every molecule of O2 and you know I'm just trying to try to go fit but you know you do this
+and then you figure out like well what is the atomic mass of hydrogen and what is the atomic mass of
+oxygen and then you can figure out like well it's like if you mix I'm just pulling numbers out of
+my ass so apologies if these are wrong and disclaimer that they probably are but you know you have
+like a kilogram of hydrogen and we have like 16 kilograms of oxygen and we mix those together
+and then how much water do you get and how much hydrogen and oxygen are going to be left over
+and yeah you you can figure that out it's a pretty basic problem I give you that and then you
+solve it and then now you know like what the stoichiometric relationship is and how
+molecules work a little bit and you know you just kind of like go from there and so you know like
+the first I do it myself and you watch and then you do one and you know if you have trouble
+then we don't advance to the next step but yeah or if you have questions when you watch
+me do it we don't advance to the next step and then once you've done it and you can do it
+now you teach somebody to do it and if you do that if we all did that with everything
+there are enough people out there and enough people who want to learn and who need to learn
+that we could all just you know do that and teach that way and when you think about it it's like
+why why the fuck do you even need AI for that you can just do it with people like you don't
+need that's that's the kind of thing you could easily easily do I understand to some extent
+why it's not how we do stuff because it's difficult in in the structure of like industrialized
+education sort of way schools work as we at least as we've set them up but it's not that hard
+to do in reality and if you set things up like that and especially if you did it from the
+point where kids were like little and it's like okay well you have watched somebody read this book
+and now you start reading the book to somebody else and now you start teaching somebody else how to read
+and it's it's just stuff that you could you know like teach somebody how to do the
+alphabet and you teach somebody with the sounds are what the shapes are how to write stuff
+and then they they learn it they teach it and you just keep passing stuff on that way
+um you know it's I don't know it's just it's such an obvious simple thing and I will say
+I am not an expert in education despite having taught many times so maybe there are good
+reasons why you can't just do that and obviously also like there are nuances and there are details
+and things are everything is more complicated than it seems on the surface so yeah it's not like
+you can just immediately do that but I feel like there's a way that you could make that kind of work
+and there's no need for the fake AI even if you had the really AI but especially with the
+fake ship anyway I don't want to keep rambling on about this but it's just it's frustrating just I
+I wish that um actually as long as I'm talking about this that teaching part would be a thing
+that I would do I would you know and and if I was doing it the way that I would want to do it
+it would be more combination of a lecture and also a mediation so it's like uh you do a little
+bit of a lecture and then you're also kind of like giving people the ability to do the
+watch one um do one teach one sort of thing and you're just sort of there in case there are
+any any little hiccups any stumbles so anyway that would be one thing I would like to do
+I would definitely give in my dear others I mean I I know that I would like
+well I don't know I think a lot about this because it's like what what would I do
+if I could do anything you could just snap your fingers and then like the works in a certain way
+the thing I mean fundamentally if I could not have to make money and just like
+work on my own stuff that would be preferable to do anything I can then go um you know and
+it which is not to say that I wouldn't do work but it's like I just wish that I didn't have the
+do work and somehow you know convert that to dollars I hate the I hate the dollar conversion part
+um and yeah I just think about like how if you think about like for most of human history
+obviously there are certain things that you kind of have to do like you you'd have to prepare food
+you have to either hunt or garden or food and you know build shelter maintain it all this
+kind of stuff but you could imagine like there was a time where especially
+once people got food forests kind of set up the amount of labor people had to put into that
+versus like modern agriculture where it's extremely labor intensive and chemically and energy intensive
+when people felt food forests they needed to work like legitimately like 10 20 hours a week of
+light work and light work that you're doing with friends and family and once he did that you know
+the food would just kind of like be there and similarly you know at once upon a time you could build
+your own place to live just like go out into the woods and build a place and now you got your place
+and you could just stay there you could just that could be your place and you think about that
+versus now I mean but just the amount of time and money and effort it would take to
+to get a place that is yours and then once you've got it it's not like it's actually actually yours
+because you have property taxes and you have all this other shit and eventually you could
+lose it despite having paid for the whole thing despite having done everything you know the things
+could change and then you follow the rules and then one day like it's not yours anymore
+that's like it's it's still fucked up and the only things that we have now that kind of
+give people the ability to do not have to work and not have the gun to their head to the work
+is essentially stealing other people's labor like having extra properties that are
+technically kind of yours and then you're a landlord and then they pay you for them
+and they they're working to pay you and you're just sitting there doing a very
+minimal amount of effort to maintain them or paying somebody else for it and the rest of it is just
+going into a giant pot and for you and then at the same time also you're paying interest probably
+that interest is going into an even bigger pot for for some rich fucks above you and probably
+another layer on top of that and it's just like it is the way things are so fucked up and
+frustrating versus the way they could be like we could all there's enough there's enough housing
+build that we could all just have a fucking house like or when I say have a house I mean you
+could be an apartment or something but you could live comfortably we could all live comfortably
+and have a space and the only reason that we can't do that is because some people are hoarding
+a fuck ton of space for no reason other than they want to exploit other people like get them
+to work for them and then you think also like and if I had like space and I could just live
+and I could get food then I would teach for free you know I wouldn't I don't need the
+compensation for it I'm not interested I say this a lot but I don't understand the concept of money
+and I really mean that I mean like I understand I have a PhD in physics I understand
+what people think the concept of money is and the currency of exchange and all is kind of stuff
+but it is so far detached like the modern fiat currency so far detached from anything of any real
+value that it's just like it literally just imaginary bullshit it's literally just scores in a computer
+and a database someplace and if you changed those numbers if suddenly you went into the bank
+and completely reshuffled all the the account balances it would change very little especially
+if you like suddenly just yeah let's just give everybody a couple hundred grand it would change
+extremely little it's not like there's some finite pool of of stuff that you can get and and
+and also I mean like there's this whole lie about like supply and demand and the cost of things and
+you know like well if the the lie is basically if you gave everybody a hundred grand the prices
+of everything would just go up and that would read but in reality I don't think that's true I really
+don't think that's true which is another reason that I it's just I don't understand the concept
+of money I think it's just completely made up bullshit and you know like at one point in time maybe
+you had some kind of connection to just something of some kind of value although also there's another
+thing I I know I've talked about this before but but I think that I made an episode about it
+or I mentioned it in that episode but people at one point in time but the story that
+economics professors like the tell and the the capitalist you know fairy tale is basically well
+at one point in time people would do bartering and then they needed that more efficient to
+means of exchange because you know you don't want to have to barter for everything and also if you
+have X and you need Z but you can't actually trade X for Z you can trade X with somebody else for Y
+and the person that trades the Y you can use that Y to trade with the Z and then you and so
+instead of going through that intermediate stuff now you can just convert your X to dollars or whatever
+your currency is and then you can just go directly to Z and the dollars are that's the story that's
+the the the story people tell when you actually look at it historically it's not how things worked
+like for the most part indigenous populations have more like gift economies they don't
+actually like like bartering is this is the thing that happens for certain scarce goods or if you're
+interacting with people like outside of of your community but within the community and especially
+like the community would generally speaking be family and then extended family you're not really
+accounting shit you just kind of oh I've got some extra of this and you need it so here have some
+and you've got some extra of that and then I need it and so you're like here have some or I need some
+shit done and I need a couple extra hands for it and you're around so you help me and you need something
+else done and I'm around and I have to know how to do it and so I help you that's the kind like
+without any kind of accounting going on it's not a transactional sort of thing and when you start
+looking at that you start seeing like oh all of this get that we do and all of the not that
+just purely shit on capitalism but all this idea that we have that like oh it's just natural
+that people barter and all of this stuff and so it's since they're bartering currency makes more
+sense and boy it's all bullshit it's all just made up fucking bullshit and it's it's kind of
+ridiculous and kind of awful and especially also when you start realizing oh people used to go
+or when people went to indigenous communities like colonizers would be these people they go
+someplace in Africa or the Americas or in Asia or South Pacific or wherever they go someplace
+and they find people and the people that they find they're they're they're they're sitting there
+and they're having a lot of leisure time like a ridiculous amount of leisure time they're not
+not really doing like lots of work and you have these European colonists that are sitting there
+and like you lazy assholes right and the truth is like for the most part they figured out ways
+to you know whether it was food forests or some kind of hunting or gathering or whatever that
+did not require a shit ton of effort and so people had and they also like said up shelter
+and the shelter you know it would take bursts of effort to build at some point or if it was
+something elaborate maybe it would take like an ongoing effort over a long period of time but once
+you put that effort in it's done and then it just exists or you know like a burst of effort and
+then it's done and then it just like oh we're gonna raise the barn and then then you get the barn
+and now you've got now you've just you don't have a fucking mortgage on the barn you don't have a
+you know like leaned the to the bank that you don't actually own your own barn you built it
+with the community and I'm kind of mixing things like the if it's still I'm in essentially
+that's kind of how it worked and you look at that and you look at these these fucking settlers
+came in and like fuck you guys you have to change this and they teach this horrible mode of agriculture
+which is this industrial like row monoculture kind of crop stuff which is how most of our
+agriculture is down every now and it's very inefficient it's extremely resource intensive
+and it's basically set up so that like normally in food forests you have an ecosystem
+so you like you might have some pests but you'll have stuff there to eat the pests and you'll have
+stuff for the pests seed and then you'll have like things that kind of keep the deer out of the crop
+that you want or you've got enough extra that they're eating some of it but you're still getting
+what you need and all this kind of stuff and you know like I mean even so far is like stuff
+when it's growing together because it forms an ecosystem this kind of stuff well the simple
+obvious one would be like fixing nitrogen so you don't need fertilizer if you have stuff that's
+fixing nitrogen growing with stuff that needs nitrogen and can't fix it itself now was suddenly
+your need for fertilizer is much much less and you know there's there's stuff that makes the
+water that falls on the rain sort of stick in the soil this soil more and there's stuff that you know
+just like you can you keep going through the list and you start looking at this and it's like when
+you have an ecosystem you don't really need pesticides at least to the same extent and really
+probably at all and you don't need to do a lot of the maintenance stuff you don't need you need
+to like clean things up and make sure that certain things are not growing in certain places
+and make sure that the stuff that you want to grow is okay but other than that and then you
+get the proportions kind of right other than that and like fine tuning you can just get stuff to grow
+almost on its own and like the amount of ongoing effort that it takes is so minimal compared to
+the sort of Western agriculture system that we use and you look at that and you just like I don't
+know it's it's very offensive how just how much more resource intensive it is and it's also
+designed if you do monoculture like that it's basically designed to sap the soil of certain nutrients
+so now because you're growing only one kind of thing that might not fix nitrogen it's extracting
+all of the all the fixed nitrogen from the soil and now you have soil that is after a few cycles
+not able to support anything and you either have to rotate crops or they just everything dies and also
+by the way you're not taking you know it's not just that you're taking the fruits out but you're
+taking all of the stuff out and you're like disposing of it someplace else so all the other minerals
+that are there are just getting pushed off someplace else or you know they're extracted from the soil
+as well and you're just making barren shitty soil versus you could be doing this in a way that
+makes much more sense and works much better it is just I don't know I and also I do want to
+obviously like things were not perfect and I do like having the ability to get surgery if you need
+surgery I like I needed out of the truck to me to get my retina fixed and I like the fact that I could
+do that I like living in a society with that I like having a manufactured computer that I can use
+but I can record this on and share it with you and do work on and all that kind of stuff I like
+that kind of stuff it's kind of nice but you don't need to do it the way that we're doing it like
+we could make things so much better and all of this shit is just shit the people made up
+and a lot of it could be better and you know I'm not saying like we should go back to the way
+things were but why don't we look at the way things were and look at the way things are and improve on
+things and this is also my thing you know I've talked about this before but when you're traveling
+go around and see how other people do shit and recognize the things that you're not doing
+and then steal the good ideas you know like I just had a friend traveling with me around your
+pan for a week last week I think it's now it's a week ago but this was her first time being on a
+train and her remark is just like trains are fucking awesome like having a metro and having
+even without shit concept just having trains to get around the city is fucking awesome and then when
+you have like shinconsen or the Chinese high-speed rail or tijie ve whatever it is it's
+fucking amazing it's like you know and this is just one example of public transit and public goods
+but you can look at other stuff and go around the world and see like oh there are places where
+if you need surgery you don't have to pay for it it's just covered and it's not like that's
+automatically like this giant queue that everybody has to get into and it's you know this big
+train there are places where it's actually kind of works well not none of them are perfect
+and some things are better in some places and some things are better in other places but yeah
+what you could do there's nothing that says that you have to replicate one particular thing you
+can kind of look around see what works and see what doesn't work and then take the best parts
+and figure out the stuff that doesn't work and figure out why it doesn't work
+and replace it or do something better or try something new you can go around and say like well
+everybody having nothing gets stuck on this car thing but everybody having their own private car
+and having to have a car like to get around in the US if you don't have a car you're kind of
+a little bit fucked in a lot of places and the in fact it's a luxury to live places where you
+don't need a car in the US unlike most of the world where if if you live in Tokyo or in Bangkok
+or most of the places that I've visited on this trip or most of the places that I haven't
+visited that are around you know you do not you could just be a random person living some place
+and not having a car is actually not a big deal like you can for the most part get where you want to
+go you can do the things you want to do and it's not like you're going to be like taking
+over to give us amount of time to do it either in fact it's it's easier here not having a car
+for most things to just take the metro and then you get there then it would be to you know you
+pay for parking and then you drive someplace you deal with traffic and then you have to find a parking
+spot and you have to pay for parking there and then it actually is worse it's a worse experience
+to have a car in a lot of places and wait you know and you think about like that the expensive
+having a car the expensive having to have insurance and every car has an individual driver that's not
+that will train because we can't afford to train everybody well and so now the odds of getting in
+a wreck are much higher every car is taking up so much space like you know if you look at like
+how big a car is there's a there's a there's a I I should find it but there's a really nice cartoon
+that I like that sort of shows a road and it shows like this is how many cars or how much space
+this moving this many people and cars with a single driver takes and then this is what it looks
+like if they're all in trains or buses or bicycles and you look at that and it's just so much
+more efficient and you think about like all the time that you're spending in traffic all the the risk
+of damage all the waste of energy and materials and the disposal of all that stuff
+the ecological impact of all that stuff and again you're just like solving a problem that
+everybody has but instead of solving it once for everybody or even even solving it a couple times
+in different ways for everybody you're solving it all individually over and over and over again
+and of course it's going to be ridiculously inefficient and of course it's going to take
+much more space and create a lot more traffic like the amount of people
+is true like if you go on the Tokyo Metro during rush hour it'll be crowded but also there's a
+massive train with 12 cars and a new one comes every like two minutes and each one of those is
+crowded but the amount of people you're moving versus if every one of those people was in a fucking car
+it's it's ridiculous it's completely ridiculous and it's just like seal that fucking idea
+and also like the reason I want people looking at that kind of stuff is because you should be
+fucking pissed you should you should actually be pissed if you live in the US how fucked up things are
+and how needlessly fucked up things are and when you start looking at it too and it's like
+this is things of this way not because people decided to make them that way but mostly because
+like some rich assholes wanted to sell cars and so they ripped up the trolleys and some rich assholes
+had this other interest and so they or yeah in the US like the answer to a lot of stuff
+is also racism so it's like well if you put in public transit system black people get to use it
+too and we can't possibly have that so you know I mean it doesn't take very very much scratching
+when you like I looked in Gilbert for a while and people there are weirdly opposed to the light rail
+coming down there and the light rail so badly just once the turn right like it comes down
+main street in Mesa it just wants to turn right and then go down through downtown Gilbert
+when I say it wants to I mean like I think one day it will I think it's almost inevitable
+but people in Gilbert don't want that and they don't want it because the same reason that they don't
+want something in Scottsdale because they're like oh no if we do that and poor people might come here
+or if we do this then brown people or black people might come here and like I mean they
+they won't necessarily say that openly but that's it's it's clearly what they're thinking
+and the poor one they will say openly so you know you talk to people and it's like oh you're just
+fucking classes than racist and you know it's it's annoying and again I do think
+and I think space at worst I think inevitably one day it will happen just because it's you can slow
+down the future you can delay things you can put up a roadblocks but eventually there are
+things that just make more sense and eventually things get better they don't necessarily have
+to but I do think people on average like making things better and there are reasons like
+eventually you run out of gas like it worst case scenario eventually it's just not going to be
+feasible to have everybody running their own car the energy will not work the amount of resources
+that it takes to do that isn't going to work and so eventually you start getting more densities
+and eventually you start building more public transit because that's what you have to do and it would
+be nice if you just said like well we can see this is going to happen you can see 50 years from now
+there's going to be public transit in Phoenix assuming Phoenix is habitable why not just fucking do it
+now eventually you guys are going to have some kind of universal healthcare why not just fucking do
+why do you have to like delay this stuff and the most annoying thing also is like you get so many
+people who would benefit so much from this who have been convinced that it's bad and that they should
+be against it and they're fighting it and in reality the people who really benefit from not having
+it are an extremely small subset of people and even they even like I mean the episode on
+well I was words have meaning but a lot of it was on like racism and the thing about racism
+and all the stuff that I was talking about even the racists even the people who are
+air quotes winning in that system and I mean this about capitalism too even the air quotes winners
+are suffering because of the system like the system is worse for everybody the system I
+talk about this a lot but I am a pilot and if I want to fly someplace first off the amount
+that it costs to rent a plane even a cheap plane but especially like a kind of nice plane
+the amount that it costs the gas that it uses it's so ridiculous and then you know it takes so much
+more time I have to be trained if the do all this kind of stuff and I'm not moving that many people
+so it gets if you look at like an a380 years and then like that it's actually pretty efficient
+in terms of how far people are going for each kilometer or mild traveled per person but if you
+look at like an individual little like a series or a says not it's you're talking like SUV kind of
+economy for fuel and do you know which is that terrible terrible but it's not great
+and so you look at that and you're like then on top of that and you imagine everybody could do
+that somehow you have you have little microfusion reactors so now everybody can have their own
+private plane well now you still have to get from the airport to someplace and then you have to
+and you think about like all the extra steps versus if we had Shinkansen you know I could travel
+around Arizona and I think about does a lot because I'm gonna be in Arizona and a week and I need
+to get from Phoenix to Flagstaff and then back to Phoenix and if I if I could just take a fucking
+Shinkansen from LA to Phoenix and then take another one to Flagstaff it'd be so much better it'd be
+infinitely better versus also like imagine I have like money's no object I can rent a car or I
+can pay a driver or whatever and I could even have a private jet fly me from LA to the Flagstaff
+and I still like I get to the airport and Flagstaff and now what do I do I have a you have
+a last mile problem versus if you had fucking public transit going to the airport or going from
+the train station you're just fine you're just you it's it's so much better and easier for
+everybody again including the dairy air quotes rich people and of course also also if you fix
+some things like you because there's no reason the things that are terrible about travel
+mostly don't need to be that way you're there are certain things that just kind of need to be
+shitty but there are a lot of things that we make shitty for the sake of making them shitty like they
+don't need to be as bad as they are you don't need security to be as terrible as it is
+you could make you could solve the problem which we actually do have of needing some degree of security
+and do it in a way that is not fucking horrible and you can kind of see this because there's like
+TSA precheck in global entry and all this kind of stuff you could just do it for everybody there's no
+there's no real reason not to do it for everybody and instead we make everybody you know you've
+got grandma taking off her shoes because that's a problem you got people dumping their water because
+somehow magically my two liters of water is going to become a bomb like it which is just fucking ridiculous
+it's just like it's not that it's not possible but if somebody is going to do that and that
+determined they'll find another way really and probably probably not going to make like a
+peroxide compound or whatever it is um that is a liquid and then have a binary chemical or whatever
+to you know it's it's like you can do it but it's it's more like a theoretical thing it's not like a
+real thing and then the shoe thing is just like some one asshole tried to let us shoes on fire one time
+and now everybody from then on has to take off their shoes but but if you get through the TSA precheck
+thing you no longer have to take off your shoes because reasons yeah it's just that the whole thing
+is between security theater and just bullshit the look I'm slurring there anyway I'd probably need
+to eat and I definitely it's 18 now oh eight right now and it is my last night and uh in Tokyo so
+I feel like I should probably go out and do something although I don't know I'm kind of content
+just staying in but I feel like I should do something because it's like you know lose that
+opportunity um definitely at least gets something to eat um and with that I will talk to you later
+I'm really sleepy I'm so not looking forward to I'm not looking forward to uh deflying back it's
+it's such a it's kind of funny because it's like on one hand I do understand either the funny thing
+is I was going to call this inflections I never even got the fucking inflections uh the inflections part
+well actually it'll finish this and I'll get through the inflections cap that often and get
+the I can't I can't believe him an hour in and I didn't even think about this actually I
+felt good I mean I'm going to get to the inflections so the inflections thing the re and I'm just
+going to blast through this but the the idea there was just that uh there are certain times
+whether it's societally or in your own life you know you could you could change things dramatically
+almost any time there there are wherever you are whatever you're doing you could make a move that
+changes the the course of your life especially if it's a destructive move like if it's something
+damaging to yourself or others you could do that you could choose to but you could make like a big
+change and like you could decide to move someplace and figure out how to do it or I could decide
+I'm going to go on a trip and be away for two months and these like you could do that any time
+but there are times when you're kind of an inflection point and at these inflection points
+it doesn't take like that much effort doesn't take that much energy they're just kind of like a
+point where you can kind of push things a little bit one way or another and it rolls downhill
+from there it's kind of like a saddle point so you're in a you can imagine like you're at the top of
+mountain and once you're down in the valley if you want to you could be in the valley which is
+kind of like where you are most of the time you can climb up a mountain I don't have the edges of the
+valley and then really change things but it takes a lot of doing it takes a lot of discipline and
+care and concern and all of that or you know if you happen to be at a place where you're like
+at the top of the hill or at a hill where you can go left or right it might take exactly the
+same like you're at the the fork in the road and both paths are going downhill both paths take
+about the same amount of energy and right now or they you know you never know maybe down the road
+one will take a lot more and one will take a lot less but right now both are going to be about
+the same amount of effort and you could just choose and that is that is what I was kind of
+talk about with inflections and my whole my whole thing there was just going to be like you
+you know like I could just not get on the plane tomorrow I could do that and then things would be
+very different I'm going to obviously but there are things like that that you could do so you can
+inflect things anytime but you can also like I found myself ending with my kind of miserable
+job ending and in a place where I could have fit for the amount of money that I've spent traveling
+I could have lived in Arizona in my same situation with my car and all that kind of stuff
+I could have gotten about to October maybe maybe maybe November and then I'd run out of money
+or I could have done what I did and I did that and I'm actually I feel really glad that I did
+it I feel I don't it does help that I don't understand the concept of money but I don't feel
+any regrets about like what I've spent money on or what I've done to in the last couple of months
+the only thing that I kind of wish is just a I really want to figure out a way to I'm not saying
+I want to live as I have been the last couple of months because it's it's more of a vacation
+but to be able to travel a little bit or just to be someplace else and have some flexibility
+and that not be somebody else's bitch so to be in a sort of speak that have the boss with the
+gun to your head that you know like if you don't do the asshole of shit that I'm forcing
+you to do then you're gonna be out on the street and you're gonna go or in my case not on the street
+but have to live this is I'm actually wrapping up with the stuff that I started on I have places
+to stay but you know I will be in a place where I don't have my own space for a little while
+I'm not I'm not looking forward to that I'm really not and then I have an opportunity to go
+someplace else where I would have my own space but it would be like in the middle of the
+fucking nowhere and it's like okay then how the fuck do I get out of there how do I how do I travel
+anywhere from there um like it's it's very different than like if I if I had a place here even if
+it was a modern or modest place or or in Paris or whatever you can get around you have the city
+to do stuff and and you can you can wander you could hang out with people you got people to hang
+out with versus like you're in the middle of the desert and there's not really many people around
+and what are you gonna do and that just doesn't sound just not sound appealing to me
+being stuck being stuck in Gilbert and you know like hey what am I doing there I'm not sure
+be when I'm there like I need a car or you know dealing with the transit there is a fucking nightmare
+especially if you're getting anywhere that is not on a transit line which is most places
+and like I just am thinking about like what why do I want to be what do I want to do
+and I'm at kind of an inflection point I really I need to figure out what to what to do next that's
+kind of what I was what I was saying anyway I don't want to ramble on about this for too much
+longer because I am getting I'm I'm ready to eat something now kind of wild it's my last I could
+I could eat someplace for lunch tomorrow I guess but this will probably be my last sort of
+niceish meal in Tokyo um I don't know I'm probably not gonna spend like ridiculous amount of money
+it's been a tiny bit that is actually one thing about like Tokyo and in so many places outside
+of the US like the rent here is not cheap but it's cheaper than LA to be that guess it depends on
+where you stay but I could live here more cheaply than I could live in LA for sure and I would be
+more comfortable I would have the the Metro and the Shinkansen and then when you look at like the
+cost of food even if you go someplace is like I mean that don't come here wrong you can go to a
+sushi restaurant and spend like 80,000 yen for person you could you could do that but you can also
+just go and you can on the other extreme get like ramen for a few hundred yen but for 500 to
+a thousand yen you can get a pretty decent meal or 1500 yen if you're um you can get a pretty decent
+meal and if you had the kitchen and all that kind of stuff it wouldn't be that hard to to make
+a pretty good food here and it wouldn't be that expensive and yeah I'm not just trying to talk
+myself in the the staying here necessarily I'm not that I'm staying here but I'm obviously going
+back but the getting stuff set up so there would be here but I'm looking at different places
+and I'm considering where it would be and I definitely know wherever I go the thing that I want
+I mean I want to be able to spend time with my mom and sister that's a big one but I really
+I really want to just be someplace where I don't need to make a ridiculous amount of money to be
+comfortable and I can just I can have my own space and reasonably well and have stuff that I can
+do and I have to have a car I really really don't want to have a car again and it's like maybe
+one day I will but if I could avoid it I would be glad to not have one I didn't have a car before
+I got married in my wife her ex-wife wanted to not be the only one that drove so I learned how to
+drive but I was in my 20s and I think I would have been fine never learning how to drive truly
+I could have just like not done it and it would have been a big deal and if I lived in a different
+society or in a place where there was public transit then I didn't have to then I why would you have
+a car why would you want to it's it's one of these things like in the US you think about like what
+people think is freedom and what are the things that you're aspiring to and a lot of them are just
+silly a lot of them are kind of ridiculous a lot of them you know like oh you're gonna
+just to I don't know why this one came up but you're gonna have a big wedding and people look
+like thinking about how much you're gonna spend on the wedding and how the wedding's gonna go
+and all this kind of stuff I did you spend like a ridiculous amount of money more money than
+sometimes people make in a year or several years on a wedding or on a fucking ring or something
+like that and then like what what was the point of that is it something that was really you know
+I mean there are things that I keep coming back to travel but the like travel I don't feel like
+is waste of money I I feel like it was it's money will spend spending time with people
+to the extent that it costs money to to do that or having meals with people and kind of stuff
+there there are things like that that feel like they're good and useful and worth
+whatever you're putting in having my computer having a nice computer that works and that you
+can use and all this kind of stuff actually and I I don't regret spending money on my computer
+I wish that I I wish well I wish that it was like an open source thing that was more compatible
+and didn't have like enriching Apple and have this weird conflict between Apple and Google and
+all the layers of bullshit there but I still I still feel pretty decent about it I don't feel
+like bad about it and I don't know they're just like having well I I don't want to go into
+to those because especially it's it's an hour ten minutes in but I was going to talk about like
+gone I was it was just like having a little mental flight back to Kyoto and when my friend
+and I were there walking around we passed a place and there was ridiculous and there was a couple
+of different compounds but a couple like ridiculous ridiculous places you know like people have
+the house and they have like a giant yard and they have maybe a guest house and some other stuff
+and you just look at that and don't give it wrong I I wouldn't mind if money was no object
+and resources were I I wouldn't mind that but also like what do you really need do you really
+need that I don't know I think you can be comfortable with with a lot less and you know what is
+really worth putting putting resources and time and effort into and I think also like the amount
+this is this is probably going to be the last thing that I talked about here today but like
+the amount of money that I've made and various points in my life like my my last job was not
+paid that well but was still better than a lot of people that were probably harder than I did
+but you know I've had jobs where I mean pretty significant amount of money for a little while
+and yet the the stuff that I had to show for it and the stuff that I was doing with that money
+was kind of silly it was not and I don't even mean like extravagant purchases or ridiculous stuff
+although the car that I had was such a fucking waste of money so too I just like I regret that
+one deeply I enjoyed it a little bit and it was nice driving people around it was nice having a
+thing to get around Phoenix but if I didn't have to have that car like the amount of extra money
+that I would have or the money that would have gone to paying student loans or like credit card
+debt or whatever it is just like why would you sink those resources into that and you just convert
+again I don't understand the concept of money but I do understand that is equivalent to the
+this much of your life that you're putting into to work or whatever and you just think about
+like is it really worth I would rather not have to put in that and just have you know like a certain
+amount that covers my needs and then have the rest of the time be like leisure time and my leisure time
+might end up being putting stuff together like this or writing programs or you know like all
+there you could be whatever random stuff but it doesn't necessarily have to be like converted to
+you have to do this in order to make money in order to not be on the street or in order to get your
+eye fixed or whatever and it's just like I don't know it it's it's interesting to me but I am
+I'm so fucking tired I hope it doesn't come across that I'm tired because I'm like you know
+A I don't have notes for this so it's probably a little rambly and then B like I don't think it's
+obvious obvious but I am like struggling here I'm just like sleepy and with that I think
+I'm gonna go get something to eat and I'm gonna fly back tomorrow and at this time
+and 24 hours from now I will be like halfway back to LA which is fucking wild
+at least unlike my friend I don't have a six hour layover when I get there and then a flight
+to Phoenix I just have the the main flight so I feel bad for her that she had to do that although
+still like it's one of those things like it everything is interminable and it goes on forever
+and then it's over and it's it's a very weird it's right up there with my thing that's like
+you know everything is either impossible or trivial if you want once you understand how to do
+calculus it's actually pretty fucking easy and before you learn how to do it if you wanted to
+if you wanted to take limits or figure out the volume of certain things it could be fucking impossible
+and I mean you think about Lengzino's paradoxes and people spent hundreds of years thinking
+about these things and they never came up with limits and then all of a sudden Newtonian
+11 minutes came up with calculus and now it just becomes like oh well yeah you're taking
+Zeno's paradoxes I guess I should say if you're listening and you don't know this is just the idea
+a few of them but basically the idea is you can never get from A to B because first you have to get
+halfway there and then you have to get halfway from where you are to the next place and then you have
+to get halfway from there to the next place and so on and so on and they're infinitely many
+halfway theirs the thing that that loses is of course each one you're if you're going at a constant
+speed first you travel half the distance and it takes half the time and then next one you're
+traveling a quarter of the distance which is half the remaining distance and it takes a quarter
+of the time which is after remaining time and each time you're taking half of the the time
+remaining to go half of the distance and it basically works out to be a limit and it ends up being
+just a finite amount of time and it's actually is pretty simple but people struggled with this
+and couldn't figure it out for I want to say centuries but I think like over a thousand years
+people didn't get it and all of a sudden it's like oh it's just a limit and you just look at
+stuff like that and it's like that there are just so many things like that and I think life is
+very much like that as well like I'm sure whatever I'm doing a year or two from now will
+seem probably in some sense trivial compared to thinking about what to do
+certainly well I guess the the only options are either I figure something out or I'm completely
+and probably in a figure something out I hope I hope although I don't know we'll see we'll see
+with that thanks is ever for listening and the next time I talk to you I will probably be back in the
+US I can't I can't believe that I I was so glad to the spend a week with my friend here though
+that was that was nice I really enjoyed that I I always think people should travel just in general
+and I'm somebody like I love my I love my own company I love spending time with myself and I don't
+really need that much interaction with people and a lot of people annoy me like in any significant
+amount of time I kind of get tired of a lot of people her I did not get tired of and I really enjoyed
+I enjoyed her company in spending time walking around with her and doing stuff so anyway that was
+it was nice I I know I've said that before but it is just yeah just thinking about it again
+but with that thanks again and talk to you soon it's at you</p>
+
+    </article>
+  </main>
+  <footer>
+    <span class="copyright" title="Copyright Scott Menor / SMENOR, LLC. All Rights Reserved.">&copy; 2025 </span>
+    <span> Not all who wander are lost.</span>
+  </footer>
+</body>
+</html>
